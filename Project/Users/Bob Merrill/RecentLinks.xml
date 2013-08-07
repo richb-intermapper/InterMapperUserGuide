@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlEditorKit.ImageGeneralDialogPage">
+        <Link Value="S:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide\Content\images\snrequired.png" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="S:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide\Content\09-Reference\layer2features.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog">
+        <Link Value="S:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide\Content\09-Reference\09-06-Data_Collection\datacenter.htm" />
+    </Dialog>
+</RecentLinks>

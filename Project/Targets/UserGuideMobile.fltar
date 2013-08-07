@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="InterMapper User Guide"
+  Type="WebHelpMobile"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  OutputFile="index.htm"
+  ConditionTagExpression="include[Primary.online] exclude[Primary.NewInfo or Primary.Omit or Primary.print or Primary.review or Primary.test] "
+  Skin="/Project/Skins/DefaultMobile.flskn"></CatapultTarget>

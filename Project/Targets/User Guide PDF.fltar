@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  DefaultUrl="/Content/welcome.html"
+  OutputFile="InterMapper_User_Guide"
+  Type="PDF"
+  MasterToc="/Project/TOCs/Primary.fltoc"
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[Primary.print] exclude[Primary.NewInfo or Primary.Omit or Primary.online or Primary.review or Primary.test] "
+  MasterPage="../../Content/Resources/MasterPages/PrintDoc.flmsp"
+  MasterPageLayout="/Content/Resources/PageLayouts/DartwareChapter.flpgl"
+  MasterStylesheet="/Content/default.css"
+  OutputFolder="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide"
+  conditions="Primary.print">
+  <Variables>
+    <Variable
+      Name="Primary/CurrentVersion">5.4</Variable>
+  </Variables>
+  <ConditionTags />
+  <Glossaries></Glossaries>
+  <PrintedOutput
+    ExpandingTextConversion="expand"
+    MultiDocWordOutput="False" />
+  <PDF
+    ShowUsedBookmarks="false"
+    DownsampleImages="true"
+    ImageCompression="JPEG" />
+  <DocumentProperties
+    Title="InterMapper User Guide"
+    Author="Bob Merrill" />
+</CatapultTarget>

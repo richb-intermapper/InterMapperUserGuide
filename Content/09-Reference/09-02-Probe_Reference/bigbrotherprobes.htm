@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print" MadCap:check_list="Ran Smart Index" MadCap:id="Big_Brother_Probes" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:status="In Progress" class="" MadCap:lastBlockDepth="4" MadCap:lastHeight="854" MadCap:lastWidth="576">
+    <head><title>Big Brother Probes</title>
+        <link href="../../default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="L2">
+            <MadCap:keyword term="Big Brother Probes" />Big Brother Probes</h1>
+        <p> InterMapper can act as a Big Brother server. <a href="http://www.bb4.com/download.html">Big 
+ Brother</a><MadCap:keyword term="IP" /><MadCap:keyword term="Set:IP" /><MadCap:keyword term="Network Monitor" /> is a popular network monitoring tool that allows you to create scripts 
+ ("clients") that run on remote systems and send status reports back to the Big 
+ Brother server. This allows a network manager to test additional kinds of network 
+ devices, either by writing scripts or using some of the many        <a href="http://www.deadcat.net">scripts 
+ that are already available.</a></p>
+        <p> When you specify a device to be tested with a Big Brother probe, InterMapper's 
+ built-in Big Brother server listens for messages coming from a Big Brother client 
+ on the corresponding machine. 
+</p>
+        <p>To configure Big Brother probe, you need to set two parameters:</p>
+        <ul>
+            <li><b>Port</b> - The default port is 1984, but you may choose a different port. If you choose a different port, 
+ make sure that the Big Brother client on the corresponding machine is also configured 
+ for the same port.
+</li>
+            <li><b>Purple Time</b> - This is the number of minutes to wait without a report before indicating a problem. In an actual Big Brother server, this is thirty minutes; Big Brother shows a device as purple if it goes this long without reports from the device. InterMapper shows it as DOWN (blinking red).</li>
+        </ul>
+        <p>
+            <MadCap:keyword term="IP:set" />
+            <MadCap:keyword term="Set" />
+            <MadCap:keyword term="BBDISPLAY" /> In order for InterMapper to receive Big Brother messages from the remote client, 
+ it must be configured correctly. In particular, the client must be configured 
+ so that its BBDISPLAY is set to the IP address of the machine where InterMapper 
+ is running.
+</p>
+        <p>
+            <MadCap:keyword term="Big Brother State" /> The Big Brother states will be mapped to InterMapper states as shown in the 
+ table below: 
+</p>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <col style="width: 185px;" />
+            <col style="width: 265px;" />
+            <tr>
+                <th style="text-align: left;">Big Brother State</th>
+                <th style="text-align: left;">
+                    <MadCap:keyword term="InterMapper Status" />InterMapper Status</th>
+            </tr>
+            <tr>
+                <td>Okay (green)</td>
+                <td>Okay (green)</td>
+            </tr>
+            <tr>
+                <td>Attention (yellow)</td>
+                <td>Warning (yellow)</td>
+            </tr>
+            <tr>
+                <td>Trouble (red)</td>
+                <td>Critical (red)</td>
+            </tr>
+        </table>
+        <p> At the moment, the only messages that InterMapper will process and represent 
+ are "status" (and "combo") messages.
+</p>
+        <p> Note that the Big Brother server for a given port will not start until at 
+ least one device has been configured for that port. Similarly, once the last 
+ device for that port has been removed, the server for that port will shut down.
+</p>
+        <p> For more information about Big Brother, check the Big Brother web site at 
+  <a href="http://www.bb4.com/download.html" target="_blank">http://www.bb4.com/download.html</a><MadCap:keyword term="BB4 Technologies" /><MadCap:keyword term="Big Brother System" />. "Big Brother System and 
+ Network Monitor" is a trademark of BB4 Technologies, Inc. There's a good description 
+ of the Big Brother message format at:        <a href="http://www.bb4.org/bb/help/help/Status_Message_Format.htm">http://www.bb4.org/bb/help/help/Status_Message_Format.htm</a>. 
+ You can also look through a large set of        <a href="http://www.deadcat.net">Big 
+ Brother clients</a> that can be downloaded freely.
+</p>
+    </body>
+</html>

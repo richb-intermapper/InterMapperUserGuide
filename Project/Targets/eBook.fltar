@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="New Target"
+  Type="EPUB"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[Primary.print] exclude[Primary.CurrentInfo or Primary.NewInfo or Primary.Omit or Primary.online or Primary.review or Primary.test] "
+  MasterStylesheet="/Content/default.css"
+  OutputFolder="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide">
+  <PrintedOutput
+    CollapseMargins="true" />
+</CatapultTarget>

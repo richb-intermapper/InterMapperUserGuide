@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.NewInfo" MadCap:lastBlockDepth="4" MadCap:lastHeight="834" MadCap:lastWidth="576">
+    <head>
+    </head>
+    <body>
+        <h1>What's New in Version <MadCap:variable name="Primary.NextVersion" />?</h1>
+        <h2>Major Features</h2>
+        <h3>InterMapper Reports</h3>
+        <p>This version represents continued performance, disk usage, and feature improvements to InterMapper Reports, as well as additional built-in reports.</p>
+        <ul>
+            <li><b>Report templates - </b> 5.5 introduces report templates, predefined reports that prompt the user for key settings, and use those settings to generate a report. The result can be saved as a report. </li>
+            <li><b>New, Load, and Save Reports pages -</b> the Load and Save pages are easier to use, and the New Report page simplifies the creation of a new report.</li>
+            <li><b>New Report templates-</b> templates are available for service level agreement, event history, dataset chart, top “N”, details, and outages.</li>
+            <li><b>Performance and disk usage -</b> The way data is stored in the database has been redesigned. As a result, the database uses less disk space, adds data more quickly, and starts up faster. After the upgrade, the database initially consumes more space, but after the first weekly maintenance, its size is decreased substantially. You will see space savings <i>only after the first weekly maintenance is complete</i>. To achieve these improvements, raw data points are held in a new "datastore" table. If you have written SQL queries against the "datapoint" table, you need to modify your queries to use a new "load_data" function. </li>
+            <li><b>CSV Export -</b> InterMapper Reports allows export of reports in CSV format. </li>
+            <li><b>Maintenance Tasks -</b> We have made a number of improvements to the daily and weekly automatic maintenance tasks. Given enough free disk space, the maintenance tasks use a new behavior that takes less time, uses less memory, and improves the performance of subsequent database operations.</li>
+        </ul>
+        <h3>Charts and InterMapper Database</h3>
+        <p>InterMapper <MadCap:variable name="Primary.NextVersion" /> gives you greater visibility into and control over chart data, as well as data exported to InterMapper Database.</p>
+        <ul>
+            <li><b>Server Settings - </b> The Reports Server panel now allows you to add, delete, and edit retention policy definitions directly, rather than requiring you to go to the IMDC interface. Note, too, that retention policies now include two “Server storage type” parameters along with the traditional database parameters: “Forever” and “None”. “Forever” means all charted or exported values are saved to a local disk file. “None” means that we will poll the data but not save it for charting or exporting.</li>
+            <li><b>Chart Window -</b> In the Chart Window, you may now right-click on a dataset legend and choose “Show Device” to have InterMapper indicate in the Map or List Views which device the dataset belongs to.</li>
+            <li><b>Status Window -</b> In the Status Window, when you click on a chartable value, a menu pops up, allowing you to choose to create a new chart or to raise and/or go to an existing chart which contains this dataset.</li>
+            <li><b>Chart View -</b>  In Chart View, datasets are now displayed along with the charts containing them. Creation date, source, type, and the filename for the associated chart file are also displayed. Users may show the chart or device associated with a dataset, rename or remove the dataset and export or delete data from the dataset. <br /><b>Note:</b> Deleting data from one or more datasets may be time-consuming, and no polling activity takes place until the deletion is complete.<br /></li>
+            <li><b>Dataset View -</b> In the new dataset view, device and interfaces with chartable values are displayed in a filter on the left-hand side of the window. Select one or more devices or interfaces; the union of the chartable values appears on the right-hand side, along with the type and retention policy for the values. Set or adjust retention policies for the values here.</li>
+        </ul>
+        <h3>Improved Control of Device Labels</h3>
+        <p><b>JavaScript in device labels and notifiers:</b> Use Javascript to generate text in device labels, notifier titles, and notifier messages. Use JavaScript to access probe parameters and variables, as well as certain internal information, and use it in label text. This allows, for example, display of variables returned from a probe in a device label. See <a href="../05-Arranging_Your_Map/Dynamic_Label_Text.htm">Generating Label Text with JavaScript<MadCap:xref href="../05-Arranging_Your_Map/Dynamic_Label_Text.htm" target="" title="" alt="" MadCap:conditions="Primary.print" /></a> for more information.</p>
+        <h2>Minor Features</h2>
+        <h3>Layer 2 Enhancements</h3>
+        <ul>
+            <li><b>IP Conflicts -</b> InterMapper will automatically indicate IP conflicts when it finds devices with same IP address in more than one place.</li>
+            <li><b>Ignore IP Addresses -</b> Using “Set Behavior…”, the user can indicate that a particular device’s IP address should be ignored in Layer 2 by checking “Ignore this address in Layer 2”.</li>
+            <li><b>Additional Flags -</b> InterMapper will automatically flag the spanning-tree root and ports where a switch port is plugged into another port on the same switch. In addition, the user may manually flag switch ports or vlans as wireless and endpoints as virtual machines by right-clicking on the switch port, vlan, or endpoint and selecting an item from the Tag submenu.</li>
+            <li><b>Minor tweaks to the server settings dialog -</b> The server settings Layer 2 Features panel now includes a count of the number of Layer-2-enabled maps and a link to a dialog allowing you to enable or disable Layer 2 on specific maps.</li>
+            <li><b>New location of InterMapper Settings folder for Windows users -</b>  InterMapper's installer places the InterMapper Settings folder in Windows' preferred location unless you specify otherwise. <br /><br /><b>Notes:</b> <![CDATA[ ]]><br />When you upgrade to <MadCap:variable name="Primary.NextVersion" />, the installer checks for a Settings folder in the preferred location. If none is found, it attempts to move the existing Settings folder to the new location. If it fails, the upgraded version runs with the Settings folder in the old location.<br /><br /></li>
+        </ul>
+        <h3>Other Enhancements</h3>
+        <ul>
+            <li><b>Greater flexibility in handling licenses and serial numbers -</b> We have made a number of minor tweaks to make it even easier to enter your license or serial number into InterMapper.</li>
+            <li><b>Numerous bug fixes and minor improvements</b>
+            </li>
+        </ul>
+        <p>Documents versions:</p>
+        <ul>
+            <li>InterMapper &amp; InterMapper RemoteAccess: <MadCap:variable name="Primary.NextVersion" /></li>
+            <li>InterMapper Flows: <MadCap:variable name="Primary.NextFlowsVersion" /></li>
+            <li>Document Built: <MadCap:variable name="System.ShortDate" /> <![CDATA[ ]]><MadCap:variable name="System.ShortTime" /></li>
+        </ul>
+    </body>
+</html>

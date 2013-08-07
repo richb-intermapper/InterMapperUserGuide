@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print" MadCap:check_list="Ran Smart Index" class="" MadCap:lastBlockDepth="6" MadCap:lastHeight="2049" MadCap:lastWidth="1122">
+    <head><title>Setting Error and Traffic Thresholds</title>
+        <link rel="StyleSheet" href="../default.css" />
+    </head>
+    <body>
+        <h1 class="L2">
+            <MadCap:keyword term="Device Thresholds window;Set:Error Thresholds" />
+            <MadCap:keyword term="Set" />
+            <MadCap:keyword term="Set:Thresholds" />
+            <MadCap:keyword term="Default:Default Device Thresholds:Setting" />
+            <MadCap:keyword term="Default:Default Thresholds:Setting" />
+            <MadCap:keyword term="Default:Default Traffic Thresholds:Setting" />
+            <MadCap:keyword term="Error" />
+            <MadCap:keyword term="Error:Setting" />
+            <MadCap:keyword term="Traffic Thresholds" />
+            <MadCap:keyword term="Thresholds" />
+            <MadCap:keyword term="Thresholds:Setting" />Setting Error and Traffic Thresholds</h1>
+        <p>
+            <MadCap:keyword term="Map" />
+            <MadCap:keyword term="Round-Trip Time" />You can set device and traffic thresholds for devices and connections so 
+	you can view errors and traffic flows in a meaningful way. </p>
+        <p>You can set 
+	thresholds for packet loss and response time for all devices on a map. <MadCap:keyword term="Set:Default Thresholds" /><MadCap:keyword term="Default:Default Thresholds" />You can also override default thresholds for a particular device.</p>
+        <p>
+            <MadCap:keyword term="Set Thresholds" />For devices, you can set thresholds for:</p>
+        <ul>
+            <li><b style="font-style: normal;">Timeout</b> - specify the number of seconds that indicates the device is down.</li>
+            <li><b>Number of lost packets</b> - specify a number of lost packets between 
+	 1 and 10 required to set a device to a down state.</li>
+            <li><b>Interface errors</b>
+                <MadCap:keyword term="Errors-per-minute" /> - specify the number of interface errors-per-minute 
+	 required to set a device to warning, alarm or critical state.</li>
+            <li><b>Short-term packet loss</b> - specify a number of packets out of the 
+	 last 100 required to set a device to warning, alarm, or critical state. 
+	 This metric is applicable only to packet-based probes. This statistic can 
+	 be viewed from the device's status window.</li>
+            <li><b>Response Time</b> - specify a response time in milliseconds required 
+	 to set a device to warning, alarm, or critical state. This statistic can be
+	 viewed from the device's status window.</li>
+        </ul>
+        <p>As stated above, these statistics can be seen in the device's status window.</p>
+        <h2>Setting Default Thresholds for a Map</h2>
+        <p>
+            <MadCap:keyword term="Edit menu" />
+            <MadCap:keyword term="Edit" />You can set default device and traffic thresholds for a map. Use the Map 
+	Settings window, available from the Edit menu, to set default thresholds.</p>
+        <h3 class="clearboth">
+            <MadCap:keyword term="Set:Default Device Thresholds" />
+            <MadCap:keyword term="Default:Default Device Thresholds" />Setting Default Device Thresholds</h3>
+        <p>
+            <MadCap:keyword term="Map Settings Window" />
+            <MadCap:keyword term="Map Settings" />
+            <MadCap:keyword term="Thresholds&gt;Device" />Use the <b style="font-style: italic;">Device</b> section of the Map Settings window to set default 
+	device thresholds for a map so that errors for all devices are reported at 
+	the same levels.</p>
+        <div>
+            <img src="../Resources/Images/MapSettings-Device.png" border="0" style="width: 575px;height: 246px;" />
+        </div>
+        <p class="pagebreakbefore"><b>To set the default device thresholds for a map:</b>
+        </p>
+        <ol>
+            <li> In an editable map, choose <b><i>Map Settings</i></b> from the Edit menu. 
+	The Map Settings window appears.</li>
+            <li> In the left pane, click <b><i>Device</i></b>. The default 
+	thresholds for the map appear in the right pane.</li>
+            <li> Enter the settings you want to change, and click <b><i><MadCap:keyword term="OK" />OK</i></b>. The 
+	map uses the new threshold settings.</li>
+        </ol>
+        <h3>
+            <MadCap:keyword term="Set:Default Traffic Thresholds" />
+            <MadCap:keyword term="Default:Default Traffic Thresholds" />Setting Default Traffic Thresholds</h3>
+        <p>
+            <MadCap:keyword term="Thresholds&gt;Traffic" />
+            <MadCap:keyword term="Specific Device" />Use the <b style="font-style: italic;">Traffic</b> section of the Map Settings window to set traffic 
+	thresholds for a map. You cannot set traffic thresholds for a specific device.</p>
+        <div>
+            <img src="../Resources/Images/MapSettings-Network.png" border="0" style="width: 582px;height: 177px;" />
+        </div>
+        <p><b>To set the default traffic thresholds for a map:</b>
+        </p>
+        <ol>
+            <li> In an editable map, choose <b><i>Map Settings</i></b> from the Edit menu. 
+	 The Map Settings window appears.</li>
+            <li> In the left pane, click <b><i>Traffic</i></b>. The current 
+	 traffic thresholds for the map appear in the right pane.</li>
+            <li> Enter the settings you want to change, and click <b><i>OK</i></b>. The 
+	 map uses the new threshold settings.<br /><br /></li>
+        </ol>
+        <p>For more information on traffic threshold settings, see<a href="../04-Creating_Maps/mapsettings.html"> Map Settings Window<MadCap:xref href="../04-Creating_Maps/mapsettings.html" target="" title="" alt="" MadCap:conditions="Primary.print" /></a>.</p>
+        <h2 class="pagebreakbefore">Setting Thresholds for a Specific Device</h2>
+        <p>You can set device thresholds for a specific device, with different values 
+	than the default map settings. You cannot set traffic thresholds for a specific 
+	network or link.&#160;You do this from the Info window.</p>
+        <p><b>Note:</b> When setting thresholds for a probe group, you can set the thresholds only for an individual probe, or use the Map's default settings. For more information, see <a href="#probegroups">Setting Thresholds for Probe Groups<MadCap:xref href="#probegroups"></MadCap:xref></a> below.</p>
+        <p>
+            <img src="../Resources/Images/Thresholds-device.png" style="width: 578px;height: 285px;" />
+        </p>
+        <p><b>Note:</b>
+            <MadCap:keyword term="TCP" />
+            <MadCap:keyword term="Only SNMP" />
+            <MadCap:keyword term="Ping/UDP-based" /> Only SNMP probes have thresholds for all three parameters (response 
+	time, packet loss and interface errors); a ping/UDP-based probe monitors only response time and packet loss, and a TCP probe monitors only response 
+	time.<br /></p>
+        <p><b>To set the device thresholds for a specific device:</b>
+        </p>
+        <p class="floatright">&#160;</p>
+        <ol>
+            <li>With the map in Edit mode, right-click a device and choose <b style="font-style: italic;">Info window</b>, or choose <b style="font-style: italic;">Info window</b> from the Monitor menu. The Info window appears.</li>
+            <li>
+                <MadCap:keyword term="Monitor menu" />In the Info window, click <b>Thresholds.</b> The Thresholds 
+	 pane appears.</li>
+            <li>Clear the <b><i>Use Map Defaults</i></b> check box.</li>
+            <li>If you want to suppress alerts for the device when it goes down, select the <b style="font-style: italic;">Ignore Outages</b> check box.<br /><br /><b>Note:</b> The <b style="font-style: italic;">Ignore Outages</b> check box suppresses alerts only with respect to outages, not to other state changes, thresholds, or to any alerts triggers by probes attached to the device. This is useful if a device such as a laptop or mobile device goes up or down (or leaves the network completely) as part of its normal operation.<br /><br /></li>
+            <li>Enter new values in the boxes you want to change, and click <b><i>OK</i></b> or <b style="font-style: italic;">Apply</b>. 
+	 The selected device uses the new values.</li>
+        </ol>
+        <h2>Setting Thresholds for Probe Groups <a name="probegroups"></a></h2>
+        <p>When setting thresholds for a probe group, you can set the thresholds only for an individual probe, or use the Map's default settings. </p>
+        <p>To set thresholds for a probe group:</p>
+        <ol>
+            <li>Double-click a probe group. The Info window for the probe group appears.</li>
+            <li>In the left pane of the Info window, click <b style="font-style: italic;">Probes</b>. A list of probes in the probe group appears.</li>
+            <li>
+                <MadCap:snippetText src="../Resources/Snippets/RighClick.flsnp" /> the probe for which you want to set thresholds, and choose <b style="font-style: italic;">Info Window</b>. The Info window for the selected probe appears.</li>
+            <li>In the left pane, click <b style="font-style: italic;">Thresholds</b>. The threshold settings for the selected probe appear.</li>
+            <li>Clear the <b style="font-style: italic;">Use Map Defaults</b> box, then set the thresholds as needed and click <b style="font-style: italic;">OK</b>. The thresholds for the selected probe are set.</li>
+            <li>Continue setting thresholds for each probe as needed, then click <b style="font-style: italic;">OK</b>&#160;in the probe group's Info window.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

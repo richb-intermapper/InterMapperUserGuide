@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="5" MadCap:lastHeight="827" MadCap:lastWidth="576">
+    <head><title>Outage Alarms on Interfaces</title>
+        <link rel="StyleSheet" href="../default.css" />
+    </head>
+    <body>
+        <h1 class="L2">
+            <MadCap:keyword term="Acknowledgements:Acknowledging" />
+            <MadCap:keyword term="Alarm">
+            </MadCap:keyword>
+            <MadCap:keyword term="Outage Alarms on Interfaces" />Outage Alarms on Interfaces</h1>
+        <p>
+            <MadCap:keyword term="Down" />InterMapper treats an outage on each device interface as a separate alert 
+	event. Each time an interface goes down, the device will go into alarm. The 
+	device icon turns orange, and the affected interface gets a red "X". Any Alarm 
+	notifications for that device are triggered. </p>
+        <p>
+            <MadCap:keyword term="ACK" />
+            <MadCap:keyword term="State/color" />You can right-click an affected interface's link, and select "Acknowledge". The device turns back to green (or its previous state/color), 
+	the interface link gets a blue "X", and no further notifications 
+	for that device are sent. InterMapper also writes a line in the Event Log 
+	file for these events. The format of the Event Log entries is: </p><pre class="code">09/30 14:03:32 link DOWN : [1] switch.example.com - 1
+...
+09/30 14:03:49 link ACK : [1] switch.example.com - 1
+</pre>
+        <p>If another interface subsequently goes down, the same process repeats: </p>
+        <ul>
+            <li> the device turns orange
+</li>
+            <li>
+                <MadCap:keyword term="EventLog file" /> an entry is written to the Event Log file
+</li>
+            <li> the affected interface gets a red "X"
+</li>
+            <li> notifications are sent
+</li>
+            <li> you can acknowledge the new interface
+</li>
+        </ul>
+        <p>
+            <MadCap:keyword term="Unacknowledge" />If two interfaces go down more or less simultaneously, a single set of alarm 
+	notifications is sent. If you right-click to acknowledge one interface, the 
+	device itself remains orange because it still has unacknowledged down interfaces. No further notifications will be sent. When all the 
+	down interfaces have been acknowledged the device returns to its previous 
+	state and color. </p>
+        <p>
+            <MadCap:keyword term="Status window" />Once acknowledged, a link's Status Window show the interface's 
+	status as "ACK (down)". </p>
+        <p>
+            <MadCap:keyword term="Interfaces window" />You can acknowledge and unacknowledge multiple interfaces from the device's 
+	Interfaces Window. Select one or more interfaces in the list, and choose Acknowledge 
+	or Unacknowledge. This has the same effect as doing each interface individually. 
+  </p>
+        <p>You can un-acknowledge a link by right-clicking on it. This replaces 
+	the blue "X" with a red one, and re-enables any repeated notifications for 
+	that device. </p>
+        <p><b>Tip:</b> Choose from two methods of handling down interfaces. </p>
+        <ol>
+            <li> Acknowledge the interface as described above. This is good for outages on operational interfaces that are expected to return to service in the near future. </li>
+            <li> If you know that an interface will be down for a long time, you can hide that
+interface. This tells InterMapper not to monitor its status and removes it
+from the map to minimize the visual clutter. To show or hide an interface, open
+the device's Interfaces Window and check/uncheck the box in the left column. 
+</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  InsertMOTW="true"
+  ConditionTagExpression="include[Primary.review] exclude[Primary.CurrentInfo or Primary.NewInfo or Primary.Omit or Primary.online or Primary.print or Primary.test] "
+  OutputFolder="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide">
+  <PrintedOutput
+    CollapseMargins="true" />
+</CatapultTarget>
