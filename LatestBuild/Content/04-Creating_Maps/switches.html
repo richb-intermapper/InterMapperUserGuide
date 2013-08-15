@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Arranging Your Map">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Connecting Devices to Switch Ports</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor604"></a><a name="kanchor605"></a><a name="kanchor606"></a><a name="kanchor607"></a><a name="kanchor608"></a><a name="kanchor609"></a>Connecting Devices to Switch Ports</h1>
+            <p>Here are some tips for handling switches in your map.</p>
+            <h2><a name="kanchor610"></a><a name="kanchor611"></a><a name="kanchor612"></a><a name="kanchor613"></a>Hiding Inactive Ports</h2>
+            <p><a name="kanchor614"></a>Auto-discovered switches will have all their ports shown in a map. This 
+ can add a great deal of clutter, and make it difficult to see the real 
+ structure of the map. In addition, an inactive (i.e., unused) switch port 
+ will cause the switch itself to be placed in alarm. </p>
+            <p><b>Note:</b> You can also convert your map to Layer 2. Using Layer 2 information, your map is automatically updated to match the topology represented by the switch's Layer 2 information. For more information, see <a href="../07-MonitoringNetwork/MappingWithLayer2.htm">Mapping with Layer 2<a href="../07-MonitoringNetwork/MappingWithLayer2.htm" class="MCXref xref ">{}</a></a>.</p>
+            <p><a name="kanchor615"></a>Use the Interfaces window to select and remove these switch ports.</p>
+            <p><b style="font-weight: bold;">To hide switch ports:</b>
+            </p>
+            <ol>
+                <li value="1">With the map editable, right-click/CTRL-click the switch and choose Interfaces Window. The Interfaces window appears, showing the switch's available interfaces.</li>
+                <li value="2">Select or clear the checkboxes to enable or disable switch ports. The disabled interfaces disappear from the map.</li>
+            </ol>
+            <h2>Connecting Devices to Switch Ports</h2>
+            <p><a name="kanchor616"></a><a name="kanchor617"></a>InterMapper does not connect devices to the proper port of a switch. Instead, 
+	it connects all the devices of a subnet to the first switch port it discovers 
+	(usually the port with ifIndex=1).</p>
+            <p>You can manually move a device's link to the proper port by dragging the 
+	link from the central oval (labeled "192.168.1.0/24" in the figures 
+	below) to the proper port, as shown below:</p>
+            <table style="caption-side: top;">
+                <col style="width: 197px;" />
+                <col style="width: auto;" />
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top;">1. The map before making changes. The switch's ports are shown by the 
+ numbered ovals. (Make sure the map is in <a href="../07-MonitoringNetwork/Monitoring_Your_Network.htm">Edit 
+ mode</a>.)</td>
+                        <td style="vertical-align: top;">
+                            <img src="../Resources/Images/linkdevice2switch1.png" style="border-style: none;border-style: none;" border="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">2. Click a link and drag it. A line appears, and follows the cursor.<b><br /><br />Note:</b> You can drag links only <i>from </i>a network.</td>
+                        <td style="vertical-align: top;">
+                            <img src="../Resources/Images/linkdevice2switch2.png" style="border-style: none;border-style: none;" border="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p>3. Drag the link to the desired port. The link disconnects from the
+ original network oval and remains connected to the new. Note that the 
+ port's oval now contains two port numbers: that of the switch (7) and 
+ the port number of the device (2).</p>
+                            <p class="clearboth"><i style="font-style: italic;">Tip:</i> When moving links to the proper 
+ ports on a switch, it's sometimes easier to change the port labels to 
+ display the port's number. </p>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <img src="../Resources/Images/linkdevice2switch3.png" style="border-style: none;border-style: none;" border="0" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

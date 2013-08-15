@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Monitoring Your Network">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Interfaces Window</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1183"></a><a name="kanchor1184"></a><a name="kanchor1185"></a>Interfaces Window</h1>
+            <p><a name="kanchor1186"></a><a name="kanchor1187"></a><a name="kanchor1188"></a><a name="kanchor1189"></a><a name="kanchor1190"></a>InterMapper can show the interfaces of a particular router or switch. This 
+ is convenient for viewing the specifics of those interfaces (for example, 
+ the ifAlias or Name assigned to each individual port) or for viewing the status 
+ of the port.</p>
+            <p><b>To view the Interfaces window:</b>
+            </p>
+            <ol>
+                <li value="1"> Right-click the router or switch for which you want to view the Interfaces 
+	 Window.</li>
+                <li value="2">From the context menu, choose <b><i> Interfaces Window</i></b>.<br /><br />or </li>
+            </ol>
+            <ul>
+                <li value="1"><a name="kanchor1191"></a>From the Monitor menu, choose <b><i>Interfaces Window</i></b>.</li>
+            </ul>
+            <p><b>Note:</b> You may open as many interfaces windows as you like. Each window is updated at the device's poll interval.</p>
+            <h2>The Interfaces Window</h2>
+            <p style="text-align: left;">
+                <img src="../Resources/Images/Window-interfaces1.png" />
+            </p>
+            <p><a name="kanchor1192"></a>The Interfaces window displays one row for each port/interface on the device. 
+ It shows the following information in columns: </p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;"><a name="kanchor1193"></a>Show/Hide Checkbox</b> - When 
+ checked this interface will be visible on the map. Unchecking this box will 
+ hide the interface.</li>
+                <li value="2"><b style="font-weight: bold;">ifAlias</b> - The ifAlias assigned 
+ to the interface. </li>
+                <li value="3"><b style="font-weight: bold;">Name</b> - The name assigned 
+ to the interface. </li>
+                <li value="4"><b style="font-weight: bold;">Description</b> - The description 
+ assigned to the interface. </li>
+                <li value="5"><b style="font-weight: bold;">Type</b><a name="kanchor1194"></a> - The type of the interface, 
+ as defined in MIB-II. </li>
+                <li value="6"><b style="font-weight: bold;">Status</b><a name="kanchor1195"></a><a name="kanchor1196"></a> - The status of the 
+	 interface as determined by ifAdminStatus and ifOperStatus. A green dot means 
+	 the interface is operational. If ifOperStatus is ≠1, then a red "X" 
+	 appears (the interface is down.) If ifAdminStatus is ≠1, then a blue "X" is shown (the interface has been disabled administratively.)</li>
+                <li value="7"><b style="font-weight: bold;">TX Speed</b><a name="kanchor1197"></a> - The Transmit Speed reported 
+ by the interface, in bits per second.</li>
+                <li value="8"><b>RX&#160;Speed </b>- User-settable value that is used when
+InterMapper computes the utilization of the receive side of the interface. If
+the value is not set, InterMapper uses the TX Speed for the calculation. This is
+useful when the transmit and receive speeds are different (for example, in
+asymmetric DSL links). You can set change both the RX Speed and TX speed using the
+<b style="font-style: italic;">Set Link Speed...</b> command, described below.
+</li>
+                <li value="9"><b style="font-weight: bold;">Index</b><a name="kanchor1198"></a> - The ifIndex of the 
+ interface. </li>
+                <li value="10"><b>VLAN</b> - Contains the VLAN ID that has been assigned to
+the interface. </li>
+                <li value="11"><b>Display unnumbered interfaces</b> - Select or clear this 
+ box to choose whether to see all the unnumbered interfaces on a switch. By default,                          <i>InterMapper</i> 
+  does not display unnumbered interfaces.</li>
+                <li value="12"><b>Allow periodic reprobe</b> - Select or clear this box to choose whether or not a device 
+ is to be automatically reprobed every 12 hours.
+</li>
+                <li value="13"><b>Ignore interface discards</b> - Select or clear this box to choose whether to ignore interface discards.</li>
+                <li value="14"><b>Ignore interface errors</b> - Select or clear this box to choose whether to ignore interface errors.</li>
+            </ul>
+            <h2>Hiding and Deleting Interfaces</h2>
+            <p>You can hide interfaces, or you can delete them. </p>
+            <p><b>To hide an interface: </b>
+            </p>
+            <ul>
+                <li value="1">Clear the check box next to the interface. If you hide an interface, a network associated that interface disappears from the map, and remains that way. The interface is no longer polled, and data is no longer collected.</li>
+            </ul>
+            <p><b>To delete an interface: </b>
+            </p>
+            <ul>
+                <li value="1">Click the line for the interface you want to delete and press <b style="font-style: italic;">Delete</b>.</li>
+            </ul>
+            <p>or</p>
+            <ul>
+                <li value="1">Right-click the interface line and choose Delete from the context menu.</li>
+            </ul>
+            <h3>Hiding vs. Deleting an Interface</h3>
+            <p>Use the following information to help you decide whether you want to hide or delete an interface:</p>
+            <ul>
+                <li value="1"><b>Probe rediscovery</b> - When you <i>hide</i> the interface, it does not reappear unless you "unhide" it.  When you <i>delete</i> an interface, InterMapper rediscovers it and displays it again the next time it re-probes the device unless you clear the <b style="font-style: italic;">Allow periodic reprobe</b> check box. </li>
+                <li value="2"><b>Data Collection</b> - When you <i>hide</i> the interface, data collection stops. It starts when you re-enable it. When you <i>delete</i> an interface, data collection resumes when the interface is rediscovered.</li>
+                <li value="3"><b>Polling</b> - When you <i>hide</i> the interface, polling for that interface stops. It starts when you re-enable it. When you <i>delete</i> an interface, it is polled, and thus reappears when rediscovered.</li>
+                <li value="4"><b>Layer 2 Discovery</b> - When you <i>hide</i> the interface, Layer 2 discovery for that interface stops. It starts when you re-enable it. When you <i>delete</i> an interface, the interface is rediscovered, and Layer 2 information is collected.</li>
+            </ul>
+            <h2 class="pagebreakbefore">Acknowledging Down Interfaces</h2>
+            <p>You can acknowledge one or more down interfaces from the Interfaces window. </p>
+            <p>To acknowledge down interfaces:</p>
+            <ol>
+                <li value="1">In the Interfaces window, select the rows for the interfaces you want to acknowledge.</li>
+                <li value="2">Right-click one of the selected interfaces and choose Acknowledge... The Acknowledge window appears.</li>
+                <li value="3">Create an acknowledgement as described in <a href="Acknowledging_Device_Problems.htm">Acknowledging Device Problems</a>.</li>
+            </ol>
+            <h2>Copying Data from the Interfaces Window</h2>
+            <p>You can copy data from the Interfaces window for use in spreadsheet or other application.</p>
+            <p><b>To copy data from the Interfaces window:</b>
+            </p>
+            <ol>
+                <li value="1"> Select the rows you want to copy. Shift-click to select contiguous rows, Ctrl-click to select non-contiguous rows.</li>
+                <li value="2">Press <i><b>Ctrl/Cmd-C</b></i>. The selected rows are copied to the clipboard 
+			in tab-delimited format.</li>
+            </ol>
+            <h2>Setting the Data Retention Policy for an Interface</h2>
+            <p>You can set the retention policy for an interface from the Interfaces window.</p>
+            <p><b>To set the retention policy for a particular interface:</b>
+            </p>
+            <ol>
+                <li value="1">Right-click the interface and choose <b style="font-style: italic;">Set Data Retention</b> from the context menu.<br /> The Set Retention Policy window appears.</li>
+                <li value="2">Choose a retention policy from the <b style="font-style: italic;">Data Retention Policy</b> dropdown menu. Data is collected as specified by the selected policy.</li>
+            </ol>
+            <h2 class="pagebreakbefore">Setting the Link Speed</h2>
+            <p class="floatright">
+                <img src="../Resources/Images/window-linkspeed.png" />
+            </p>
+            <p>With the map editable, use the Set Link Speed window to set the TX Speed and RX Speed for a particular interface. There are two ways to open the Set Link Speed window:</p>
+            <ul>
+                <li value="1">Right-click the link, and choose <b style="font-style: italic;">Set Link Speed... </b><i style="font-style: normal;">from the context menu.</i></li>
+                <li value="2">From the Interfaces Window, right-click the Interface whose speed you want to set, and choose <b style="font-style: italic;">Set Link Speed...</b> from the context menu.</li>
+            </ul>
+            <p>The following units are permitted:</p>
+            <ul>
+                <li value="1">K (Kilo), M (Mega), G (Giga), T (Tera), P (Peta)</li>
+            </ul>
+            <p>These are all valid values:</p>
+            <ul>
+                <li value="1">1000000
+</li>
+                <li value="2">1000 K
+</li>
+                <li value="3">1M
+</li>
+            </ul>
+            <p><b>Note:</b> The <b style="font-style: italic;">RX Speed</b> box is disabled when <b style="font-style: italic;">Type of interface</b> is set to <b style="font-style: italic;">Baseband</b>.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

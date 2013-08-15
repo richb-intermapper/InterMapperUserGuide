@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Server Settings|Server Preference Panels">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Log File Preferences</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1646"></a><a name="kanchor1647"></a><a name="kanchor1648"></a><a name="kanchor1649"></a><a name="kanchor1650"></a>Log File Preferences</h1>
+            <p><a name="kanchor1651"></a>InterMapper writes information to log files about various events. Use the 
+	log files to review the events surrounding a particular problem, helping you 
+	to troubleshoot the problem more effectively.</p>
+            <p><b style="font-weight: bold;">To view an existing log file:</b>
+            </p>
+            <ul>
+                <li value="1"><a name="kanchor1652"></a><a name="kanchor1653"></a><a name="kanchor1654"></a><a name="kanchor1655"></a>Choose the file you want to view from the Logs submenu 
+ of the Windows menu.</li>
+            </ul>
+            <p><b style="font-weight: bold;"><a name="kanchor1656"></a>To view and edit the preferences for log 
+ files:</b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor1657"></a>From the Edit menu, choose <b><i><a name="kanchor1658"></a><a name="kanchor1659"></a><a name="kanchor1660"></a><a name="kanchor1661"></a>Server Settings... </i></b><a name="kanchor1662"></a>The 
+	 Server Settings window appears. </li>
+                <li value="2">Click <b><i>Log Files</i></b>. A list of log files appears in the right panel, showing the current Log File preferences for the selected log file.</li>
+            </ol>
+            <h2><a name="logfileprefs"></a>Setting Preferences for Log Files</h2>
+            <p class="pagebreakafter">
+                <img src="../../Resources/Images/SrvrSettings-LogFileOptions.png" />
+                <br /><i>The Log File preferences pane shows a list of currently defined log files with properties for the selected file.</i>
+            </p>
+            <ul>
+                <LI class="pagebreakbefore" value="1"><b style="font-weight: bold;">To see a brief explanation 
+ of the function of a log file,</b> click the log file in the list. The 
+ explanation appears in the lower panel of the Preferences pane. </LI>
+                <li value="2"><b style="font-weight: bold;">To add a log file,</b> 
+ click <b style="font-style: italic;">Add New Log</b>. The              <a href="#logfileparameters"> Log File Preferences</a> for the new log file appear. </li>
+                <li value="3"><b style="font-weight: bold;">To edit a log file 
+ definition,</b> click to select a log file definition. The properties for the selected log file appear. The              <a href="#logfileparameters"> Log File Preferences</a> for the selected log file appear. </li>
+                <li value="4"><b style="font-weight: bold;"><a name="kanchor1663"></a>To delete a log file,</b> click to select a log file definition, then click <b style="font-style: italic;">Delete this Log</b>. 
+ The log file definition disappears from the list. <br /><br /><b>Note:</b> The Debug Log, Event Log and Outages Log cannot be deleted.</li>
+            </ul>
+            <p>
+                <img src="../../Resources/Images/blank.gif" style="width: 1px;height: 1px;border-style: none;margin-left: 10px;margin-right: 10px;" width="1" height="1" border="0" />
+            </p>
+            <h3 class="pagebreakbefore"><i style="font-style: italic;"><a name="kanchor1664"></a>Log File Preferences</i>
+            </h3>
+            <p>The example above typical log file preferences. It shows 
+ the names of the log files, and their rotation intervals.</p>
+            <p><b style="font-weight: bold;">To add a new log file:</b>
+            </p>
+            <ol>
+                <li value="1">Click 
+ <b style="font-style: italic;">Add New Log</b>. The              <a href="#logfileparameters"> Log File preferences</a> for the new log file appear. 
+ </li>
+                <li value="2"><a name="kanchor1665"></a><a name="kanchor1666"></a><a href="#logfileparameters">Set the log file preferences  </a> as described below.</li>
+            </ol>
+            <p><b style="font-weight: bold;">To edit preferences for an existing log 
+ file:</b>
+            </p>
+            <ol>
+                <li value="1">Click to select the log file.  The              <a href="#logfileparameters"> Log File preferences</a> for the selected log file appear. </li>
+                <li value="2"><a href="#logfileparameters">Set the log file preferences</a> as described below.</li>
+            </ol>
+            <h2><a name="logfileparameters"></a>Setting Log File Preferences</h2>
+            <p class="pagebreakbefore"><a name="kanchor1667"></a><b>Log File Name </b>- Set the filename (actually the prefix) for the log file. You can enter up 
+		 to 14 characters (see <a href="#logfilenaming">Log File Naming and File 
+		 Format </a> below.)&#160;<a name="kanchor1668"></a>The file is given a .TXT extension, and can be edited with any text 
+		 editor. </p>
+            <p><a name="kanchor1669"></a><b>Start New Log File</b> - Use these settings to specify how often and at what point in a log cycle 
+		the current log file is closed and a new one is opened. This allows you to break 
+		the log files into convenient sizes and/or time epochs. Choose from these 
+		options:&#160;</p>
+            <ul>
+                <li value="1">Never </li>
+                <li value="2">Once daily </li>
+                <li value="3">Twice daily </li>
+                <li value="4">Once weekly </li>
+                <li value="5">Twice weekly</li>
+            </ul>
+            <p>&#160;<a name="kanchor1670"></a><b>Delete log files after __ days/weeks</b> - Check this box to force InterMapper to delete old log files automatically 
+		 after a certain date.</p>
+            <p><b>Note: </b>Each time InterMapper starts a new log file, it checks 
+		 to see if any log files should be deleted. On platforms where the file 
+		 creation date is available, it is used to determine whether a log file 
+		 should be deleted. If the creation date is not available, the file's 
+		 last modification date is used.</p>
+            <p><a name="kanchor1671"></a><a name="kanchor1672"></a><b>Also send messages to syslog server</b>
+                <br />Click this checkbox to specify that all log file entries be sent to 
+		 a syslog server. Set the values for:&#160;</p>
+            <ul>
+                <li value="1"><b>IP Address</b><a name="kanchor1673"></a><a name="kanchor1674"></a> - enter an IP address for the syslog 
+			server.</li>
+                <li value="2"><b>Facility</b> - choose a value to match your local system conventions.</li>
+                <li value="3"><b>Severity</b> - choose a value to match your local system conventions.</li>
+            </ul>
+            <h2><a name="kanchor1675"></a><a name="kanchor1676"></a><a name="kanchor1677"></a><a name="kanchor1678"></a>Redirecting Log Entries</h2>
+            <p><a name="kanchor1679"></a>By default, all entries go to the built-in Event Log file. You can redirect 
+	streams of log entries from InterMapper's Remote Server, Web Server, or Telnet server to a particular log file 
+	(and syslog server). This can be useful, for example, for sending all web 
+	access events one file, and all outage events to a different file.</p>
+            <p><b style="font-weight: bold;">To redirect a log entry stream:</b>
+            </p>
+            <ol>
+                <li value="1">Create a new log file definition for the file you 
+ want to receive the log entries, as described above. </li>
+                <li value="2">From the Edit menu, choose <b><i>Server Settings...</i></b> 
+ The Server Settings window appears. </li>
+                <li value="3"><a name="kanchor1680"></a>In the left panel of the Server Settings window, 
+	 click to choose the server (Remote, Web, or Telnet) whose log entries you want to send to a different 
+	 log file. The panel for the selected server appears. </li>
+                <li value="4">In the <b><i><a name="kanchor1681"></a>Send Log File Entries to</i></b> menu, choose the log file you created to receive the log entries. </li>
+                <li value="5">Click <b><i><a name="kanchor1682"></a>OK</i></b>. All log file entries for 
+ the selected server are redirected to the new log file.</li>
+            </ol>
+            <h2><a name="logfilenaming"></a><a name="kanchor1683"></a>Log File Naming and File Format</h2>
+            <p>Log files are saved in text format in the <i><a name="kanchor1684"></a>InterMapper Settings:InterMapper 
+ Logs</i> folder. Each file has a user-defined prefix that describes its 
+ function, and ends with a suffix of              <i>.yyyymmddhhmm.txt</i>, where the 
+ suffix is the (four-digit) year, month, day, hour and minute when the 
+ file was created. The prefix can be up to 14 characters in length.</p>
+            <h2><a name="kanchor1685"></a>Log File Sources</h2>
+            <p>Log information comes from several sources, including:</p>
+            <ul>
+                <li value="1">Up and down entries for the devices being logged 
+ </li>
+                <li value="2">Hits on the built-in web server </li>
+                <li value="3"><a name="kanchor1686"></a><a name="kanchor1687"></a>Connections to the InterMapper RemoteAccess and Telnet server</li>
+                <li value="4">InterMapper's own internal status and error messages</li>
+            </ul>
+            <p>Three built-in log files are always present, and cannot be deleted:</p>
+            <ul>
+                <li value="1">The <b>Event Log</b> file - when you first launch 
+ InterMapper, the Event log file receives all entries from all sources. 
+ You can divert certain streams to other log files. </li>
+                <li value="2">The <b>Outages</b> file - contains entries that describe 
+ the start and end times of outages, as well as their duration. This stream 
+ of entries cannot be redirected to any other log file. </li>
+                <li value="3">The <b>Debug</b> file - displays certain debugging 
+ information, as described in              <a href="../../07-MonitoringNetwork/07-02-Log_Windows/debug.html">The 
+ Debug Window</a>.</li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

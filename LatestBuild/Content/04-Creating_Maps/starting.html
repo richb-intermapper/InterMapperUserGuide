@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Creating Maps">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Starting Your Map</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 data-mc-conditions="Primary.online">Starting Your Map</h1>
+            <p><a name="kanchor197"></a><a name="kanchor198"></a><a name="kanchor199"></a><a name="kanchor200"></a>When you launch <i>InterMapper</i><a name="kanchor201"></a>, a Map List window appears. It contains several demo maps, which show 
+examples of network maps, and contains brief descriptions of the elements 
+ appearing on the maps. Double-click a map to open it.</p>
+            <p><a name="kanchor202"></a><a name="kanchor203"></a>After you have explored the demo maps, you are ready to use the Auto-discover 
+ function to create your first map.</p>
+            <h2><a name="kanchor204"></a><a name="kanchor205"></a><a name="kanchor206"></a>Creating a New Map</h2>
+            <p>To create a new map, choose <b><i>New Map...</i></b><a name="kanchor207"></a><a name="kanchor208"></a> from the File Menu. 
+ The New Map Constructor window appears:</p>
+            <p>
+                <img src="../Resources/Images/Dlg-NewMapConstructor.png" border="0" />
+            </p>
+            <p>Enter a map name, and click <b style="font-style: italic;">Next &gt;</b>.The second page of the New Map Constructor appears.</p>
+            <p>
+                <img src="../Resources/Images/Dlg-Autodiscovery.png" />
+            </p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;"><a name="kanchor209"></a>Autodiscovery</b><a name="kanchor210"></a><a name="kanchor211"></a><a name="kanchor212"></a><a name="kanchor213"></a><a name="kanchor214"></a><a name="kanchor215"></a> - InterMapper's 
+	 Auto-discover function automatically scans your network, looking for network 
+	 devices to add to your map. It uses several heuristic techniques (including 
+	 SNMP probes, ICMP echo packets, and DNS and NBP queries) to 
+	 discover all the devices that are present. It then places those devices 
+	 on a map. 
+            </li>
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor216"></a>Manual Entry</b> - Type or paste 
+	a list of host names or IP addresses for the devices you want to add to the 
+	map.</li>
+                <li value="3"><b style="font-weight: bold;"><a name="kanchor217"></a>Import a file</b><a name="kanchor218"></a><a name="kanchor219"></a> - Specify 
+	a tab-delimited, CSV, or XML import file. For more information, see            <a name="kanchor220"></a><a name="kanchor221"></a><a name="kanchor222"></a><a href="04-01-Import-Export/Importing_Data_Into_Maps.htm">Importing 
+	Data Into Maps</a>.</li>
+            </ul>
+            <p>For information on using the Auto-discover function, see <a href="Using_Auto-discover.htm">Using 
+ Auto-discover</a>. </p>
+            <h2>Importing Data into a Map</h2>
+            <p>You can also create a map by importing data in a text file. For more 
+ information, see <a href="04-01-Import-Export/Importing_Data_Into_Maps.htm">Importing 
+ Data Into Maps</a>.</p>
+            <h2><a name="kanchor223"></a><a name="kanchor224"></a>InterMapper Labels</h2>
+            <p><i style="font-style: italic;">InterMapper</i><a name="kanchor225"></a> places a label on each 
+ device it finds. By default, it uses the device's full DNS 
+ name. Networks are labeled with both an IP address and the number of 
+ bits in the subnet mask (indicating the network range). For example, the network labeled <span class="code">192.168.1.0/24</span> 
+ indicates that the IP devices are in subnet <span class="code">192.168.1.0</span>, 
+ with a subnet mask of 24 bits (<span class="code">255.255.255.0</span>). 
+ </p>
+            <p><b style="font-weight: bold;">Note:</b> You can change the label that appears 
+	for each device using the            <b><i>Label...</i></b> command, available from the            <a href="../09-Reference/09-01-Command-Menu-Reference/format.html">Format menu</a>.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Numeric Pagers</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor923"></a><a name="kanchor924"></a><a name="kanchor925"></a><a name="kanchor926"></a><a name="kanchor927"></a>Notification Using a Numeric Pager</h1>
+            <p><a name="kanchor928"></a><a name="kanchor929"></a> You can configure InterMapper to use alphanumeric modem paging to send messages 
+ to numeric pagers.
+</p>
+            <p>To send numeric pages, follow these three basic steps:
+</p>
+            <ol>
+                <li value="1">Create a new paging service.</li>
+                <li value="2"><a name="kanchor930"></a>Create one or more paging subscribers to receive the numeric pages.</li>
+                <li value="3">Edit the notification message as you normally would. Any non-numeric characters 
+ are removed.</li>
+            </ol>
+            <h2>Step 1: Create a new paging service: </h2>
+            <p />
+            <ol>
+                <li value="1"><a name="kanchor931"></a>From the Edit menu, choose <b><i><a name="kanchor932"></a>Server Settings...</i></b></li>
+                <li value="2"><a name="kanchor933"></a>In the Server Settings window, click to choose <i><b><a name="kanchor934"></a>Notifier List</b></i>. 
+  </li>
+                <li value="3">Click <b><i>Add...</i></b> to create a new notifier. 
+  </li>
+                <li value="4">From the <b><i> Notifier Type</i></b> dropdown menu, choose       <b><i><a name="kanchor935"></a>Alpha-numeric 
+ Pager (Dialup)</i></b>. 
+  </li>
+                <li value="5">From <i><b>Subscriber</b></i> dropdown menu, choose       <b><i><a name="kanchor936"></a>Edit List... </i></b><a name="kanchor937"></a>The 
+ Modem Pager Settings window appears. 
+  </li>
+                <li value="6">In the <b><i><a name="kanchor938"></a>Paging Services</i></b> tab, click       <b><i>Add</i></b><a name="kanchor939"></a><a name="kanchor940"></a>. A New 
+ Service appears in the Paging Services list, and an information form for the 
+ new service appears at the right. 
+  </li>
+                <li value="7">In the <b><i><a name="kanchor941"></a>Name </i></b> box, enter a name for the new service. 
+  </li>
+                <li value="8">Leave the service telephone number blank. (This is what tells InterMapper 
+ to do numeric paging instead of alpha-numeric paging.) 
+  </li>
+                <li value="9">Data bits, stop bits, parity, and baud rate are irrelevant and may be set 
+ to anything legal. 
+  </li>
+                <li value="10"><a name="kanchor942"></a><a name="kanchor943"></a>Leave the modem init string at the default, ATE0V1. 
+  </li>
+                <li value="11">Choose the desired modem. You may create more than one such service, if 
+ you want.
+</li>
+            </ol>
+            <h2>Step 2: Create one or more paging subscribers:</h2>
+            <ol start="12">
+                <li value="12">Click the <b><i>Paging Subscribers</i></b> tab and create the paging subscriber(s) 
+ who will use numeric paging. 
+  </li>
+                <li value="13">Set the service field to use the service created in the steps above. 
+  </li>
+                <li value="14"><a name="kanchor944"></a>Set the pager id to be the phone number used to dial the pager. To the pager 
+ id/phone number, append enough of your modem's pause characters (for most 
+ modems, this is a comma) to make sure that InterMapper waits until the call 
+ has been answered and any introductory message played to send the tones with 
+ the numeric message. This varies from service to service. <br /></li>
+            </ol>
+            <h2 class="pagebreakbefore">Step 3: Edit the message as you normally would:</h2>
+            <p>When creating a notifier based on numeric pager subscribers, edit the message 
+ as you normally would, using the InterMapper macros if you so desire. When the 
+ page is sent, all non-numeric characters will be removed. So, the message: </p>
+            <blockquote>
+                <p><a name="kanchor945"></a> DOWN: 192.168.1.132 </p>
+                <p> &#160;&#160;&#160;becomes</p>
+                <p> 1921681132 </p>
+            </blockquote>
+            <p> Future versions of InterMapper may contain new macros to provide numeric codes 
+ for common events.
+</p>
+            <h2><a name="kanchor946"></a><a name="kanchor947"></a>Paging Log File<a name="logfile"></a></h2>
+            <p><a name="kanchor948"></a> The paging log file is a special file which receives logging of all paging 
+ traffic and messages, including the details of the modem commands and text written 
+ and read. The information in this log may help you or InterMapper Technical Support 
+ to troubleshoot paging if it is not working correctly. 
+</p>
+            <p> To start logging this traffic, use the <i><b>Log Files</b></i> panel of the 
+ Server Settings window to create a log file named       <b>Paging</b><a name="kanchor949"></a> (The log file 
+ name will be "Paging&lt;date&gt;.txt") Logging continues until the log file 
+ is removed through the Log Files panel. 
+</p>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

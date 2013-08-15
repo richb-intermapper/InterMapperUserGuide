@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Monitoring Your Network">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Acknowledging Device Problems</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1202"></a><a name="kanchor1203"></a><a name="kanchor1204"></a><a name="kanchor1205"></a><a name="kanchor1206"></a><a name="kanchor1207"></a><a name="kanchor1208"></a>Acknowledging Device Problems</h1>
+            <p><a name="kanchor1209"></a>Use the Acknowledge command, available from the Monitor Menu, to 
+ acknowledge failures or problems in the network. When you acknowledge 
+ a problem, the InterMapper program does the following: </p>
+            <ul>
+                <li value="1">Changes the device's icon color to blue to show that 
+ the problem has been acknowledged. </li>
+                <li value="2">Stops further notifications of the problem, either 
+ for the duration of this outage, or for a specified time period. </li>
+                <li value="3"><a name="kanchor1210"></a><a name="kanchor1211"></a><a name="kanchor1212"></a>Writes any comment you enter into to the Event Log file, 
+	 along with the name and IP address of the user who acknowledged the problem. 
+	</li>
+                <li value="4"><a name="kanchor1213"></a>Displays the comment in the device's Status Window. 
+ </li>
+            </ul>
+            <h2><a name="kanchor1214"></a><a name="kanchor1215"></a>Why are Acknowledgements useful?</h2>
+            <p>Acknowledgments allow the network administrator to see the state of 
+ the network, as well as the responses that have been made to the current 
+ set of problems. </p>
+            <p>Use Acknowledgements to: </p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;">Indicate that someone has 
+	 taken responsibility for a problem</b> - Because acknowledging a problem 
+	 turns the affected device's icon blue, it's easy to see that someone is 
+	 aware of (and is presumably working on) the problem. </li>
+                <li value="2"><b style="font-weight: bold;">Emphasize new problems</b> 
+ - The normal color of icons on a map should be green (operating correctly) 
+ or blue (having trouble, but being worked on.) When a new problem occurs, 
+ the affected devices' color are red, orange or yellow, depending on the 
+ severity. This makes it easy to see where new troubles lie. After acknowledgment, 
+ these devices will also be blue. </li>
+                <li value="3"><b style="font-weight: bold;">Suppress notification for 
+	 a problem device </b>- When a device has been acknowledged, no further notifications 
+	 are sent. </li>
+                <li value="4"><b style="font-weight: bold;">Provide information about 
+	 the problem and its management </b>- Enter a comment to convey information 
+	 about the failure, and/or the corrective action. </li>
+            </ul>
+            <h2>Acknowledging a problem</h2>
+            <p class="floatright">
+                <img src="../Resources/Images/window-ack.png" />
+            </p>
+            <p><b style="font-weight: bold;">To acknowledge a problem with a device: 
+ </b>
+            </p>
+            <ol>
+                <li value="1">Click the device(s) you want to acknowledge.</li>
+                <li value="2">From the Monitor menu, choose <i><b>Acknowledge... </b></i><a name="kanchor1216"></a><a name="kanchor1217"></a><a name="kanchor1218"></a>(Cmd-' 
+ or Ctrl-'). The Acknowledge window appears. </li>
+                <li value="3">If you want keep the device in Acknowledgement mode 
+ for a specific period of time, or for an indefinite period, choose <i><b>Indefinite</b></i> 
+ or           <i><b>Timed...</b></i> in the           <i><b>Ack</b></i> column.</li>
+                <li value="4"><a name="kanchor1219"></a><a name="kanchor1220"></a>If you want to suppress notifications for devices 
+ that depend on this device, click to select the <b><i><a name="kanchor1221"></a><a name="kanchor1222"></a>Block notifications 
+ for dependent devices</i></b><a name="kanchor1223"></a> check box.</li>
+                <li value="5">Enter a comment, then click <i><b>Acknowledge</b></i>. 
+ The selected device's icon changes to blue, and your comment is written 
+ to the Event Log file. Notifications are cancelled for the selected device 
+ for the duration of this outage. </li>
+            </ol>
+            <h3><a name="kanchor1224"></a><a name="kanchor1225"></a>Basic, Timed and Indefinite Acknowledgements</h3>
+            <p>InterMapper offers three kinds of acknowledgements: </p>
+            <table style="width: 100%;margin-left: 0;margin-right: auto;">
+                <col />
+                <col />
+                <col />
+                <tr valign="top">
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;"><b style="font-weight: bold;">Basic</b>
+                    </td>
+                    <td style="width: 62%;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" width="62%">
+                        <p>The device is acknowledged, and notifications are suppressed until it 
+ gets better or worse. The icon turns blue to indicate that someone has 
+ taken responsibility for it, and that no further notifications will be 
+ sent.</p>
+                        <p>As soon as the device's state changes to any other status, its acknowledge 
+ status is automatically cleared, and notifications resume. From then on, 
+ notifications are sent for any subsequent failures.</p>
+                    </td>
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;font-style: italic;">
+                        <img src="../Resources/Images/Ack-basic.png" border="0" />
+                        <br />Down, with Basic Acknowledgement<br /><br><br /></br></td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;"><b style="font-weight: bold;">Timed</b>
+                    </td>
+                    <td style="width: 62%;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" width="62%">
+                        <p>The device is acknowledged, and notifications suppressed for the specified 
+ period of time. The icon turns blue (if it's not okay), and the wrench 
+ badge appears to show that notifications will be blocked for the specified 
+ time. In this case, the state of the device is OK.</p>
+                    </td>
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;">
+                        <img src="../Resources/Images/Ack-Up-Timed.png" style="border-style: none;" border="0" />
+                        <br /><i>Up, with Timed Acknowledgement</i>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;"><b style="font-weight: bold;">Indefinite</b>
+                    </td>
+                    <td style="width: 62%;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" width="62%">
+                        <p>The device remains acknowledged until the operator <i><a name="kanchor1226"></a>unacknowledges</i> 
+ it. </p>
+                        <p>As with the <b>Timed</b> acknowledgement, the icon turns blue and the 
+ wrench badge appears to remind the operator that notifications are suppressed. In this case, the device is DOWN.</p>
+                    </td>
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;">
+                        <img src="../Resources/Images/Ack-Indefinite.png" style="border-style: none;" border="0" />
+                        <p><i>Down, with Indefinite Acknowledgment</i>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p><b style="font-weight: bold;">Note:</b><a name="kanchor1227"></a> With timed and indefinite acknowledge, 
+ you can acknowledge a device even when it is up and okay (i.e., green). 
+ This is useful if you know that there may be future outages (for example, 
+ planned maintenance) with the device, and you want to avoid extraneous 
+ notifications. You cannot do this with Basic Acknowledge.</p>
+            <p><b style="font-weight: bold;">Note:</b> The presence of the wrench badge 
+ is a safety measure. When you scan the map visually, the wrench indicates 
+ devices whose notifications are currently being blocked.</p>
+            <h2><a name="kanchor1228"></a>Acknowledgements and Dependencies</h2>
+            <p>When you acknowledge a device, use the <b><i>Block notifications for 
+ dependent devices </i></b>check box to specify whether the acknowledged 
+ device should be considered in finding dependencies. Checking the box 
+ suppresses notifications for any device "on the other side" 
+ of the device being acknowledged. </p>
+            <p><b style="font-weight: bold;">To suppress notifications for all devices 
+ that are dependent on the selected device:</b>
+            </p>
+            <ul>
+                <li value="1">Check the <b>Block notifications for dependent devices</b> 
+ box. Notifications are suppressed for any device that depends on the selected 
+ device.</li>
+            </ul>
+            <p>For more information on dependencies and dependent devices, see <a href="../06-Notifiers/dependencies.html">Using 
+ Notification Dependencies</a>. </p>
+            <h2><a name="kanchor1229"></a>Unacknowledging a Device</h2>
+            <p>Use the Unacknowledge command to restore the device to its current notification state. </p>
+            <p><b style="font-weight: bold;"><a name="kanchor1230"></a><a name="kanchor1231"></a>To remove the acknowledgement for a device:</b>
+            </p>
+            <ol>
+                <li value="1">Click to select the device, or choose multiple devices.</li>
+                <li value="2">From the Monitor menu, choose <b><i><a name="kanchor1232"></a>Un-Acknowledge</i></b>. 
+ The selected devices are returned to their current notification states, 
+ and their notifications are no longer suppressed.</li>
+            </ol>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

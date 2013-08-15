@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using Layer 2 Features">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>The Endpoints Pane</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 data-mc-conditions="Primary.online">The Endpoints Pane</h1>
+            <p>The Layer 2 view's Endpoints pane lists all <i>endpoint</i> devices (servers, workstations, and routers) and the switch ports they are connected to. It does <i>not</i> include managed switches, which are not considered to be endpoints. </p>
+            <p>The columns of the Endpoints pane are:</p>
+            <ul>
+                <li value="1"><b>Flags</b> - flags that give detailed information about the port or device. See <a href="Layer_2_Flags.htm">Layer 2 Flags<a href="Layer_2_Flags.htm" title="" alt="" class="MCXref xref ">{}</a></a> for more information.</li>
+                <li value="2"><b>Switch and Port</b> - describe a particular switch port</li>
+                <li value="3"><b>MAC and Address</b> - contain the MAC address and the IP Address of the device.</li>
+                <li value="4"><b>DNS</b> - the DNS name of the device (if known).</li>
+                <li value="5"><b>VLAN</b> - the VLAN(s) supported by this port.</li>
+                <li value="6"><b>NIC Manufacturer</b> - the manufacturer of the Network Interface Card (NIC), derived from the MAC address.</li>
+                <li value="7"><b>First Seen</b> - the time the device was first detecting during a Layer 2 scan. </li>
+                <li value="8"><b>Last Seen</b> - the most recent time the device was detected during a Layer 2 scan.</li>
+                <li value="9"><b>Present</b> - two numbers, separated by "/". The first is the number of times this device was seen during a scan, the second is the total number of scans.</li>
+                <li value="10"><b>ifAlias</b> - the ifAlias taken from the Switch and Port (if available).</li>
+            </ul>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/L2-EndpointsPane-55_578x225.png" style="width: 578;height: 225;" />
+            </p>
+            <h2>Controlling what you see in the Endpoints Pane</h2>
+            <ul>
+                <li value="1">In the Filter pane, click various combinations of Switch, VLAN, and NIC Manufacture to control the rows that appear in the Endpoints pane.</li>
+                <li value="2">In the Endpoints pane, click a column heading to sort by that column. Click again to reverse the sort.</li>
+                <li value="3">Click the sprocket at the right end of the Endpoints pane's column heading bar to add to or remove columns from the Endpoints Pane.</li>
+                <li value="4">By default, the Endpoints pane shows endpoints only - it hides ports connected to other switches, ports with no devices attached (regardless of whether they are up or down) or devices marked as "fuzzy." Select the Show All Ports box near the top of the <a href="Filter_Pane.htm">Filter pane<a href="Filter_Pane.htm" title="" alt="" class="MCXref xref ">{}</a></a> to show all ports.</li>
+            </ul>
+            <h2>Using Layer 2 Information to Update Map Connections</h2>
+            <p>In addition to this tabular view, InterMapper can pass the connection information back into the Map view, automatically showing the connection of each device on the map to the proper port on the switch. This simplifies the creation and arrangement of your maps; all you need to do is tidy up the map. Turn this feature on from the Layer 2 Features pane of the <a href="../04-Creating_Maps/mapsettings.html#Layer2features">Map Settings<a href="../04-Creating_Maps/mapsettings.html#Layer2features" title="" alt="" class="MCXref xref ">{}</a></a> window.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

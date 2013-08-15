@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Server Settings|Server Configuration Panels">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Remote Server</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1922"></a><a name="kanchor1923"></a><a name="kanchor1924"></a><a name="kanchor1925"></a>The Remote Server</h1>
+            <p><a name="kanchor1926"></a><a name="kanchor1927"></a><a name="kanchor1928"></a><a name="kanchor1929"></a><a name="kanchor1930"></a><a name="kanchor1931"></a>InterMapper's Remote Server allows a user to configure and edit maps on an 
+	InterMapper installation from a remote computer. To allow these changes, the 
+	Remote Server accepts connections from the InterMapper or InterMapper RemoteAccess 
+	application, running on a different computer. For more information about InterMapper 
+	RemoteAccess, see the <a href="http://www.dartware.com/imremote/">InterMapper 
+	Remote</a><a name="kanchor1932"></a> web site.</p>
+            <p><a name="kanchor1933"></a><a name="kanchor1934"></a><a name="kanchor1935"></a>InterMapper always listens for remote connections on its localhost interface, 
+ 127.0.0.1. This allows a user to run a copy of the InterMapper RemoteAccess 
+ application on the machine that is running InterMapper. For security, 
+ InterMapper refuses all Remote Server connections from non-localhost addresses 
+ by default to prevent unauthorized configuration. </p>
+            <p><a name="kanchor1936"></a><a name="kanchor1937"></a><a name="kanchor1938"></a>You can configure InterMapper to accept connections from remote computers, 
+	giving varying degrees of access by IP address or by username and password.</p>
+            <p><a name="kanchor1939"></a><a name="kanchor1940"></a><a name="kanchor1941"></a><a name="kanchor1942"></a><a name="kanchor1943"></a><a name="kanchor1944"></a>Unlike the Telnet and Web servers, you cannot start or stop the Remote 
+ Server. You configure the Remote Server using the Remote Server settings panel
+ of the Server Configuration section, found in the Server Settings window.</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/serversettings-remoteserver.png" />
+            </p>
+            <p><b style="font-weight: bold;">To configure the Remote Server:</b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor1945"></a>From the Edit menu, choose <b><i>Server Settings...</i></b> 
+ The Server Settings window appears.</li>
+                <li value="2">In the Server Configuration section, click <b><i>Remote 
+ Server</i></b>. The Remote Server panel appears.</li>
+            </ol>
+            <ul>
+                <li value="1"><a name="kanchor1946"></a><a name="kanchor1947"></a><a name="kanchor1948"></a><a name="kanchor1949"></a>Enter a TCP port number, or use the default value.</li>
+                <li value="2">To configure access to the Remote Server, click the Plus icon<a name="kanchor1950"></a><a name="kanchor1951"></a> 
+ to add addresses to the Remote Server firewall. </li>
+                <li value="3">To remove an entry, click the Minus icon.</li>
+                <li value="4">To edit an entry, click the pencil icon.</li>
+                <li value="5">To see a list of clients connected to the server, click <b style="font-style: italic;">Show Connected Clients</b>. (See below)</li>
+                <li value="6">If you want entries from this server to be sent to 
+ a different log file, choose a log file from the <b><i><a name="kanchor1952"></a>Send log file entries 
+ to</i></b> dropdown menu. For more information on log files, see <a href="../08-02-Server_Prefs/logging.html">Log Files</a>.</li>
+            </ul>
+            <p><b style="font-weight: bold;">Note:</b> The Server Settings window is 
+ available only to users who have administrator privileges.</p>
+            <h2>Showing Connected Clients</h2>
+            <p>Click Show Connected Clients to view a list of InterMapper clients connected to the server. The Remote Clients window appears, showing the connected user's name, IP address, time of login and type of license.</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/dlg-settings-RemClients.png" />
+            </p>
+            <h2>Additional Information</h2>
+            <p>For more information on configuring your Remote Server, see <a href="accesscontrol.html">Server 
+ Access Control</a><a name="kanchor1953"></a><a name="kanchor1954"></a>. It describes how to set your Remote Server's port, 
+ discusses encryption and when to use it, and describes how to configure 
+ the built-in firewall's list of IP addresses.</p>
+            <p><a name="kanchor1955"></a>For more information on configuring your built-in servers' firewalls, 
+ see <a href="firewall.html">Configuring a Firewall</a>.</p>
+            <p>For more information on users and groups, see <a href="08-03-01-Users/users.html">Users 
+ and Groups</a>. It describes how to set up users and groups, and how you 
+ specify who may use the Remote Server. It also discusses administrator 
+ access to the Remote Server.</p>
+            <p>For more information on setting permissions for a particular map, see 
+ <a href="mapaccess.html">Controlling Access to a Map</a>. It describes 
+ how to set up unique access controls (by username) for an individual map.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

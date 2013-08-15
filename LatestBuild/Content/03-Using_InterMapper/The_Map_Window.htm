@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>The Map Window</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor147"></a><a name="kanchor148"></a>The Map Window</h1>
+            <p>You view any map in a Map window. Below is one of the example maps installed 
+	with InterMapper.</p>
+            <p>For an in-depth explanation of the elements that appear in the map window, 
+ what they mean, and how to use them, see <a name="kanchor149"></a><a href="../07-MonitoringNetwork/Monitoring_Your_Network.htm">Monitoring 
+ Your Network</a>.</p>
+            <p>
+                <img src="../Resources/Images/MapWindow-NOCmap_556x578.png" style="width: 556;height: 578;" />
+            </p>
+            <h2 class="pagebreakbefore"><a name="kanchor150"></a>The Title Bar</h2>
+            <p>The Title bar shows the map's title, its state, and has standard controls for 
+ zooming, minimizing, and closing the window.</p>
+            <p>
+                <img src="../Resources/Images/titlebar.png" style="border-style: none;" border="0" />
+            </p>
+            <h2><a name="kanchor151"></a>The Menu Bar</h2>
+            <p>The Menu bar contains the map's menus.</p>
+            <blockquote>
+                <p style="text-align: left;">
+                    <img src="../Resources/Images/menubar.png" style="border-style: none;" border="0" />
+                </p>
+            </blockquote>
+            <p>For a complete reference for each menu, see the <a href="../09-Reference/09-01-Command-Menu-Reference/reference.html">Command/Menu 
+ Reference</a>.</p>
+            <h2>The Toolbar</h2>
+            <p><a name="kanchor152"></a>The Toolbar contains buttons to toggle the map's edit mode and to switch 
+	from one view to another.</p>
+            <p>
+                <img src="../Resources/Images/mapwindow-toolbar.png" style="border-style: none;" border="0" />
+            </p>
+            <h2>Switching Between Monitor Mode and Edit Mode</h2>
+            <ul>
+                <li value="1">Click the Lock button at the left end of the tool bar to switch the map 
+	 between Monitor mode and Edit mode:</li>
+            </ul>
+            <table border="0" style="margin-left: 0;margin-right: auto;">
+                <col style="width: 71px;" />
+                <col style="width: 384px;" />
+                <tr>
+                    <td style="vertical-align: top;text-align: center;">
+                        <img src="../Resources/Images/Mode-locked.png" style="border-style: none;" border="0" />
+                    </td>
+                    <td style="vertical-align: top;"><b>In Monitor mode</b> - The map is not editable, and status windows appear when you click and hold a device, link, or network.</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;text-align: center;">
+                        <img src="../Resources/Images/Mode-edit.png" style="border-style: none;" border="0" />
+                    </td>
+                    <td style="vertical-align: top;"><b>In Edit mode</b> - The map is editable. Status windows can be opened with menu commands.</td>
+                </tr>
+            </table>
+            <p><b>Tip:</b> Press tab to switch between Monitor and Edit modes.</p>
+            <h2>Switching Views in the Map Window</h2>
+            <p>Click one of these buttons to switch to a different Map Window view.</p>
+            <table border="0" width="449">
+                <col />
+                <col style="width: 579px;" />
+                <tr>
+                    <td width="41" style="text-align: right;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/tool-iconview.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td>
+                        <p><b>Map view</b>
+                            <br /><a name="kanchor153"></a>Shows the map graphically, showing devices, networks, and their interconnections.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: right;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/tool-listview.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td>
+                        <p><b>List view<br /></b>Shows the devices on the map as a list, with columns for the device's 
+		 status, name, address, probe type, and current and previous condition. 
+		</p>
+                        <ul>
+                            <li value="1">Click a column heading to sort by that column.</li>
+                            <li value="2">Click again to sort in reverse order. </li>
+                            <li value="3">Use the <b style="font-style: italic;">Columns</b> submenu available from the View menu to choose the columns you want to view.</li>
+                            <li value="4">Right-click a column heading to choose the columns you want to view, and to choose a column to sort by.</li>
+                            <li value="5">Drag items from one map to another. The source map must be in List view. The target map must be editable, but can be in another view.<br /><br />It is convenient to sort by Status so the most serious conditions 
+			appear at the top of the list.</li>
+                        </ul>
+                        <p>Note: You can also view a global list of devices.</p>
+                        <p><b>To view a global device list:</b>
+                        </p>
+                        <ul>
+                            <li value="1">With a server selected in the map list, choose <b style="font-style: italic;">Device List</b> from the Map List window's Window menu. A list of all devices on the selected server appears.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: right;" valign="top">&#160;</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: right;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/tool-notifierview.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td>
+                        <p><b>Notifier view</b><a name="kanchor154"></a>
+                            <br />This view lets you see which notifiers are attached to each<br />device on a map. Another way to think of it is as a "responsibilities" 
+		 view - what devices apply to a certain notifier.</p>
+                        <ul>
+                            <li value="1"><a name="kanchor155"></a>Select a particular notifier from the dropdown menu; you can see the checkboxes for all its recipients.</li>
+                            <li value="2">To set a value for all devices, hold <b style="font-style: italic;">Alt </b>or <b style="font-style: italic;">Option</b>, and set a value. The value you changes to the selected value for the entire column. This works on all check boxes, as well as on the <b style="font-style: italic;">Delay</b>, <b style="font-style: italic;">Repeat</b>, and <b style="font-style: italic;">Count </b>columns.<br /></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: right;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/tool-chartlistview.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td>
+                        <p><b>Chart view<br /></b>Shows the list of charts for the map.</p>
+                        <ul>
+                            <li value="1">Expand the tree to view a chart's datasets.</li>
+                            <li value="2">Double-click a chart name to open the chart.</li>
+                            <li value="3">Right-click the Chart List button to open a particular chart without switching the view.</li>
+                            <li value="4">Right-click a chart to:
+							<ul style="list-style: square;"><li value="1">Show the chart
+								</li><li value="2">Rename the chart
+								</li><li value="3">Delete the chart
+								</li></ul></li>
+                            <li value="5">Right-click a dataset to:
+						<ul style="list-style: square;"><li value="1">Show the chart containing that instance of the dataset
+                        </li><li value="2">Show the device generating the dataset
+                        </li><li value="3">Raise the status window for the device generating the dataset
+                        </li><li value="4">Rename the dataset
+                        </li><li value="5">Remove the dataset
+                        </li><li value="6">Export data from the dataset
+                        </li><li value="7">Delete data from the dataset</li></ul></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: right;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/tool-datasetview.png" />
+                        </p>
+                    </td>
+                    <td>
+                        <p width="398"><b>Dataset view</b>
+                            <br style="font-weight: bold;" />This view shows the datasets available for charting and data collection in this map. With the map in edit mode, you can choose a retention policy for any dataset.</p>
+                        <p width="398">Shows the following:</p>
+                        <ul>
+                            <li width="398" value="1">A list of devices on the current map.</li>
+                            <li width="398" value="2">The dataset name, type, and current retention policy and variable for a selected device whose check box is selected.</li>
+                            <li width="398" value="3">Any available interfaces and the available datasets associated with them.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <h2><a name="kanchor156"></a>The Map Legend</h2>
+            <p>The Map legend to the right of the toolbar shows the different states of 
+	the map and the number of devices in each state. It also acts as a filter in list view.</p>
+            <p>
+                <img src="../Resources/Images/legend.png" style="border-style: none;" border="0" />
+            </p>
+            <table border="0" width="449" style="margin-left: 0;margin-right: auto;">
+                <col />
+                <col style="width: 60px;" />
+                <col style="width: 475px;" />
+                <tr>
+                    <td style="font-weight: bold;text-align: center;">Badge</td>
+                    <td style="font-weight: bold;text-align: center;">Color</td>
+                    <td style="font-weight: bold;text-align: center;">Meaning</td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: center;vertical-align: top;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/legend-down.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">
+                        <p>Red <br />(Flashing)</p>
+                    </td>
+                    <td valign="top" style="vertical-align: top;">
+                        <p><b>Down</b> - No response has been received from the device within 
+		 the specified timeout period.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: center;vertical-align: top;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/legend-critical.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">
+                        <p>Red<br />(Solid)</p>
+                    </td>
+                    <td valign="top" style="vertical-align: top;">
+                        <p><b>Critical</b> - The specified threshold for critical state has been 
+		 met</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: center;vertical-align: top;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/legend-alarm.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">
+                        <p>Orange</p>
+                    </td>
+                    <td valign="top" style="vertical-align: top;">
+                        <p><b><a name="kanchor157"></a>Alarm</b> - The specified threshold for alarm state has been met.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: center;vertical-align: top;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/legend-warning.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">
+                        <p>Yellow</p>
+                    </td>
+                    <td valign="top" style="vertical-align: top;">
+                        <p><b><a name="kanchor158"></a>Warning</b> - The specified threshold for warning state has been 
+		 met. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: center;vertical-align: top;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/legend-up.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">
+                        <p>Green</p>
+                    </td>
+                    <td valign="top" style="vertical-align: top;">
+                        <p><b>Up</b> - The device is working below the specified thresholds.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="41" style="text-align: center;vertical-align: top;" valign="top">
+                        <p width="41" valign="top">
+                            <img src="../Resources/Images/legend-unknown.png" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">
+                        <p>Gray</p>
+                    </td>
+                    <td valign="top" style="vertical-align: top;">
+                        <p><b>Unknown</b> - The device is not being polled, so its state is unknown.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;vertical-align: top;">&#160;</td>
+                    <td style="text-align: center;vertical-align: top;font-weight: bold;">
+                        <p>Purple</p>&#160;</td>
+                    <td style="vertical-align: top;">
+                        <p><b>Searching </b>- The device is searching for adjacent routers (during auto-discovery) or is 
+	tracking down unnumbered interfaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;vertical-align: top;">
+                        <p>
+                            <img src="../Resources/Images/badge-wrench-s.PNG" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">&#160;</td>
+                    <td style="vertical-align: top;">
+                        <p><b>Acknowledge - Timed or Indefinite </b>- The device's problem has been acknowledged and notifications are being suppressed, either indefinitely, or for a specified period of time.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;vertical-align: top;">
+                        <p>
+                            <img src="../Resources/Images/badge-checkmark-s.PNG" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;vertical-align: top;">&#160;</td>
+                    <td style="vertical-align: top;">
+                        <p><b>Acknowledge - Basic </b>- The device's problem has been acknowledged, and notifications are being suppressed until the device comes back up, at which time the checkmark is cleared.</p>
+                        <p><b>List Acknowledged Devices</b> - (Filter button) List all devices that have been acknowledged.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;vertical-align: top;">
+                        <p>
+                            <img src="../Resources/Images/badge-noack-s.PNG" style="border-style: none;" border="0" />
+                        </p>
+                    </td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td style="vertical-align: top;">
+                        <p><b>List Un-Acknowledged Devices</b> - (Filter button) List all devices that have not been acknowledged.</p>
+                    </td>
+                </tr>
+            </table>
+            <ul>
+                <li value="1">Click a legend icon to view a list of devices that currently in that state.</li>
+                <li value="2">Click the icon again to go back to the previous view.</li>
+                <li value="3">Shift-click icons to view devices in more than one state. <br /><br /><b>Example:</b> Shift-click the Alarm and Warning icons to see any devices in either 
+	 of those states.<br /><br /></li>
+                <li value="4">Click one of the Acknowledge Filter buttons (to the right of the legend) to list only acknowledged or un-acknowledged devices. <br /><br /><b>Note:</b> The filter buttons work with in concert with the legend icons - clicking a Filter button shows only the devices in the selected state that are acknowledged or un-acknowledged. It is possible to click a filter button and see no devices.</li>
+            </ul>
+            <h2><a name="kanchor159"></a>The Map Area</h2>
+            <p>The Map area is the "canvas" on which you create your map. To get 
+ started, take a look at Creating Maps. It is full of information about <a href="../04-Creating_Maps/starting.html">starting 
+your map</a>. The Creating Maps section is full of information for      <a href="../04-Creating_Maps/starting.html">creating</a>,      <a href="../05-Arranging_Your_Map/arranging.htm">arranging</a>, 
+ and making your map look      <a href="../05-Arranging_Your_Map/arranging.htm">just 
+ the way you want</a> it to look. You'll also find a quick reference of      <a href="../04-Creating_Maps/Quick_Reference_-_Editing_Your_Map.htm">editing 
+ shortcuts</a>.</p>
+            <p>For an in-depth explanation of the elements that appear in the map window, 
+ what they mean, and how to use them, see <a href="../07-MonitoringNetwork/Monitoring_Your_Network.htm">Monitoring 
+ Your Network</a>.</p>
+            <h2><a name="kanchor160"></a>The Status Bar</h2>
+            <p>The Status bar contains controls for switching in and out of map edit mode, 
+ setting the polling interval, and zooming the map.</p>
+            <p>
+                <img src="../Resources/Images/statusbar.png" style="border-style: none;" border="0" />
+            </p>
+            <table width="66%" border="0" cellspacing="5" cellpadding="5">
+                <tr>
+                    <td valign="top" width="68%"> The <i><b><a name="kanchor161"></a>Poll Interval</b></i> drop-down 
+		menu sets the polling interval for the map. </td>
+                    <td valign="top" width="32%" align="right">
+                        <img src="../Resources/Images/pollinterval.png" style="border-style: none;" border="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="68%"> The <i><b><a name="kanchor162"></a>Map Zoom</b></i> drop-down menu 
+		sets the zoom factor for the map. If you choose                   <i><b><a name="kanchor163"></a>Auto</b></i>, the 
+		map zooms automatically when you resize the window. </td>
+                    <td valign="top" width="32%" align="right">
+                        <img src="../Resources/Images/mapzoommenu.png" style="border-style: none;" border="0" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

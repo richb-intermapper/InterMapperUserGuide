@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Advanced Data Import/Export">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>The Directive Line</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2" data-mc-conditions="Primary.online">Introduction - The Directive Line</h1>
+            <h2 class="L2" data-mc-conditions="">Introduction - The Directive Line</h2>
+            <p><a name="kanchor3079"></a><a name="kanchor3080"></a><a name="kanchor3081"></a><a name="kanchor3082"></a><a name="kanchor3083"></a><a name="kanchor3084"></a><a name="kanchor3085"></a>If you need more control over the import process, you can use the Directive line technique instead of a spreadsheet-style import file. In addition to inserting new devices, you can update specific attributes of existing devices, change their appearance or location, and delete them.</p>
+            <p><b>Note: </b>You can automate the importing of map data by sending commands 
+	 to InterMapper RemoteAccess through its command-line interface. This allows 
+	 you to interact with InterMapper through your own scripts. For more information, 
+	 see     <i><a name="kanchor3086"></a><a name="kanchor3087"></a><a name="kanchor3088"></a>Using the Command Line Interface</i> in the <a href="http://dartware.com/go.php?to=intermapper.devguide" target="_blank">Developer Guide</a>.</p>
+            <p>The first line, known as the <span style="font-weight: bold;font-style: italic;">directive</span> line, is formatted as in this example:</p>
+            <blockquote><pre><a name="kanchor3089"></a><a name="kanchor3090"></a><a name="kanchor3091"></a># format=tab table=devices fields=id,name,address modify=address match=id
+</pre>
+            </blockquote>
+            <p>Each of the elements below is separated by a tab:</p>
+            <ul>
+                <li value="1"><a name="kanchor3092"></a>The first line must begin with pound/hash sign ("#").</li>
+                <li value="2">The <i>table=devices</i> parameter specifies which table the data should be imported into.<br /><br /><a name="kanchor3093"></a><a name="kanchor3094"></a>Valid choices are detailed in <a href="#datatypes">Data types</a>, below.<br /><br /><b>Notes:</b><br /><ul><li value="1"><a name="kanchor3095"></a><a name="kanchor3096"></a><a name="kanchor3097"></a>You can generate a list of fields and descriptions for any data type 
+		 by exporting the <span style="font-weight: bold;font-style: italic;"><a name="kanchor3098"></a><a name="kanchor3099"></a>Schema</span> table. For more information, see <a href="../../04-Creating_Maps/04-01-Import-Export/Exporting_Data_From_Maps.htm">Exporting 
+		 Data From Maps</a>.</li><li value="2"><a name="kanchor3100"></a>You can include columns in your import file from both the Device and Vertices tables. InterMapper automatically applies the Vertex attributes appropriately to the vertex linked to the indicated device.<br /><br /></li></ul></li>
+                <li value="3">The <i>fields=id,name,address</i> parameter identifies the order of the data in the columns. In this example, there are three columns for the device's ID, name, and address.</li>
+                <li value="4">The <span style="font-style: italic;">modify</span> and <span style="font-style: italic;">match</span>parameters combine to specify which device attributes to change, and which device attributes to use to verify that the correct device has been found.</li>
+            </ul>
+            <p class="pagebreakafter">&#160;</p>
+            <table style="border-spacing: 0px;caption-side: top;" cellspacing="0">
+                <col style="width: 40pt;" />
+                <col style="width: 65%;" />
+                <tr valign="top">
+                    <td>
+                        <p style="font-weight: bold;"><a name="kanchor3101"></a>Directive Parameter</p>
+                    </td>
+                    <td>
+                        <p style="font-weight: bold;"><a name="kanchor3102"></a>Format/Options</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1">
+                        <p style="font-style: italic;"><span>Format</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Supported file formats:</p>
+                        <ul>
+                            <li value="1"><b style="font-style: italic;">tab</b> - tab-delimited</li>
+                            <li value="2"><b style="font-style: italic;">csv </b>- comma-separated</li>
+                            <li value="3"><b style="font-style: italic;">xml </b>- XML format (see an exported file for the format)</li>
+                        </ul>
+                        <p><b>Example:</b>
+                        </p><pre class="code">format=tab
+</pre>&#160;
+          </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <p style="font-style: italic;">Table</p>
+                    </td>
+                    <td>
+                        <p> Available values for the <span class="code">table </span>directive are listed in <a href="#datatypes">Data types</a>, below.</p>
+                        <p>Examples:</p><pre class="code">table=devices
+table=vertices
+</pre>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <p><span style="font-style: italic;">Modify</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><a name="kanchor3103"></a>Comma-separated list of field names. Use this parameter to specify which of the columns you want to update. You can combine this with the optional <span style="font-weight: bold;font-style: italic;">Match</span> parameter.</p>
+                        <p><span style="font-weight: bold;">Note:</span> If there is no                  <span style="font-weight: bold;font-style: italic;">Match</span> parameter, the                  <span style="font-weight: bold;font-style: italic;">ID</span><a name="kanchor3104"></a> field is used to find matches. If no <span style="font-weight: bold;font-style: italic;">ID</span>field exists, the import fails.</p>
+                        <p>Example:</p><pre class="code"><a name="kanchor3105"></a><a name="kanchor3106"></a><a name="kanchor3107"></a><a name="kanchor3108"></a><a name="kanchor3109"></a>modify=ID,MapName,Address,Latitude,Longitude
+</pre>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1">
+                        <p><span style="font-style: italic;">Match</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Comma-separated list of field names. Use this parameter to specify which of the columns you want to use to determine whether to modify device values.<br /><br />If no <span style="font-style: italic;font-weight: bold;">Match</span> parameter is included, the                  <span style="font-weight: bold;font-style: italic;">ID</span> field is used to find matches.<br /><br />If no <span style="font-weight: bold;font-style: italic;">ID</span> field is included in the file, the import fails.</p>
+                        <p><b>Example:</b>
+                        </p><pre class="code">match=MapName,Address
+</pre>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1">
+                        <p><span style="font-style: italic;">Insert</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Comma-separated list of field names. Use this parameter to specify the fields you want to set when creating the device.<br /><br /><a name="kanchor3110"></a><a name="kanchor3111"></a><a name="kanchor3112"></a><a name="kanchor3113"></a>You must include a combination of at least two fields whose Access attribute is "CREATE" (MapPath, Address, DNSName, IMProbe, MapID). To see the valid combinations, see <a href="device_attributes.htm">Device Attributes</a>. When no valid MapPath is included, one is created for you, named "Untitled 1".</p>
+                        <p>Once the device is created using one or more of these fields, InterMapper attempts to set the values of the remaining fields specified in the Insert parameter to the values in the corresponding columns.</p>
+                        <p><i>Insert</i> fields are evaluated from left to right. If, for example, you specify an Address, DNSName, and IMProbe in that order, the Address is set, and the DNSName is resolved to it, and remaining fields are set from the IMProbe parameter.</p>
+                        <p><b>Examples:</b>
+                        </p><pre class="code"><a name="kanchor3114"></a>Insert=MapPath,Address,Name,Latitude,Longitude
+</pre>
+                        <p><a name="kanchor3115"></a>&#160;(The example above creates devices in the specified maps with the specified addresses, names, latitude, and longitude)<br /></p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1">
+                        <p><span style="font-style: italic;">Delete</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Comma-separated list of field names. Use this parameter to specify which of the columns you want to use to determine whether a device should be deleted.</p>
+                        <p>Example:</p><pre class="code"><a name="kanchor3116"></a>delete=MapName,Probe
+</pre>
+                        <p><a name="kanchor3117"></a>(The example above would delete all devices in the specified maps that use the specified probes)</p>
+                    </td>
+                </tr>
+            </table>
+            <h3 class="pagebreakbefore"><a name="kanchor3118"></a>Remaining lines - specifying the data</h3>
+            <p>The remaining lines of the file contain the data as specified in the <span style="font-weight: bold;font-style: italic;">fields</span> definition described above. Each column is separated by a tab, and columns must appear in the order specified in the                  <span style="font-weight: bold;font-style: italic;">fields</span> definition (for directive line imports) or must correspond to the field names specified in the first line of the file (spreadsheet-style imports).</p>
+            <p> Available values for the <span class="code">table</span> directive are listed in <a href="#datatypes">Data types</a>, below.</p>
+            <h3><a name="kanchor3119"></a>Import File Example</h3>
+            <p>Below is an example of an Import file. This file specifies itself as a tab-delimited file containing a list of devices. All devices are going into the map named "MapA", and each device definition contains Address, Probe, Latitude, and Longitude columns.</p><pre class="code"><tt style="font-family: monospace;"># format=tab table=devices fields=MapName,Address,Probe,Latitude,Longitude 
+MapA 192.168.2.100 http 43.3 -72.0
+MapA 192.168.2.101 http 43.9 -72.3
+MapA 192.168.2.102 http 43.8 -72.8
+MapA 192.168.2.103 http 43.0 -72.4
+MapA 192.168.2.104 http 43.2 -72.3
+MapA 192.168.2.105 http 43.6 -72.2</tt></pre>
+            <h3><a name="kanchor3120"></a><a name="kanchor3121"></a>Automatic Placement of Devices</h3>
+            <p>If your map contains no benchmarks (as described in <a name="kanchor3122"></a><a href="../../04-Creating_Maps/04-01-Import-Export/Using_Geographic_Coordinates.htm">Using Geographic Coordinates</a><a name="kanchor3123"></a><a name="kanchor3124"></a>) latitude and longitude fields are ignored. You can place devices at specific locations using the XCoordinate and YCoordinate fields (described in the                  <a href="Vertex_Attributes.htm">Vertex Attributes</a>). X and Y coordinates are calculated from the upper left.</p>
+            <p>If the map contains benchmarks to specify geographic coordinates, InterMapper uses them to place devices at the proper location in the map.</p>
+            <p><span style="font-weight: bold;">Note:</span> In order for InterMapper to place devices accurately using geographic coordinates, two benchmarks must be specified before you import or update the devices. If you have imported the devices to the map before specifying the benchmarks, you can create an export file containing the MapPath, ID, Latitude and Longitude, then re-import the file after specifying your benchmarks. The devices are moved to the appropriate locations on the map.</p>
+            <h3><a name="kanchor3125"></a>How InterMapper Inserts Devices</h3>
+            <p>InterMapper places new devices in horizontal rows across the top of the specified map. If either X/Y coordinates or geographic coordinates are specified for the device, InterMapper places it at the specified location on the map.</p>
+            <h3 class="pagebreakbefore"><a name="kanchor3126"></a><a name="kanchor3127"></a>How InterMapper Handles Errors and Defaults</h3>
+            <p style="margin-bottom: 0.75em;margin-top: 0.75em;"><a name="kanchor3128"></a>InterMapper strives to use sensible defaults. The import file need only supply a server name, map path, and either an IP address or DNS Name for a new device. InterMapper uses its default settings for other values and parameters.</p>
+            <p style="margin-bottom: 0.75em;margin-top: 0.75em;"><a name="kanchor3129"></a><a name="kanchor3130"></a>InterMapper also tries to handle incorrect data. The import process protects against and recovers sensibly from faulty, ill-formatted, or inconsistent input values. Certain data (invalid format for an IP address, for example) cannot succeed, and will be reported as an error. Most other data should be passed along so the device can be added to the map with appropriate defaults. The InterMapper Event Log file contains a line for each newly added device, along with a success or error indication.</p>
+            <p style="margin-bottom: 0.75em;margin-top: 0.75em;">If the attribute name in the header of the imported file is not recognized as a valid attribute, InterMapper displays an error message and ignores the contents of that column.</p>
+            <p style="margin-bottom: 0.75em;margin-top: 0.75em;">When the import is finished, a summary is written to the Event Log file.</p>
+            <p style="margin-bottom: 0.75em;margin-top: 0.75em;"><i style="font-style: italic; font-weight: bold;">Notes:</i>
+            </p>
+            <ul style="margin-bottom: 0.75em;margin-top: 0.75em;">
+                <li value="1">Every InterMapper server maintains a unique identifier (the "id") for each of its devices on each map. This makes it a convenient value for matching updated information to an existing device.</li>
+                <li value="2">InterMapper defines a new                  <i>IMProbe</i><a name="kanchor3131"></a><a name="kanchor3132"></a> URL that completely specifies all the parameters of an InterMapper Probe. This IMProbe: URL is defined in                  <i><a name="kanchor3133"></a><a href="the_improbe_url.htm">The IMProbe URL</a></i>.</li>
+            </ul>
+            <h2><a name="datatypes"></a>Data types</h2>
+            <p style="margin-bottom: 0.75em;margin-top: 0.75em;">For each table for which data can be imported or exported, a data type is defined. For information on the different data types, and what information is readable, writable, or both, see the Attributes topic for each data type as linked below. </p><pre class="code">table=[data type]</pre>
+            <ul style="margin-top: 0.75em;margin-bottom: 0em;">
+                <li value="1"><span style="font-weight: bold;">devices</span> - imports data specific to devices. See the <a href="device_attributes.htm">Device Attributes</a> table.</li>
+                <li value="2"><span style="font-weight: bold;">vertices</span> - You can also control other aspects of a device in a map, such as the device's color, label, shape, or font. The <span class="code">vertices </span>type imports data specific to the appearance of devices. See the                  <a href="Vertex_Attributes.htm">Vertex Attributes</a> table.</li>
+                <li value="3"><span style="font-weight: bold;">interfaces</span> - imports data specific to the switch and router interfaces. See the           <a href="interface_attributes.htm">Interface Attributes</a> table.</li>
+                <li value="4"><b>maps</b> - imports data specific to maps. See the <a href="map_attributes.htm">Map Attributes</a> table.</li>
+                <li value="5"><b>notifiers</b> - imports data to describe notifiers. See the <a href="notifierattributes.htm">Notifier Attributes</a> table.</li>
+                <li value="6"><b>notifierrules</b> - imports data to describe how a notifier is applied. See the <a href="notifierrules.htm">Notifier Rules Attributes table.</a></li>
+                <li value="7"><b>users </b>- imports user account information. See the <a href="User_Attributes.htm">User Attributes</a> table.</li>
+                <li value="8"><b>retentionpolicies</b>- imports user account information. See the <a href="Retention_Policy_Attributes.htm">Retention Policy Attributes</a> table</li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

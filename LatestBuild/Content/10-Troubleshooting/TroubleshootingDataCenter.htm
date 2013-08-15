@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="FAQs">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Troubleshooting InterMapper DataCenter</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Troubleshooting InterMapper DataCenter</h1>
+            <ul>
+                <li value="1"><a href="#differentURL">I get an error message: "This InterMapper Server already appears to be associated with the InterMapper
+Database. Existing UUID is associated with a different URL".</a>
+                </li>
+            </ul>
+            <h2><a name="differentURL"></a>I get an error message: "This InterMapper Server already appears to be associated with the InterMapper
+Database. Existing UUID is associated with a different URL"</h2>
+            <p>Because multiple InterMapper installations can report to a single InterMapper
+Database, when InterMapper registers with InterMapper Database, it supplies a
+UUID to uniquely identify it. The InterMapper Database makes note of the URL and
+other characteristics of the server and associates them with the UUID. If InterMapper Database receives the same UUID from a different URL, it generates the error above.
+This may happen, for instance, if you copy your server settings from one copy of
+InterMapper to another, or move InterMapper to a new host or IP address. Your choices are to:</p>
+            <ul>
+                <li value="1"><b>Cancel</b> - Stop the registration of the server</li>
+                <li value="2"><b>Force</b> - Force the UUID to be associated with the new URL. </li>
+                <li value="3"><b>Regenerate</b> - Have InterMapper generate a new UUID.</li>
+            </ul>
+            <p>If you are certain that the installation of InterMapper which has generated this
+error is the same installation that was associated with the UUID previously, or
+if you know it should replace it, you can choose "Force".</p>
+            <p>If this is a different installation of InterMapper, choose "Regenerate".</p>
+            <p><b>Note:</b> <i>It is important to pay attention to this error;</i> map ids, device ids, etc., are
+only unique within a given server; if you associate a completely different
+installation of InterMapper with an existing UUID, the information about maps,
+etc. on the old server will be replaced or updated by information from the new
+server. When that occurs, datapoints from completely different datasets may be associated as if they were from one dataset.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

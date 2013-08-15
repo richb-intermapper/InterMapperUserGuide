@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Notification by Traps</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1053"></a><a name="kanchor1054"></a><a name="kanchor1055"></a><a name="kanchor1056"></a>Notification by SNMP Trap</h1>
+            <p>An <span style="font-style: italic;">SNMP trap</span> is an unsolicited SNMP 
+	message that is sent to another device. Traps are sent to convey the data 
+	immediately, instead of waiting for that device to be polled at some future 
+	time.</p>
+            <p>InterMapper sends a SNMP Trap as a notification when a device goes into 
+ a particular state.</p>
+            <p>
+                <img src="../../Resources/Images/window-ConfigNotifier-Trap_553x320.png" style="width: 553;height: 320;" />
+            </p>
+            <p><i style="font-style: italic;"><a name="kanchor1057"></a><a name="kanchor1058"></a><a name="kanchor1059"></a><a name="kanchor1060"></a><a name="kanchor1061"></a><a name="kanchor1062"></a>Configuring a Trap Notifier. Enter the 
+ IP Address or DNS name for the device to receive the trap, along with the SNMP 
+ Trap Community String.</i>
+            </p>
+            <p><a name="kanchor1063"></a><a name="kanchor1064"></a><a name="kanchor1065"></a>In the notification Schedule window, select "SNMP Trap" from 
+ the dropdown menu, and fill in the IP address or DNS name of the device 
+ to receive the trap, and the SNMP Trap Community string.</p>
+            <p>InterMapper sends six pieces of information in the trap. <a name="kanchor1066"></a><a name="kanchor1067"></a><a name="kanchor1068"></a>All are encoded as OCTET STRING. This information is also available in ASN.1 
+	format. in the <a href="dartwaremib.html">Dartware MIB</a>.</p>
+            <table>
+                <tr>
+                    <td style="text-align: right;width: 20%;vertical-align: top;" align="right" width="20%"><b style="font-weight: bold;"><a name="kanchor1069"></a>Timestamp:</b>
+                    </td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td style="width: 80%;" width="80%">The current date and time, as a string in the format:<br />&#160;&#160;MM/DD&#160;HH:MM:SS</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;vertical-align: top;" align="right"><b style="font-weight: bold;">Message:</b>
+                    </td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td><a name="kanchor1070"></a><a name="kanchor1071"></a><a name="kanchor1072"></a><a name="kanchor1073"></a>DOWN, UP, ALARM, WARN, OK, or TRAP (See the <a href="dartwaremib.html">Dartware MIB</a>.)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;vertical-align: top;" align="right"><b style="font-weight: bold;">Device name:</b>
+                    </td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td>The devices DNS name, as a string</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;vertical-align: top;" align="right" valign="top"><b style="font-weight: bold;">Condition:</b>
+                    </td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td>The condition of the device, as it would be printed in the log file.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: right;vertical-align: top;">Device Address:</td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td>The address of the device the triggered the notifier.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;text-align: right;vertical-align: top;">Probe Type:</td>
+                    <td style="vertical-align: top;">&#160;</td>
+                    <td>The type of probe that triggered the notifier</td>
+                </tr>
+            </table>
+            <p><a name="kanchor1074"></a><a name="kanchor1075"></a>InterMapper's traps contain the following MIB variables, taken from the Dartware 
+	MIB (described in detail in <a href="dartwaremib.html">The Dartware MIB</a>):</p><pre class="code"><a name="kanchor1076"></a>intermapperTimestamp = 1.3.6.1.4.1.6306.2.1.1.0<br /><a name="kanchor1077"></a>intermapperMessage = 1.3.6.1.4.1.6306.2.1.2.0<br /><a name="kanchor1078"></a>intermapperDeviceName = 1.3.6.1.4.1.6306.2.1.3.0<br /><a name="kanchor1079"></a>intermapperCondition = 1.3.6.1.4.1.6306.2.1.4.0</pre>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

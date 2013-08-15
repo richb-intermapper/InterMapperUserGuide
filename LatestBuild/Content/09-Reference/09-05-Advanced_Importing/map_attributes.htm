@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Advanced Data Import/Export">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Map Attributes</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor3144"></a>Map Attributes</h1>
+            <p>The <span class="code">maps</span>directive imports data specific to maps.</p>
+            <p>Use these attributes with the following table specification in line 1:</p><pre class="code">table=maps</pre>
+            <ul style="list-style: disc;" type="disc">
+                <li value="1">Fields marked with an asterisk (*) are required.</li>
+                <li value="2">Fields marked with an plus(+) can be updated during import.</li>
+            </ul>
+            <table class="fieldtable">
+                <tr>
+                    <th>Field Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td class="fieldname">MapId</td>
+                    <td class="fielddesc"><b>Type: </b>TEXT<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />A unique, persistant identifier for this map instance.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">MapName</td>
+                    <td class="fielddesc"><b>Type: </b>TEXT<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Name of the map.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">MapPath</td>
+                    <td class="fielddesc"><b>Type: </b>TEXT<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Full path of the map, including the name of the map.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">Status</td>
+                    <td class="fielddesc"><b>Type: </b>TEXT<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Status of the map (e.g. down, critical, alarm, warning, okay).<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">DeviceCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of devices in the map.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">NetworkCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of networks in the map.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">InterfaceCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of interfaces in the map.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">DownCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of devices that are down.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">CriticalCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of devices in critical status.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">AlarmCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of devices in alarm status.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">WarningCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of devices in warning status.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">OkayCount</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Number of okay devices.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">DataRetentionPolicy</td>
+                    <td class="fielddesc"><b>Type: </b>INTEGER<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Database retention policy.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">IMID</td>
+                    <td class="fielddesc"><b>Type: </b>TEXT<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />Identifier of the map in the IMID format.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">Enabled</td>
+                    <td class="fielddesc"><b>Type: </b>BOOLEAN<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />True if the map is currently running.<br /></td>
+                </tr>
+                <tr>
+                    <td class="fieldname">Layer2</td>
+                    <td class="fielddesc"><b>Type: </b>BOOLEAN<br /><b>Access: </b>READ-ONLY<br /><b>Attributes: </b>none<br /><b>Description: </b><br />True if the map is enabled for layer 2 polling.<br /></td>
+                </tr>
+            </table>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

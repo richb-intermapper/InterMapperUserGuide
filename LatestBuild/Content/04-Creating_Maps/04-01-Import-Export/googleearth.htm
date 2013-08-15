@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Advanced Data Import/Export|Importing and Exporting Data">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Exporting Information to Google Earth</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Exporting Information to Google Earth</h1>
+            <p>InterMapper exports the following information so that Google Earth can place devices in the proper location. This information is exported as a .KML file compatible with Google Earth.</p>
+            <p>Each InterMapper map appears as a place in the left pane of Google earth. Items are shown as follows:</p>
+            <ul>
+                <li value="1"><b>Devices</b> are represented by their status badges (green, yellow, orange, red circle icons)</li>
+                <li value="2"><b>Network ovals</b> are shown as small circles.</li>
+                <li value="3"><b>Links</b> between devices are shown as lines connecting the icons.</li>
+                <li value="4"><b>A Status window</b> for each of the above items displayed when you click the item.</li>
+            </ul>
+            <p>To be displayed in Google Earth, a device must have geographic information; devices that do not have geographic information are not displayed at all. </p>
+            <p><b>Geographic coordinates may be set in two ways:</b>
+            </p>
+            <ul>
+                <li value="1"><b>Explicitly</b> -  by using   <b style="font-style: italic;">Set Latitude and Longitude...</b> for each device. You can set latitude and longitude values for many devices at once by <a href="Using_Geographic_Coordinates.htm#Importing">importing a text file containing the correct information</a>.</li>
+                <li value="2"><b>Implicitly</b> - When benchmarks are are placed on a map, the device's latitude and longitude are inferred from the x/y position on the map, relative to the established benchmarks. Use the Insert menu's <a href="Using_Geographic_Coordinates.htm#benchmarks"><b style="font-style: italic;">Map Benchmark...</b></a>. to add benchmarks. Use of benchmarks is inherently less precise than using explicit coordinates.</li>
+            </ul>
+            <p>In the case where both explicitly set coordinates and benchmarks are used, InterMapper uses the explicit coordinates and ignores the benchmarks.</p>
+            <h2>How it works</h2>
+            <ul>
+                <li value="1"><b>Google Earth requests information from the InterMapper server using HTTP</b>. Consequently, the InterMapper web server interface must be enabled in the Server Settings. </li>
+                <li value="2"><b>The Google Earth connection uses the same authentication method as the web interface</b>; you must have appropriate web access permissions for any map you wish to view in Google Earth. (Google Earth will prompt you for the username and password.) </li>
+                <li value="3"><b>Google Earth does not need to be installed on the InterMapper server</b>, though its machine must have appropriate access permissions established in the InterMapper web server firewall.</li>
+                <li value="4"><b>Google Earth uses a "Network Link"</b> with a URL that Google Earth uses to request information from InterMapper.</li>
+            </ul>
+            <h2 class="pagebreakbefore">How to use it</h2>
+            <p>The easiest way to get the URL is through the InterMapper web interface.</p>
+            <ol>
+                <li value="1">Download and install Google Earth.</li>
+                <li value="2">From the Server Configuration section of the Server Settings window, click <b style="font-style: italic;">Web Server</b>. The Web Server settings pane appears in the right pane.</li>
+                <li value="3">Make sure the web server is running, then click the URL to launch a browser with the InterMapper Web interface. </li>
+                <li value="4">In the InterMapper web interface, click <b style="font-style: italic;">Map List</b>. A list of maps on your server appears.</li>
+                <li value="5">Click the link to a map that contains latitude/longitude information, either implicitly or explicitly. The map appears in the browser.</li>
+                <li value="6">At the bottom of the map, click <b style="font-style: italic;">View this map in Google Earth</b>. This is a link to the map's .KML&#160;file, a data file used by Google Earth. Assuming Google Earth has been installed properly, your browser offers to use Google Earth to open the file.</li>
+            </ol>
+            <p>If everything is set up properly, the status badges for your devices hover over the surface of the Earth in appropriate locations.  </p>
+            <p>To view a device's status window:</p>
+            <ul>
+                <li value="1">Click the device's badge. The device's Status Window appears in the Google Earth window.</li>
+            </ul>
+            <p>The map refreshes automatically every 5 minutes.</p>
+            <h3 class="pagebreakbefore">What you see</h3>
+            <p>The images below show the original map, the mapped devices displayed from two different zoom levels, and the status window for one of the devices.</p>
+            <p style="text-align: center;font-style: italic;">
+                <img src="../../Resources/Images/unakleet-im.png" />
+                <br />Original map in InterMapper</p>
+            <p style="text-align: center;font-style: italic;">
+                <img src="../../Resources/Images/unakleet-gearth-wide.png" />
+                <br />Wide view in Google Earth<br /></p>
+            <p style="text-align: center;font-style: italic;">
+                <img src="../../Resources/Images/unakleet-gearth-zoom.png" />
+                <br />Closer view in Google Earth</p>
+            <p style="text-align: center;font-style: italic;">
+                <img src="../../Resources/Images/unakleet-gearth-statwin.png" />
+                <br />Status window in Google Earth</p>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

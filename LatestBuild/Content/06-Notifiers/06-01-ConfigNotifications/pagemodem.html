@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Notification using an Analogue Modem</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2pagebreakbefore"><a name="kanchor876"></a><a name="kanchor877"></a><a name="kanchor878"></a><a name="kanchor879"></a><a name="kanchor880"></a><a name="kanchor881"></a>Configuring a Pager Notifier to use an Analogue Modem</h1>
+            <p><i>InterMapper </i><a name="kanchor882"></a><a name="kanchor883"></a><a name="kanchor884"></a> uses TAP, the Telelocator Alphanumeric Protocol, with an 
+ internal or external analogue modem to connect to a page service, and to deliver 
+ a notification.
+</p>
+            <p><b><a name="kanchor885"></a><a name="kanchor886"></a>To use the built-in support for paging via analogue modems:</b>
+            </p>
+            <ol>
+                <li value="1"><a href="../Working_With_Notifiers.htm#createnotifier">Create a new notifier</a>. 
+  </li>
+                <li value="2">From the <b><i><a name="kanchor887"></a>Notifier Type</i></b> dropdown menu, select          <i>Alpha-numeric 
+ Pager (Dial-up)</i><a name="kanchor888"></a><a name="kanchor889"></a><a name="kanchor890"></a><a name="kanchor891"></a><a name="kanchor892"></a>. The example below 
+ shows the Configure Notifier window with the Alpha-numeric Pager (Dial-up) 
+ type. 
+  </li>
+                <li value="3">From the <b><i><a name="kanchor893"></a>Subscriber</i></b> dropdown menu, choose a subscriber, or choose          <b><i><a name="kanchor894"></a>Edit List...</i></b><a name="kanchor895"></a><a name="kanchor896"></a> to 
+ add or edit paging services or subscribers. 
+    </li>
+                <li value="4">Click <b><i><a name="kanchor897"></a>Edit Message...</i></b> to edit the message that is sent to 
+	 the pager. (See warning below)
+	</li>
+                <li value="5">In the <i><b><a name="kanchor898"></a>Notifier Schedule </b></i>panel, choose the hours during 
+	 which the page will be sent. 
+	</li>
+                <li value="6">When finished, click <b><i><a name="kanchor899"></a>OK</i></b>.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-Pager_548x318.png" style="width: 548;height: 318;" />
+                <br /><i><a name="kanchor900"></a>A notification that uses the built-in modem paging facilities. 
+ The page will be sent to the person specified by the Subscriber menu.</i>
+            </p>
+            <p><b>Warning:</b><a name="kanchor901"></a> Many paging services limit the length of a message. Sending 
+	a longer message can cause multiple pages per event, and can considerably 
+	increase your pager bill.</p>
+            <h2>Setting up Paging Services and Subscribers</h2>
+            <p>Before you can use the paging options, you need to:</p>
+            <ul>
+                <li value="1">Set up one or more paging services. 
+  </li>
+                <li value="2"><a name="kanchor902"></a><a name="kanchor903"></a>Set up one or more subscribers for that service.</li>
+            </ul>
+            <p>The window above assumes that you have already configured InterMapper for your 
+ pager service.</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-Pager-modemsettings.png" />
+                <br /><i>Entering information about a service</i>
+            </p>
+            <p><b>To add or edit paging services:</b>
+            </p>
+            <ol>
+                <li value="1">Choose <b><i>Edit List...</i></b> from the          <i><b>Subscriber </b></i><a name="kanchor904"></a>drop-down 
+	 menu. The Paging Settings window appears. 
+	</li>
+                <li value="2">Click the <i><b>Paging Services </b></i>tab. A list of paging services 
+	 appears, if any are defined. 
+	</li>
+                <li value="3">Click a service to edit, or click <b><i>Add</i></b>. The information for 
+	 the paging service appears. 
+	</li>
+                <li value="4"><a name="kanchor905"></a><a name="kanchor906"></a>Enter dialup information in the boxes provided. Use the information about 
+	 your paging service to enter the service name, telephone number, and password, 
+	 the port to which your modem is attached, and the modem configuration. 
+	</li>
+                <li value="5">In the <b><i><a name="kanchor907"></a>Bits</i></b> dropdown menu, choose values appropriate to your 
+	 modem. Open the menu repeatedly to set the data bits, stop bits, and parity. 
+	 By default, the values are set to 7 data bits, 1 stop bit, and Even parity. 
+	</li>
+                <li value="6">In the <b style="font-style: italic;">Retries</b> box, set the number of times you would like the page to be sent if it fails. The default is 2.</li>
+                <li value="7">In the <b style="font-style: italic;">Retry Interval</b> box, 
+set the number of seconds to wait between retries. The default is 10 seconds.</li>
+                <li value="8">When finished, click <b><i>Done</i></b>.</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-Pager-subscribers.png" />
+                <br /><i>Entering information about a subscriber</i>
+            </p>
+            <p><b>To add or edit paging subscribers:</b>
+            </p>
+            <ol>
+                <li value="1">Choose <b><i>Edit List...</i></b> from the          <i><b>Subscriber </b></i>drop-down 
+	 menu. The Paging Settings window appears. 
+	</li>
+                <li value="2">Click the <i><b>Paging Subscribers </b></i>tab. A list of paging subscribers 
+	 appears, if any are defined. 
+	</li>
+                <li value="3">Click a service to edit, or click <b><i>Add</i></b>. The information for 
+	 the paging service appears. 
+	</li>
+                <li value="4">In the <b><i>Name</i></b> box, enter the name of the person you want to 
+	 receive the page.
+	</li>
+                <li value="5">From the <b><i>Service</i></b> dropdown menu, choose the user's Paging Service. 
+	 If the user's paging service doesn't appear, you need to create it as described 
+	 above. 
+	</li>
+                <li value="6">In the <b><i><a name="kanchor908"></a>Pager ID</i></b> box, enter the person's pager ID. (This 
+	 may be different from the Service phone number that you entered when creating 
+	 the user's Paging Service definition above.) 
+	</li>
+                <li value="7">When finished, click <b><i>Done</i></b>.</li>
+            </ol>
+            <h3 class="pagebreakbefore"><a name="kanchor909"></a><a name="kanchor910"></a>Paging Log File</h3>
+            <p><a name="kanchor911"></a>The paging log file is a special file which will receive logging of all paging 
+ traffic and messages, including the details of the modem commands and text written 
+ and read. The information in this log may help you or InterMapper Technical Support 
+ to troubleshoot paging if it is not working correctly. </p>
+            <p><a name="kanchor912"></a>To start logging this traffic, use the Log Files server settings panel to create 
+ a log file named Paging (The log file name will be "Paging&lt;date&gt;.txt") 
+ Logging will continue until the log file is removed through the Log Files panel.</p>
+            <h3><a name="kanchor913"></a>Modem Compatibility</h3>
+            <h4><a name="kanchor914"></a><a name="kanchor915"></a>With Mac OSX</h4>
+            <p><a name="kanchor916"></a><a name="kanchor917"></a><a name="kanchor918"></a><a name="kanchor919"></a>InterMapper has been tested with Mac OSX using various built-in modems, an 
+ external USB modem (MultiTech MT5634ZBA-USB), and an older external modem connected 
+ via a KeySpan Twin Serial adapter (using KeySpan's current OSX driver) on a 
+ beige G3. With the KeySpan serial adapter, InterMapper lists both serial ports 
+ in the Modem Page Settings dialog and you are responsible for choosing the correct 
+ one.</p>
+            <h4><a name="kanchor920"></a><a name="kanchor921"></a>With Windows and Unix</h4>
+            <p><a name="kanchor922"></a>A number of modems have been tested with InterMapper. While we cannot guarantee 
+ that a particular modem works, we believe that most modems that support V.34 
+ or a later specification will work well.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

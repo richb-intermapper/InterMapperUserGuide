@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Probe Reference">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Windows NT Services Probe</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor2693"></a><a name="kanchor2694"></a><a name="kanchor2695"></a><a name="kanchor2696"></a><a name="kanchor2697"></a><a name="kanchor2698"></a><a name="kanchor2699"></a><a name="kanchor2700"></a><a name="kanchor2701"></a><a name="kanchor2702"></a><a name="kanchor2703"></a><a name="kanchor2704"></a>Monitoring NT Services with the Windows NT Services Probe</h1>
+            <p><a name="kanchor2705"></a><a name="kanchor2706"></a><a name="kanchor2707"></a><a name="kanchor2708"></a><a name="kanchor2709"></a><a name="kanchor2710"></a><a name="kanchor2711"></a><a name="kanchor2712"></a><a name="kanchor2713"></a>InterMapper can monitor and send notifications for NT 
+ Services running on another computer. InterMapper uses the Service Control 
+ Manager facilities of the underlying Windows host to communicate with 
+ a remote computer to track the state of its services.</p>
+            <p><i style="font-style: italic;">Note:</i><a name="kanchor2714"></a><a name="kanchor2715"></a><a name="kanchor2716"></a> This NT Services monitoring 
+ is only available if the InterMapper server is running on a Windows XP, or 2003 computer. You cannot use this facility if you're using 
+ a Macintosh or Unix/Linux computer to host the InterMapper server. </p>
+            <table style="float: right;" align="right">
+                <tr>
+                    <td style="padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;"><span><img src="../../Resources/Images/probe_ntservices.png" style="border-style: none;float: none;border-style: none;" border="0" /></span><span></span>
+                    </td>
+                </tr>
+            </table>
+            <p>The <b>NT Services</b> configuration window displays the full list of 
+ services that are running on a remote host. You can check off one or many 
+ services to monitor; InterMapper will then give an alert if any of them 
+ fails. The parameters to the probe are: </p>
+            <ul>
+                <li value="1">A list of <b>NT services</b><a name="kanchor2717"></a> on the target machine. 
+ This list has red and green marks to indicate whether the service is currently 
+ running. Checking the box for the service will cause InterMapper to send 
+ an alert if that service ever stops running.</li>
+                <li value="2">The <b><a name="kanchor2718"></a><a name="kanchor2719"></a><a name="kanchor2720"></a>Username</b> and      <b><a name="kanchor2721"></a>Password</b><a name="kanchor2722"></a> required 
+ to log onto the target machine.</li>
+            </ul>
+            <h2><a name="Authentication"></a>Authentication for NT Services Probe</h2>
+            <p><a name="kanchor2723"></a><a name="kanchor2724"></a><a name="kanchor2725"></a><a name="kanchor2726"></a>The NT Services probe opens the Service Control Manager (SCM) on the 
+ target machine; hence, some authentication is required before this can 
+ happen. There are several ways to do this.</p>
+            <ol>
+                <li value="1"><b style="font-weight: bold;">Using built-in username and password:</b><a name="kanchor2727"></a><a name="kanchor2728"></a> 
+ InterMapper has the built-in ability to solicit from you a username and 
+ password for authentication. When you choose the NT Services probe, it 
+ will prompt you for a username and password before attempting to connect 
+ to the target machine. If you have not used one of the methods below, 
+ fill in a username and password at that point and click OK. This will 
+ be all you need to do for authentication; the username and password will 
+ be saved. 
+	
+	<p><b style="font-weight: bold;">Note:</b><a name="kanchor2729"></a> For this to work, 
+ InterMapper must be running as an administrator, as only administrators 
+ are empowered to make the required network connections. You can do this 
+ in one of two ways: </p><ul><li value="1"><a name="kanchor2730"></a><a name="kanchor2731"></a><a name="kanchor2732"></a><a name="kanchor2733"></a>The first way is by adjusting the account under 
+ which InterMapper is run. InterMapper is normally installed under the 
+ LocalSystem account, which does not have administrator privileges. To 
+ change the account under which it runs, follow this procedure: Go into 
+ the SCM and stop the InterMapper service if it is running. Right-click 
+ and choose "Properties". Choose the "Log On" tab. 
+ Under "Log On As...", click the radio button next to "This 
+ account:", and click "Browse..." to list the accounts; 
+ choose an account with administrator privileges. Fill in the password 
+ for the account in "Password:" and "Confirm Password:". 
+ Click "OK".</li><li value="2"><a name="kanchor2734"></a><a name="kanchor2735"></a><a name="kanchor2736"></a>The second way is to let InterMapper be an administrator when it 
+ needs to be by supplying it with an administrator's username and password, 
+ so that it can elevate its privileges when it needs to. You can do this 
+ using the NT Services item in the Server Settings list. 
+		
+		<b style="font-weight: bold;">Note:</b><a name="kanchor2737"></a><a name="kanchor2738"></a> In either scheme, the 
+ administrator you supply must have been given the "Logon as a service" 
+ right in the local security policy of the machine you are monitoring. <br /><br /></li></ul></li>
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor2739"></a>The NET USE command:</b> Another way 
+ to authenticate is to use the NET USE command to create a connection between 
+ the host machine and the target. For instance, to monitor the services 
+ on a host at 192.168.1.140, enter the following: 
+	
+	<p><a name="kanchor2740"></a>&#160;&#160;NET USE \\192.168.1.140\ipc$ /USER:Administrator</p><p><a name="kanchor2741"></a>You will be prompted for the password, and the connection will be 
+ made. (If you have done this, when prompted for a username and password 
+ for NT Services by InterMapper, you can leave them blank and click OK.)</p><p><b style="font-weight: bold;">Note:</b><a name="kanchor2742"></a><a name="kanchor2743"></a> You must use the IP address 
+ and not the network name for the machine. That is important, as the Windows 
+ OS will not see the DNS name or the domain name as being the same as 192.168.1.140 
+ when checking the connections, and will not recognize that there is a 
+ connection when InterMapper tries to query the services by IP address, 
+ returning an "access denied" error instead. </p></li>
+                <li value="3"><b style="font-weight: bold;"><a name="kanchor2744"></a><a name="kanchor2745"></a><a name="kanchor2746"></a>Synchronizing Users:</b> A third way 
+ to authenticate is to make sure that the user and password under which 
+ the InterMapper service is running exists on the target machine as well. 
+ 
+	
+	<p>When InterMapper is first installed, it is installed running under 
+ the user "LocalSystem", as most services are. It is necessary 
+ to create a new user on your machine; let's name it <i>InterMapper</i> 
+ and give it a password. Make sure it is a member of Administrators. (If 
+ you already have a username and password that exist on all machines that 
+ are to be targeted by the NT Services probe as well as the InterMapper 
+ host and which has Administrator permissions everywhere, you can skip 
+ the previous step and substitute it for      <i>InterMapper</i> in the following.)</p><p>Go into the SCM and stop the InterMapper service if it is running. 
+ Right-click and choose "Properties". Choose the "Log On" 
+ tab. Under "Log On As...", click the radio button next to "This 
+ account:", and click "Browse..." to list the accounts; 
+ choose <i>InterMapper</i>. Fill in the password for the account in "Password:" 
+ and "Confirm Password:". Click "OK".</p><p>On the target machine, create a new user, also named <i>InterMapper</i>, 
+ with the same password, and also a member of Administrators.</p><p><a name="kanchor2747"></a>Start InterMapper from the SCM on the original machine. You should 
+ now be able to use NT Services probes. (When prompted for a username and 
+ password for NT Services by InterMapper, you can leave them blank and 
+ click OK.)</p></li>
+            </ol>
+            <h2><a name="kanchor2748"></a><a name="kanchor2749"></a>A Note About Windows XP Professional</h2>
+            <p><a name="kanchor2750"></a>Windows XP uses a "simple" network scheme by default. In this 
+ scheme, all remote connections are mapped to "guest", which 
+ has very few permissions, as you might expect. This is the case even if 
+ there are other authenticated connections between the two computers. This 
+ default configuration prevents InterMapper from opening the SCM on a remote 
+ Windows XP machine. Even with correct username and password information, 
+ you will get an "access is denied" error.</p>
+            <p><a name="kanchor2751"></a><a name="kanchor2752"></a><a name="kanchor2753"></a><a name="kanchor2754"></a>To turn off this simplified networking: On the remote XP machine, choose 
+ Start Menu-&gt;My Computer. In the window that opens, choose Tools-&gt;Folder 
+ Options. Click the View tab. In the Advanced Settings list, scroll to 
+ the bottom. Uncheck the box next to "Use simple file sharing (Recommended)". 
+ Click Apply or OK. InterMapper should now be able to open the SCM on this 
+ machine from afar if you've followed one of the methods above to provide 
+ proper authentication.</p>
+            <h2><a name="kanchor2755"></a><a name="kanchor2756"></a><a name="kanchor2757"></a>A Note About Windows XP Home</h2>
+            <p>Windows XP Home operates in a simpler networking environment. This has 
+ several ramifications for the NT Services probe:</p>
+            <ul>
+                <li value="1">Windows XP Home only operates in the simple network scheme. 
+	 Therefore you cannot use the NT services probe to monitor services running 
+	 on an XP Home computer. </li>
+                <li value="2">You will need to be sure that the account running 
+ the InterMapper service has administrator rights and also has a password 
+ set.</li>
+            </ul>
+            <h2><a name="kanchor2758"></a><a name="kanchor2759"></a><a name="kanchor2760"></a>A Note About Windows XP SP2 and Firewalls</h2>
+            <p><a name="kanchor2761"></a>If you have Windows XP SP2 or have installed your own firewall on the 
+ target machine, you will need to make sure that there are holes in the 
+ firewall for the probe. If you are using a default installation of Windows 
+ XP SP2, then in the Windows Firewall settings, there is a probably a default 
+ exception for File and Printer Sharing. If there is, you can simply check 
+ this exception, and you will be done.</p>
+            <p><a name="kanchor2762"></a><a name="kanchor2763"></a>If there is not, or if you are using different firewall software, you 
+ will need to add exceptions for port 137 (UDP), port 138 (UDP), port 139 
+ (TCP) and port 445 (TCP).</p>
+            <p>Note that if your host machine is Windows XP SP2 or has a firewall, 
+ the same holes need to be open for NT Services probes to work.</p>
+            <h2>A Note on Error Messages</h2>
+            <p>InterMapper may encounter authentication errors when attempting to connect. 
+ Here is a list of the messages and ways you might work around them:</p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;">Error attempting 
+ to elevate privileges.</b><a name="kanchor2764"></a><a name="kanchor2765"></a><a name="kanchor2766"></a><a name="kanchor2767"></a> InterMapper is not running as an administrator, 
+ and thus needs to elevate its privileges in order to be able to execute 
+ the NT Services probe. It could not do so. Make sure a correct username 
+ and password for the InterMapper host machine have been supplied in the 
+ NT Services panel of the Server Settings dialog. Make sure the user given 
+ has the right to log on as a service in your Local Security Policy. If 
+ host machine is Windows Server 2003 or newer, make sure the user has the 
+ right to impersonate another user.</li>
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor2768"></a>Could not establish 
+ Windows Networking connection to probe target.</b> When a username and 
+ password have been supplied for the target machine, InterMapper attempts 
+ to use them to create a connection between the host and the probe target. 
+ This attempt failed for some reason. Will be followed by more specific 
+ error information. See below.</li>
+                <li value="3"><b style="font-weight: bold;">Could not open SCM 
+ on probe target.</b> InterMapper could not open the Service Control Manager 
+ on the target machine. Will be followed by more specific error information. 
+ See below. </li>
+            </ul>
+            <p>The following errors might be appended to the messages above:</p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;">Access is denied.</b><a name="kanchor2769"></a> 
+ Make sure InterMapper is running as an administrator, or that an administrator 
+ username and password have been provided in the NT Services panel in the 
+ Server Settings dialog. Make sure a valid administrator username and password 
+ have been supplied for the probe target. If the probe target is running 
+ Windows XP, make sure that "Simple Networking" is turned off.</li>
+                <li value="2"><b style="font-weight: bold;">The network name 
+ cannot be found.</b> and      <b>The network path was not found.</b> The device 
+ you have specified does not appear to exist on the network. If you are 
+ sure that it does, make sure it is a Windows machine with File and Print 
+ Sharing turned on, and that any firewall has exceptions for File and Print 
+ Sharing.</li>
+                <li value="3"><b style="font-weight: bold;">An extended error 
+ has occurred.</b><a name="kanchor2770"></a> A network-specific error has occurred. It should be 
+ followed by more information about the nature of the error. You may need 
+ to consult your network administrator.</li>
+                <li value="4"><b style="font-weight: bold;">The specified network 
+ password is incorrect.</b><a name="kanchor2771"></a> The password you supplied doesn't match the 
+ username.</li>
+                <li value="5"><b style="font-weight: bold;">No network provider 
+ accepted the given network path.</b> and      <b>The network is not present 
+ or not started.</b> No network is present, or a component of the network 
+ has not been started. Consult your network administrator.</li>
+                <li value="6"><b style="font-weight: bold;"><a name="kanchor2772"></a>The RPC server is 
+ unavailable.</b><a name="kanchor2773"></a> Make sure that probe target is a Windows machine with 
+ File and Print Sharing turned on, and that any firewall has exceptions 
+ for File and Print Sharing. </li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

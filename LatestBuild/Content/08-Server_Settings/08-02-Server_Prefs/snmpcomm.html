@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Server Settings|Server Preference Panels">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>SNMP Preferences</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1587"></a><a name="kanchor1588"></a><a name="kanchor1589"></a><a name="kanchor1590"></a><a name="kanchor1591"></a><a name="kanchor1592"></a>SNMP Preferences</h1>
+            <p><a name="kanchor1593"></a><a name="kanchor1594"></a><a name="kanchor1595"></a><a name="kanchor1596"></a>Use the SNMP subsection of the Server Preferences section to set the default 
+ SNMP settings for each SNMP access method. These settings are used for 
+ all new devices.</p>
+            <h2><a name="kanchor1597"></a><a name="kanchor1598"></a>About SNMP Versions</h2>
+            <p><a name="kanchor1599"></a>InterMapper can retrieve data from devices using SNMP version 1, version 
+	2c, or version 3. Each of these can access the same SNMP information, but 
+	through different means:</p>
+            <ul>
+                <li value="1"><b><a name="kanchor1600"></a>SNMPv1</b> was the original version, and provided 
+ a simple means for retrieving data. Security was provided through        <i><a name="kanchor1601"></a><a name="kanchor1602"></a>community 
+ strings</i><a name="kanchor1603"></a><a name="kanchor1604"></a><a name="kanchor1605"></a> that acted like a password to allow or deny access to the 
+ information. The Read-Only community string gave permission to the requester 
+ to read data; the Read-Write community string gave permission to modify 
+ data. All data transmissions (including the community string) were sent 
+ "in the clear", that is, unencrypted. </li>
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor1606"></a>SNMPv2c</b><a name="kanchor1607"></a> provided 
+ additional, more efficient methods to request data, and added new data 
+ types (such as 64-bit counters) so that the monitoring system could get 
+ more accurate data. SNMPv2c is like SNMPv1 in that it uses the same community 
+ string system, and transmits data in the clear. </li>
+                <li value="3"><b><a name="kanchor1608"></a>SNMPv3</b><a name="kanchor1609"></a><a name="kanchor1610"></a> provides the same data retrieval facilities 
+ as SNMPv2c, with additional security. There is a secure method of providing 
+ authentication information (so the device knows whether to respond to 
+ the query or not), as well as a privacy function that encrypts the entire 
+ transmission so that eavesdroppers cannot discern the data. </li>
+            </ul>
+            <h2><a name="kanchor1611"></a><a name="kanchor1612"></a><a name="kanchor1613"></a>What is an SNMP Community String?</h2>
+            <p><a name="kanchor1614"></a><a name="kanchor1615"></a>The SNMP Read-only Community string is like a user id or password that allows 
+	access to a router's or other device's statistics. InterMapper sends the community 
+	string along with all SNMP requests. If the community string is correct, the 
+	device responds with the requested information. If the community string is 
+	incorrect, the device simply ignores the request and does not respond.</p>
+            <p><b style="font-weight: bold;">Note:</b><a name="kanchor1616"></a> SNMP Community strings are used only 
+	by devices which support SNMPv1 and SNMPv2c protocol. SNMPv3 uses username/password 
+	authentication, along with an encryption key.</p>
+            <h2><a name="kanchor1617"></a>Community String Types</h2>
+            <p><a name="kanchor1618"></a><a name="kanchor1619"></a><a name="kanchor1620"></a>There are actually three community strings for SNMPv1-v2c-speaking devices:</p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;">SNMP Read-only community string 
+	  </b>- enables a remote device to retrieve "read-only" information 
+	 from a device. InterMapper uses this information from devices on its maps. 
+	</li>
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor1621"></a>SNMP Read-Write community 
+	 string </b>- used in requests for information from a device and to modify 
+	 settings on that device. InterMapper does not use the read-write community 
+	 string, since it never attempts to modify any settings on its devices. </li>
+                <li value="3"><b style="font-weight: bold;"><a name="kanchor1622"></a>SNMP Trap community string 
+	  </b><a name="kanchor1623"></a>- included when a device sends SNMP Traps to InterMapper. InterMapper 
+	 accepts any SNMP Trap community string.</li>
+            </ul>
+            <p><a name="kanchor1624"></a>By convention, most SNMPv1-v2c equipment ships from the factory with 
+ a read-only community string set to "public". It is standard 
+ practice for network managers to change all the community strings so that 
+ outsiders cannot see information about the internal network. (In addition, 
+ network managers may employ firewalls to block any SNMP traffic to ports 
+ 161 and 162 on the internal network.)</p>
+            <h2><a name="kanchor1625"></a>SNMP Server Settings Pane</h2>
+            <p>InterMapper remembers the default settings for each of the various SNMP 
+ access methods. These are set in the <b><a name="kanchor1626"></a>Server Settings&gt;SNMP</b> preference 
+ pane. <img src="../../Resources/Images/serversettings-snmp.png" /></p>
+            <p>This pane allows you to specify the following: </p>
+            <div style="float: right;">
+                <p><i style="font-style: italic;">Setting the default SNMP preferences</i>
+                </p>
+            </div>
+            <ul>
+                <li value="1"><b style="font-weight: bold;">SNMP Version</b><a name="kanchor1627"></a><a name="kanchor1628"></a> - 
+ Select the default SNMP version to be used for new devices in autodiscovery. 
+ InterMapper will attempt to use the selected version when it discovers 
+ a new device. If it gets a response, it will continue to use that version. 
+ If that fails, then it will simply ping the device.</li>
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor1629"></a>SNMPv1-2c Community</b> 
+ - If the selected SNMP Version is either SNMPv1 or SNMPv2c, InterMapper 
+ will use this community string to attempt to communicate with the device. 
+ </li>
+                <li value="3"><b style="font-weight: bold;"><a name="kanchor1630"></a>SNMPv3 Authentication</b><a name="kanchor1631"></a><a name="kanchor1632"></a> 
+ - If the selected SNMP version is SNMPv3, InterMapper will use the specified 
+ authentication method (SHA, MD5, or None) with the indicated password 
+ on the right to authenticate with the device. </li>
+                <li value="4"><b style="font-weight: bold;"><a name="kanchor1633"></a>User Name</b> - The 
+ SNMPv3 user name to be used for authentication and privacy.</li>
+                <li value="5"><b style="font-weight: bold;">Privacy</b><a name="kanchor1634"></a> - When using SNMPv3, 
+	 the privacy method (DES, AES, or None) will be used with the encryption 
+	 password on the right. </li>
+                <li value="6"><b style="font-weight: bold;"><a name="kanchor1635"></a><a name="kanchor1636"></a><a name="kanchor1637"></a><a name="kanchor1638"></a>Listen for SNMP Traps 
+ on UDP Port 162</b> - Check this box if you want InterMapper to listen for 
+ SNMP traps sent from devices to the standard port 162.</li>
+                <li value="7"><b style="font-weight: bold;">Also listen for SNMP 
+ traps on UDP port </b>- InterMapper can listen for traps on a second, 
+ non-standard port (in addition to port 162). Check this box and enter 
+ the port number in the text box. Traps received on this alternate port 
+ are handled in the same manner as those received on port 162.</li>
+                <li value="8"><b style="font-weight: bold;">Verbose trap logging</b><a name="kanchor1639"></a><a name="kanchor1640"></a><a name="kanchor1641"></a> 
+ - Check this box to instruct InterMapper to display the full OID and contents 
+ for all varbinds of a trap, instead of simply the varbind contents. </li>
+            </ul>
+            <h2><a name="kanchor1642"></a>Setting SNMP Preferences for Specific Devices</h2>
+            <p><a name="kanchor1643"></a><a name="kanchor1644"></a><a name="kanchor1645"></a>The panel shown above sets the default SNMP preferences that InterMapper 
+	uses when querying devices. You can also set SNMP preferences for individual 
+	devices on your map using the <b style="font-style: italic;">Set Community...</b> (SNMPv1-v2c) or <b style="font-style: italic;">Set Probe...</b> (all 
+	three SNMP versions) commands, available from the Monitor menu. You can set various parameters for one or more devices at a 
+	time, by selecting the devices you want to change before executing the command.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

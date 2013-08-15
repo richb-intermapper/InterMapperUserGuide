@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Notification using SNPP</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor950"></a><a name="kanchor951"></a><a name="kanchor952"></a><a name="kanchor953"></a><a name="kanchor954"></a><a name="kanchor955"></a><a name="kanchor956"></a><a name="kanchor957"></a><a name="kanchor958"></a>Configuring a Page Notifier to Send a Page Using SNPP (Network)</h1>
+            <p>Use InterMapper's Simple Network Paging Protocol (SNPP) feature to send pages 
+ over a network. Using this protocol, pages can be sent quickly and reliably, 
+ without the use of an analogue modem or a separate telephone line.</p>
+            <p>
+                <img src="../../Resources/Images/window-ConfigNotifier-SNPP_559x324.png" style="width: 559;height: 324;" />
+                <img src="../../Resources/Images/blank.gif" height="1" width="1" hspace="10" border="0" />
+            </p>
+            <p><b>To configure:</b>
+            </p>
+            <ol>
+                <li value="1"><a href="../Working_With_Notifiers.htm#createnotifier">Create a new notifier</a>. </li>
+                <li value="2">From the <b><i><a name="kanchor959"></a>Notifier Type</i></b> dropdown menu, select       <i>Alpha-numeric 
+ Pager (Network)</i><a name="kanchor960"></a><a name="kanchor961"></a><a name="kanchor962"></a><a name="kanchor963"></a>. The example below shows the Configure Notifier window with 
+ the Alpha-numeric Pager (Network) type.</li>
+                <li value="3">In the <b><i><a name="kanchor964"></a><a name="kanchor965"></a><a name="kanchor966"></a>Pager ID</i></b><a name="kanchor967"></a><a name="kanchor968"></a> box, enter the ID of the pager you wish to 
+ call.</li>
+                <li value="4">In the <b><i><a name="kanchor969"></a><a name="kanchor970"></a>SNPP Server</i></b><a name="kanchor971"></a><a name="kanchor972"></a><a name="kanchor973"></a> box, enter the IP address or domain name 
+ of the SNPP Server.<br /></li>
+                <li value="5"><a name="kanchor974"></a><a name="kanchor975"></a>If you want to use a port other than the default SNPP port, enter it in 
+ the <b><i>SNPP Port</i></b> box.<br /><br />Contact your pager provider for IP address, domain name, and SNPP port information. 
+  </li>
+                <li value="6">Click <b><i><a name="kanchor976"></a>Edit Message...</i></b> to edit the message that is sent to 
+ the pager.</li>
+                <li value="7">In the <i><b><a name="kanchor977"></a>Notifier Schedule</b></i> panel, choose the hours during which 
+ the page will be sent.</li>
+                <li value="8">When finished, click <b><i><a name="kanchor978"></a>OK</i></b>.</li>
+            </ol>
+            <p><b>Note:</b><a name="kanchor979"></a><a name="kanchor980"></a> InterMapper may not be able to reach
+your SNPP-based paging service via the Internet if your WAN
+circuits or routers are down. Be sure that you have a backup
+notification mechanism for failures to critical services. See the workaround in <a href="AlertViaCellPhone.htm#workaround">Alerts Via Cell Phone</a> for a possible approach.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

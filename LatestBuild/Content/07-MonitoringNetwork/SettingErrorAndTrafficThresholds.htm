@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Monitoring Your Network">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Setting Error and Traffic Thresholds</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1243"></a><a name="kanchor1244"></a><a name="kanchor1245"></a><a name="kanchor1246"></a><a name="kanchor1247"></a><a name="kanchor1248"></a><a name="kanchor1249"></a><a name="kanchor1250"></a><a name="kanchor1251"></a><a name="kanchor1252"></a><a name="kanchor1253"></a>Setting Error and Traffic Thresholds</h1>
+            <p><a name="kanchor1254"></a><a name="kanchor1255"></a>You can set device and traffic thresholds for devices and connections so 
+	you can view errors and traffic flows in a meaningful way. </p>
+            <p>You can set 
+	thresholds for packet loss and response time for all devices on a map. <a name="kanchor1256"></a><a name="kanchor1257"></a>You can also override default thresholds for a particular device.</p>
+            <p><a name="kanchor1258"></a>For devices, you can set thresholds for:</p>
+            <ul>
+                <li value="1"><b style="font-style: normal;">Timeout</b> - specify the number of seconds that indicates the device is down.</li>
+                <li value="2"><b>Number of lost packets</b> - specify a number of lost packets between 
+	 1 and 10 required to set a device to a down state.</li>
+                <li value="3"><b>Interface errors</b><a name="kanchor1259"></a> - specify the number of interface errors-per-minute 
+	 required to set a device to warning, alarm or critical state.</li>
+                <li value="4"><b>Short-term packet loss</b> - specify a number of packets out of the 
+	 last 100 required to set a device to warning, alarm, or critical state. 
+	 This metric is applicable only to packet-based probes. This statistic can 
+	 be viewed from the device's status window.</li>
+                <li value="5"><b>Response Time</b> - specify a response time in milliseconds required 
+	 to set a device to warning, alarm, or critical state. This statistic can be
+	 viewed from the device's status window.</li>
+            </ul>
+            <p>As stated above, these statistics can be seen in the device's status window.</p>
+            <h2>Setting Default Thresholds for a Map</h2>
+            <p><a name="kanchor1260"></a><a name="kanchor1261"></a>You can set default device and traffic thresholds for a map. Use the Map 
+	Settings window, available from the Edit menu, to set default thresholds.</p>
+            <h3 class="clearboth"><a name="kanchor1262"></a><a name="kanchor1263"></a>Setting Default Device Thresholds</h3>
+            <p><a name="kanchor1264"></a><a name="kanchor1265"></a><a name="kanchor1266"></a>Use the <b style="font-style: italic;">Device</b> section of the Map Settings window to set default 
+	device thresholds for a map so that errors for all devices are reported at 
+	the same levels.</p>
+            <div>
+                <img src="../Resources/Images/MapSettings-Device_575x246.png" border="0" style="width: 575;height: 246;" />
+            </div>
+            <p class="pagebreakbefore"><b>To set the default device thresholds for a map:</b>
+            </p>
+            <ol>
+                <li value="1"> In an editable map, choose <b><i>Map Settings</i></b> from the Edit menu. 
+	The Map Settings window appears.</li>
+                <li value="2"> In the left pane, click <b><i>Device</i></b>. The default 
+	thresholds for the map appear in the right pane.</li>
+                <li value="3"> Enter the settings you want to change, and click <b><i><a name="kanchor1267"></a>OK</i></b>. The 
+	map uses the new threshold settings.</li>
+            </ol>
+            <h3><a name="kanchor1268"></a><a name="kanchor1269"></a>Setting Default Traffic Thresholds</h3>
+            <p><a name="kanchor1270"></a><a name="kanchor1271"></a>Use the <b style="font-style: italic;">Traffic</b> section of the Map Settings window to set traffic 
+	thresholds for a map. You cannot set traffic thresholds for a specific device.</p>
+            <div>
+                <img src="../Resources/Images/MapSettings-Network_582x177.png" border="0" style="width: 582;height: 177;" />
+            </div>
+            <p><b>To set the default traffic thresholds for a map:</b>
+            </p>
+            <ol>
+                <li value="1"> In an editable map, choose <b><i>Map Settings</i></b> from the Edit menu. 
+	 The Map Settings window appears.</li>
+                <li value="2"> In the left pane, click <b><i>Traffic</i></b>. The current 
+	 traffic thresholds for the map appear in the right pane.</li>
+                <li value="3"> Enter the settings you want to change, and click <b><i>OK</i></b>. The 
+	 map uses the new threshold settings.<br /><br /></li>
+            </ol>
+            <p>For more information on traffic threshold settings, see<a href="../04-Creating_Maps/mapsettings.html"> Map Settings Window</a>.</p>
+            <h2 class="pagebreakbefore">Setting Thresholds for a Specific Device</h2>
+            <p>You can set device thresholds for a specific device, with different values 
+	than the default map settings. You cannot set traffic thresholds for a specific 
+	network or link.&#160;You do this from the Info window.</p>
+            <p><b>Note:</b> When setting thresholds for a probe group, you can set the thresholds only for an individual probe, or use the Map's default settings. For more information, see <a href="#probegroups">Setting Thresholds for Probe Groups<a href="#probegroups" class="MCXref xref ">{}</a></a> below.</p>
+            <p>
+                <img src="../Resources/Images/Thresholds-device_578x285.png" style="width: 578;height: 285;" />
+            </p>
+            <p><b>Note:</b><a name="kanchor1272"></a><a name="kanchor1273"></a><a name="kanchor1274"></a> Only SNMP probes have thresholds for all three parameters (response 
+	time, packet loss and interface errors); a ping/UDP-based probe monitors only response time and packet loss, and a TCP probe monitors only response 
+	time.<br /></p>
+            <p><b>To set the device thresholds for a specific device:</b>
+            </p>
+            <p class="floatright">&#160;</p>
+            <ol>
+                <li value="1">With the map in Edit mode, right-click a device and choose <b style="font-style: italic;">Info window</b>, or choose <b style="font-style: italic;">Info window</b> from the Monitor menu. The Info window appears.</li>
+                <li value="2"><a name="kanchor1275"></a>In the Info window, click <b>Thresholds.</b> The Thresholds 
+	 pane appears.</li>
+                <li value="3">Clear the <b><i>Use Map Defaults</i></b> check box.</li>
+                <li value="4">If you want to suppress alerts for the device when it goes down, select the <b style="font-style: italic;">Ignore Outages</b> check box.<br /><br /><b>Note:</b> The <b style="font-style: italic;">Ignore Outages</b> check box suppresses alerts only with respect to outages, not to other state changes, thresholds, or to any alerts triggers by probes attached to the device. This is useful if a device such as a laptop or mobile device goes up or down (or leaves the network completely) as part of its normal operation.<br /><br /></li>
+                <li value="5">Enter new values in the boxes you want to change, and click <b><i>OK</i></b> or <b style="font-style: italic;">Apply</b>. 
+	 The selected device uses the new values.</li>
+            </ol>
+            <h2>Setting Thresholds for Probe Groups <a name="probegroups"></a></h2>
+            <p>When setting thresholds for a probe group, you can set the thresholds only for an individual probe, or use the Map's default settings. </p>
+            <p>To set thresholds for a probe group:</p>
+            <ol>
+                <li value="1">Double-click a probe group. The Info window for the probe group appears.</li>
+                <li value="2">In the left pane of the Info window, click <b style="font-style: italic;">Probes</b>. A list of probes in the probe group appears.</li>
+                <li value="3">Right-click (or Ctrl-click) the probe for which you want to set thresholds, and choose <b style="font-style: italic;">Info Window</b>. The Info window for the selected probe appears.</li>
+                <li value="4">In the left pane, click <b style="font-style: italic;">Thresholds</b>. The threshold settings for the selected probe appear.</li>
+                <li value="5">Clear the <b style="font-style: italic;">Use Map Defaults</b> box, then set the thresholds as needed and click <b style="font-style: italic;">OK</b>. The thresholds for the selected probe are set.</li>
+                <li value="6">Continue setting thresholds for each probe as needed, then click <b style="font-style: italic;">OK</b>&#160;in the probe group's Info window.</li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

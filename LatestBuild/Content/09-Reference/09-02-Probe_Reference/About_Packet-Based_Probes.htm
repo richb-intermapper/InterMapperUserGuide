@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Probe Reference">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Packet-Based Probes</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor2659"></a>About Packet-Based Probes</h1>
+            <h2><a name="kanchor2660"></a>Packet-based Test Procedure</h2>
+            <p> Whenever InterMapper tests a packet-based device, it uses the following procedure:
+</p>
+            <ol>
+                <li value="1"><a name="kanchor2661"></a><a name="kanchor2662"></a> InterMapper sends the appropriate probe packet (ping, SNMP get-request, 
+ DNS query, etc.) 
+  </li>
+                <li value="2"><a name="kanchor2663"></a> InterMapper waits the timeout interval specified for the particular device. 
+  </li>
+                <li value="3"> If a response arrives, InterMapper examines its contents and sets the device 
+ status based on that response 
+  </li>
+                <li value="4"> However, if no response arrives, InterMapper sends another probe packet 
+  </li>
+                <li value="5"> The above procedure is repeated until a response arrives or the specified 
+ number of probes has been sent 
+  </li>
+                <li value="6"><a name="kanchor2664"></a> If no response has arrived after the final timeout, InterMapper sets the 
+ device status to Down. 
+  </li>
+                <li value="7"> In any event, the device is scheduled to be tested again at a time set 
+ by the map's (or the device's) poll interval. 
+</li>
+            </ol>
+            <p><a name="kanchor2665"></a> The default timeout is three seconds, with a default probe count of three 
+ seconds. Consequently, InterMapper will take nine seconds to declare a device 
+ is down (three probes, waiting three seconds each). Both the timeout and the 
+ number of probes can be set for each device. 
+</p>
+            <p> This often gives rise to 21 second or 51 second outages. What's happening 
+ here is that the device fails to respond to one set of probes (for example, 
+ after nine seconds), but responds immediately at the next poll 30 or 60 seconds 
+ later. This gives an outage duration to be (30-9=21) seconds or (60-9=51) seconds. 
+</p>
+            <h2>Shared Polling in Ping/Echo and SNMP Probes</h2>
+            <p>You may have created different maps that poll the same device. For Ping/Echo and SNMP probes (built-in or custom), InterMapper polls a device only once if it is considered to be the same device, and shares the response among all the maps that poll that device. </p>
+            <p>This happens automatically, and there are no user-controllable parameters.</p>
+            <p>In order for two mapped devices to be considered the same and share the results of a single probe, the following characteristics of the mapped device must be identical:</p>
+            <ul>
+                <li value="1">Probe Type
+</li>
+                <li value="2">Address
+</li>
+                <li value="3">Port
+</li>
+                <li value="4">Poll Interval
+</li>
+                <li value="5">Timeout
+</li>
+                <li value="6">Max tries
+</li>
+                <li value="7">Display Unnumbered Interfaces, Ignore
+Discards, Ignore Errors, Allow Periodic Reprobe</li>
+                <li value="8">SNMP&#160;Version and read-only community string
+</li>
+                <li value="9">Number, name, and value of probe parameters
+</li>
+                <li value="10">SNMPv3 authentication information</li>
+            </ul>
+            <p>For SNMP probes, the following flags in the probe file must be identical. (this is nearly always the case, as it is implied by the probe type, but is still checked explicitly):</p>
+            <ul>
+                <li value="1">MINIMAL
+</li>
+                <li value="2">NOLINKS
+</li>
+                <li value="3">LINKCRITICAL
+</li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

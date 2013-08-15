@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Probe Reference">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Probe Reference Overview</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2" data-mc-conditions="Primary.online">Probe Reference Overview</h1>
+            <p><a name="kanchor2613"></a><a name="kanchor2614"></a><a name="kanchor2615"></a><a name="kanchor2616"></a>Use the Probe Picker window to choose the probe you want to use to query 
+ the device.</p>
+            <p style="text-align: center;font-style: italic;">
+                <img src="../../Resources/Images/window-SetProbe.png" />
+                <br />Set Probe Window</p>
+            <h2>Using the Probe Selection Window</h2>
+            <ul>
+                <li value="1">Click plus (+) in the left pane to expand a probe 
+ group.</li>
+                <li value="2">Click minus (-) in the left pane to collapse a probe 
+ group.</li>
+                <li value="3">Click a probe in the left pane to choose the probe. 
+ Information about the probe and controls for setting any available parameters 
+ appear in the right frame.</li>
+                <li value="4">Click <b><i><a name="kanchor2617"></a>Default</i></b> to set the probe back 
+ to default setting for that probe type.</li>
+            </ul>
+            <h2 class="pagebreakbefore"><a name="kanchor2618"></a>About the Probes</h2>
+            <p><a name="kanchor2619"></a>InterMapper comes with a large number of built-in probes. For a full index and detailed descriptions of built-in probes, see the <a href="ProbeReference/Probe_Index.htm">Probe Index</a>.</p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;"><a href="ProbeReference/Basic.htm">Basic 
+ Probes</a></b> - use the Basic probes to cover the majority of your 
+ needs for probing devices.</li>
+                <li value="2"><b><a href="ProbeReference/SNMP.htm">SNMP Probes</a></b>- use the SNMP probes to perform a wide variety of queries 
+ on SNMP devices.</li>
+                <li value="3"><b style="font-weight: bold;"><a href="ProbeReference/Network_Devices.htm">Network 
+ Devices</a></b><a name="kanchor2620"></a> - Use the network device probes to query network devices, such as routers, switches and UPS units.</li>
+                <li value="4"><b style="font-weight: bold;"><a href="ProbeReference/Servers_Standard.htm">Servers-Standard</a></b> 
+ - use these probes to query various devices using one of many Standard 
+ protocols.</li>
+                <li value="5"><b style="font-weight: bold;"><a name="kanchor2621"></a><a href="ProbeReference/Servers_Proprietary.htm">Servers-Proprietary</a></b> 
+ - use these probes to query various devices using one of many Proprietary 
+ protocols.</li>
+                <li value="6"><b style="font-weight: bold;"><a href="ProbeReference/Miscellaneous.htm">Miscellaneous 
+ Probes</a></b><a name="kanchor2622"></a><a name="kanchor2623"></a><a name="kanchor2624"></a><a name="kanchor2625"></a><a name="kanchor2626"></a><a name="kanchor2627"></a><a name="kanchor2628"></a><a name="kanchor2629"></a><a name="kanchor2630"></a><a name="kanchor2631"></a><a name="kanchor2632"></a> - use these probes for a variety of uses. You can find 
+ the Demo, Non-Polling, and TCP Check probes. You can also find the Legacy 
+ probes (included to support older maps) and the template for developing 
+ Nagios and Command-line probes.</li>
+                <li value="7"><b><a href="ProbeReference/Wireless.htm"><b>Wireless Probes</b></a></b> - Use these probes to get vendor-specific information from a number of wireless devices.</li>
+                <li value="8"><b><a href="ProbeReference/WMI.htm">WMI Probes</a></b> - If InterMapper is installed on a Windows machine, use these probes to get detailed information from Windows workstations through the Windows Management Instrumentation (WMI) interface.</li>
+            </ul>
+            <h2><a name="timeout"></a>Packet-based probes</h2>
+            <p><a name="kanchor2633"></a><a name="kanchor2634"></a><a name="kanchor2635"></a><a name="kanchor2636"></a><a name="kanchor2637"></a>Probes such as "Ping/Echo", "SNMP MIB-II", "NNTP" 
+ and "RADIUS" send UDP packets to the device being 
+ tested and await a correctly formatted response. </p>
+            <ul>
+                <li value="1">For more information on packet-based probes, see 
+ <a href="About_Packet-Based_Probes.htm">About Packet-based Probes</a> 
+ and            <a href="ProbeReference/Network_Devices.htm">Network Device Probes</a>.</li>
+            </ul>
+            <h3><a name="kanchor2638"></a><a name="kanchor2639"></a>Probe timeout period</h3>
+            <p>The timeout period for waiting is configured by choosing <b><i><a name="kanchor2640"></a>Set Timeout</i></b><a name="kanchor2641"></a><a name="kanchor2642"></a> 
+ from the Set Probe Info submenu. If no response is received within the 
+ timeout period, InterMapper tries again by sending another request packet. 
+ This process is repeated until either a response is received, or the number 
+ of requests sent exceeds the "Number of Lost Packets" threshold 
+ set for the map (a default of 3). </p>
+            <h3>Response packet integrity</h3>
+            <p>All packet-based probes check the integrity of the response they receive, 
+ and some can set the status of the device (<i><a name="kanchor2643"></a>Alarm</i>,            <i><a name="kanchor2644"></a>Warning</i>, 
+ or            <i><a name="kanchor2645"></a>OK</i>) based on the severity of a problem.</p>
+            <h2><a name="kanchor2646"></a>TCP-based probes</h2>
+            <p><a name="kanchor2647"></a><a name="kanchor2648"></a><a name="kanchor2649"></a>Probes like "HTTP", "SMTP", and "LDAP" 
+ and others test the ability of a server to accept a TCP connection on 
+ a specific listening port, and to respond to a scripted interchange. </p>
+            <ul>
+                <li value="1">For more information on TCP-based probes see <a href="ProbeReference/Servers_Standard.htm"> 
+      Server Probes - Standard </a>.</li>
+            </ul>
+            <h3>What happens in a TCP-based interchange</h3>
+            <ol>
+                <li value="1">InterMapper first attempts to connect to the specified 
+ port at the device's address. </li>
+                <li value="2"><a name="kanchor2650"></a>If this connection attempt fails, InterMapper shows 
+ the device in the DOWN state. <br /><br /><a name="kanchor2651"></a>If InterMapper successfully connects to the listening port, InterMapper 
+ sends protocol-specific commands through the TCP connection to test the 
+ server's responses and compare them to expected values. </li>
+                <li value="3"><a name="kanchor2652"></a>InterMapper changes the status of the device (e.g. 
+ ALARM, WARNING, OKAY, DOWN) if an error condition is detected, or if the 
+ execution of InterMapper's probe is interrupted for any reason. </li>
+                <li value="4">If InterMapper doesn't receive a proper response 
+ for 60 seconds, or if the TCP connection is lost while waiting for a response, 
+ the InterMapper probe will set status of the device to the proper condition.</li>
+            </ol>
+            <h2><a name="kanchor2653"></a>Miscellaneous Probes</h2>
+            <p>InterMapper has several "miscellaneous probes", described 
+ briefly below. They are described in detail in <a href="ProbeReference/Miscellaneous.htm">Miscellaneous 
+ Probes</a>.</p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;">Demo probe</b> - Use 
+ this probe to create demonstration maps, which simulate a network and 
+ its activity.</li>
+                <li value="2"><b style="font-weight: bold;">Legacy probes</b> - 
+ These probes that have been superceded by other probes. They are included 
+ to support older maps.</li>
+                <li value="3"><b style="font-weight: bold;">Nagios</b><a name="kanchor2654"></a><a name="kanchor2655"></a><a name="kanchor2656"></a> - Use the 
+ Nagios probe type to select plugins from the Nagios monitoring system. 
+ InterMapper can use these plugins to test devices. For more details, see 
+ the Nagios Plugins page in the <a href="http://dartware.com/go.php?to=intermapper.devguide" target="_blank">Developer Guide</a>.</li>
+                <li value="4"><b style="font-weight: bold;"><a name="kanchor2657"></a>Non-polling probe</b> 
+ - Choose this probe so that the selected device is not probed.</li>
+                <li value="5"><b>Prototype SNMP&#160;probe</b> - Use this probe as the basis for creating custom SNMP&#160;probes.</li>
+                <li value="6"><b style="font-weight: bold;">TCP Check probe</b><a name="kanchor2658"></a> 
+ - Use this probe to monitor the number of TCP connections to an SNMP-enabled 
+ device and to send an alarm when a specified number of connections is exceeded.</li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

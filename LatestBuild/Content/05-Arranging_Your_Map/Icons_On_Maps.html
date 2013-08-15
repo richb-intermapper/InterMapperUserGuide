@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Arranging Your Map">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Icons on Maps</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor506"></a><a name="kanchor507"></a>Icons and Images on Maps</h1>
+            <p>InterMapper can display devices on a map in one of several <i>shapes.</i> 
+	The default shape is a rectangle, with the device's                    <i><a name="kanchor508"></a>Label</i> inside. InterMapper 
+	can also display an oval, a wire (a straight line), a cloud, a text object 
+	which can be used as a legend on a map, or as an icon. </p>
+            <p>A large number of built-in icons are provided with InterMapper. It is also 
+	very straightforward to import your own icons.</p>
+            <h2><a name="kanchor509"></a><a name="kanchor510"></a>Setting an Object's Icon</h2>
+            <p><a name="kanchor511"></a>To set an icon, select one or more items on the map, then choose <b><a name="kanchor512"></a>Format 
+		 &gt; Icon...</b><a name="kanchor513"></a><a name="kanchor514"></a> This opens the Select an Icon window. This window 
+		 has several components: </p>
+            <p class="floatright">
+                <img src="../Resources/Images/icons-builtin_350x340.png" style="border-style: none;width: 350;height: 340;" border="0" />
+                <br /><a name="kanchor515"></a><i>Select an Icon window - Built-in Shapes</i>
+            </p>
+            <ul>
+                <li value="1">A drop-down menu lists collections of icons called 
+			<i><a name="kanchor516"></a>Icon Sets.</i> There are several built-in icon sets, including                <i><a name="kanchor517"></a>Traditional</i> 
+			and                    <i>Default icons</i> sets, and various Cisco-themed icon sets.. </li>
+                <li value="2">A scrolling list on the left shows icons from the 
+			selected icon set. These icons appear at a uniform size in the list. 
+			Click one of these icons to use it for the selected device(s) on the 
+			map.<br /><b>Note:</b><a name="kanchor518"></a><a name="kanchor519"></a> Grayscale custom icons appear shaded with the color of 
+			a device when it is in the UP state (the default is green.)<br /></li>
+                <li value="3">A preview pane of the icon, showing the selected icon 
+			in the size it will appear on the map. </li>
+                <li value="4">Color preview buttons. The green, yellow, orange, 
+			and red buttons correspond to the different device states. Click a 
+			colored button to view the icon's appearance when it is in the indicated state.</li>
+            </ul>
+            <p class="pagebreakafter">&#160;</p>
+            <p class="floatright" style="clear: both;">
+                <img src="../Resources/Images/icons-colorful_356x390.png" style="width: 356;height: 390;" />
+                <br /><a name="kanchor520"></a><i>Select an Icon window - Default Icons</i>
+            </p>
+            <ul>
+                <li value="1">Below the <b><i>Reload</i></b><a name="kanchor521"></a> button is Information 
+			about the icon: its filename, dimensions, and file size. </li>
+                <li value="2">Click the <i><b>Refresh</b></i> button (as shown) to force InterMapper 
+			to reload the image, perhaps after modification in an image editing 
+			program. </li>
+                <li value="3">Click the <b><i>Import</i></b> button (as shown) to import an 
+			icon or a folder of icons into InterMapper. These icons are sent to 
+			the                    <i><a name="kanchor522"></a>InterMapper Settings &gt; Custom Icons</i> folder on the InterMapper 
+			server. </li>
+                <li value="4">Click the <b style="font-style: italic;">Refresh</b> button to refresh the list of icons.</li>
+                <li value="5">Drag an image file to the window to import it into the current icon-set.</li>
+                <li value="6"><a name="kanchor523"></a>Drag a folder of image files to the window to create a new icon-set, 
+			importing the image files in the folder to the new icon-set.</li>
+                <li value="7"><a name="kanchor524"></a>If the Icon Size slider appears, use it to select the icon's size.</li>
+            </ul>
+            <h2 class="pagebreakbefore"><a name="kanchor525"></a><a name="kanchor526"></a>Icon Coloring According to the Device Status</h2>
+            <p class="floatright">
+                <img src="../Resources/Images/iconcolors.png" />
+            </p>
+            <p>InterMapper colors the icon depending on its status. When in the <b style="font-style: italic;">Up</b>
+status, the icon retains its normal color. (Grayscale icons are tinted green.) If the icon goes to a warning, 
+ alarm, or down status (yellow, orange, or red, respectively) InterMapper shows a grayscale version, tinted to match the device's state. 
+</p>
+            <p>Clicking the color preview buttons changes the color to show how the 
+ icon appears on the map in a given status.</p>
+            <h2><a name="fileformats"></a><a name="kanchor527"></a><a name="kanchor528"></a>Creating Custom Icon Files</h2>
+            <p>Icons files can be saved in one of several common graphic formats:</p>
+            <ul>
+                <li value="1"><a name="kanchor529"></a><a name="kanchor530"></a>Portable Network Graphics (PNG) - recommended - works with all operating 
+ systems and platforms. </li>
+                <li value="2"><a name="kanchor531"></a><a name="kanchor532"></a>Joint Photographic Experts Group (JPEG) - works with all operating systems 
+ and platforms. </li>
+                <li value="3"><a name="kanchor533"></a>Graphic Interchange Format (GIF) - works with all operating systems 
+ and platforms.</li>
+            </ul>
+            <p>Other graphics file formats may work for you, but aren't guaranteed to appear 
+ properly on all platforms. </p>
+            <p><a name="kanchor534"></a>The recommended file format is a PNG file, saved at 72 pixels per inch, 
+ with 256 colors. You should use transparency for the area surrounding 
+ the icon, so the background color shows through properly. </p>
+            <p>If the icon's filename has a suffix of "_##" where "##" 
+	is a number representing the size in pixels, the icons are grouped automatically, 
+	and the icon size slider appears.</p>
+            <h2><a name="arbitrary"></a>Placing arbitrary icons and images in maps</h2>
+            <p>Any icon or image can be placed in a map. Before you can place an image in a map, you must import it as an icon.</p>
+            <p><b>To place an image or icon in a map:</b>
+            </p>
+            <ol>
+                <li value="1">If the image has not yet been imported as an icon, import it now.</li>
+                <li value="2">From the Insert menu, choose <b style="font-style: italic;">Icon...</b> The Select an Icon window appears.</li>
+                <li value="3">Choose the icon or image you want to insert and click <b style="font-style: italic;">OK</b>. The icon or image appears in the map.</li>
+                <li value="4">Move the icon or image to a desired location on the map.</li>
+            </ol>
+            <p><b>Note:</b> When you place an icon on a map, a network oval is added to the map, and the icon assigned to it. You can edit the network as you would any other network, changing the icon or label, or adding a comment or subnet list.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

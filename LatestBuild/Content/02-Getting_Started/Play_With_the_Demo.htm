@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Play With the Demo</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor137"></a><a name="kanchor138"></a><a name="kanchor139"></a>Try out the Demo Maps</h1>
+            <p><a name="kanchor140"></a><a name="kanchor141"></a>The first time InterMapper launches, it will open a Demo Map file that 
+ shows simulated network activity: outages, high traffic, and other problems 
+ that you'd see in a real network. (Although not as frequently, we hope...) 
+ </p>
+            <p>The image below shows a portion of an example map with a number of devices 
+ (rectangles) connected by various kinds of links (lines). Here are some tips 
+ to help you understand the various items on the map:</p>
+            <p class="floatright">
+                <img src="../Resources/Images/WelcomeMap_324x390.png" style="border-style: none;width: 324;height: 390;" border="0" />
+            </p>
+            <ul>
+                <li value="1">Devices are displayed in <b>green</b> to indicate that the 
+ device is up and running. </li>
+                <li value="2">Devices that are down <b>blink red</b> when InterMapper 
+ cannot communicate with them. </li>
+                <li value="3"><b style="font-weight: bold;">Click and hold</b> a device 
+ to see a status window of detailed information and outage history, or <b>Right/Ctrl-click</b> it and choose <b style="font-style: italic;">Status Window</b> from the dropdown menu.</li>
+                <li value="4">You can <b>tear off</b> these status windows to keep them 
+ open by dragging the mouse outside their boundary. </li>
+                <li value="5">You'll hear <b>sounds</b><a name="kanchor142"></a> to indicate that there have been 
+ failures. (InterMapper can send e-mail or pages, too!) To silence these 
+ alarms, choose      <b><a name="kanchor143"></a>Preferences...</b> from the      <b>Edit</b> menu, click the <b style="font-style: italic;">Sounds</b> subcategory of the <b style="font-style: italic;">Behavior</b> category and clear the <b style="font-style: italic;">Play sound notifications</b> check box.</li>
+                <li value="6">Lines (<i>links</i>) show      <b>dotted lines</b> (<i>ants</i>) <a name="kanchor144"></a>when traffic exceeds a threshold </li>
+                <li value="7">Links get a <b>yellow or orange background</b> when traffic 
+ exceeds 50% or 90%, respectively. </li>
+                <li value="8"><b style="font-weight: bold;">Circles at the ends of links</b> 
+      (they look like raindrops in puddles) indicate errors that have been detected 
+ by the interface. </li>
+                <li value="9"><b>Circles close to the device</b> indicate receive errors.</li>
+                <li value="10"><b> Circles close to the network</b> indicate transmit errors. </li>
+                <li value="11"><b style="font-weight: bold;">Click and hold on a link</b><a name="kanchor145"></a> 
+      to see a status window of port/interface information and traffic statistics, or <b>Right/Ctrl-click</b> it and choose <b style="font-style: italic;">Status Window</b> from the dropdown menu.
+    </li>
+            </ul>
+            <p>In addition, there are other things you may note on the map as it operates:</p>
+            <ul>
+                <li value="1">Some devices become dim from time to time. That's because 
+ they're being <i>shadowed</i> by another failure on the map. We also say 
+ that those shadowed devices      <i>depend</i> on all the devices on the path 
+ to it. InterMapper can automatically detect this state and will avoid notifying 
+ the network manager about outages if the dependent devices are unreachable 
+ because of the other failure. </li>
+                <li value="2">On several of the demo maps, a star appears on a device. That means that it's the <i><a name="kanchor146"></a>Vantage Point</i> for "shadowing". 
+ InterMapper will suppress notifications for a device if it's not possible 
+ to reach the device from the Vantage Point without going through a failed 
+ device. (It's in the "shadow" of a failed device.")</li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

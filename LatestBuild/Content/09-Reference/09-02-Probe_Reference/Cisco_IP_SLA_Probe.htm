@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Probe Reference">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Cisco IP SLA Probe</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Cisco IP SLA Probe</h1>
+            <p>IP SLA uses active traffic monitoring - the generation of traffic in a continuous, reliable, and predictable manner - for measuring network performance edge-to-edge over a network. The traffic generated simulates network applications like VoIP and video conferencing, and collects network performance information in real time. The information collected includes data about jitter (interpacket delay variance), latency, and packet loss.</p>
+            <p>Cisco IP SLA is supported on most IOS-based Cisco routers and switches. IP SLA was previously known as Service Assurance Agent (SAA).</p>
+            <p>You can easily configure your Cisco routers and switches to be IP SLA agents or IP SLA responders. An agent initiates IP SLA tests to a remote responder. A particular agent can have multiple IP SLA tests running to many remote responders. A particular router or switch can be both an agent and a responder. For each IP SLA test that has been configured the agent collects edge-to-edge network performance information and stores it in the Cisco RTTMON MIB. </p>
+            <h2>The InterMapper IP SLA Probe</h2>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/CiscoIP-SLAprobe-statuswindow.png" style="border-style: none;" border="0" />
+            </p>
+            <p style="text-align: center;font-style: italic;">IP SLA&#160;Jitter probe output in Status window</p>
+            <p>The InterMapper Cisco IP SLA Jitter probe uses SNMP to collect the information from the RTTMON MIB in the agent, allowing you to alarm jitter, latency, and packet loss, and to chart these values. You can <a href="http://download.dartware.com/contrib/probes/ca.ubc.snmp.cisco-ip-sla.txt.zip">download a .zip</a> of the probe.</p>
+            <p>The InterMapper Cisco <em>IP SLA Probe</em> is particularly useful for monitoring and measuring QoS for VoIP and video conferencing applications. However, it is useful in many other contexts including:</p>
+            <ul>
+                <li value="1">Service level agreement monitoring, measurement, and verification.</li>
+                <li value="2">IP network health assessment</li>
+                <li value="3">Troubleshooting of network operation</li>
+            </ul>
+            <h2>Documentation</h2>
+            <p>An <a href="http://download.dartware.com/contrib/probes/Cisco_IP_SLA_Probe_Users_Guide.doc"><em>IP SLA Probe User Guide</em></a> describes how to set up the IP SLA testing between two Cisco routers/switches and how to configure the InterMapper probe to monitor the values.</p>
+            <p>This page shows a sample Status Window for the probe. You can also see a <a href="http://gallery.dartware.com/main.php?g2_view=core.DownloadItem&amp;g2_itemId=109&amp;g2_serialNumber=2" target="_blank">screenshot with several graphs from a live installation.</a></p>
+            <p>Extensive documentation about IP SLA and how to configure IP SLA is available on the <a href="http://cisco.com/en/US/tech/tk920/tsd_technology_support_sub-protocol_home.html">Cisco web site.</a></p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

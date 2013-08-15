@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Server Settings|Server Configuration Panels">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Configuring a Firewall</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1850"></a><a name="kanchor1851"></a><a name="kanchor1852"></a><a name="kanchor1853"></a><a name="kanchor1854"></a><a name="kanchor1855"></a><a name="kanchor1856"></a>Configuring a Firewall</h1>
+            <p><a name="kanchor1857"></a><a name="kanchor1858"></a>For each built-in server, the Firewall list shows all the addresses that 
+	are allowed to connect or are blocked:</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/serversettings-firewallconfig.png" />
+            </p>
+            <ul>
+                <li value="1"><a name="kanchor1859"></a><a name="kanchor1860"></a><a name="kanchor1861"></a>If an incoming address matches an <i>Allow </i>address (or range), the connection 
+ is allowed. </li>
+                <li value="2">If the incoming address matches a <i><a name="kanchor1862"></a><a name="kanchor1863"></a>Deny </i>address, the connection is 
+ dropped. </li>
+                <li value="3">Firewall definitions are checked against the incoming address in the order 
+ in which they appear.</li>
+            </ul>
+            <h2>Changing the order of a firewall definition</h2>
+            <p>Firewall definitions are applied in the order in which they appear. You can 
+ change the order of the definitions after you have created them.</p>
+            <p><b><a name="kanchor1864"></a><a name="kanchor1865"></a>To move a firewall definition to a different position in the list:</b>
+            </p>
+            <ul>
+                <li value="1"><a name="kanchor1866"></a><a name="kanchor1867"></a>Click and drag the firewall definition to the new position.</li>
+            </ul>
+            <h4><a name="addressranges"></a><a name="kanchor1868"></a><a name="kanchor1869"></a><a name="kanchor1870"></a><a name="kanchor1871"></a>Entering Address Ranges</h4>
+            <p><a name="kanchor1872"></a><a name="kanchor1873"></a><a name="kanchor1874"></a>You can enter addresses in the access control list in three different formats:</p>
+            <ul>
+                <li value="1"><b><a name="kanchor1875"></a>Fully-specified IP addresses</b>
+                    <br />Example: <span class="code"><b>192.168.1.10</b></span></li>
+                <li value="2"><b>Address ranges</b>
+                    <br />Example:<span class="code"><b>192.168.1.1-31</b></span>. This 
+ specifies any device in the range <span class="code">192.168.1.1</span> 
+    to <span class="code">192.168.1.31</span>.</li>
+                <li value="3"><b>Addresses with a "*" wildcard </b>Each wildcard corresponds to a range 
+ of 0-255. <br />Example: <span class="code"><b>192.168.1.*</b></span> (equivalent to <span class="code">192.168.1.1-255</span>) <br />Example: <b><span class="code">192.168.*.*</span></b> (Class B range)<br />Example: <span class="code"><b>*.*.*.* </b>("all addresses")</span></li>
+            </ul>
+            <p><b>Tip:</b><a name="kanchor1876"></a><a name="kanchor1877"></a> To deny access to certain addresses, add them at the top of the 
+	list and set the      <i><b>Access </b></i>attribute to "Deny".</p>
+            <p><a name="kanchor1878"></a>For a description of the Access Control process and the rules InterMapper uses 
+ to determine whether a user should be allowed to connect to an InterMapper server, 
+ see the <a href="accesscontrol.html">Server Access Control</a> page.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

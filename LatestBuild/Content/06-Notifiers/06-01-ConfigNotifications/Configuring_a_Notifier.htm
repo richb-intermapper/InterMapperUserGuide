@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Configuring a Notifier</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2" data-mc-conditions="Primary.online">Configuring A Notifier</h1>
+            <p><a name="kanchor770"></a><a name="kanchor771"></a><a name="kanchor772"></a><a name="kanchor773"></a><a name="kanchor774"></a><a name="kanchor775"></a>A notifier has four attributes: </p>
+            <ul>
+                <li value="1">A <i><a name="kanchor776"></a>notifier name</i>.</li>
+                <li value="2">The <i>type </i>of notification to send</li>
+                <li value="3">A <i>schedule</i> of hours during which the notification 
+	 should be sent</li>
+                <li value="4">A set of <i>parameters</i><a name="kanchor777"></a> determined by the notification type. This is 
+	 the information required to allow the notification to be sent. For example, 
+	 an E-mail notifier requires a valid E-mail address.</li>
+            </ul>
+            <p><b style="font-weight: bold;"><a name="configurenotifier"></a>To configure 
+	a notifier:</b>
+            </p>
+            <ol>
+                <li value="1">Enter a notifier <i>name</i> in the            <b><i>Name</i></b> box</li>
+                <li value="2">In the <b><i><a name="kanchor778"></a>Notifier Type</i></b> dropdown menu, choose a 
+	 notifier type.</li>
+                <li value="3"><a name="kanchor779"></a>In the Configuration panel, enter configuration information 
+	 for the selected notifier type. </li>
+                <li value="4">In the <b><i><a name="kanchor780"></a>Scheduled Hours </i></b>panel, choose the hours 
+	 during which the notifier is active.</li>
+                <li value="5">Click <b><i><a name="kanchor781"></a>Test Notifier</i></b> to send a test notification.</li>
+                <li value="6"><a name="kanchor782"></a><a name="kanchor783"></a><a name="kanchor784"></a>Close the Configure Notifier window.</li>
+            </ol>
+            <p style="font-style: italic;text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-email_556x322.png" style="width: 556;height: 322;" />The Configure Notifier window.</p>
+            <ul>
+                <li value="1">Use the left side of the window to choose the <i>type</i> 
+	  of notification, and to set the notifier parameters. </li>
+                <li value="2">Use the right side of the window edit the <i>schedule</i> 
+	  during which the notification can be sent.</li>
+            </ul>
+            <p>When you select the type of notifier from the <b><i>Notifier Type</i></b> 
+	dropdown menu, the left pane changes to show the parameters required for the 
+	selected notifier type. </p>
+            <h3><a name="removenotifier"></a><a name="kanchor785"></a>Removing a Notifier</h3>
+            <p><a name="kanchor786"></a><a name="kanchor787"></a><a name="kanchor788"></a>You can remove a notifier from the Notifier List window.</p>
+            <p><b style="font-weight: bold;">To remove a notifier:</b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor789"></a>From the Edit menu, choose <b><i><a name="kanchor790"></a>Server Settings...</i></b><a name="kanchor791"></a> 
+	  The Server Settings window appears, with a list of settings in the left 
+	 pane.</li>
+                <li value="2"><a name="kanchor792"></a>From the Server Configuration section of the settings list, choose 
+	  <b><i>Notifier List</i></b>. The Notifier List window appears.</li>
+                <li value="3">Click to select the notifier you want to remove.</li>
+                <li value="4">Click <b><i>Remove... </i></b>A confirmation dialog appears.</li>
+                <li value="5">Click <b><i>Yes</i></b>. The selected notifier disappears 
+	 from the Notifier List. </li>
+            </ol>
+            <h2><a name="kanchor793"></a>Configure Notifier Window Reference</h2>
+            <h3>Name</h3>
+            <p>Enter a name in the Name box. The name can be any can be any descriptive 
+	text string. </p>
+            <p><i style="font-style: italic;">Tip: </i>If the notifier is active only at 
+	certain times of the day or week, you may want to include a description of 
+	the time period as well. For example, you could assign names like "Weekend 
+	Pager" and "Second Shift Pager" to notifiers that had those 
+	time schedules.</p>
+            <h3>Notifier Type</h3>
+            <p>From the Configure Notifier window's <b><i>Notifier Type</i></b> dropdown menu, 
+	choose a notifier type. For more information, see            <a href="../NotifierOverview.htm#notifiertypes">Notifier 
+	Types</a> at the top of this topic.</p>
+            <h3>Scheduled Hours</h3>
+            <p>Select a range of hours during which this notification should be sent. </p>
+            <ul>
+                <li value="1">Active hours are shown in gray.</li>
+                <li value="2">Inactive hours are shown in white.</li>
+            </ul>
+            <p><b style="font-weight: bold;">To set a range of hours:</b>
+            </p>
+            <ul>
+                <li value="1">Click and drag across a range of hours.</li>
+                <li value="2">Click and drag across all blocks to invert the selection.</li>
+            </ul>
+            <p><b style="font-weight: bold;">To add or remove hours from the schedule:</b>
+            </p>
+            <ul>
+                <li value="1">Click an individual cell to make it active or inactive. 
+	</li>
+            </ul>
+            <p><b style="font-weight: bold;">To activate or deactivate all hours in the 
+	schedule:</b>
+            </p>
+            <ul>
+                <li value="1">Double-click the <i><b><a name="kanchor794"></a>Active Hours </b></i>legend to activate 
+	 all hours in the schedule.</li>
+                <li value="2">Double-click the <i><b><a name="kanchor795"></a>Inactive Hours</b></i> legend to 
+	 de-activate all hours in the schedule.</li>
+            </ul>
+            <p class="pagebreakbefore"><b>To edit the message sent with the notification:</b>
+            </p>
+            <ul>
+                <li value="1">Click <i><b><a name="kanchor796"></a>Edit Message...</b></i> The            <a href="../NotifierOverview.htm">E-mail 
+	 Notification page</a> shows the editing interface.<br /><br /><b>Note:</b> You can also use InterMapper variables and Javascript to insert information dynamically into a notifier message or subject. For more information, see <a href="../../05-Arranging_Your_Map/Dynamic_Label_Text.htm">Dynamic Label &amp; Alert Text<a href="../../05-Arranging_Your_Map/Dynamic_Label_Text.htm" title="" alt="" class="MCXref xref ">{}</a></a>.</li>
+            </ul>
+            <h3><a name="testnotifier"></a>Test Notifier</h3>
+            <ul>
+                <li value="1">In the Configure Notifier window, click <b><i>Test Notifier</i></b>. The notification is sent immediately, with the state defined as "Test."</li>
+            </ul>
+            <p>Once you have created notifiers,  you may attach them to all devices 
+	(the default notifier is used for all new devices) or to one or more devices.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Command-line Options">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Command-line Options for InterMapper RemoteAccess</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 data-mc-conditions="Primary.online"><a name="kanchor3397"></a>Commmand-line Options for RemoteAccess</h1>
+            <p><a name="kanchor3398"></a><a name="kanchor3399"></a>You can call InterMapper RemoteAccess from a command line, and control a significant 
+ number of functions. This can be useful for automating the updating of 
+ maps, or for various testing purposes.</p>
+            <p><a name="kanchor3400"></a><a name="kanchor3401"></a>InterMapper RemoteAccess currently supports the following command-line arguments:</p>
+            <table style="border-spacing: 0;width: 90.607%;margin-left:0;border-spacing: 0px;" cellspacing="0" width="90.607%">
+                <col style="width: 189px;" />
+                <col style="width: 61.403%;" />
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-bottom-style: none;border-right-style: none;border-left-style: none;border-top-style: none;">
+                        <p><span style="font-weight: bold;">Argument</span>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-bottom-style: none;border-top-style: none;border-right-style: none;">
+                        <p><span style="font-weight: bold;">Description</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3402"></a>-host --host &lt;HOST&gt;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>connect to the specified HOST</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-right: 10px;padding-left: 10px;border-bottom-style: none;border-right-style: none;border-left-style: none;">
+                        <p>-port --port &lt;PORT&gt;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;border-bottom-style: none;border-right-style: none;">
+                        <p><a name="kanchor3403"></a><a name="kanchor3404"></a><a name="kanchor3405"></a>connect to the specified PORT on HOST (defaults to 8181)</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-left-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3406"></a>-map --map &lt;MAP_NAME&gt;</p>
+                    </td>
+                    <td style="padding-right: 10px;padding-left: 10px;border-bottom-style: none;border-right-style: none;">
+                        <p>load the specified map(s) from HOST (separate map names with ":")</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3407"></a>-f --file &lt;FILE_NAME&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>open the specified shortcut file</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3408"></a>-d --debug &lt;DEBUG_CONFIG_FILE&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>use the specified configuration file to configure debugging output</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3409"></a><a name="kanchor3410"></a>-dmax --dmax &lt;MAX_CHARS&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>set the maximum number of characters in the debug window</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3411"></a>-D&lt;name&gt;=&lt;value&gt; </p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>set a system property</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3412"></a>-user --user &lt;USER&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>log in as USER</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3413"></a>-pass --pass &lt;PASSWORD&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>log in as USER with PASSWORD</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p>-version --version</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>print product version</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3414"></a>-env --env</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>print out system properties</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p>-h -? --help</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>print this help message</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3415"></a>&#160;-import 
+ --import &lt;FILE_NAME&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3416"></a>import the specified file (use - for stdin)</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3417"></a><a name="kanchor3418"></a>-export --export &lt;EXPORT-SPEC&gt;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p><a name="kanchor3419"></a>export the specified data to stdout.<br /><br style="font-weight: bold;" /><b>Note:</b> Data for all maps is exported.</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">
+                        <p>-ignore-cert-check</p>
+                    </td>
+                    <td class="p" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p>accept all server SSL certificates without prompting</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">-importmap --importmap &lt;FILE_NAME&gt;</td>
+                    <td class="p" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p width="61.403%">import the specified map.</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding-right: 10px;padding-left: 10px;border-left-style: none;border-right-style: none;border-bottom-style: none;">-exportmap --exportmap &lt;MAP_ID&gt; </td>
+                    <td class="p" style="padding-right: 10px;padding-left: 10px;border-right-style: none;border-bottom-style: none;">
+                        <p width="61.403%">export the specified map</p>
+                        <p width="61.403%"><b>Note:</b> The easiest way to get the map ID is to look in the Maps folder in the InterMapper Settings folder. Each map name has a prefix that begins with "g". The text between the "g" and the hyphen ("-") is the Map ID.</p>
+                    </td>
+                </tr>
+            </table>
+            <h2 class="pagebreakbefore">Examples for Import commands</h2>
+            <p>To import to a specified server, IM Remote is invoked as follows:<a name="kanchor3420"></a><a name="kanchor3421"></a><a name="kanchor3422"></a><a name="kanchor3423"></a>&#160;<a name="kanchor3424"></a></p><pre class="code" xml:space="preserve">java  -jar &lt;jar-file&gt; --host &lt;intermapper-server&gt; [--user &lt;username&gt; --pass &lt;password&gt;] --import &lt;import-file&gt;&#160;</pre>
+            <p>The example below reads imported data from newdata.tab.</p><pre class="code" xml:space="preserve">
+java  -jar intermapper_remoteaccess.jar --host big.dartware.com --user admin --pass adminpw --import newdata.tab</pre>
+            <p>The example below reads imported data from <i>stdin</i>.</p><pre class="code" xml:space="preserve">java  -jar intermapper_remoteaccess.jar --host big.dartware.com --user admin --pass adminpw --import -</pre>
+            <p>The stdin form of the --import option allows Unix users to create self-contained 
+ executable files that import stuff:<a name="kanchor3425"></a>&#160;<a name="kanchor3426"></a></p><pre class="code" xml:space="preserve">#!/usr/bin/java 
+ -jar intermapper_remoteaccess.jar --host big.dartware.com --import -<br />#import blah blah 
+ blah<br />blah blah 
+ blah<br />blah blah 
+ blah</pre>
+            <p><a name="kanchor3427"></a>One use for this would be to automate testing of InterMapper Server.</p>
+            <h2>Examples for Export commands</h2>
+            <p>To export from a specified server, IM Remote is invoked as follows:</p><pre class="code" xml:space="preserve">java  -jar &lt;jar-file&gt; --host &lt;intermapper-server&gt; [--user &lt;username&gt; --pass &lt;password&gt;] \
+  --export "format=&lt;output-type&gt;&#160;table=&lt;table-name&gt; fields=&lt;field-list&gt;</pre>
+            <p>The example below writes exported data to <i>stdout</i>.</p><pre class="code" xml:space="preserve">java -jar intermapper_remoteaccess.jar --host big.dartware.com --user admin --pass adminpw --export  "format=tab table=devices fields=*"</pre>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

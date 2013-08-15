@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Creating Maps">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Probe Groups</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Creating Probe Groups</h1>
+            <h2>Overview</h2>
+            <p>Use a probe group to include multiple probes targeting the same IP address into a single icon on a map. A probe group shows the worst status among the probes in the group. A probe group counts as a single device against your license count.</p>
+            <p><b>Note:</b> Only those devices that reference the same IP address can be added to a group.</p>
+            <h3>About the Control Probe</h3>
+            <p>Each probe group can contain a control probe. Setting a control probe affects the probe group as follows:</p>
+            <ul>
+                <li value="1">When a control probe is defined, no notifications for the other probes in the group are sent if the control probe is down. </li>
+                <li value="2">The group's interfaces match those of the control probe.</li>
+            </ul>
+            <p>When you create a group containing an SNMP&#160;probe, a "control probe" is automatically determined for the group.  This is the first SNMP probe detected, and can be changed. If there are no        SNMP probes in the group, no control probe is defined. See <a href="#controlprobe">Setting a probe group's control probe</a> below.</p>
+            <h3>How grouped devices are probed</h3>
+            <p>Here are some important facts about how devices are probed after grouping.</p>
+            <ul>
+                <li value="1"><b>Each member probe is polled at its own rate, with its own settings.</b> The settings in place when the device is added to a probe group are used, including poll rate, attached notifiers, and probe parameters. You can edit the settings for any probe - see <a href="#editProbeSettings">Editing Settings for a Probe Within a Probe Group<a href="#editProbeSettings" class="MCXref xref ">{}</a></a>.</li>
+                <li value="2"><b>The device icon's state reflects the most serious condition of its member probes</b>. When the state of one of the member probes becomes the most serious state, the device icon's state changes to reflect it.</li>
+                <li value="3"><b>By attaching a notifier to the device</b>, you can get notifications whenever any probe in the group has a problem.            </li>
+                <li value="4"><b>By attaching a notifier to a member of the group</b>, you can get notifications when that member probe has a problem
+            </li>
+                <li value="5"><b>If the control probe is down</b>, no notifications are sent for any other member of the group. </li>
+                <li value="6"><b>Interface information is shown</b> based on the selected control probe.
+            </li>
+            </ul>
+            <p>Use the <b style="font-style: italic;">Group</b> command to create a probe group from a set of selected devices.</p>
+            <table style="margin-left: 0; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p><b>To create a probe group:</b>
+                            </p>
+                            <ol>
+                                <li value="1">With the map editable, select the devices you want to group. All devices must use the same IP address.</li>
+                                <li value="2">From the Insert menu, choose <b style="font-style: italic;">Group</b>. The selected devices are replaced by a single device icon.</li>
+                            </ol>
+                            <p>When you double-click the resulting device icon, the grouped probes appear in a list in the group's Info window.</p>
+                            <p style="text-align: left;">
+                                <img src="../Resources/Images/Info-probes_329x200.png" style="width: 329;height: 200;" />
+                            </p>
+                        </td>
+                        <td style="vertical-align: top;text-align: center;">
+                            <p>
+                                <img src="../Resources/Images/group-before.png" />
+                            </p>
+                            <p><i>Before grouping</i>
+                                <br />
+                                <img src="../Resources/Images/group-after.png" />
+                            </p>
+                            <p><i>After grouping</i>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p><b>Note:</b> When you group a selection of probes, the resulting group uses the first line of the first device as its label. You can change the label before or after grouping.</p>
+                        </td>
+                        <td style="vertical-align: top;text-align: center;">&#160;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Creating one or more empty Probe Groups</h2>
+            <p>You can create an empty probe group, then add probes to the group as needed. </p>
+            <p><b>To create an empty probe group:</b>
+            </p>
+            <ol>
+                <li style="font-weight: normal;font-style: normal;" value="1">From the Insert menu, choose <b style="font-style: italic;">Empty Probe Group... </b>The Add Probe Group(s) dialog appears.<b style="font-style: italic;"></b></li>
+                <li value="2">For each probe group you want to add, enter a host name or IP address.</li>
+                <li value="3">Click <b style="font-style: italic;">Add</b>. A probe group icon appears for each host name or address you entered.</li>
+            </ol>
+            <h2>Adding devices to a probe group</h2>
+            <p>You can add probes to a group in several ways:</p>
+            <ul>
+                <li value="1">Add an existing device to a group.</li>
+                <li value="2">Add a new device to a group</li>
+                <li value="3">From the list view, drag and drop a device into a group.</li>
+            </ul>
+            <p class="pagebreakbefore"><b>To add an existing device to a probe group:</b>
+            </p>
+            <ol>
+                <li value="1">Select the group and the devices you want to add to it.</li>
+                <li value="2">Choose <b style="font-style: italic;">Group</b> from the Insert menu. If all selected devices use the same IP address or host name, the selected devices are added to the existing probe group.</li>
+            </ol>
+            <p><b>To add a new device to a probe group:</b>
+            </p>
+            <ol>
+                <li value="1">From the probe group's Info window, click the <b style="font-style: italic;">plus (+)</b> button. The Set Probe window appears.</li>
+                <li value="2">Choose the probe you want to use, set its parameters, then click <b style="font-style: italic;">OK</b>. The probe is added to the group.</li>
+            </ol>
+            <p>You can remove one or more probes from a group.</p>
+            <p><b>To remove probes from a group:</b>
+            </p>
+            <ol>
+                <li value="1">Double-click a probe group. The probe group's Info window appears.</li>
+                <li value="2">In the Info window, select the probes you want to remove from the group. Use Shift-click to add contiguous probes to your selection, or Control-click to add or remove discontiguous probes from your selection.</li>
+                <li value="3">Click the <b style="font-style: italic;">minus ( - )</b> button. The selected probes are removed from the probe group, and appear as separate devices in the map.</li>
+            </ol>
+            <p>From the List view, you can also drag a probe out of a probe group.</p>
+            <h2><a name="editProbeSettings"></a>Editing Settings for a Probe Within a Probe Group</h2>
+            <p>Each probe in a probe group can be polled at its own rate, can have its own settings, and can be edited while part of the group.</p>
+            <p><b>To edit a probe's setting within a group:</b>
+            </p>
+            <ol>
+                <li value="1">Double-click the probe group's device icon. The Info window opens, showing the list of probes in the group.</li>
+                <li value="2">Double-click to open the Info window for the selected probe, or right-click/Ctrl-click the probe, and choose an option from the context menu.</li>
+            </ol>
+            <h2 class="pagebreakbefore"><a name="controlprobe"></a>Setting a probe group's control probe</h2>
+            <p>You can set the control probe for a probe group. If the control probe is down, no notifications are sent for any other member of the group, and the group's interfaces match those of the control probe.</p>
+            <p><b>To set the control probe for a group:</b>
+            </p>
+            <ol>
+                <li value="1">With the map editable, double-click the probe group icon. The Info window appears.</li>
+                <li value="2">Click <b style="font-style: italic;">Probes</b> in the left panel. The probes in the group appears.</li>
+                <li value="3">In the left column of the probe list, click the star icon for the probe you want to use as the control probe. The color of the star changes to indicate that the probe is the control probe.</li>
+            </ol>
+            <blockquote>
+                <p style="font-style: italic;text-align: center;">
+                    <img src="../Resources/Images/ControlProbe.png" />
+                    <br />Setting the control probe</p>
+            </blockquote>
+            <h2>&#160;</h2>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Creating Maps">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Adding Networks to the Map</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor289"></a><a name="kanchor290"></a><a name="kanchor291"></a><a name="kanchor292"></a><a name="kanchor293"></a><a name="kanchor294"></a>Adding Networks to the Map</h1>
+            <p><a name="kanchor295"></a><a name="kanchor296"></a><a name="kanchor297"></a>InterMapper uses "network ovals" to represent a "subnet" 
+	- a range of IP addresses. It uses these networks as graphical connecting points 
+	for all the devices on the subnet. When InterMapper places an SNMP-speaking 
+	device on a map, it automatically adds a network for each of its interfaces.</p>
+            <p>You can also add new networks manually.</p>
+            <p class="floatright">
+                <img src="../Resources/Images/AddNetworkWindow.png" style="border-style: none;border-style: none;" border="0" />
+                <img src="../Resources/Images/blank.gif" style="width: 1px;height: 1px;margin-left: 10px;margin-right: 10px;border-style: none;border-style: none;" width="1" height="1" border="0" />
+                <br /><a name="kanchor298"></a>Add Subnet... window. <br />Enter an IP subnet (in the form x.x.x.x/yy).</p>
+            <p><b style="font-weight: bold;">To add a new network:</b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor299"></a>From the Insert menu, choose <b>Network... </b>An 
+ Add Network window appears, as shown below. </li>
+                <li value="2"><a name="kanchor300"></a><a name="kanchor301"></a><a name="kanchor302"></a>Enter the IP subnet information or range and click <b><a name="kanchor303"></a>OK</b><a name="kanchor304"></a>. For more information on IP addresses
+ and subnets, see             <a href="../10-Troubleshooting/ipaddressing.html">About 
+ IP</a>.<br />The network is added to the map as an oval, labeled with the network information 
+	 you entered. Any devices that belong to that subnet are automatically connected 
+	 to the new network.<br /><br /><b>Note:</b> Adding a subnet does not automatically initiate the discovery process. To scan the new network, right-click the new network oval and choose Scan Network... For more information, see <a href="Scanning_A_Network.htm">Scanning a Network</a>.</li>
+            </ol>
+            <h2 class="pagebreakbefore"><a name="addremovelinks"></a><a name="kanchor305"></a><a name="kanchor306"></a>Adding and Removing Links</h2>
+            <p>InterMapper may not connect devices to the proper network in every case. 
+ In such a case, you can make the connection manually.</p>
+            <p><b style="font-weight: bold;">To add a link manually:</b>
+            </p>
+            <ol>
+                <li value="1">Make sure the map is in <a href="../07-MonitoringNetwork/Monitoring_Your_Network.htm">Edit 
+ mode</a>.</li>
+                <li value="2">Right/Ctrl-click one of the objects you want to link to another.</li>
+                <li value="3">From the menu that appears, click <b style="font-style: italic;">Attach To</b>. A line appears, connecting the selected object to your mouse cursor, as shown:<br /><br /><img src="../Resources/Images/addlink-2.png" style="border-style: none;border-style: none;" border="0" /><br /><br /></li>
+                <li value="4">Click the object you want to connect to. A link is created between the two objects:<br /><br /><img src="../Resources/Images/addlink-3.png" style="border-style: none;border-style: none;" border="0" /><img src="../Resources/Images/blank.gif" style="width: 1px;height: 1px;margin-left: 10px;margin-right: 10px;border-style: none;border-style: none;" width="1" height="1" border="0" /><br /><br /><b>Note:</b><a name="kanchor307"></a><a name="kanchor308"></a> Once a manual connection has been established, InterMapper 
+ remembers it. You can drag manually-connected items around the map, and 
+ they work just like those links InterMapper has created automatically.</li>
+            </ol>
+            <p><b style="font-weight: bold;"><a name="kanchor309"></a><a name="kanchor310"></a>To remove a manually-connected link:</b>
+            </p>
+            <ol>
+                <li value="1">Make sure the map is in <a href="../07-MonitoringNetwork/Monitoring_Your_Network.htm">Edit 
+ mode</a>.</li>
+                <li value="2">Right/Ctrl-click the link  
+ and choose <b><i>Remove</i></b>. The link disappears.</li>
+            </ol>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

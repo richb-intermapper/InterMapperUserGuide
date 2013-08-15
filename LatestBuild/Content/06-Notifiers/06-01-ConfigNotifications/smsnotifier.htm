@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Configuring an SMS Notifier</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Configuring an SMS Notifier</h1>
+            <p>Use an SMS notifier to send a text message directly to a cell phone using a cellular (GSM or CDMA) modem.</p>
+            <p style="font-weight: normal;"><b>Note:</b> To state the obvious, the modem used to send SMS messages must be able to connect to a cellular network. If there is no coverage at the location of the SMS modem, the server will not able to send the notification.</p>
+            <p>
+                <img src="../../Resources/Images/window-ConfigNotifier-SMS_547x317.png" style="width: 547;height: 317;" />
+            </p>
+            <p><b>To configure an SMS notifier:</b>
+            </p>
+            <ol>
+                <li value="1">In the Configure Notifier window, choose "SMS" from the <b><i>Notifier Type</i></b> dropdown menu.
+            </li>
+                <li value="2">In the <b><i>Recipient </i></b> box, choose the recipient from the dropdown menu. If there are no recipients in the list, click <b style="font-style: italic;">Edit Recipient List...</b> to configure connection to an SMS modem and to add and configure SMS recipients. See <a href="#addmodem">Adding and Removing SMS Modems</a> and <a href="#addrecipient">Adding and Removing SMS&#160;Recipients</a>, below.</li>
+                <li value="3">If you want to edit the message, click <b style="font-style: italic;">Edit Message...</b> For more information on editing messages, see <a href="email.html#editemailmessage">Editing the Text of an E-mail Notification Message</a>.</li>
+            </ol>
+            <h2 class="pagebreakbefore"><a name="addmodem"></a>Adding and Removing SMS&#160;Modems</h2>
+            <p>Before you can send SMS messages, you must set up at least one SMS modem through which SMS messages are sent.</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-SMSmodem.png" />
+            </p>
+            <p><b>To add an SMS modem:</b>
+            </p>
+            <ol>
+                <li value="1">From the Configure Notifier window, with SMS selected as the Notifier Type, click <b style="font-style: italic;">Edit Recipient List...</b> The SMS Settings window appears.</li>
+                <li value="2">In the SMS&#160;window, click the <b style="font-style: italic;">SMS Modems</b> tab. A list of available modems appears on the left.</li>
+                <li value="3">Click <b style="font-style: italic;">Add</b>. A new modem configuration form appears.</li>
+                <li value="4">Enter a <b style="font-style: italic;">Name</b> and <b style="font-style: italic;">PIN</b>, choose a <b style="font-style: italic;">Modem Port</b>, connection <b style="font-style: italic;">Bits</b> and <b style="font-style: italic;">Speed</b>, and enter a modem initialization string in the <b style="font-style: italic;">Init String</b> box.<br /><br /><b>Note:</b> Not all cell carriers require a PIN.<br /><br /></li>
+                <li value="5">If you want to change the default retry specifications, set the <b style="font-style: italic;">Retries</b> and <b style="font-style: italic;">Retry Interval</b> values.</li>
+                <li value="6">When finished, click <b style="font-style: italic;">OK</b>. The specified modems appear in the recipient's <b style="font-style: italic;">Modem</b> dropdown menu.</li>
+            </ol>
+            <h2 class="pagebreakbefore"><a name="addrecipient"></a>Adding and Removing SMS&#160;Recipients</h2>
+            <p>Before you can send SMS messages, you must set up at least one SMS recipient to receive the message.</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-SMSrecipients.png" />
+            </p>
+            <p><b>To add an SMS recipient:</b>
+            </p>
+            <ol>
+                <li value="1">From the Configure Notifier window, with SMS selected as the Notifier Type, click <b style="font-style: italic;">Edit Recipient List...</b> The SMS Settings window appears.</li>
+                <li value="2">In the SMS&#160;window, click the <b style="font-style: italic;">SMS Recipients</b> tab. A list of available recipients appears on the left.</li>
+                <li value="3">Click <b style="font-style: italic;">Add</b>. A new recipient configuration form appears.</li>
+                <li value="4">Enter a <b style="font-style: italic;">Name</b>, choose a <b style="font-style: italic;">Modem</b>, and enter the number of the recipient's phone in the <b style="font-style: italic;">Phone #</b> box.</li>
+                <li value="5">When finished, click <b style="font-style: italic;">OK</b>. The specified recipients appear in the notifier's dropdown menu. The recipient's specified modem appears when you choose the recipient from the notifier's <b style="font-style: italic;">Recipient</b> dropdown menu.</li>
+            </ol>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

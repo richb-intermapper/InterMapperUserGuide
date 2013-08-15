@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper Reports">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Selecting Source Data</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Selecting Source Data</h1>
+            <p>When creating a report, you first need to choose the devices or interfaces for which data is included in the report.</p>
+            <p>Use the data source selection bar to select the devices or interfaces for your report.</p>
+            <p>
+                <img src="../Resources/Images/IMRS-SelectDevice-controls_553x28.png" style="width: 553;height: 28;" />
+            </p>
+            <p><b>To select data sources:</b>
+            </p>
+            <ul>
+                <li value="1">Click anywhere in the source selection bar shown above. A selection tree appears, as shown below.</li>
+            </ul>
+            <p>
+                <img src="../Resources/Images/IMRS-SelectDevices-85pct.png" />
+            </p>
+            <ul>
+                <li value="1">Select or clear the check boxes for the devices or interfaces whose source data you want to include in the report.</li>
+                <li value="2">Select the <b style="font-style: italic;">Show deleted devices &amp; interfaces</b> check box to include devices or interfaces that have been deleted. </li>
+                <li value="3">Click the <b style="font-style: italic;">Select All</b> or <b style="font-style: italic;">Unselect All</b> to select or unselect all devices or interfaces in a column.</li>
+                <li value="4">When finished selecting, click the source selection bar. The selection tree disappears, and the selected data appears.<br /><br /><b>Note:</b> If you select a large amount of data over a large time range, it may take a few moments or longer for the data to appear. This depends on a number of variables - the speed of reports server CPU, the amount of data, the time units selected.</li>
+            </ul>
+            <h2>Selecting a Dataset</h2>
+            <p>To create graphs, you need to select a dataset that contains numeric values. The datasets available depend on which devices are selected, the probes used to monitor those devices, what datasets are recorded through those probes, and whether those datasets are being exported to the Reports Server database.</p>
+            <p>A dataset is available when retention policy for the selected device is not set to <b style="font-style: italic;">None</b> and one of the following is true:</p>
+            <ul>
+                <li value="1">For devices, response time or short-term packet loss are always stored.</li>
+                <li value="2">For interfaces, incoming or outgoing bytes/second are always stored.</li>
+                <li value="3">If the dataset is specified in the probe to be 'autorecord' .</li>
+                <li value="4">If  a chart was created from the dataset by clicking it in the Status window or dragging it from the Status window to an existing chart.</li>
+            </ul>
+            <p class="floatright">
+                <img src="../Resources/Images/Reports-SelectDataSet.png" />
+            </p>
+            <p><b>To select a dataset:</b>
+            </p>
+            <ul>
+                <li value="1">From the Dataset dropdown menu, near the right of the device selection controls, choose a dataset. Assuming you are still in Table view, a list of values appears.</li>
+            </ul>
+            <h2>Selecting Data Grouping</h2>
+            <p>
+                <img src="../Resources/Images/IMRS-MinAvgMaxGrp.png" />
+            </p>
+            <h3>Grouping by time</h3>
+            <p>In most cases, the selected time scale causes each data point to represent a group of raw samples. Use the data grouping buttons to specify how you want the group of samples represented by a graph data point to be displayed.</p>
+            <p><b>To select data grouping for each time period:</b>
+            </p>
+            <ul>
+                <li value="1">Click <b style="font-style: italic;">Min</b> to display the minimum value from the group of samples during a data point's time period.</li>
+                <li value="2">Click <b style="font-style: italic;">Avg</b> to take the average value from the group of samples during a data point's time period.</li>
+                <li value="3">Click <b style="font-style: italic;">Max</b> to display the maximum value from the group of samples during a data point's time period.</li>
+            </ul>
+            <h3 class="pagebreakbefore">Grouping by device or interface</h3>
+            <p>When multiple devices or interfaces are selected, each device or interface's dataset appears as a line or bar on the graph. The Group check box allows you to group the datasets from multiple devices or interfaces into a single dataset that shows the minimum, average or maximum value for all devices in the group over the selected time period.</p>
+            <p>To view devices or interfaces as one dataset:</p>
+            <ul>
+                <li value="1">Select the <b style="font-style: italic;">Group</b> check box.</li>
+            </ul>
+            <h2>Selecting Columns (Table view)</h2>
+            <p class="floatright">
+                <img src="../Resources/Images/IMRS-SelectColumns.png" />
+            </p>
+            <p>In Table view, regardless of the selected dataset, use the <b style="font-style: italic;">Columns</b> selector to choose the columns to show in the report.</p>
+            <h2>Using the Page Controls</h2>
+            <p>
+                <img src="../Resources/Images/IMRS-PageControls.png" class="floatright" />
+            </p>
+            <p>Use the page controls to choose the page of data you want to view.</p>
+            <ul>
+                <li value="1">Click the left and right arrow buttons to move to the start or end of the report or to move to the previous or next page.</li>
+                <li value="2">Type in a page number to move to that page.</li>
+                <li value="3">Use the dropdown selector to specify the number of results are shown on a page.</li>
+            </ul>
+            <h2>Selecting a Data Range</h2>
+            <p>
+                <img src="../Resources/Images/IMRS-SelectDataRange.png" />
+            </p>
+            <p>You can limit the amount of data from the dataset that is displayed in the report. In selecting a data range, you select data over a time range, and control the density of that data over the specified range. You do this using the <b style="font-style: italic;">Show Data From</b> controls at the bottom of the window. Select a range of data by date, and specify the units to use (hours, days, weeks, months, etc.). Learn more about data range selection options in Data Range Options, below.</p>
+            <h2>Data Range Options</h2>
+            <table style="margin-left: 0; margin-right: auto;">
+                <col style="width: 192px;" />
+                <col style="width: 366px;" />
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p style="font-weight: bold;">Previous</p>
+                            <p>Select a data in a range of time previous to today.</p>
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="../Resources/Images/IMRS-Time-Previous_315x145.png" style="width: 315;height: 145;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p style="font-weight: bold;">...to Date</p>
+                            <p>Select all data from beginning of the most recent day, week, month, or year.</p>
+                            <p>The time units vary with your selection.</p>
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="../Resources/Images/IMRS-Time-ToDate_316x146.png" style="width: 316;height: 146;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p style="font-weight: bold;">Specific date</p>
+                            <p>Select data for a specific date.</p>
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="../Resources/Images/IMRS-Time-SpecDate_316x151.png" style="width: 316;height: 151;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p style="font-weight: bold;">All dates before</p>
+                            <p>Select all data before the specified date.</p>
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="../Resources/Images/IMRS-Time-DatesBefore_317x151.png" style="width: 317;height: 151;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p style="font-weight: bold;">All dates after</p>
+                            <p>Select all data after the specified date.</p>
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="../Resources/Images/IMRS-Time-DatesAfter_312x145.png" style="width: 312;height: 145;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p style="font-weight: bold;">Date Range</p>
+                            <p style="font-weight: normal;">Select data from the specified range of dates.</p>
+                        </td>
+                        <td>
+                            <img src="../Resources/Images/IMRS-Time-DateRange_364x117.png" style="width: 364;height: 117;" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Specifying Time Units</h2>
+            <p>
+                <img src="../Resources/Images/IMRS-DataUnits.png" class="floatright" />
+            </p>
+            <p>In addition to selecting a range of data over time, you can specify the units used to display the data.</p>
+            <p>Of course, the data units selected affect the time it takes to display the report. (Displaying data every 5 minutes over a year, for example, represents a large amount of data.)</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

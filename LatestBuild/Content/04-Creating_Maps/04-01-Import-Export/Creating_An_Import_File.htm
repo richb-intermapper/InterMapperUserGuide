@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Advanced Data Import/Export|Importing and Exporting Data">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating An Import File</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <p class="h1"><a name="kanchor3018"></a><a name="kanchor3019"></a><a name="kanchor3020"></a>Creating An Import File</p>
+            <p>Since a missing tab can cause errors in an import by causing data to be imported 
+	into the wrong fields, creating a file from scratch in a text editor is relatively 
+	error-prone. The following methods are recommended for creating import files 
+	quickly and accurately:</p>
+            <ul style="list-style: disc;" type="disc">
+                <li value="1"><a href="Exporting_Data_From_Maps.htm">Export a map</a>, 
+	 then edit the file.</li>
+                <li value="2"><a href="#spreadsheet">Use a 
+	 spreadsheet application</a><a name="kanchor3021"></a><a name="kanchor3022"></a> such as Excel to create a tab-delimited file.</li>
+                <li value="3">Generate a file algorithmically from a database. This may 
+	 be useful if you plan to update maps regularly.</li>
+            </ul>
+            <p>An import file is text file, formatted as follows:</p>
+            <ul style="list-style: disc;" type="disc">
+                <li value="1"><span style="font-weight: bold;"><a name="kanchor3023"></a>The first line of the file 
+	 specifies the format of the following lines</span><a name="kanchor3024"></a><a name="kanchor3025"></a> - it specifies the file 
+	 format ("tab" in the example below), the table to be filled ("devices") 
+	 and the order of the fields. Three fields must be specified: MapName, Address, 
+	 and Probe; the remaining fields are optional.</li>
+                <li value="2"><span style="font-weight: bold;">Remaining lines contain 
+	 the data for the devices you want to import</span> - Each device occupies 
+	 a single line, and the data columns are separated by tabs (a "tab-delimited" 
+	 file.) Each column corresponds to a field in the           <span style="font-weight: bold;font-style: italic;">fields</span><span> 
+	  specification of Line 1.</span></li>
+            </ul>
+            <h3>Line 1 - specifying the format for the import file data</h3>
+            <p><a name="kanchor3026"></a>The first line of the file determines the method you are going to use for 
+	importing, and can provide you with a significant amount of control over how 
+	devices are imported. There are two different methods you can use for importing; 
+	each uses a different format for the first line of the file:</p>
+            <ul style="list-style: disc;" type="disc">
+                <li value="1"><span style="font-weight: bold;">Spreadsheet-style import</span><span><a name="kanchor3027"></a><a name="kanchor3028"></a><a name="kanchor3029"></a> 
+	  - This technique is used only for adding new devices to a map. The first 
+	 line of the file contains the column names associated with the data in the 
+	 remaining lines. This is the recommended method. Once you have created this 
+	 file, it is easy to change the first line to a Directive line.</span>
+                </li>
+                <li value="2"><span style="font-weight: bold;">Directive line</span> - 
+	 This method gives you a large amount of control over the import process. 
+	 In addition to inserting new devices, you can update specific attributes 
+	 of existing devices, change their appearance or location, and delete them. 
+	 This technique is documented in        <a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
+	 Data Importing</a><a name="kanchor3030"></a> in the References section.</li>
+            </ul>
+            <p> <span style="font-weight: bold;">Notes:</span></p>
+            <ul>
+                <li value="1">For either style of importing, data is set only in those fields whose <span style="font-weight: bold;font-style: italic;"><a name="kanchor3031"></a>Access</span><span><a name="kanchor3032"></a> 
+	  value is specified as "READ-WRITE" in the <i><a name="kanchor3033"></a>Device Attributes</i> 
+	  and        <i><a name="kanchor3034"></a><a name="kanchor3035"></a><a name="kanchor3036"></a>Vertex Attributes</i> topics, found in the in        <a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
+	 Data Importing</a> in the References section. </span></li>
+                <li value="2">Text files should be encoded in UTF8 format. </li>
+                <li value="3">Characters with values less than 255 can be imported directly. </li>
+                <li value="4">Character values greater than 255 must be escaped using the standard XML format (<span class="code">&amp;#[character code]</span>).</li>
+            </ul>
+            <h3><a name="spreadsheet"></a><a name="kanchor3037"></a>Spreadsheet-style Import file</h3>
+            <p>The recommended format for creating an import file is a spreadsheet style 
+	format, in which the first line contains tab-separated column names that correspond 
+	to the remaining rows:</p><pre class="code">LabelTemplate MapName Address 
+Machine1 Map1 192.0.0.1
+Machine2 Map1 192.0.0.2
+</pre>
+            <p>This is the equivalent of the following directive line, as explained below:<a name="kanchor3038"></a></p><pre class="code"># format=tab table=devices fields=LabelTemplate,MapName,Address insert=LabelTemplate,MapName,Address
+Machine1 Map1 192.0.0.1 
+Machine2 Map1 192.0.0.2
+</pre>
+            <p><span style="font-weight: bold;">Notes:</span>
+            </p>
+            <ul style="list-style: disc;" type="disc">
+                <li value="1">If you have created a spreadsheet-style import file, you 
+	 can easily change it to a <i>Directive line-based</i> file for updating 
+	 the map.</li>
+                <li value="2"><a name="kanchor3039"></a><a name="kanchor3040"></a>You can include columns in your import file from both the 
+	 Device and Vertices tables. InterMapper automatically applies the Vertex 
+	 attributes appropriately.</li>
+            </ul>
+            <p>The columns are imported in the order specified. The last value specified 
+	takes precedence over previous values in the same line. Because of this, Help/Systems
+	recommends that you use only one the following columns when importing. If 
+	more than one of these is specified, and there are conflicts, the last column's 
+	values are used:</p>
+            <ul style="list-style: disc;" type="disc">
+                <li value="1"><span style="font-weight: bold;">Address</span>
+                </li>
+                <li value="2"><span style="font-weight: bold;"><a name="kanchor3041"></a>DNSName</span>
+                </li>
+                <li value="3"><span style="font-weight: bold;">IMProbe</span>
+                </li>
+            </ul>
+            <p>For a complete list of device attributes and corresponding field names, see 
+	<i>Device Attributes</i> in         <i><a name="kanchor3042"></a><a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
+	 Data Importing</a> in the References section.</i></p>
+            <h3>The Directive-Line</h3>
+            <p>Using the Directive Line technique, in addition to inserting new devices, 
+	you can update specific attributes of existing devices, change their appearance 
+	or location, and delete them. This technique is documented in <i><a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
+	 Data Importing</a> in the References section.</i><span style="font-weight: bold;"><br /></span></p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

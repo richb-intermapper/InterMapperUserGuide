@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Web Server Reference">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Using the Web Server</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1><a name="kanchor3197"></a><a name="kanchor3198"></a><a name="kanchor3199"></a><a name="kanchor3200"></a>Using the Web Server </h1>
+            <p><a name="kanchor3201"></a>Each page that InterMapper serves contains the same controls at the 
+ top. The example below shows an InterMapper map as it appears in a web 
+ page.</p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-WebServer_562x311.png" style="width: 562;height: 311;" />
+                <br /><i style="font-style: italic;"><a name="kanchor3202"></a><a name="kanchor3203"></a>A typical InterMapper web page. the "Example.com" National map.</i>
+            </p>
+            <p>The InterMapper web page typically has three parts:</p>
+            <ul>
+                <li value="1">The <i>header,</i> which shows the map name or other 
+ title, a navigation bar for going to other pages, and the Refresh menu. This is usually the same for every page. </li>
+                <li value="2">The <i>content</i> of the page, which varies, depending 
+ on which page is selected.</li>
+                <li value="3">The <i>footer</i> of the page, which shows the time 
+ the page was created.</li>
+            </ul>
+            <h2 class="pagebreakbefore"><a name="kanchor3204"></a>InterMapper Web Page Navigation</h2>
+            <p><a name="kanchor3205"></a><a name="kanchor3206"></a>Use the menu at the top of the InterMapper Web Page to access the available 
+ features of the web page. The example above shows a web page for a particular 
+ map. The image below shows the InterMapper Web Server menu, found at the 
+ top of each page.</p>
+            <p>
+                <img src="../../Resources/Images/window_webserver-header-s.png" style="border-style: none;" border="0" />
+            </p>
+            <p><i style="font-style: italic;"><a name="kanchor3207"></a>The header for the global web pages. 
+ Note that the navigational links list different choices from a map's links.</i>
+            </p>
+            <p>Click any of the menu items at the top of the page to view the page. 
+ Here is a brief description of each page:</p>
+            <ul>
+                <li value="1"><b style="font-weight: bold;"><a name="kanchor3208"></a>Map List</b><a name="kanchor3209"></a> - Click 
+ this menu item to view a list of open maps and the charts associated with 
+ those maps. </li>
+                <li value="2"><b style="font-weight: bold;">Error</b> - Click this 
+ menu item to view a list of InterMapper errors. </li>
+                <li value="3"><b style="font-weight: bold;">Full</b> - Click this 
+ item to view a list of devices and networks associated with all open maps. 
+ </li>
+                <li value="4"><b style="font-weight: bold;">Outages</b> - Click 
+ this item to view a list of current outages (that are currently down) 
+ and previous outages (that failed in the past, but have returned to service).</li>
+                <li value="5"><b style="font-weight: bold;"><a name="kanchor3210"></a>Device List</b> - Click 
+ this item to view a list of devices and networks associated with all open 
+ maps. </li>
+                <li value="6"><b style="font-weight: bold;"><a name="kanchor3211"></a>Telnet</b> - Click 
+ this item to open a Telnet client and a connection to the InterMapper 
+ Telnet server. </li>
+                <li value="7"><b style="font-weight: bold;">About</b> - Click this 
+ item to view information about the current version of InterMapper under 
+ which the Web Server is running.</li>
+            </ul>
+            <h3><a name="kanchor3212"></a><a name="kanchor3213"></a><a name="kanchor3214"></a><a name="kanchor3215"></a><a name="kanchor3216"></a><a name="kanchor3217"></a><a name="kanchor3218"></a>Setting the Interval for Reloading the Web Page</h3>
+            <p class="floatright">
+                <img src="../../Resources/Images/webrefreshpopup.png" style="border-style: none;" border="0" />
+            </p>
+            <p>InterMapper pages can be set to refresh at a specified interval. This 
+ keeps the web page's information up-to-date. </p>
+            <p><b style="font-weight: bold;">To set the Reload interval:</b>
+            </p>
+            <ol>
+                <li value="1">From the <b>Reload this page</b> dropdown menu, choose 
+ a reload interval. </li>
+                <li value="2">Click the <i><b>Set </b></i>button. The web browser 
+ refreshes the page at the specified interval.</li>
+            </ol>
+            <h2><a name="kanchor3219"></a>Customizing Web Pages</h2>
+            <p style="margin-bottom: 0;"><a name="kanchor3220"></a>InterMapper's web page appearance is controlled by template files. For more information, see <i>Customizing Web Pages</i> in the <a href="http://dartware.com/go.php?to=intermapper.devguide" target="_blank">Developer Guide</a>.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

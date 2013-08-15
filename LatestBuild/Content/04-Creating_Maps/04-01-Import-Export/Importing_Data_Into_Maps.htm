@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Advanced Data Import/Export|Importing and Exporting Data">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Importing Data Into Maps</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor3004"></a><a name="kanchor3005"></a><a name="kanchor3006"></a><a name="kanchor3007"></a><a name="kanchor3008"></a>Importing Data</h1>
+            <p>InterMapper can import data from a text file to update information about devices on a map, or information about Users or Groups. This is useful for: </p>
+            <ul>
+                <li value="1"><a name="kanchor3009"></a>New customers who want to import the devices/probe types 
+	 from their current monitoring system (or information that's already present 
+	 in a spreadsheet or other format) into InterMapper. </li>
+                <li value="2">Customers who make frequent updates to existing devices 
+ on maps. </li>
+                <li value="3">Customers who frequently add new devices to maps. They want 
+	 to enter information about new customers to a database, then export the 
+	 new device information to a file that can be bulk-imported into InterMapper.</li>
+                <li value="4"><a name="kanchor3010"></a><a name="kanchor3011"></a><a name="kanchor3012"></a><a name="kanchor3013"></a>Customers who want to make systematic changes to 
+ their maps. They can export the InterMapper map as, say, tab-delimited 
+ data, then edit columns in a spreadsheet/database, then re-import, letting 
+ InterMapper merge the new information onto the existing devices. This 
+ is useful for wholesale label changes, switching IP addresses, etc. </li>
+                <li value="5">Customers who want to import a list of users from another source for authentication purposes.</li>
+            </ul>
+            <p style="font-weight: bold;"><a name="kanchor3014"></a>To import data:</p>
+            <ol style="list-style: decimal;list-style-type: decimal;">
+                <li value="1">Create an import file as described in <a href="Creating_An_Import_File.htm">Creating 
+	 an Import File</a>.</li>
+                <li value="2"><a name="kanchor3015"></a>In the Map List window, click to select the server 
+	 to which you want to import map data, or open a map on that server.<br /><br /><b>Note:</b> The import file contains the name of the map. If the map does 
+	 not exist, it is created automatically.<br /><br /></li>
+                <li style="font-weight: normal;font-weight: normal;" value="3">From the File menu's <span style="font-style: italic;font-weight: bold;">Import...</span><a name="kanchor3016"></a>submenu, choose       <b><span style="font-style: italic;">Data File...</span></b>A standard file dialog 
+	 appears.</li>
+                <li style="font-weight: normal;font-weight: normal;" value="4">Select the file you want to import and click <span style="font-weight: bold;font-style: italic;">Open</span>. If the map data is valid, devices are added or 
+	 updated on the specified maps as appropriate. If the specified map does 
+	 not exist, one is created automatically.<br /><br /><b>Note:</b><a name="kanchor3017"></a> You can automate the importing of map data by sending commands 
+	 to InterMapper RemoteAccess through its command-line interface or through the HTTP API. This allows 
+	 you to interact with InterMapper through your own scripts. For more information, 
+	 see     <a href="../../09-Reference/09-05-Advanced_Importing/IMRA-CommandLineOptions.htm">Command-line options for RemoteAccess</a>, (in this manual) as well as     <i>InterMapper HTTP API</i> in the <a href="http://dartware.com/go.php?to=intermapper.devguide" target="_blank">Developer Guide</a>.<br /><br />When importing data in Tab/CSV/XML formats, foreign characters must be presented in 
+the same way as the output of the <b style="font-style: italic;">Export </b>command:
+			<ul><li value="1">Characters with values less than 255 can be imported directly. </li><li value="2">Character values greater than 255 must be escaped using the standard XML format (<span class="code">&amp;#[character code]</span>).</li></ul></li>
+            </ol>
+            <p class="pagebreakafter">&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

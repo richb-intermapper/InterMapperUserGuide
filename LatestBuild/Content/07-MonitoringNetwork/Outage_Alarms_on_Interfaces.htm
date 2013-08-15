@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Monitoring Your Network">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Outage Alarms on Interfaces</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor1233"></a><a name="kanchor1234"></a><a name="kanchor1235"></a>Outage Alarms on Interfaces</h1>
+            <p><a name="kanchor1236"></a>InterMapper treats an outage on each device interface as a separate alert 
+	event. Each time an interface goes down, the device will go into alarm. The 
+	device icon turns orange, and the affected interface gets a red "X". Any Alarm 
+	notifications for that device are triggered. </p>
+            <p><a name="kanchor1237"></a><a name="kanchor1238"></a>You can right-click an affected interface's link, and select "Acknowledge". The device turns back to green (or its previous state/color), 
+	the interface link gets a blue "X", and no further notifications 
+	for that device are sent. InterMapper also writes a line in the Event Log 
+	file for these events. The format of the Event Log entries is: </p><pre class="code">09/30 14:03:32 link DOWN : [1] switch.example.com - 1
+...
+09/30 14:03:49 link ACK : [1] switch.example.com - 1
+</pre>
+            <p>If another interface subsequently goes down, the same process repeats: </p>
+            <ul>
+                <li value="1"> the device turns orange
+</li>
+                <li value="2"><a name="kanchor1239"></a> an entry is written to the Event Log file
+</li>
+                <li value="3"> the affected interface gets a red "X"
+</li>
+                <li value="4"> notifications are sent
+</li>
+                <li value="5"> you can acknowledge the new interface
+</li>
+            </ul>
+            <p><a name="kanchor1240"></a>If two interfaces go down more or less simultaneously, a single set of alarm 
+	notifications is sent. If you right-click to acknowledge one interface, the 
+	device itself remains orange because it still has unacknowledged down interfaces. No further notifications will be sent. When all the 
+	down interfaces have been acknowledged the device returns to its previous 
+	state and color. </p>
+            <p><a name="kanchor1241"></a>Once acknowledged, a link's Status Window show the interface's 
+	status as "ACK (down)". </p>
+            <p><a name="kanchor1242"></a>You can acknowledge and unacknowledge multiple interfaces from the device's 
+	Interfaces Window. Select one or more interfaces in the list, and choose Acknowledge 
+	or Unacknowledge. This has the same effect as doing each interface individually. 
+  </p>
+            <p>You can un-acknowledge a link by right-clicking on it. This replaces 
+	the blue "X" with a red one, and re-enables any repeated notifications for 
+	that device. </p>
+            <p><b>Tip:</b> Choose from two methods of handling down interfaces. </p>
+            <ol>
+                <li value="1"> Acknowledge the interface as described above. This is good for outages on operational interfaces that are expected to return to service in the near future. </li>
+                <li value="2"> If you know that an interface will be down for a long time, you can hide that
+interface. This tells InterMapper not to monitor its status and removes it
+from the map to minimize the visual clutter. To show or hide an interface, open
+the device's Interfaces Window and check/uncheck the box in the left column. 
+</li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

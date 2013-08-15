@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Glossary_Chunk',terms:[{t:'benchmark',c:0},{t:'CSR',c:0},{t:'InterMapper Console',c:0},{t:'JPEG',c:0},{t:'MIB Variable',c:0},{t:'NetFlow Exporter',c:0},{t:'notification',c:0},{t:'notifier',c:0},{t:'notifier parameters',c:0},{t:'notifier schedule',c:0},{t:'notifier target',c:0},{t:'PNG',c:0},{t:'SNMP',c:0}]});

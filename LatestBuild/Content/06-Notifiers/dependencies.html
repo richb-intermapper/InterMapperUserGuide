@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Notification Dependencies</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor755"></a>Using Notification Dependencies</h1>
+            <p>InterMapper can block or suppress notifications for devices that are "behind" 
+	or "shadowed by" another failed device. This helps you avoid receiving 
+	dozens (or hundreds) of notifications for devices that don't respond because 
+	there is a router or link down between InterMapper and that device. </p>
+            <p>This feature is called <i>dependencies</i>, because InterMapper can 
+ suppress the notifications for other devices that depend on the failed 
+ device.</p>
+            <p><a name="kanchor756"></a><a name="kanchor757"></a>There's no need to set the dependencies manually between devices on 
+ a map. Instead, InterMapper follows the links that are already part of 
+ the map.</p>
+            <p>To enable dependencies, you <a href="#setreferencepoint">set a <i>Vantage 
+ Point</i></a><a name="kanchor758"></a><a name="kanchor759"></a><a name="kanchor760"></a><a name="kanchor761"></a>. The Vantage Point indicates the position from which InterMapper 
+ views the network. You usually set the Vantage Point on the actual device 
+ where InterMapper is running. Once you've set the Vantage Point, InterMapper 
+ can determine which devices are dependent on which other devices.</p>
+            <p><b>Example 1: All devices are up</b>
+            </p>
+            <p><a name="kanchor762"></a>The example below shows a map with several interconnected routers. The 
+ yellow star on the InterMapper icon shows that it is the map's vantage 
+ point.</p>
+            <p>
+                <img src="../Resources/Images/VantagePoint-active2_585x118.png" style="border-style: none;width: 585;height: 118;" border="0" />
+            </p>
+            <p><b>Example 2: One device is down, shows dependent devices</b>
+            </p>
+            <p>In this example, Router2 has failed. InterMapper will send the normal 
+ notifications for Router2, but it will suppress notifications for any 
+ of the devices that depend on it. Those dependent devices' icons are dimmed 
+ on the map to show they're being shadowed by the failure.</p>
+            <p>
+                <img src="../Resources/Images/VantagePoint-down_585x119.png" style="border-style: none;width: 585;height: 119;" border="0" />
+            </p>
+            <h2><a name="setreferencepoint"></a>Setting a Vantage Point</h2>
+            <p class="floatright">
+                <img src="../Resources/Images/VantagePoint.png" style="border-style: none;border-style: none;" border="0" />
+                <br />
+                <br /><i style="font-style: italic;">A Vantage Point.<br />Notice the star <br />on the item.</i>
+            </p>
+            <p><b style="font-weight: bold;">To set a map's Vantage Point:</b>
+            </p>
+            <ol>
+                <li value="1">Make the map editable.</li>
+                <li value="2">Select the device or network you want to use as the 
+ Vantage Point.</li>
+                <li value="3"><a name="kanchor763"></a><a name="kanchor764"></a>From the Monitor menu's Set Info submenu, choose <b><i>Set Vantage Point </i></b>. 
+ </li>
+            </ol>
+            <p>&#160;&#160;&#160;&#160;&#160;or</p>
+            <ul>
+                <li value="1">When the map is editable, right-click (or Ctrl-click) a device or network, then choose <b><i>Set 
+Vantage Point </i></b> from the context menu's Set Info submenu.</li>
+            </ul>
+            <p>A small star appears next to the item, as shown here. </p>
+            <h2><a name="kanchor765"></a>Moving and Removing a Vantage Point</h2>
+            <p><a name="kanchor766"></a><a name="kanchor767"></a><a name="kanchor768"></a>You may remove a Vantage Point or move it to a new item. </p>
+            <p><b style="font-weight: bold;">To move a Vantage Point to a new item:</b>
+            </p>
+            <ul>
+                <li value="1">Set the Vantage Point to the new item as described 
+ above.</li>
+            </ul>
+            <p><b style="font-weight: bold;">To remove a Vantage Point:</b>
+            </p>
+            <ol>
+                <li value="1">Select the item to which the Vantage Point is currently 
+ assigned.</li>
+                <li value="2">From the Monitor menu's Set Info submenu, choose <b><i>Remove Vantage 
+ Point</i></b>. </li>
+            </ol>
+            <p>&#160;&#160;&#160;&#160;&#160;or</p>
+            <ul>
+                <li value="1">Control-click the item to which the Vantage Point 
+ is currently assigned, then choose <b><i><a name="kanchor769"></a>Remove Vantage Point</i></b> 
+ from the dropdown menu's Set Info submenu.</li>
+            </ul>
+            <p>A star next to the item disappears, and no Vantage Point is set. Notifications 
+ are sent for all map items.</p>
+            <h2>How Dependencies Work</h2>
+            <p>When a device goes down (when no response has been received from it),dependencies are used to determine whether to suppress the 
+ notification. </p>
+            <p>Starting at the Vantage Point, InterMapper follows the links 
+ toward the device in question. If the only path to that device passes through a device, a link, or an interface 
+ that's already down, InterMapper knows that the device is shadowed, dims 
+ its icon, and suppresses the notifications. </p>
+            <p>If there is no failure along the path, or if there is no path at all 
+ (functional or not) to the device, InterMapper allows the notification 
+ to go through.</p>
+            <p>Even though a device is shadowed (and its notifications are suppressed), 
+ InterMapper continually probes the device to show its status.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

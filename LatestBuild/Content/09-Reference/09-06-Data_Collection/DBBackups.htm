@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Reference|Using InterMapper DataCenter">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Configuring Automatic Database Backups</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Configuring Automatic Database Backups</h1>
+            <p>InterMapper Database can automatically create back-ups of its built-in database. Please keep in mind that creating a backup can consume a lot of disk space, and takes time to complete.</p>
+            <p><b>To set up automatic backups:</b>
+            </p>
+            <ol>
+                <li value="1">From the InterMapper Database Settings page, click <b style="font-style: italic;">Automatic Backups</b>. The Automatic Database Backups page appears.</li>
+                <li value="2">Set the period you want to use for backing up. You do backups daily or weekly.</li>
+                <li value="3">For daily backups, set the time you want the backup to start. For weekly backups, set the day and time.</li>
+                <li value="4">Specify the maximum number of backups you want to store. Once this number of backups is reached, the oldest backup is deleted each time a new one is created.</li>
+                <li value="5">Click <b style="font-style: italic;">Save Settings</b>. The backup settings are saved, and backups are created according to the specified schedule.</li>
+            </ol>
+            <h3>Creating an unscheduled backup</h3>
+            <p>You can create a backup at any time.</p>
+            <p><b>To create a backup:</b>
+            </p>
+            <ul>
+                <li value="1">Click <b style="font-style: italic;">Create Backup</b>. A new backup file is created immediately. The backup starts immediately. When finished, the backup file is listed in the <b style="font-style: italic;">Available Backups</b> box.</li>
+            </ul>
+            <h3>Restoring a previous backup</h3>
+            <p>You can restore a previous backup. </p>
+            <ol>
+                <li value="1">In the <b style="font-style: italic;">Available Backups</b> box, click the backup file you want to restore.</li>
+                <li value="2">Click <b style="font-style: italic;">Restore</b>. Data from the selected backup is restored to the InterMapper Database.</li>
+            </ol>
+            <h3>Viewing backup progress and canceling backups</h3>
+            <p>When a backup is underway, you can view its progress from the Automatic Database Backups page. You can also cancel a backup while it is under way. </p>
+            <p>To view backup progress or cancel a backup:</p>
+            <ul>
+                <li value="1">While the backup is under way, go to the Automatic Database Backups page. The progress bar appears.</li>
+                <li value="2">Click <b style="font-style: italic;">Abort</b> to cancel the current backup.</li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

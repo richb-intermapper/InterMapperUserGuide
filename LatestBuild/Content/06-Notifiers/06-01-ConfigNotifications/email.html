@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Notifiers/Alerts|Configuring Notifiers">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Notification by E-Mail</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor827"></a><a name="kanchor828"></a><a name="kanchor829"></a><a name="kanchor830"></a><a name="kanchor831"></a><a name="kanchor832"></a><a name="kanchor833"></a><a name="kanchor834"></a><a name="kanchor835"></a><a name="kanchor836"></a>Configuring an E-Mail Notifier
+         </h1>
+            <p><a name="kanchor837"></a><a name="kanchor838"></a><a name="kanchor839"></a><a name="kanchor840"></a><a name="kanchor841"></a><a name="kanchor842"></a>Use an e-mail notifier to send an e-mail message to one or more
+ recipients. The e-mail message can provide detailed information about the device that
+ triggered the notifier.&#160;The example below&#160;shows the Configure
+ Notifier window for the E-mail notifier type.
+         </p>
+            <p style="text-align: center;">
+                <img src="../../Resources/Images/window-ConfigNotifier-email_551x319.png" style="border-style: none;border-style: none;width: 551;height: 319;" border="0" /><i style="font-style: italic;">&#160;Configuring an e-mail notifier.</i>
+            </p>
+            <p><b style="font-weight: bold;">To configure an e-mail notifier:</b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor843"></a><a name="kanchor844"></a><a name="kanchor845"></a><a name="kanchor846"></a><a name="kanchor847"></a>In the Configure Notifier window, choose "Electronic mail
+ (SMTP)" from the <b><i>Notifier Type</i></b> drop-down menu.
+            </li>
+                <li value="2">In the <b><i>Address</i></b><a name="kanchor848"></a><a name="kanchor849"></a> box, enter the e-mail address you
+ want to receive the notification.
+You can enter multiple addresses, separated by commas, spaces, tabs, newlines, or carriage returns.</li>
+            </ol>
+            <p><b>Note:</b><a name="kanchor850"></a><a name="kanchor851"></a><a name="kanchor852"></a> E-mail is sent using an outgoing SMTP mail server. Before InterMapper can send e-mail notifications, you must specify the SMTP host you want to use for sending e-mail notifications. For more information on 
+	how to specify your outgoing SMTP mail server (and a backup server) see <a href="../../08-Server_Settings/08-02-Server_Prefs/emailprefs.html">E-mail Preferences</a>. </p>
+            <h2 class="pagebreakbefore"><a name="editemailmessage"></a><a name="kanchor853"></a><a name="kanchor854"></a><a name="kanchor855"></a><a name="kanchor856"></a>Editing the Text of an E-mail Notification Message </h2>
+            <p class="floatright">
+                <img src="../../Resources/Images/window-ConfigNotifier-EditMsg_349x303.png" style="width: 349;height: 303;" />
+            </p>
+            <p><i style="font-style: italic;"><br /><a name="kanchor857"></a><a name="kanchor858"></a><a name="kanchor859"></a>Edit E-mail Message window,
+ showing the default e-mail message.</i>
+            </p>
+            <p>An E-mail notifier sends a text message that describes the failure.
+         </p>
+            <p><a name="kanchor860"></a>Use the Edit Message window to edit the message sent by the notifier.
+ The example below shows the Edit E-mail Message window containing
+ the default e-mail message. The list at the lower left contains
+ variables you can substitute in the text.
+         </p>
+            <p>Double-click an item to insert it into the message text. When the
+ notification is sent, the inserted item is replaced with its
+ current value in the message text.
+</p>
+            <table style="clear: right;width: 100%;border-spacing: 0px;border-spacing: 0px;" cellspacing="0" width="100%">
+                <col style="width: 0%;" />
+                <col />
+                <tr>
+                    <td style="text-align: left;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" align="left" valign="top"><b style="font-weight: bold;">Subject :</b>
+                    </td>
+                    <td style="text-align: left;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" align="left" valign="top"><pre class="code"><a name="kanchor861"></a>&lt;Event&gt;:
+ &lt;Device Name&gt;</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" align="left" valign="top"><b style="font-weight: bold;">Message:</b>
+                    </td>
+                    <td style="text-align: left;padding-left: 5px;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;" align="left" valign="top"><pre class="code"><a name="kanchor862"></a><a name="kanchor863"></a>&lt;Timestamp&gt;:
+ Message from InterMapper &lt;Version&gt;<br />Event: &lt;Event&gt;<br />Name: &lt;Device Name&gt;<br /><a name="kanchor864"></a>Document: &lt;Document Name&gt;<br /><a name="kanchor865"></a>Address: &lt;Device Address&gt;<br /><a name="kanchor866"></a>Probe Type: &lt;Probe Type&gt;<br /><a name="kanchor867"></a>Condition: &lt;Device Condition&gt;<br /><a name="kanchor868"></a>Time since last
+ reported down: &lt;Last Down&gt;<br /><a name="kanchor869"></a>Device's up time: &lt;SysUpTime&gt;</pre>
+                    </td>
+                </tr>
+            </table>
+            <p><b>Note:</b> You can also use InterMapper variables and Javascript to insert information dynamically into a notifier's subject or message text. For more information, see <a href="../../05-Arranging_Your_Map/Dynamic_Label_Text.htm">Dynamic Label &amp; Alert Text<a href="../../05-Arranging_Your_Map/Dynamic_Label_Text.htm" title="" alt="" class="MCXref xref ">{}</a></a>.</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

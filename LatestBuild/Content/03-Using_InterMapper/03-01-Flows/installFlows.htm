@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Quick Start">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Installing InterMapper Flows</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2">Installing InterMapper Flows</h1>
+            <p>You must follow several steps before you can begin analyzing your Flows data.</p>
+            <ul>
+                <li value="1">InterMapper Flows is installed automatically with InterMapper. See <a href="../../02-Getting_Started/install.html">Installing and Launching InterMapper<a href="../../02-Getting_Started/install.html" class="MCXref xref " xrefformat="{}">{}</a></a> for more information. </li>
+                <li value="2">If you are running a trial version, InterMapper Flows is fully operational. Once the trial expires, an InterMapper Flows license is required.</li>
+                <li value="3">Be sure to <b>remove any firewalls</b> on the selected UDP ports for NetFlow  (default is 2055).  </li>
+                <li value="4"><i>Note: </i>The InterMapper Flows service/daemon may not start up if  another program is using port 2055 (or whatever port you have designated for  netflow packets). You should stop/uninstall any other netflow packages on the  system.  </li>
+                <li value="5">You must also <b>configure one or more Flows exporters</b> to send data to the InterMapper Flows server. InterMapper Flows  automatically detects the exporters and begins collecting their data. Many switches and routers can be configured to export Flows data. There are also several software-based Flows exporters available, including nProbe, SoftFlowd, and ProQueSys.</li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-US" xml:lang="en-US" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-conditions="Primary.online,Primary.print" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using InterMapper|Creating Maps">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Sub-maps</title>
+        <meta name="description" content="Dartware network monitoring: Testing the description tag." />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../default.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
+        </div>
+        <div class="pagewidth">
+            <h1 class="L2"><a name="kanchor317"></a><a name="kanchor318"></a><a name="kanchor319"></a><a name="kanchor320"></a>Creating Sub-maps</h1>
+            <p><a name="kanchor321"></a><a name="kanchor322"></a>Another way to hide detail is to create a top-level map that gives an overview 
+	of many individual maps. Each icon on the top-level map shows the status of 
+	another map (a "sub-map"). The color of the icon indicates the most 
+	serious condition (the "worst thing") on its sub-map. These sub-maps 
+	can be on the local computer, or could even be on another InterMapper server. 
+  </p>
+            <p><a name="kanchor323"></a>
+            The example below shows the Atlanta map that opens when you double-click the Atlanta icon on the National map. Notice that on the National map, the Atlanta icon is "down". The Atlanta map shows that the LDAP server is the reason.</p>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/SubmapExample1.png" />
+            </p>
+            <p style="text-align: center;">&#160;</p>
+            <h2 class="pagebreakbefore"><b style="font-weight: bold;">Creating a Sub-Map</b>
+            </h2>
+            <p><a name="kanchor324"></a><a name="kanchor325"></a><a name="kanchor326"></a><a name="kanchor327"></a><a name="kanchor328"></a><a name="kanchor329"></a><a name="kanchor330"></a>Use the Map Status probe to create an icon that represents a sub-map. 
+ To do this, you add a device with the address of the InterMapper server 
+ on which the map is running, (127.0.0.1 if it's on the local computer) 
+ with a Probe Type of <i><b>Map Status</b></i>. </p>
+            <p>The color of the icon for a map item using a Map Status probe indicates 
+ the most serious condition (the "worst thing") on sub-map. </p>
+            <p>&#160;</p>
+            <p><b style="font-weight: bold;">To add a sub-map item to a map: </b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor331"></a><a name="kanchor332"></a><a name="kanchor333"></a>The easiest way to add a submap is to drag the desired map from the Map 
+	 List window to the map. In certain special cases, the Set Probe window appears, with the Map Status 
+	 Probe selected. </li>
+                <li value="2">Click <b><i><a name="kanchor334"></a>OK</i></b> to accept the default settings. A new device is 
+	 added, using the current map and user account information. 
+	  
+	</li>
+            </ol>
+            <p style="text-align: center;">
+                <img src="../Resources/Images/SetProbe-MapStatus_579x483.png" style="width: 579;height: 483;" />
+                <br /><i style="font-style: italic;">The Map Status probe configuration window.</i>
+            </p>
+            <p class="pagebreakbefore"><b style="font-weight: bold;">To add a sub-map manually:</b>
+            </p>
+            <ol>
+                <li value="1"><a name="kanchor335"></a>From the Insert menu, choose <b>Device...</b></li>
+                <li value="2"><a name="kanchor336"></a><a name="kanchor337"></a>Enter the <a href="../10-Troubleshooting/ipaddressing.html">IP 
+ address</a>,          <a href="../10-Troubleshooting/dns.html">DNS name</a>, or          <a href="../10-Troubleshooting/About_WINS_Names.htm">WINS name</a> 
+ (preceded by "\\") of the InterMapper server that contains the 
+ sub-map. Sub-maps may be running on the local InterMapper server (use 
+ the address          <i>127.0.0.1</i>), or enter the address of InterMapper running 
+ at a customer site, at a branch office, or at an international office. 
+ </li>
+                <li value="3"><a name="kanchor338"></a>Specify the <b><a name="kanchor339"></a><a name="kanchor340"></a>Port</b> to connect to (default is 
+ 8181). </li>
+                <li value="4">Select <b>Map Status</b> from the Basic category.  </li>
+                <li value="5">Enter the <b><a name="kanchor341"></a><a name="kanchor342"></a>Map Name</b> to be monitored. <br /><br /><b>Note:</b> if your map is nested in a sub-folder, you must enter the full path to the map. For example, "/MySubFolder/MyMap.map". If you add the submap by dragging it into the map from the Map List window, the path is entered automatically.<br /></li>
+                <li value="6">Enter the <b><a name="kanchor343"></a><a name="kanchor344"></a>User Name</b> and          <b><a name="kanchor345"></a>Password</b> of 
+ an account on that server. This account must have read-access to the map. 
+ </li>
+                <li value="7">Click <b>OK.</b> The new icon appears on the 
+ map, and its color reflects the state of everything on the sub-map. 
+ </li>
+            </ol>
+            <p><b style="font-weight: bold;">To view the sub-map</b> (to "drill 
+ down" into it) </p>
+            <ul>
+                <li value="1">Double-click the sub-map's icon. The map opens, and 
+ you can see and modify (if you have been granted permission) the settings 
+ on the sub-map. </li>
+            </ul>
+            <h2>Best Practices When Using Sub-maps</h2>
+            <p>Try to follow these best practices when setting up a map 
+status probe:</p>
+            <ul>
+                <li value="1">Use a username with minimum amount of privilege (read-only). Never 
+set up a map status probe using a username that has administrative privileges.</li>
+                <li value="2">Use only one username per server for map status probes. InterMapper has a limit of 2 
+user logins per connection. If map status probes monitoring maps on a server are 
+configured using more than one username, you may need to explicitly logout 
+from the map status probe login before you can access a map status probe 
+that uses a different username. <br /><br />For example, let's assume you have access to 
+map status probes on server S, and that we have MapB and MapC on server S that 
+you don't have access to. When you double click a map status probe for MapB, 
+the InterMapper client will log you in as user B (you are logged in twice on 
+server S). You will not be able to open MapC before you log off the connection 
+to MapB. This restriction is only for one server, if you are using map status 
+probes to monitor maps on multiple InterMapper servers, you can use a different username for each server.</li>
+            </ul>
+        </div>
+        <p>
+            <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>
+            <script id="dartwarejs" name="dartwarejs" type="text/javascript" src="../dartware.js">
+            </script>
+        </p>
+    </body>
+</html>
