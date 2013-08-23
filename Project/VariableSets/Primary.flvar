@@ -28,7 +28,7 @@
   <Variable
     Name="ReleaseMonth"
     Comment=""
-    Definition="Some text">July 2013</Variable>
+    Definition="Some text">August 2013</Variable>
   <Variable
     Name="Copyright"
     Comment=""

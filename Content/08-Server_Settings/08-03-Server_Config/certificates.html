@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print" MadCap:check_list="Ran Smart Index" MadCap:ignoredWords="TITLE};PATH};ARGS};LAUNCHER};ADDRESS};PORT};address};port}" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:status="In Progress" MadCap:lastBlockDepth="4" MadCap:lastHeight="3349" MadCap:lastWidth="622">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.online,Primary.print" MadCap:check_list="Ran Smart Index" MadCap:ignoredWords="TITLE};PATH};ARGS};LAUNCHER};ADDRESS};PORT};address};port}" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:status="In Progress" MadCap:lastBlockDepth="4" MadCap:lastHeight="609" MadCap:lastWidth="576">
     <head><title>SSL Certificates</title>
         <link rel="StyleSheet" href="../../default.css" />
     </head>
@@ -59,9 +59,10 @@
  of the Server Settings window to create a Certificate Signing Request, 
  and to upload a signed certificate to the InterMapper server.</p>
         <p>The remainder of this topic describes the three separate steps in detail.</p>
-        <h2>
-            <img src="../../Resources/Images/serversettings-SSLCertificate2.png" />
-        </h2>
+        <p class="pagebreakbefore" style="font-style: italic;">The SSL Certificate Panel</p>
+        <p>
+            <img src="../../Resources/Images/serversettings-SSLCertificate2.png" style="border-width: 2px;border-style: solid;border-color: #a9a9a9;width: 464px;height: 449px;" />
+        </p>
         <h2>Step 1: Create a Certificate Signing Request</h2>
         <ol>
             <li>
@@ -137,9 +138,9 @@
             <li> You can send the CSR to any of several commercial certificate authorities,<br /><MadCap:keyword term="InstantSSL" />such as InstantSSL (<a href="http://www.instantssl.com">http://www.instantssl.com</a><MadCap:keyword term="Verisign" />), 
 			Verisign<br />(<a href="http://www.verisign.com/products/site/index.html">http://www.verisign.com/products/site/index.html</a><MadCap:keyword term="Thawte" />), 
 			or Thawte<br />(<a href="http://www.thawte.com">http://www.thawte.com</a>). These 
-			companies will return a signed certificate that<br />is globally-recognizable as authentic.</li>
+			companies return a signed certificate that is globally-recognizable as authentic.</li>
         </ol>
-        <h2 class="pagebreakbefore">
+        <h2>
             <MadCap:keyword term="Uploading" />
             <MadCap:keyword term="Signed Certificate:Uploading" />Step 3: Uploading the Signed Certificate</h2>
         <p />
@@ -166,7 +167,7 @@
 		 start it again. These certificates are then used for HTTPS and InterMapper 
 		 Remote client connections if the SSL/TLS boxes are checked in the respective 
 		 server settings.</p>
-        <h2>Using an externally generated CSR and Private Key</h2>
+        <h2 class="pagebreakbefore">Using an externally generated CSR and Private Key</h2>
         <p>If you use a different application from InterMapper to create your Certificate 
  Signing Request (CSR), InterMapper will not have access to the private 
  key used to create the CSR. To upload your certificate with the private 
@@ -174,7 +175,7 @@
  key, and the CA's public certificate chain (if included), and use the 
  "Upload new certificate..." button to upload this combined file. 
  </p>
-        <h2 class="pagebreakbefore"><a name="notes"></a>Technical Notes</h2>
+        <h2><a name="notes"></a>Technical Notes</h2>
         <p>The design for this scheme is based on the SSL section of the Apache 
  Mod-SSL httpd.conf file.</p>
         <ol>

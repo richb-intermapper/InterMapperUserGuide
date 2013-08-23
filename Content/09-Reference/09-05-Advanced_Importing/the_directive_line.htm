@@ -158,10 +158,10 @@ MapA 192.168.2.105 http 43.6 -72.2</tt></pre>
             <MadCap:keyword term="Default" />
             <MadCap:keyword term="InterMapper Handles Errors" />How InterMapper Handles Errors and Defaults</h3>
         <p style="margin-bottom: 0.75em;margin-top: 0.75em;">
-            <MadCap:keyword term="DNS:DNS Name" />InterMapper strives to use sensible defaults. The import file need only supply a server name, map path, and either an IP address or DNS Name for a new device. InterMapper uses its default settings for other values and parameters.</p>
+            <MadCap:keyword term="DNS:DNS Name" />InterMapper strives to use sensible defaults. The import file needs only a server name, map path, and either an IP address or DNS Name for a new device. InterMapper uses its default settings for other values and parameters.</p>
         <p style="margin-bottom: 0.75em;margin-top: 0.75em;">
             <MadCap:keyword term="Event Log file" />
-            <MadCap:keyword term="InterMapper Event Log file" />InterMapper also tries to handle incorrect data. The import process protects against and recovers sensibly from faulty, ill-formatted, or inconsistent input values. Certain data (invalid format for an IP address, for example) cannot succeed, and will be reported as an error. Most other data should be passed along so the device can be added to the map with appropriate defaults. The InterMapper Event Log file contains a line for each newly added device, along with a success or error indication.</p>
+            <MadCap:keyword term="InterMapper Event Log file" />The import process recovers sensibly from faulty, ill-formatted, or inconsistent input values. An invalid format for an IP address, for example, cannot succeed, and is reported as an error. Most other data is passed along so the device can be added to the map with appropriate defaults. The InterMapper Event Log file contains a line for each newly added device, along with indication of success or error.</p>
         <p style="margin-bottom: 0.75em;margin-top: 0.75em;">If the attribute name in the header of the imported file is not recognized as a valid attribute, InterMapper displays an error message and ignores the contents of that column.</p>
         <p style="margin-bottom: 0.75em;margin-top: 0.75em;">When the import is finished, a summary is written to the Event Log file.</p>
         <p style="margin-bottom: 0.75em;margin-top: 0.75em;"><i style="font-style: italic; font-weight: bold;">Notes:</i>

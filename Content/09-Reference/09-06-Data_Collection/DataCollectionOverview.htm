@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="875" MadCap:lastWidth="576">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="778" MadCap:lastWidth="576">
     <head>
         <link href="../../default.css" rel="stylesheet" type="text/css" />
     </head>
@@ -19,10 +19,11 @@
             <li>If you do none of the above, the default server-wide policy is applied automatically.</li>
         </ul>
         <p><b>Note:</b> Data Retention Policies are applied individually, not in sequence. For example, specifying an hourly data expiration of two days now causes hourly samples to be deleted after two days, instead of two days plus the raw and custom expirations.</p>
+        <h2 class="pagebreakbefore">Retention Policies in Status and Info Windows</h2>
         <p>A device or interface's current Retention Policy is shown in the Status and Info windows. In the Status window, the information appears as follows:</p><pre class="code">Retention Policy: PolicyName, [Not] Exportable</pre>
         <ul>
             <li><b>Policy</b> - the policy name as created in InterMapper Reports Server.  </li>
-            <li><b>Exportable/Not Exportable</b> <![CDATA[ ]]><br />- <b style="font-style: italic;">Exportable</b> appears if the parameters of the policy are such that they cause data to
+            <li><b>Exportable/Not Exportable</b> <br />- <b style="font-style: italic;">Exportable</b> appears if the parameters of the policy are such that they cause data to
 be exported to the database. <br />- <b style="font-style: italic;">Not Exportable</b> appears if the parameters of the
 policy are such that they will not cause data to be exported to the database
 (the None policy, for instance).

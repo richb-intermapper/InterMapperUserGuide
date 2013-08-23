@@ -95,9 +95,7 @@
 		
 		<b style="font-weight: bold;">Note:</b><MadCap:keyword term="Local Security Policy" /><MadCap:keyword term="Logon" /> In either scheme, the 
  administrator you supply must have been given the "Logon as a service" 
- right in the local security policy of the machine you are monitoring. <br /><br /> 
- 
-		</li></ul></li>
+ right in the local security policy of the machine you are monitoring. <br /><br /></li></ul></li>
             <li><b style="font-weight: bold;"><MadCap:keyword term="NET USE" />The NET USE command:</b> Another way 
  to authenticate is to use the NET USE command to create a connection between 
  the host machine and the target. For instance, to monitor the services 
@@ -160,16 +158,7 @@
             <MadCap:keyword term="Running:XP Home" />
             <MadCap:keyword term="Windows XP Home" />
             <MadCap:keyword term="XP Home" />A Note About Windows XP Home</h2>
-        <p>Windows XP Home operates in a simpler networking environment. This has 
- several ramifications for the NT Services probe:</p>
-        <ul>
-            <li>Windows XP Home only operates in the simple network scheme. 
-	 Therefore you cannot use the NT services probe to monitor services running 
-	 on an XP Home computer. </li>
-            <li>You will need to be sure that the account running 
- the InterMapper service has administrator rights and also has a password 
- set.</li>
-        </ul>
+        <p>The NT services probe does not work with an XP Home computer. </p>
         <h2>
             <MadCap:keyword term="Firewall" />
             <MadCap:keyword term="Firewalls" />
@@ -188,7 +177,7 @@
  (TCP) and port 445 (TCP).</p>
         <p>Note that if your host machine is Windows XP SP2 or has a firewall, 
  the same holes need to be open for NT Services probes to work.</p>
-        <h2>A Note on Error Messages</h2>
+        <h2 class="pagebreakbefore">A Note on Error Messages</h2>
         <p>InterMapper may encounter authentication errors when attempting to connect. 
  Here is a list of the messages and ways you might work around them:</p>
         <ul>
