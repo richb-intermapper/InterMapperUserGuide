@@ -23,12 +23,12 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor1233"></a><a name="kanchor1234"></a><a name="kanchor1235"></a>Outage Alarms on Interfaces</h1>
-            <p><a name="kanchor1236"></a>InterMapper treats an outage on each device interface as a separate alert 
+            <h1 class="L2"><a name="kanchor1231"></a><a name="kanchor1232"></a><a name="kanchor1233"></a>Outage Alarms on Interfaces</h1>
+            <p><a name="kanchor1234"></a>InterMapper treats an outage on each device interface as a separate alert 
 	event. Each time an interface goes down, the device will go into alarm. The 
 	device icon turns orange, and the affected interface gets a red "X". Any Alarm 
 	notifications for that device are triggered. </p>
-            <p><a name="kanchor1237"></a><a name="kanchor1238"></a>You can right-click an affected interface's link, and select "Acknowledge". The device turns back to green (or its previous state/color), 
+            <p><a name="kanchor1235"></a><a name="kanchor1236"></a>You can right-click an affected interface's link, and select "Acknowledge". The device turns back to green (or its previous state/color), 
 	the interface link gets a blue "X", and no further notifications 
 	for that device are sent. InterMapper also writes a line in the Event Log 
 	file for these events. The format of the Event Log entries is: </p><pre class="code">09/30 14:03:32 link DOWN : [1] switch.example.com - 1
@@ -39,7 +39,7 @@
             <ul>
                 <li value="1"> the device turns orange
 </li>
-                <li value="2"><a name="kanchor1239"></a> an entry is written to the Event Log file
+                <li value="2"><a name="kanchor1237"></a> an entry is written to the Event Log file
 </li>
                 <li value="3"> the affected interface gets a red "X"
 </li>
@@ -48,14 +48,14 @@
                 <li value="5"> you can acknowledge the new interface
 </li>
             </ul>
-            <p><a name="kanchor1240"></a>If two interfaces go down more or less simultaneously, a single set of alarm 
+            <p><a name="kanchor1238"></a>If two interfaces go down more or less simultaneously, a single set of alarm 
 	notifications is sent. If you right-click to acknowledge one interface, the 
 	device itself remains orange because it still has unacknowledged down interfaces. No further notifications will be sent. When all the 
 	down interfaces have been acknowledged the device returns to its previous 
 	state and color. </p>
-            <p><a name="kanchor1241"></a>Once acknowledged, a link's Status Window show the interface's 
+            <p><a name="kanchor1239"></a>Once acknowledged, a link's Status Window show the interface's 
 	status as "ACK (down)". </p>
-            <p><a name="kanchor1242"></a>You can acknowledge and unacknowledge multiple interfaces from the device's 
+            <p><a name="kanchor1240"></a>You can acknowledge and unacknowledge multiple interfaces from the device's 
 	Interfaces Window. Select one or more interfaces in the list, and choose Acknowledge 
 	or Unacknowledge. This has the same effect as doing each interface individually. 
   </p>
@@ -71,7 +71,6 @@ from the map to minimize the visual clutter. To show or hide an interface, open
 the device's Interfaces Window and check/uncheck the box in the left column. 
 </li>
             </ol>
-            <p>&#160;</p>
         </div>
         <p>
             <noscript>Javascript is required to view this help file. It is currently disabled or not supported by this browser.</noscript>

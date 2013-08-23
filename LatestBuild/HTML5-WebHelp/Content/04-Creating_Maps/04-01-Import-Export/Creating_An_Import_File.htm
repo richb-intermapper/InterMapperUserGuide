@@ -23,7 +23,7 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <p class="h1"><a name="kanchor3018"></a><a name="kanchor3019"></a><a name="kanchor3020"></a>Creating An Import File</p>
+            <p class="h1"><a name="kanchor3016"></a><a name="kanchor3017"></a><a name="kanchor3018"></a>Creating An Import File</p>
             <p>Since a missing tab can cause errors in an import by causing data to be imported 
 	into the wrong fields, creating a file from scratch in a text editor is relatively 
 	error-prone. The following methods are recommended for creating import files 
@@ -32,14 +32,14 @@
                 <li value="1"><a href="Exporting_Data_From_Maps.htm">Export a map</a>, 
 	 then edit the file.</li>
                 <li value="2"><a href="#spreadsheet">Use a 
-	 spreadsheet application</a><a name="kanchor3021"></a><a name="kanchor3022"></a> such as Excel to create a tab-delimited file.</li>
+	 spreadsheet application</a><a name="kanchor3019"></a><a name="kanchor3020"></a> such as Excel to create a tab-delimited file.</li>
                 <li value="3">Generate a file algorithmically from a database. This may 
 	 be useful if you plan to update maps regularly.</li>
             </ul>
             <p>An import file is text file, formatted as follows:</p>
             <ul style="list-style: disc;" type="disc">
-                <li value="1"><span style="font-weight: bold;"><a name="kanchor3023"></a>The first line of the file 
-	 specifies the format of the following lines</span><a name="kanchor3024"></a><a name="kanchor3025"></a> - it specifies the file 
+                <li value="1"><span style="font-weight: bold;"><a name="kanchor3021"></a>The first line of the file 
+	 specifies the format of the following lines</span><a name="kanchor3022"></a><a name="kanchor3023"></a> - it specifies the file 
 	 format ("tab" in the example below), the table to be filled ("devices") 
 	 and the order of the fields. Three fields must be specified: MapName, Address, 
 	 and Probe; the remaining fields are optional.</li>
@@ -50,12 +50,12 @@
 	  specification of Line 1.</span></li>
             </ul>
             <h3>Line 1 - specifying the format for the import file data</h3>
-            <p><a name="kanchor3026"></a>The first line of the file determines the method you are going to use for 
+            <p><a name="kanchor3024"></a>The first line of the file determines the method you are going to use for 
 	importing, and can provide you with a significant amount of control over how 
 	devices are imported. There are two different methods you can use for importing; 
 	each uses a different format for the first line of the file:</p>
             <ul style="list-style: disc;" type="disc">
-                <li value="1"><span style="font-weight: bold;">Spreadsheet-style import</span><span><a name="kanchor3027"></a><a name="kanchor3028"></a><a name="kanchor3029"></a> 
+                <li value="1"><span style="font-weight: bold;">Spreadsheet-style import</span><span><a name="kanchor3025"></a><a name="kanchor3026"></a><a name="kanchor3027"></a> 
 	  - This technique is used only for adding new devices to a map. The first 
 	 line of the file contains the column names associated with the data in the 
 	 remaining lines. This is the recommended method. Once you have created this 
@@ -66,26 +66,26 @@
 	 In addition to inserting new devices, you can update specific attributes 
 	 of existing devices, change their appearance or location, and delete them. 
 	 This technique is documented in        <a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
-	 Data Importing</a><a name="kanchor3030"></a> in the References section.</li>
+	 Data Importing</a><a name="kanchor3028"></a> in the References section.</li>
             </ul>
             <p> <span style="font-weight: bold;">Notes:</span></p>
             <ul>
-                <li value="1">For either style of importing, data is set only in those fields whose <span style="font-weight: bold;font-style: italic;"><a name="kanchor3031"></a>Access</span><span><a name="kanchor3032"></a> 
-	  value is specified as "READ-WRITE" in the <i><a name="kanchor3033"></a>Device Attributes</i> 
-	  and        <i><a name="kanchor3034"></a><a name="kanchor3035"></a><a name="kanchor3036"></a>Vertex Attributes</i> topics, found in the in        <a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
+                <li value="1">For either style of importing, data is set only in those fields whose <span style="font-weight: bold;font-style: italic;"><a name="kanchor3029"></a>Access</span><span><a name="kanchor3030"></a> 
+	  value is specified as "READ-WRITE" in the <i><a name="kanchor3031"></a>Device Attributes</i> 
+	  and        <i><a name="kanchor3032"></a><a name="kanchor3033"></a><a name="kanchor3034"></a>Vertex Attributes</i> topics, found in the in        <a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
 	 Data Importing</a> in the References section. </span></li>
                 <li value="2">Text files should be encoded in UTF8 format. </li>
                 <li value="3">Characters with values less than 255 can be imported directly. </li>
                 <li value="4">Character values greater than 255 must be escaped using the standard XML format (<span class="code">&amp;#[character code]</span>).</li>
             </ul>
-            <h3><a name="spreadsheet"></a><a name="kanchor3037"></a>Spreadsheet-style Import file</h3>
+            <h3><a name="spreadsheet"></a><a name="kanchor3035"></a>Spreadsheet-style Import file</h3>
             <p>The recommended format for creating an import file is a spreadsheet style 
 	format, in which the first line contains tab-separated column names that correspond 
 	to the remaining rows:</p><pre class="code">LabelTemplate MapName Address 
 Machine1 Map1 192.0.0.1
 Machine2 Map1 192.0.0.2
 </pre>
-            <p>This is the equivalent of the following directive line, as explained below:<a name="kanchor3038"></a></p><pre class="code"># format=tab table=devices fields=LabelTemplate,MapName,Address insert=LabelTemplate,MapName,Address
+            <p>This is the equivalent of the following directive line, as explained below:<a name="kanchor3036"></a></p><pre class="code"># format=tab table=devices fields=LabelTemplate,MapName,Address insert=LabelTemplate,MapName,Address
 Machine1 Map1 192.0.0.1 
 Machine2 Map1 192.0.0.2
 </pre>
@@ -95,7 +95,7 @@ Machine2 Map1 192.0.0.2
                 <li value="1">If you have created a spreadsheet-style import file, you 
 	 can easily change it to a <i>Directive line-based</i> file for updating 
 	 the map.</li>
-                <li value="2"><a name="kanchor3039"></a><a name="kanchor3040"></a>You can include columns in your import file from both the 
+                <li value="2"><a name="kanchor3037"></a><a name="kanchor3038"></a>You can include columns in your import file from both the 
 	 Device and Vertices tables. InterMapper automatically applies the Vertex 
 	 attributes appropriately.</li>
             </ul>
@@ -107,13 +107,13 @@ Machine2 Map1 192.0.0.2
             <ul style="list-style: disc;" type="disc">
                 <li value="1"><span style="font-weight: bold;">Address</span>
                 </li>
-                <li value="2"><span style="font-weight: bold;"><a name="kanchor3041"></a>DNSName</span>
+                <li value="2"><span style="font-weight: bold;"><a name="kanchor3039"></a>DNSName</span>
                 </li>
                 <li value="3"><span style="font-weight: bold;">IMProbe</span>
                 </li>
             </ul>
             <p>For a complete list of device attributes and corresponding field names, see 
-	<i>Device Attributes</i> in         <i><a name="kanchor3042"></a><a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
+	<i>Device Attributes</i> in         <i><a name="kanchor3040"></a><a href="../../09-Reference/09-05-Advanced_Importing/the_directive_line.htm">Advanced 
 	 Data Importing</a> in the References section.</i></p>
             <h3>The Directive-Line</h3>
             <p>Using the Directive Line technique, in addition to inserting new devices, 

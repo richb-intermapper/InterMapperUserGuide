@@ -23,39 +23,39 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor1879"></a><a name="kanchor1880"></a><a name="kanchor1881"></a><a name="kanchor1882"></a><a name="kanchor1883"></a><a name="kanchor1884"></a><a name="kanchor1885"></a>Controlling Access to Your Server</h1>
-            <p><a name="kanchor1886"></a><a name="kanchor1887"></a><a name="kanchor1888"></a><a name="kanchor1889"></a><a name="kanchor1890"></a><a name="kanchor1891"></a>You can configure the firewalls of InterMapper's built-in servers to 
+            <h1 class="L2"><a name="kanchor1877"></a><a name="kanchor1878"></a><a name="kanchor1879"></a><a name="kanchor1880"></a><a name="kanchor1881"></a><a name="kanchor1882"></a><a name="kanchor1883"></a>Controlling Access to Your Server</h1>
+            <p><a name="kanchor1884"></a><a name="kanchor1885"></a><a name="kanchor1886"></a><a name="kanchor1887"></a><a name="kanchor1888"></a><a name="kanchor1889"></a>You can configure the firewalls of InterMapper's built-in servers to 
  accept or deny connections from a client based on its IP address. You 
  can also require a user name and password. Once accepted, a connection 
  is associated with a user name that is used to determine which maps and 
  permissions are available. For some examples of typical access control 
  setups, see <a href="08-03-01-Users/examples.html">Access Control Examples</a>.</p>
             <p style="font-weight: normal;"><b>Note:</b> You can also control access through the <a href="authserver.htm">InterMapper Authentication Server</a>, which connects to an external authentication server such as Radius, LDAP, or ActiveDirectory to authenticate a user. For more information, see    <a href="authserver.htm">Authentication Server</a>,.</p>
-            <h2><a name="kanchor1892"></a>The Access Control Process</h2>
-            <p><a name="kanchor1893"></a><a name="kanchor1894"></a>When a user attempts to connect to one of the InterMapper servers, the 
+            <h2><a name="kanchor1890"></a>The Access Control Process</h2>
+            <p><a name="kanchor1891"></a><a name="kanchor1892"></a>When a user attempts to connect to one of the InterMapper servers, the 
  request goes through these steps:</p>
             <ol>
                 <li value="1"><b style="font-weight: bold;">The client's IP address is 
-	 checked against the list of firewall definitions.</b><a name="kanchor1895"></a><a name="kanchor1896"></a><a name="kanchor1897"></a><a name="kanchor1898"></a> If the address matches 
+	 checked against the list of firewall definitions.</b><a name="kanchor1893"></a><a name="kanchor1894"></a><a name="kanchor1895"></a><a name="kanchor1896"></a> If the address matches 
 	 a DENY address in the firewall list, or if the address fails to match an 
 	 ALLOW address, the connection is dropped with a "not allowed" 
 	 response.</li>
-                <li value="2"><b style="font-weight: bold;"><a name="kanchor1899"></a><a name="kanchor1900"></a>The client's IP address is 
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor1897"></a><a name="kanchor1898"></a>The client's IP address is 
 	 checked against the list of Automatic Login addresses.</b>
                     <br />
                     <br />If the client's IP address matches an Automatic Login address, the connection 
 	 is accepted and is assigned the user name associated with that Automatic 
 	 Login. <br /><br /></li>
-                <li value="3"><a name="kanchor1901"></a>If the client's IP address does not match an Automatic Login address, 
+                <li value="3"><a name="kanchor1899"></a>If the client's IP address does not match an Automatic Login address, 
 	 the connection is accepted and authentication by a username and password 
 	 begins, as follows:<br /></li>
                 <ol style="list-style: lower-alpha;list-style-type: lower-alpha;">
-                    <li value="1"><b style="font-weight: bold;"><a name="kanchor1902"></a>Web server</b><a name="kanchor1903"></a><a name="kanchor1904"></a> - issues 
+                    <li value="1"><b style="font-weight: bold;"><a name="kanchor1900"></a>Web server</b><a name="kanchor1901"></a><a name="kanchor1902"></a> - issues 
 		a "401 Unauthorized" response, which forces the web browser 
 		to request a username/password from the user.</li>
-                    <li value="2"><b style="font-weight: bold;"><a name="kanchor1905"></a><a name="kanchor1906"></a>Telnet server</b><a name="kanchor1907"></a><a name="kanchor1908"></a> - prompts 
+                    <li value="2"><b style="font-weight: bold;"><a name="kanchor1903"></a><a name="kanchor1904"></a>Telnet server</b><a name="kanchor1905"></a><a name="kanchor1906"></a> - prompts 
 		for a username and password.</li>
-                    <li value="3"><b style="font-weight: bold;"><a name="kanchor1909"></a>Remote server</b><a name="kanchor1910"></a><a name="kanchor1911"></a> - proceeds 
+                    <li value="3"><b style="font-weight: bold;"><a name="kanchor1907"></a>Remote server</b><a name="kanchor1908"></a><a name="kanchor1909"></a> - proceeds 
 		after the InterMapper RemoteAccess client requests and supplies a username 
 		and password.</li>
                 </ol>
@@ -66,13 +66,13 @@
 	 the Remote and Telnet servers, an error message appears, saying that the 
 	 user name is not allowed. When using the Web server, a web page appears, 
 	 saying that the user is not allowed access.</li>
-                <li value="5"><b style="font-weight: bold;"><a name="kanchor1912"></a>The users is checked for 
-	 membership in a Special Group.</b> These special groups give broader access:<br /><ul><li value="1"><b style="font-weight: bold;"><a name="kanchor1913"></a><a name="kanchor1914"></a>Administrators Group</b><br /><a name="kanchor1915"></a>If the user is a member of the Administrators group, the connection 
-		 is given full (read/write) access to every map and setting.</li><li value="2"><b style="font-weight: bold;"><a name="kanchor1916"></a><a name="kanchor1917"></a>FullWebAccess Group</b><br />If you have created a group named <i>FullWebAccess</i><a name="kanchor1918"></a>, all members 
+                <li value="5"><b style="font-weight: bold;"><a name="kanchor1910"></a>The users is checked for 
+	 membership in a Special Group.</b> These special groups give broader access:<br /><ul><li value="1"><b style="font-weight: bold;"><a name="kanchor1911"></a><a name="kanchor1912"></a>Administrators Group</b><br /><a name="kanchor1913"></a>If the user is a member of the Administrators group, the connection 
+		 is given full (read/write) access to every map and setting.</li><li value="2"><b style="font-weight: bold;"><a name="kanchor1914"></a><a name="kanchor1915"></a>FullWebAccess Group</b><br />If you have created a group named <i>FullWebAccess</i><a name="kanchor1916"></a>, all members 
 		 of that group are given full access to all maps through the web server. 
 		 As with all web access rights, this is a read-only view. This membership 
-		 also overrides any individual map access settings.</li><li value="3"><b style="font-weight: bold;"><a name="kanchor1919"></a><a name="kanchor1920"></a>FullTelnetAccess Group</b><br />If you have created a group named <i>FullTelnetAccess</i>, all members 
-		 of that group are given full access to the Telnet server. </li><li style="font-style: normal;" value="4"><b style="font-style: normal;"><a name="kanchor1921"></a>FullLogAccess Group</b><br />If you have created a group named <i>FullLogAccess, </i>all members of that group are given full access to all log files.</li></ul></li>
+		 also overrides any individual map access settings.</li><li value="3"><b style="font-weight: bold;"><a name="kanchor1917"></a><a name="kanchor1918"></a>FullTelnetAccess Group</b><br />If you have created a group named <i>FullTelnetAccess</i>, all members 
+		 of that group are given full access to the Telnet server. </li><li style="font-style: normal;" value="4"><b style="font-style: normal;"><a name="kanchor1919"></a>FullLogAccess Group</b><br />If you have created a group named <i>FullLogAccess, </i>all members of that group are given full access to all log files.</li></ul></li>
                 <li value="6"><b style="font-weight: bold;">The user is granted access 
 	 to maps.</b> Once a connection has a user name associated with it, InterMapper 
 	 then checks to see which information is available for that user. Access 

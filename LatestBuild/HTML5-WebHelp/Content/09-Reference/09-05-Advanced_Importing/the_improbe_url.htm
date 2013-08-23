@@ -23,21 +23,21 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor3147"></a><a name="kanchor3148"></a><a name="kanchor3149"></a><a name="kanchor3150"></a><a name="kanchor3151"></a><a name="kanchor3152"></a><a name="kanchor3153"></a><a name="kanchor3154"></a><a name="kanchor3155"></a>The IMProbe URL Specification</h1>
-            <p><a name="kanchor3156"></a>InterMapper defines a URL format for specifying all the parameters for 
+            <h1 class="L2"><a name="kanchor3145"></a><a name="kanchor3146"></a><a name="kanchor3147"></a><a name="kanchor3148"></a><a name="kanchor3149"></a><a name="kanchor3150"></a><a name="kanchor3151"></a><a name="kanchor3152"></a><a name="kanchor3153"></a>The IMProbe URL Specification</h1>
+            <p><a name="kanchor3154"></a>InterMapper defines a URL format for specifying all the parameters for 
 	 a probe in a single string. This makes it straightforward to import information 
 	 about a probe into InterMapper from a text file.</p>
-            <p><a name="kanchor3157"></a><a name="kanchor3158"></a><a name="kanchor3159"></a><a name="kanchor3160"></a><a name="kanchor3161"></a><a name="kanchor3162"></a><a name="kanchor3163"></a>When you export data from InterMapper, you can include the IMProbe field 
+            <p><a name="kanchor3155"></a><a name="kanchor3156"></a><a name="kanchor3157"></a><a name="kanchor3158"></a><a name="kanchor3159"></a><a name="kanchor3160"></a><a name="kanchor3161"></a>When you export data from InterMapper, you can include the IMProbe field 
 	 in the export file. The IMProbe field contains the IMProbe URL, which in 
 	 turn contains all configuration information for a probe in URL-encoded format. 
 	 You can use the IMProbe URL to change the parameters of probes editing the 
 	 parameters of the URL, and then importing the URL into the map. </p>
-            <p><a name="kanchor3164"></a><a name="kanchor3165"></a><a name="kanchor3166"></a>For example, you could change the username and password for all of your 
+            <p><a name="kanchor3162"></a><a name="kanchor3163"></a><a name="kanchor3164"></a>For example, you could change the username and password for all of your 
 	 HTTP probes in all maps at once by:</p>
             <ol>
-                <li value="1"><a name="kanchor3167"></a><a name="kanchor3168"></a><a name="kanchor3169"></a>Exporting the data, including the MapName, Address, and Id, and IMProbe 
+                <li value="1"><a name="kanchor3165"></a><a name="kanchor3166"></a><a name="kanchor3167"></a>Exporting the data, including the MapName, Address, and Id, and IMProbe 
 		fields for all maps.</li>
-                <li value="2"><a name="kanchor3170"></a><a name="kanchor3171"></a>Finding and replacing the username and password parameters in each URL.</li>
+                <li value="2"><a name="kanchor3168"></a><a name="kanchor3169"></a>Finding and replacing the username and password parameters in each URL.</li>
                 <li value="3">Re-importing the text file.</li>
             </ol>
             <p>The URL format specifies the information necessary to define a probe using 
@@ -45,37 +45,37 @@
             <p><span style="font-weight: bold;">Note:</span><span> 'improbe://' is case-sensitive, 
 	 and must be lower-case.</span>
             </p>
-            <p>The minimal information required for an <span class="code">IMProbe</span><a name="kanchor3172"></a> URL is the 
+            <p>The minimal information required for an <span class="code">IMProbe</span><a name="kanchor3170"></a> URL is the 
 	 Address information, Probe type, and Authentication information.</p>
             <ul>
                 <li value="1"> Address information 
-		<ul><li value="1"><a name="kanchor3173"></a>DNS name</li><li value="2"><a name="kanchor3174"></a>IP address</li><li value="3">port number (optional)</li></ul></li>
+		<ul><li value="1"><a name="kanchor3171"></a>DNS name</li><li value="2"><a name="kanchor3172"></a>IP address</li><li value="3">port number (optional)</li></ul></li>
                 <li value="2"> Probe type 
 		<ul><li value="1">canonical probe name</li><li value="2">probe-specific parameters (optional)</li></ul></li>
                 <li value="3"> Authentication information 
-		<ul><li value="1"><a name="kanchor3175"></a>SNMP community name (optional)</li></ul></li>
+		<ul><li value="1"><a name="kanchor3173"></a>SNMP community name (optional)</li></ul></li>
             </ul>
             <p>The <span class="code">probe</span> may be a canonical InterMapper probe name specified 
-	 in full, ie.          <span class="code"><a name="kanchor3176"></a><a name="kanchor3177"></a>com.dartware.radius</span>,          <span class="code"><a name="kanchor3178"></a>com.dartware.http.redirect</span>, 
+	 in full, ie.          <span class="code"><a name="kanchor3174"></a><a name="kanchor3175"></a>com.dartware.radius</span>,          <span class="code"><a name="kanchor3176"></a>com.dartware.http.redirect</span>, 
 	 or a unique probe suffix may be specified, ie.          <span class="code">radius</span>,          <span class="code">http.redirect</span>.</p>
-            <p>The <span class="code">parameters</span><a name="kanchor3179"></a> are the parameters for the probe, encoded as 
+            <p>The <span class="code">parameters</span><a name="kanchor3177"></a> are the parameters for the probe, encoded as 
 	 for a GET request. To make it simpler to create IMProbe URL's manually, 
 	 the matching of parameter names is simplified. Before matching parameter 
 	 names, the parameter names are converted to lower-case, and any spaces and 
-	 underscores are removed. For a parameter named          <span class="code"><a name="kanchor3180"></a>Shared Secret</span>, 
-	 this means that IMProbe parameters          <span class="code"><a name="kanchor3181"></a>shared%20secret</span>,          <span class="code"><a name="kanchor3182"></a>sharedsecret</span> 
-	  and          <span class="code"><a name="kanchor3183"></a>shared_secret</span> will match and provide values.</p>
+	 underscores are removed. For a parameter named          <span class="code"><a name="kanchor3178"></a>Shared Secret</span>, 
+	 this means that IMProbe parameters          <span class="code"><a name="kanchor3179"></a>shared%20secret</span>,          <span class="code"><a name="kanchor3180"></a>sharedsecret</span> 
+	  and          <span class="code"><a name="kanchor3181"></a>shared_secret</span> will match and provide values.</p>
             <p>If the <span class="code">parameters</span> section contains a parameter name that is 
 	 not defined for the probe, the parameter is ignored. If a probe parameter 
 	 is left out of the IMProbe URL, it is set to its default value from the 
 	 probe file.</p>
             <h2>Examples</h2>
-            <p><a name="kanchor3184"></a><a name="kanchor3185"></a>Both of the IMProbe URLs below specify that the host netopia.example.com 
+            <p><a name="kanchor3182"></a><a name="kanchor3183"></a>Both of the IMProbe URLs below specify that the host netopia.example.com 
 	 should be tested with the built-in Ping probe: </p><pre class="code">improbe://netopia.example.com/com.dartware.ping
 improbe://netopia.example.com/ping
 </pre>
-            <p><a name="kanchor3186"></a>Both these URLs test a RADIUS server at netopia.example.com, with a shared 
-	 secret of 'secret', a user name of 'im', and a password of 'pw'. The "Shared Secret" parameter can be written multiple ways:</p><pre class="code"><a name="kanchor3187"></a><a name="kanchor3188"></a><a name="kanchor3189"></a>improbe://netopia.example.com/com.dartware.radius?shared_secret=secret&amp;user_name=im&amp;password=pw
+            <p><a name="kanchor3184"></a>Both these URLs test a RADIUS server at netopia.example.com, with a shared 
+	 secret of 'secret', a user name of 'im', and a password of 'pw'. The "Shared Secret" parameter can be written multiple ways:</p><pre class="code"><a name="kanchor3185"></a><a name="kanchor3186"></a><a name="kanchor3187"></a>improbe://netopia.example.com/com.dartware.radius?shared_secret=secret&amp;user_name=im&amp;password=pw
 improbe://netopia.example.com/radius?sharedsecret=secret&amp;username=im&amp;password=pw
 </pre>
             <p>The URLs below specifies the SNMP probe, testing a device 
@@ -83,15 +83,15 @@ improbe://netopia.example.com/radius?sharedsecret=secret&amp;username=im&amp;pas
 	 161 used in the first URL: </p><pre class="code">improbe://public@192.168.1.1/com.dartware.snmp
 improbe://public@192.168.1.1:1611/snmp
 </pre>
-            <h2><a name="kanchor3190"></a><a name="kanchor3191"></a><a name="kanchor3192"></a><a name="kanchor3193"></a>Encoding Special Characters</h2>
-            <p>The IMProbe URL format uses the <span class="code"><a name="kanchor3194"></a>Common Internet Scheme Syntax</span><a name="kanchor3195"></a> 
+            <h2><a name="kanchor3188"></a><a name="kanchor3189"></a><a name="kanchor3190"></a><a name="kanchor3191"></a>Encoding Special Characters</h2>
+            <p>The IMProbe URL format uses the <span class="code"><a name="kanchor3192"></a>Common Internet Scheme Syntax</span><a name="kanchor3193"></a> 
 	  as specified in section 3.1 of RFC 1768. The following characters are illegal 
 	 and must be encoded with %hh: </p><pre class="code">00-1F, 7F, 80-FF
 </pre>
             <p>The following characters are also considered unsafe and should be encoded 
 	 with %hh: </p><pre class="code">&lt; &gt; " # %
 </pre>
-            <p><a name="kanchor3196"></a>The following characters are reserved for special purposes and should not 
+            <p><a name="kanchor3194"></a>The following characters are reserved for special purposes and should not 
 	 appear unencoded except when used as delimiters in the URL: </p><pre class="code" style="margin-bottom: 0">; &#160;/ &#160;&#160;? &#160;: &#160;&#160;@ &#160;&#160;= &#160;&#160;&amp;
 </pre>
         </div>

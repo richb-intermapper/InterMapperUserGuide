@@ -10,7 +10,7 @@
   MasterPage="../../Content/Resources/MasterPages/PrintDoc.flmsp"
   MasterPageLayout="/Content/Resources/PageLayouts/DartwareChapter.flpgl"
   MasterStylesheet="/Content/default.css"
-  OutputFolder="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide"
+  OutputFolder="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapperUserGuide"
   conditions="Primary.print">
   <Variables>
     <Variable

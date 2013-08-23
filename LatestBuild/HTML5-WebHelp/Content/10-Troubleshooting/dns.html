@@ -23,20 +23,20 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="top"></a><a name="kanchor3521"></a><a name="kanchor3522"></a><a name="kanchor3523"></a><a name="kanchor3524"></a><a name="kanchor3525"></a>About DNS</h1>
+            <h1 class="L2"><a name="top"></a><a name="kanchor3519"></a><a name="kanchor3520"></a><a name="kanchor3521"></a><a name="kanchor3522"></a><a name="kanchor3523"></a>About DNS</h1>
             <ul>
-                <li value="1"><a name="kanchor3526"></a><a name="kanchor3527"></a><a name="kanchor3528"></a><a href="#whichdns">What 
+                <li value="1"><a name="kanchor3524"></a><a name="kanchor3525"></a><a name="kanchor3526"></a><a href="#whichdns">What 
  resolver does InterMapper OSX use for its DNS?</a>
                 </li>
                 <li value="2"><a href="#noname">InterMapper sometimes won't show 
  a device's DNS name...</a>
                 </li>
-                <li value="3"><a name="kanchor3529"></a><a name="kanchor3530"></a><a href="#fqdn">What is a FQDN?</a>
+                <li value="3"><a name="kanchor3527"></a><a name="kanchor3528"></a><a href="#fqdn">What is a FQDN?</a>
                 </li>
             </ul><a name="whichdns"></a>
             <h2>What resolver does InterMapper OSX use for its DNS? </h2>
             <p>InterMapper uses two different DNS resolvers. When you add a device 
- using the <i><b><a name="kanchor3531"></a>Add Device... </b></i><a name="kanchor3532"></a><a name="kanchor3533"></a><a name="kanchor3534"></a><a name="kanchor3535"></a><a name="kanchor3536"></a><a name="kanchor3537"></a><a name="kanchor3538"></a><a name="kanchor3539"></a><a name="kanchor3540"></a><a name="kanchor3541"></a><a name="kanchor3542"></a><a name="kanchor3543"></a>command, InterMapper uses the system's 
+ using the <i><b><a name="kanchor3529"></a>Add Device... </b></i><a name="kanchor3530"></a><a name="kanchor3531"></a><a name="kanchor3532"></a><a name="kanchor3533"></a><a name="kanchor3534"></a><a name="kanchor3535"></a><a name="kanchor3536"></a><a name="kanchor3537"></a><a name="kanchor3538"></a><a name="kanchor3539"></a><a name="kanchor3540"></a><a name="kanchor3541"></a>command, InterMapper uses the system's 
  resolver, configured in the OSX Network settings panel. 
  When you use the "DNS Check" feature
  , InterMapper does its own DNS operations, 
@@ -45,30 +45,30 @@
  assumes that the domain name is fully-qualified. The interval for verifying the domain name is determined by 
  the TTL in each DNS response (with the minimum interval specified in
  the DNS Monitor preferences panel). </p>
-            <p><a name="kanchor3544"></a><a name="kanchor3545"></a><a name="kanchor3546"></a>When you discover devices, InterMapper initially looks up the FQDN name 
+            <p><a name="kanchor3542"></a><a name="kanchor3543"></a><a name="kanchor3544"></a>When you discover devices, InterMapper initially looks up the FQDN name 
  from the IP address (address --&gt; name), then it settles down to monitoring 
  the domain name (name --&gt; address). InterMapper's built-in DNS resolver 
  doesn't handle partially-qualified or invalid domain names; they fail to resolve.  </p>
             <h2>InterMapper sometimes won't show a device's DNS name...<a name="noname"></a></h2>
-            <p><a name="kanchor3547"></a><a name="kanchor3548"></a>From the Edit menu, you can choose the Set Info submenu, then choose 
- <b><i><a name="kanchor3549"></a>Set Address... </i></b><a name="kanchor3550"></a>to change the DNS option for each affected 
+            <p><a name="kanchor3545"></a><a name="kanchor3546"></a>From the Edit menu, you can choose the Set Info submenu, then choose 
+ <b><i><a name="kanchor3547"></a>Set Address... </i></b><a name="kanchor3548"></a>to change the DNS option for each affected 
  device from<b><i>Resolve name to address</i></b> to    <b><i>Resolve address 
  to name</i></b>. With this setting InterMapper always resolves the address 
  to a name, and you don't see errors with names that aren't fully-qualified 
  domain names.</p>
             <h2>What <i>is</i> a FQDN?<a name="fqdn"></a></h2>
-            <p><a name="kanchor3551"></a>This is an acronym for a "Fully-Qualified Domain Name." Within 
+            <p><a name="kanchor3549"></a>This is an acronym for a "Fully-Qualified Domain Name." Within 
  an organization, it's convenient to refer to a computer by the first part 
  of its name, knowing that "everyone" will know that the remainder 
  is the same as the other computers in the organization. Thus, you may 
  speak of "sneezy" and "dopey", knowing that they're 
  really two computers at "seven-dwarves.org".</p>
-            <p><a name="kanchor3552"></a><a name="kanchor3553"></a><a name="kanchor3554"></a><a name="kanchor3555"></a>To identify a computer uniquely, you need the FQDN, such as "sneezy.seven-dwarves.org." Most user 
+            <p><a name="kanchor3550"></a><a name="kanchor3551"></a><a name="kanchor3552"></a><a name="kanchor3553"></a>To identify a computer uniquely, you need the FQDN, such as "sneezy.seven-dwarves.org." Most user 
  software can add a "search domain" to a partially-qualified 
  domain name, adding the missing part of the FQDN. Some DNS servers 
  require the FQDN to work properly with InterMapper. It's always best to enter the full domain name.</p>
             <p><b style="font-weight: bold;">Tip:</b> Even though you enter a FQDN 
- when specifying a computer, you can use the    <i><a name="kanchor3556"></a><a name="kanchor3557"></a>Short, Smart Name</i> when    <a href="../09-Reference/09-01-Command-Menu-Reference/format.html#labels">constructing 
+ when specifying a computer, you can use the    <i><a name="kanchor3554"></a><a name="kanchor3555"></a>Short, Smart Name</i> when    <a href="../09-Reference/09-01-Command-Menu-Reference/format.html#labels">constructing 
  a label for a device</a>.</p>
             <p><b style="font-weight: bold;">Tip:</b> Technically, a FQDN requires 
  a "." at the end. Just as the search domain is tacked onto the 

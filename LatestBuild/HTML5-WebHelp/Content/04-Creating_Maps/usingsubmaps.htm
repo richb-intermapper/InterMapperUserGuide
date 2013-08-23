@@ -23,14 +23,14 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor317"></a><a name="kanchor318"></a><a name="kanchor319"></a><a name="kanchor320"></a>Creating Sub-maps</h1>
-            <p><a name="kanchor321"></a><a name="kanchor322"></a>Another way to hide detail is to create a top-level map that gives an overview 
+            <h1 class="L2"><a name="kanchor316"></a><a name="kanchor317"></a><a name="kanchor318"></a><a name="kanchor319"></a>Creating Sub-maps</h1>
+            <p><a name="kanchor320"></a><a name="kanchor321"></a>Another way to hide detail is to create a top-level map that gives an overview 
 	of many individual maps. Each icon on the top-level map shows the status of 
 	another map (a "sub-map"). The color of the icon indicates the most 
 	serious condition (the "worst thing") on its sub-map. These sub-maps 
 	can be on the local computer, or could even be on another InterMapper server. 
   </p>
-            <p><a name="kanchor323"></a>
+            <p><a name="kanchor322"></a>
             The example below shows the Atlanta map that opens when you double-click the Atlanta icon on the National map. Notice that on the National map, the Atlanta icon is "down". The Atlanta map shows that the LDAP server is the reason.</p>
             <p style="text-align: center;">
                 <img src="../Resources/Images/SubmapExample1.png" />
@@ -38,7 +38,7 @@
             <p style="text-align: center;">&#160;</p>
             <h2 class="pagebreakbefore"><b style="font-weight: bold;">Creating a Sub-Map</b>
             </h2>
-            <p><a name="kanchor324"></a><a name="kanchor325"></a><a name="kanchor326"></a><a name="kanchor327"></a><a name="kanchor328"></a><a name="kanchor329"></a><a name="kanchor330"></a>Use the Map Status probe to create an icon that represents a sub-map. 
+            <p><a name="kanchor323"></a><a name="kanchor324"></a><a name="kanchor325"></a><a name="kanchor326"></a><a name="kanchor327"></a><a name="kanchor328"></a><a name="kanchor329"></a>Use the Map Status probe to create an icon that represents a sub-map. 
  To do this, you add a device with the address of the InterMapper server 
  on which the map is running, (127.0.0.1 if it's on the local computer) 
  with a Probe Type of <i><b>Map Status</b></i>. </p>
@@ -48,10 +48,10 @@
             <p><b style="font-weight: bold;">To add a sub-map item to a map: </b>
             </p>
             <ol>
-                <li value="1"><a name="kanchor331"></a><a name="kanchor332"></a><a name="kanchor333"></a>The easiest way to add a submap is to drag the desired map from the Map 
+                <li value="1"><a name="kanchor330"></a><a name="kanchor331"></a><a name="kanchor332"></a>The easiest way to add a submap is to drag the desired map from the Map 
 	 List window to the map. In certain special cases, the Set Probe window appears, with the Map Status 
 	 Probe selected. </li>
-                <li value="2">Click <b><i><a name="kanchor334"></a>OK</i></b> to accept the default settings. A new device is 
+                <li value="2">Click <b><i><a name="kanchor333"></a>OK</i></b> to accept the default settings. A new device is 
 	 added, using the current map and user account information. 
 	  
 	</li>
@@ -63,19 +63,19 @@
             <p class="pagebreakbefore"><b style="font-weight: bold;">To add a sub-map manually:</b>
             </p>
             <ol>
-                <li value="1"><a name="kanchor335"></a>From the Insert menu, choose <b>Device...</b></li>
-                <li value="2"><a name="kanchor336"></a><a name="kanchor337"></a>Enter the <a href="../10-Troubleshooting/ipaddressing.html">IP 
+                <li value="1"><a name="kanchor334"></a>From the Insert menu, choose <b>Device...</b></li>
+                <li value="2"><a name="kanchor335"></a><a name="kanchor336"></a>Enter the <a href="../10-Troubleshooting/ipaddressing.html">IP 
  address</a>,          <a href="../10-Troubleshooting/dns.html">DNS name</a>, or          <a href="../10-Troubleshooting/About_WINS_Names.htm">WINS name</a> 
  (preceded by "\\") of the InterMapper server that contains the 
  sub-map. Sub-maps may be running on the local InterMapper server (use 
  the address          <i>127.0.0.1</i>), or enter the address of InterMapper running 
  at a customer site, at a branch office, or at an international office. 
  </li>
-                <li value="3"><a name="kanchor338"></a>Specify the <b><a name="kanchor339"></a><a name="kanchor340"></a>Port</b> to connect to (default is 
+                <li value="3"><a name="kanchor337"></a>Specify the <b><a name="kanchor338"></a><a name="kanchor339"></a>Port</b> to connect to (default is 
  8181). </li>
                 <li value="4">Select <b>Map Status</b> from the Basic category.  </li>
-                <li value="5">Enter the <b><a name="kanchor341"></a><a name="kanchor342"></a>Map Name</b> to be monitored. <br /><br /><b>Note:</b> if your map is nested in a sub-folder, you must enter the full path to the map. For example, "/MySubFolder/MyMap.map". If you add the submap by dragging it into the map from the Map List window, the path is entered automatically.<br /></li>
-                <li value="6">Enter the <b><a name="kanchor343"></a><a name="kanchor344"></a>User Name</b> and          <b><a name="kanchor345"></a>Password</b> of 
+                <li value="5">Enter the <b><a name="kanchor340"></a><a name="kanchor341"></a>Map Name</b> to be monitored. <br /><br /><b>Note:</b> if your map is nested in a sub-folder, you must enter the full path to the map. For example, "/MySubFolder/MyMap.map". If you add the submap by dragging it into the map from the Map List window, the path is entered automatically.<br /></li>
+                <li value="6">Enter the <b><a name="kanchor342"></a><a name="kanchor343"></a>User Name</b> and          <b><a name="kanchor344"></a>Password</b> of 
  an account on that server. This account must have read-access to the map. 
  </li>
                 <li value="7">Click <b>OK.</b> The new icon appears on the 

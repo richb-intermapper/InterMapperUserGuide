@@ -34,12 +34,14 @@
             </blockquote><a name="Splunk_Layer_2_Output"></a>
             <h2>Splunk &gt; Layer 2 Output</h2>
             <blockquote>
-                <p><b>Switch Layer 2 CSV Output</b>
-                </p>
+                <h3>Layer 2 Output</h3>
                 <p>This probe scans InterMapper's Layer 2 database for information collected from switch devices, and writes it into a CSV file. The InterMapper App for Splunk (<a href="http://www.intermapper.com/products/Splunk-App/">http://www.intermapper.com/products/Splunk-App/</a>) then retrieves this data for its display.</p>
                 <p>If the process fails for any reason, the device is set to <b>Warning</b>.</p>
                 <p>Default poll interval is 10 minutes. You should decrease this (Set Info-&gt;Set Poll interval...) only if your Layer 2 discovery runs more frequently.</p>
                 <p><b>Note:</b> You should create only one device that uses this probe on an InterMapper server. Having multiple instances consumes server resources with no benefit.</p>
+                <p><b>Parameters</b>
+                </p>
+                <p>None.</p>
                 <p><i>Filename: com.dartware.layer2tocsv.txt</i>
                     <br /><i>Version: 1.4</i>
                 </p>

@@ -23,52 +23,53 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor2160"></a><a name="kanchor2161"></a><a name="kanchor2162"></a><a name="kanchor2163"></a>SSL Certificates</h1>
+            <h1 class="L2"><a name="kanchor2158"></a><a name="kanchor2159"></a><a name="kanchor2160"></a><a name="kanchor2161"></a>SSL Certificates</h1>
             <p>InterMapper's web and remote servers can employ a certificate to encrypt 
 	the data going between the server and clients. This assures that the client 
 	has connected to the actual server, and not another server acting as an 
 	impostor. </p>
-            <p><a name="kanchor2164"></a><a name="kanchor2165"></a><a name="kanchor2166"></a><a name="kanchor2167"></a>InterMapper ships with a certificate signed by Help/Systems Inc. This will work; 
+            <p><a name="kanchor2162"></a><a name="kanchor2163"></a><a name="kanchor2164"></a><a name="kanchor2165"></a>InterMapper ships with a certificate signed by Help/Systems Inc. This will work; 
 	the data is encrypted. But it's not using strong encryption (that is, it's 
 	easily broken) and web browsers using HTTPS connections will give a warning 
 	that there is a problem with the certificate, and that the data might be intercepted 
 	in transit. </p>
-            <p><a name="kanchor2168"></a><a name="kanchor2169"></a>To get stronger encryption and verification that the server is authentic, 
+            <p><a name="kanchor2166"></a><a name="kanchor2167"></a>To get stronger encryption and verification that the server is authentic, 
 	you can create and install your own SSL certificate. This is a three-step 
 	process:<br /></p>
             <ol>
-                <li value="1"><a name="kanchor2170"></a><a name="kanchor2171"></a><a name="kanchor2172"></a><a name="kanchor2173"></a><a name="kanchor2174"></a><a name="kanchor2175"></a><a name="kanchor2176"></a>Create a Certificate Signing Request (CSR). The CSR contains 
+                <li value="1"><a name="kanchor2168"></a><a name="kanchor2169"></a><a name="kanchor2170"></a><a name="kanchor2171"></a><a name="kanchor2172"></a><a name="kanchor2173"></a><a name="kanchor2174"></a>Create a Certificate Signing Request (CSR). The CSR contains 
 	 all the information needed to identify the computer. InterMapper has a built-in 
 	 function for collecting this information and building the certificate.</li>
                 <li value="2">Sign the CSR. Signing is a process where an authority verifies 
 	 the information in the certificate.</li>
-                <li value="3"><a name="kanchor2177"></a><a name="kanchor2178"></a>Upload the signed certificate into InterMapper to make it operational.</li>
+                <li value="3"><a name="kanchor2175"></a><a name="kanchor2176"></a>Upload the signed certificate into InterMapper to make it operational.</li>
             </ol>
-            <p><a name="kanchor2179"></a><a name="kanchor2180"></a><a name="kanchor2181"></a>In either case, you must first create a Certificate Signing Request 
+            <p><a name="kanchor2177"></a><a name="kanchor2178"></a><a name="kanchor2179"></a>In either case, you must first create a Certificate Signing Request 
  (CSR), which is a file that you can create using InterMapper. You then 
  sign the CSR yourself, or send it to a commercial Certificate Authority 
  to sign.</p>
-            <p><a name="kanchor2182"></a><a name="kanchor2183"></a><a name="kanchor2184"></a>Use the SSL Certificate panel, available from the Server Configuration section 
+            <p><a name="kanchor2180"></a><a name="kanchor2181"></a><a name="kanchor2182"></a>Use the SSL Certificate panel, available from the Server Configuration section 
  of the Server Settings window to create a Certificate Signing Request, 
  and to upload a signed certificate to the InterMapper server.</p>
             <p>The remainder of this topic describes the three separate steps in detail.</p>
-            <h2>
-                <img src="../../Resources/Images/serversettings-SSLCertificate2.png" />
-            </h2>
+            <p class="pagebreakbefore" style="font-style: italic;">The SSL Certificate Panel</p>
+            <p>
+                <img src="../../Resources/Images/serversettings-SSLCertificate2_464x449.png" style="border-width: 2px;border-style: solid;border-color: #a9a9a9;width: 464;height: 449;" />
+            </p>
             <h2>Step 1: Create a Certificate Signing Request</h2>
             <ol>
-                <li value="1"><a name="kanchor2185"></a>From the Edit menu, choose <i><b>Server Settings...</b></i> 
+                <li value="1"><a name="kanchor2183"></a>From the Edit menu, choose <i><b>Server Settings...</b></i> 
 			The Server Settings window appears.</li>
                 <li value="2">In the Server Configuration section, click <b><i>SSL 
 			Certificate</i></b>. The SSL Certificate panel appears.</li>
                 <li value="3">Click <b>Create new CSR...</b> The Certificate Signing 
 			Request window appears, as shown below.</li>
                 <li value="4">Enter the required information as described below, 
-			and click <b><i>OK</i></b><a name="kanchor2186"></a><a name="kanchor2187"></a><a name="kanchor2188"></a><a name="kanchor2189"></a><a name="kanchor2190"></a><a name="kanchor2191"></a><a name="kanchor2192"></a>. A 1,024-bit private key is generated for 
+			and click <b><i>OK</i></b><a name="kanchor2184"></a><a name="kanchor2185"></a><a name="kanchor2186"></a><a name="kanchor2187"></a><a name="kanchor2188"></a><a name="kanchor2189"></a><a name="kanchor2190"></a>. A 1,024-bit private key is generated for 
 			your computer, and the information is then used to create the Certificate 
 			Signing Request. The key and a copy of the CSR are saved in the        <i>InterMapper 
-			Settings:Certificates</i><a name="kanchor2193"></a> folder, and a standard Save File dialog 
-			appears.<br /><br /><a name="kanchor2194"></a>You are being asked to save a copy of the CSR (with a filename of 
+			Settings:Certificates</i><a name="kanchor2191"></a> folder, and a standard Save File dialog 
+			appears.<br /><br /><a name="kanchor2192"></a>You are being asked to save a copy of the CSR (with a filename of 
 			the FullyQualifiedDomainName.csr) on your disk. We recommend you save 
 			this on the desktop so it's easy to find when you create a signed 
 			certificate. After you have requested a signed certificate, you can 
@@ -80,22 +81,22 @@
  Certificate Signing Request: </h2>
             <p class="floatright">
                 <img src="../../Resources/Images/serversettings-CreateCSR.png" />
-                <br /><i style="font-style: italic;">The Certificate Signing Request <br />window.<a name="kanchor2195"></a><a name="kanchor2196"></a></i>
+                <br /><i style="font-style: italic;">The Certificate Signing Request <br />window.<a name="kanchor2193"></a><a name="kanchor2194"></a></i>
             </p>
             <ul>
-                <li value="1"><b style="font-weight: bold;"><a name="kanchor2197"></a>Common Name</b>
-                    <br />Enter your <i>full</i><a name="kanchor2198"></a> DNS name or IP address of your server. If possible, 
+                <li value="1"><b style="font-weight: bold;"><a name="kanchor2195"></a>Common Name</b>
+                    <br />Enter your <i>full</i><a name="kanchor2196"></a> DNS name or IP address of your server. If possible, 
 			it should include your domain name.</li>
                 <li value="2"><b style="font-weight: bold;">Organization</b>
                     <br />Enter the name of your organization.</li>
-                <li value="3"><b style="font-weight: bold;"><a name="kanchor2199"></a>Organizational Unit</b>
+                <li value="3"><b style="font-weight: bold;"><a name="kanchor2197"></a>Organizational Unit</b>
                     <br />If applicable, enter the name of an organizational unit within your 
  organization, such as a department or division name.</li>
                 <li value="4"><b style="font-weight: bold;">Country</b>
                     <br />Enter a two-letter abbreviation for your country</li>
-                <li value="5"><b><a name="kanchor2200"></a>State or Province</b>
+                <li value="5"><b><a name="kanchor2198"></a>State or Province</b>
                     <br />Enter a state or province name or abbreviation</li>
-                <li value="6"><b style="font-weight: bold;"><a name="kanchor2201"></a>City or Locality</b>
+                <li value="6"><b style="font-weight: bold;"><a name="kanchor2199"></a>City or Locality</b>
                     <br />Enter a descriptive location of the server.</li>
                 <li value="7"><b style="font-weight: bold;">Make new private key</b>
                     <br />The first time you generate a CSR, this box is dimmed. On subsequent 
@@ -105,11 +106,11 @@
             <p>When you click the OK button, InterMapper will generate a 1,024-bit 
  private key for your computer, then use the information entered above 
  to create the Certificate Signing Request. InterMapper will save following 
- files in the <i><a name="kanchor2202"></a>InterMapper Settings:Certificates</i> folder:</p>
+ files in the <i><a name="kanchor2200"></a>InterMapper Settings:Certificates</i> folder:</p>
             <ul>
-                <li value="1"><b style="font-weight: bold;"><a name="kanchor2203"></a>SSLCertificateKeyFile</b> 
+                <li value="1"><b style="font-weight: bold;"><a name="kanchor2201"></a>SSLCertificateKeyFile</b> 
  contains your private key </li>
-                <li value="2"><b style="font-weight: bold;"><a name="kanchor2204"></a>Pending.csr</b> the 
+                <li value="2"><b style="font-weight: bold;"><a name="kanchor2202"></a>Pending.csr</b> the 
  Certificate Signing Request (CSR) file </li>
             </ul>
             <p>You will also be asked to save another copy of the CSR (with a filename 
@@ -118,18 +119,18 @@
  create a signed certificate. You may discard this file after you have 
  requested a signed certificate. </p>
             <h2>Step 2: Sign the Certificate</h2>
-            <p><a name="kanchor2205"></a>Once you have a CSR file, you must have it signed. There are two ways 
+            <p><a name="kanchor2203"></a>Once you have a CSR file, you must have it signed. There are two ways 
 		 to do<br />this:</p>
             <ol>
-                <li value="1"><a name="kanchor2206"></a> You can use the OpenSSL software (available from <a href="http://www.openssl.org">http://www.openssl.org</a>) 
-			or<br /><a name="kanchor2207"></a>use the Windows CA to sign this CSR. This will create a self-signed 
+                <li value="1"><a name="kanchor2204"></a> You can use the OpenSSL software (available from <a href="http://www.openssl.org">http://www.openssl.org</a>) 
+			or<br /><a name="kanchor2205"></a>use the Windows CA to sign this CSR. This will create a self-signed 
 			certificate<br />that you can easily use within your own organization.</li>
-                <li value="2"> You can send the CSR to any of several commercial certificate authorities,<br /><a name="kanchor2208"></a>such as InstantSSL (<a href="http://www.instantssl.com">http://www.instantssl.com</a><a name="kanchor2209"></a>), 
-			Verisign<br />(<a href="http://www.verisign.com/products/site/index.html">http://www.verisign.com/products/site/index.html</a><a name="kanchor2210"></a>), 
+                <li value="2"> You can send the CSR to any of several commercial certificate authorities,<br /><a name="kanchor2206"></a>such as InstantSSL (<a href="http://www.instantssl.com">http://www.instantssl.com</a><a name="kanchor2207"></a>), 
+			Verisign<br />(<a href="http://www.verisign.com/products/site/index.html">http://www.verisign.com/products/site/index.html</a><a name="kanchor2208"></a>), 
 			or Thawte<br />(<a href="http://www.thawte.com">http://www.thawte.com</a>). These 
-			companies will return a signed certificate that<br />is globally-recognizable as authentic.</li>
+			companies return a signed certificate that is globally-recognizable as authentic.</li>
             </ol>
-            <h2 class="pagebreakbefore"><a name="kanchor2211"></a><a name="kanchor2212"></a>Step 3: Uploading the Signed Certificate</h2>
+            <h2><a name="kanchor2209"></a><a name="kanchor2210"></a>Step 3: Uploading the Signed Certificate</h2>
             <p />
             <p>After the certificate has been signed, you can upload it using <i><b>Upload 
 		 new<br />Certificate...</b></i> Either copy and paste the text of the certificate 
@@ -142,17 +143,17 @@
             <ul>
                 <li value="1"><b>SSLCertificateKeyFile</b> contains your private key, created 
 			above.<br /></li>
-                <li value="2"><b><a name="kanchor2213"></a>SSLCertificateFile</b><a name="kanchor2214"></a> contains your signed certificate (the 
+                <li value="2"><b><a name="kanchor2211"></a>SSLCertificateFile</b><a name="kanchor2212"></a> contains your signed certificate (the 
 			file from Verisign, InstantSSL, or OpenSSL.) Be sure to remove any 
 			suffix (such as ".pem") from the file name.<br /></li>
-                <li value="3"><b><a name="kanchor2215"></a>SSLCACertificateFile</b> contains the public certificate chain 
+                <li value="3"><b><a name="kanchor2213"></a>SSLCACertificateFile</b> contains the public certificate chain 
 			of the signing CA's (in order). <br /></li>
             </ul>
-            <p><a name="kanchor2216"></a>Stop the affected server from the Server Settings window, and then 
+            <p><a name="kanchor2214"></a>Stop the affected server from the Server Settings window, and then 
 		 start it again. These certificates are then used for HTTPS and InterMapper 
 		 Remote client connections if the SSL/TLS boxes are checked in the respective 
 		 server settings.</p>
-            <h2>Using an externally generated CSR and Private Key</h2>
+            <h2 class="pagebreakbefore">Using an externally generated CSR and Private Key</h2>
             <p>If you use a different application from InterMapper to create your Certificate 
  Signing Request (CSR), InterMapper will not have access to the private 
  key used to create the CSR. To upload your certificate with the private 
@@ -160,7 +161,7 @@
  key, and the CA's public certificate chain (if included), and use the 
  "Upload new certificate..." button to upload this combined file. 
  </p>
-            <h2 class="pagebreakbefore"><a name="notes"></a>Technical Notes</h2>
+            <h2><a name="notes"></a>Technical Notes</h2>
             <p>The design for this scheme is based on the SSL section of the Apache 
  Mod-SSL httpd.conf file.</p>
             <ol>
@@ -173,7 +174,7 @@
 	 if it exists. <br /></li>
                 <li value="4">It is possible to set up the configuration so there is only 
 	 one file with everything in it: SSLCertificateFile. <br /></li>
-                <li value="5"><a name="kanchor2217"></a><a name="kanchor2218"></a><a name="kanchor2219"></a><a name="kanchor2220"></a><a name="kanchor2221"></a>InterMapper will convert CR's to LF's in the file data before 
+                <li value="5"><a name="kanchor2215"></a><a name="kanchor2216"></a><a name="kanchor2217"></a><a name="kanchor2218"></a><a name="kanchor2219"></a>InterMapper will convert CR's to LF's in the file data before 
 	 loading it. There's no need to worry about CR-LF translation issues. </li>
             </ol>
             <p>&#160;</p>

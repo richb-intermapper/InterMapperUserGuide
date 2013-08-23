@@ -51,10 +51,6 @@
       Link="/Content/01-About_InterMapper/history.html"
       conditions="Primary.online,Primary.print" />
     <TocEntry
-      Title="Credits"
-      Link="/Content/01-About_InterMapper/Credits.htm"
-      conditions="Primary.online,Primary.print" />
-    <TocEntry
       Title="Warranty and License Agreement"
       Link="/Content/01-About_InterMapper/warranty.html"
       conditions="Primary.online,Primary.print" />

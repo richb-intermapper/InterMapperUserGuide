@@ -23,7 +23,7 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor226"></a><a name="kanchor227"></a><a name="kanchor228"></a>Using Auto-Discover</h1>
+            <h1 class="L2"><a name="kanchor225"></a><a name="kanchor226"></a><a name="kanchor227"></a>Using Auto-Discover</h1>
             <p>You can use Auto-Discover to create a new map. If your network contains Layer 2-enabled switches, you can also use Layer 2 information to increase the accuracy of a map's representation of your network topology. For more information, see <a href="../07-MonitoringNetwork/MappingWithLayer2.htm">Mapping With Layer 2<a href="../07-MonitoringNetwork/MappingWithLayer2.htm" class="MCXref xref ">{}</a></a>.</p>
             <p>For existing maps, you will need to use the <a href="../07-MonitoringNetwork/MappingWithLayer2.htm#existing">manual technique<a href="../07-MonitoringNetwork/MappingWithLayer2.htm#existing" class="MCXref xref ">{}</a></a> for converting the map. For new maps you create with Auto-Discovery, use the <a href="../07-MonitoringNetwork/MappingWithLayer2.htm#new">automatic technique<a href="../07-MonitoringNetwork/MappingWithLayer2.htm#new" class="MCXref xref ">{}</a></a>.</p>
             <p class="floatright">
@@ -31,11 +31,11 @@
                 <br />
                 <br />
             </p>
-            <p><b style="font-weight: bold;"><a name="kanchor229"></a>To Auto-Discover to create 
+            <p><b style="font-weight: bold;"><a name="kanchor228"></a>To Auto-Discover to create 
  an initial network map:</b>
             </p>
             <ol>
-                <li value="1"><a name="kanchor230"></a>From the File menu, choose <b><a name="kanchor231"></a>New...</b><a name="kanchor232"></a> The New Map Constructor window 
+                <li value="1"><a name="kanchor229"></a>From the File menu, choose <b><a name="kanchor230"></a>New...</b><a name="kanchor231"></a> The New Map Con-structor window 
 	appears. </li>
                 <li value="2">Enter a map name and click <b style="font-style: italic;">Next</b>.</li>
             </ol>
@@ -44,52 +44,47 @@
                 <img src="../Resources/Images/Dlg-Autodiscovery.png" />
             </p>
             <ol start="3">
-                <li value="3">Click to choose <b><i>Autodiscovery</i></b>, then click             <b><i>Create</i></b><a name="kanchor233"></a>. The Automatic Device Discovery window appears, as shown 
+                <li value="3">Click to choose <b><i>Auto-discovery</i></b>, then click             <b><i>Create</i></b><a name="kanchor232"></a>. The Automatic Device Discovery window appears, as shown 
 	below.</li>
             </ol>
             <p>&#160;</p>
             <p>&#160;</p>
-            <p>&#160;</p>
-            <p>&#160;</p>
-            <p>&#160;</p>
-            <p>&#160;</p>
-            <p class="clearboth">&#160;</p>
             <p class="floatright">
                 <img src="../Resources/Images/Dlg-Autodiscovery-IP2.png" />
             </p>
-            <ol start="3">
-                <li value="3"><a name="kanchor234"></a><a name="kanchor235"></a><a name="kanchor236"></a><a name="kanchor237"></a> Enter a host name or IP address you want to use as the starting point for 
-	auto-discovery.<br /><a name="kanchor238"></a><a name="kanchor239"></a>A name is suggested for you. It is the DNS name or IP address of a router, 
+            <ol start="3" data-mc-continue="true">
+                <li value="4"><a name="kanchor233"></a><a name="kanchor234"></a><a name="kanchor235"></a><a name="kanchor236"></a> Enter a host name or IP address you want to use as the starting point for 
+	auto-discovery.<br /><a name="kanchor237"></a><a name="kanchor238"></a>A name is suggested for you. It is the DNS name or IP address of a router, 
 	or if there's no router, the computer InterMapper is running on. Use the default 
 	value, or enter any of the following: 
 	<ul><li value="1">A DNS name</li><li value="2">An IP address (if you want to create a map of another part of a network.) 
-		<br /><a name="kanchor240"></a><a name="kanchor241"></a><a name="kanchor242"></a><a name="kanchor243"></a><a name="kanchor244"></a>If you enter the name or address of an SNMP-speaking router, InterMapper 
+		<br /><a name="kanchor239"></a><a name="kanchor240"></a><a name="kanchor241"></a><a name="kanchor242"></a><a name="kanchor243"></a>If you enter the name or address of an SNMP-speaking router, InterMapper 
 		draws interconnections to other routers in the network more quickly.</li></ul></li>
-                <li value="4"><a name="kanchor245"></a>If you have SNMP-speaking devices in your network, specify an <a href="../10-Troubleshooting/snmpfaq.html#rocs">SNMP 
+                <li value="5"><a name="kanchor244"></a>If you have SNMP-speaking devices in your network, specify an <a href="../10-Troubleshooting/snmpfaq.html#rocs">SNMP 
 	Community</a> string.</li>
-                <li value="5">Select your Discovery Options, as explained in <a href="#adwindow">The Auto-Discovery Window</a> below.</li>
-                <li value="6">Click the <b><i>Filter</i></b>&#160;button to set a filter for the discovery.</li>
-                <li value="7">Click <b><i><a name="kanchor246"></a>OK</i></b> to start the Auto-discovery process. A Discovery 
+                <li value="6">Select your Discovery Options, as explained in <a href="#adwindow">The Auto-Discovery Window</a> below.</li>
+                <li value="7">Click the <b><i>Filter</i></b>&#160;button to set a filter for the discovery.</li>
+                <li value="8">Click <b><i><a name="kanchor245"></a>OK</i></b> to start the Auto-discovery process. A Discovery 
 	Status bar appears as shown. The status bar shows progress statistics for subnets, queued routers, and addresses remaining to be scanned:<br /><img src="../Resources/Images/DiscoveryStats.png" style="margin-left: 2em;" /></li>
-                <li value="8">As the network is scanned, discovered devices appear in the current map (or in a list if you have cleared the <b style="font-style: italic;">Automatically Layout</b> check box.) When <i>InterMapper</i><a name="kanchor247"></a> 
+                <li value="9">As the network is scanned, discovered devices appear in the current map (or in a list if you have cleared the <b style="font-style: italic;">Automatically Layout</b> check box.) When <i>InterMapper</i><a name="kanchor246"></a> 
 	has found all the devices within the specified subnet, the Discovery Status 
 	bar disappears.</li>
             </ol>
             <ul>
                 <li value="1">
-                    <img src="../Resources/Images/tool-iconview.png" style="border-style: none;float: left;vertical-align: middle;" border="0" /><a name="kanchor248"></a><a name="kanchor249"></a>Click 
+                    <img src="../Resources/Images/tool-iconview.png" style="border-style: none;float: left;vertical-align: middle;" border="0" /><a name="kanchor247"></a><a name="kanchor248"></a>Click 
 	 the Map View button near the upper left corner of the Map window to view 
 	 your network as a map, showing devices and networks as icons, with the interconnections 
 	 between them. </li>
             </ul>
-            <p><b style="font-weight: bold;"><a name="kanchor250"></a><a name="kanchor251"></a>To stop the Auto-discover process:</b>
+            <p><b style="font-weight: bold;"><a name="kanchor249"></a><a name="kanchor250"></a>To stop the Auto-discover process:</b>
             </p>
             <ul>
                 <li value="1">Click the <b><i>Cancel</i></b> button. The discovery process is stopped, 
 	and no new devices or networks are added. All devices added before you stopped 
 	the process remain in the list.</li>
             </ul>
-            <h2><a name="adwindow"></a><a name="kanchor252"></a>The Automatic Device Discovery Window</h2>
+            <h2><a name="adwindow"></a><a name="kanchor251"></a>The Automatic Device Discovery Window</h2>
             <p>You control the starting point, the <a href="../10-Troubleshooting/snmpfaq.html#rocs">SNMP 
  Community string</a>, the breadth of the network search, and the kinds 
  of devices that are automatically added to the map using this window. </p>
@@ -100,8 +95,8 @@
                 <li value="1"><b style="font-weight: bold;">Starting host name 
  </b>-             <span style="font-weight: normal;">The <a href="../10-Troubleshooting/dns.html">DNS 
  name</a>,             <a href="../10-Troubleshooting/ipaddressing.html">IP address</a>, 
- or             <a name="kanchor253"></a><a href="../10-Troubleshooting/About_WINS_Names.htm">WINS name</a><a name="kanchor254"></a> 
- of a device to use as a starting point for the autodiscovery.</span></li>
+ or             <a name="kanchor252"></a><a href="../10-Troubleshooting/About_WINS_Names.htm">WINS name</a><a name="kanchor253"></a> 
+ of a device to use as a starting point for the auto-discovery.</span></li>
                 <li value="2">Specify an SNMP community -The SNMP 
 	 Read-only community string to be used to interrogate all devices. (InterMapper 
 	 attempts to read SNMP information using the specified community string. It is set to 'public' by default.)</li>
@@ -112,30 +107,30 @@
                 <li value="4"><b style="font-weight: bold;">Scan for devices on 
  all networks</b> -             <span style="font-weight: normal;">Specify which kinds 
  of devices should be automatically added to the map. Click to check this 
- box, or click  <b><i style="font-weight: bold;">Edit Filters...</i></b><a name="kanchor255"></a> 
+ box, or click  <b><i style="font-weight: bold;">Edit Filters...</i></b><a name="kanchor254"></a> 
  to open the Network Scanning window.</span></li>
                 <li value="5">Click <b style="font-style: italic;">Automatically layout </b>to let InterMapper layout the map automatically.</li>
                 <li value="6">Click <b style="font-style: italic;">Start Discovery</b> to initiate a scan of the specified host.</li>
             </ul>
-            <h2><a name="kanchor256"></a>The Network Filter Dialog</h2>
+            <h2><a name="kanchor255"></a>The Network Filter Dialog</h2>
             <p class="floatright">
                 <img src="../Resources/Images/Autodiscover-EditFilters.png" />
             </p>
-            <p><a name="kanchor257"></a>Check the filters you want to use to add devices to the map:</p>
+            <p><a name="kanchor256"></a>Check the filters you want to use to add devices to the map:</p>
             <ul>
                 <li value="1"><b style="font-weight: bold;">Active</b> - InterMapper 
  performs a complete IP address scan for each network. A device is added 
  for each IP address that responds. </li>
                 <li value="2"><b>Named</b> - Each IP address in the subnet is looked up in the DNS. 
 	 If a corresponding name is present, the device is added to the map. </li>
-                <li value="3"><b style="font-weight: bold;">SNMP</b><a name="kanchor258"></a> - InterMapper 
+                <li value="3"><b style="font-weight: bold;">SNMP</b><a name="kanchor257"></a> - InterMapper 
  sends an SNMP GetRequest to each address in the range. Any device that 
  responds is added to the map and uses the SNMP Basic Traffic probe. If the device does not respond to SNMP, the probe is set to Ping/Echo.</li>
                 <li value="4"><b style="font-weight: bold;">HTTP</b> - If the device responds to an HTTP request, an HTTP probe is added to the device (along with SNMP Basic Traffic or Ping/Echo probe), and the device becomes a <a href="probegroups.htm">probe group</a>.</li>
             </ul>
-            <h2 class="pagebreakbefore"><a name="kanchor259"></a>What Happens During Autodiscovery?</h2>
-            <p><a name="kanchor260"></a>During autodiscovery, InterMapper attempts to discover all devices on a network, based on the IP address and SNMP string provided. It does this by querying the router and ARP tables. Then, using any scan filters specified in the Network Scanning window, it scans all attached subnets, mapping all devices it finds, 
-	until it reaches the hop count specified in the <b><i><a name="kanchor261"></a>Discovery Options</i></b>&#160;section of the Automatic Device Discovery window. It then performs the following processes concurrently and iteratively 
+            <h2 class="pagebreakbefore"><a name="kanchor258"></a>What Happens During Autodiscovery?</h2>
+            <p><a name="kanchor259"></a>During autodiscovery, InterMapper attempts to discover all devices on a network, based on the IP address and SNMP string provided. It does this by querying the router and ARP tables. Then, using any scan filters specified in the Network Scanning window, it scans all attached subnets, mapping all devices it finds, 
+	until it reaches the hop count specified in the <b><i><a name="kanchor260"></a>Discovery Options</i></b>&#160;section of the Automatic Device Discovery window. It then performs the following processes concurrently and iteratively 
 	until the specified limits are reached:</p>
             <ul>
                 <li value="1">If InterMapper discovers an SNMP-speaking router, 
@@ -156,7 +151,7 @@
  an intrusion detection system, autodiscovery may trigger your intrusion 
  alarms. Be sure to check with the network manager before using this feature. 
  </p>
-                <p><span style="font-weight: bold;">Note: </span><a name="kanchor262"></a><a name="kanchor263"></a>It may take a long time 
+                <p><span style="font-weight: bold;">Note: </span><a name="kanchor261"></a><a name="kanchor262"></a>It may take a long time 
  to do autodiscovery on a large subnet (a Class A or B subnet). InterMapper 
  limits its autodiscovery queries to two per second so that it doesn't 
  overload any networks and thus it takes about 32,000 seconds (a shade 
@@ -176,7 +171,7 @@
  has finished.</p>
             <p style="text-align: center;">
                 <img src="../Resources/Images/autodiscovery.png" style="border-style: none;border-style: none;" border="0" />
-                <br /><a name="kanchor264"></a><i>Autodiscovered devices and networks. 
+                <br /><a name="kanchor263"></a><i>Autodiscovered devices and networks. 
  Routers </i>
                 <br style="font-style: italic;" /><i>are interconnected by links to networks. </i>
             </p>

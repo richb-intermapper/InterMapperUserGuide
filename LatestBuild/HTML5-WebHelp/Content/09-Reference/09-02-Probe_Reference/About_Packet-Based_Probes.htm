@@ -23,15 +23,15 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor2659"></a>About Packet-Based Probes</h1>
-            <h2><a name="kanchor2660"></a>Packet-based Test Procedure</h2>
+            <h1 class="L2"><a name="kanchor2657"></a>About Packet-Based Probes</h1>
+            <h2><a name="kanchor2658"></a>Packet-based Test Procedure</h2>
             <p> Whenever InterMapper tests a packet-based device, it uses the following procedure:
 </p>
             <ol>
-                <li value="1"><a name="kanchor2661"></a><a name="kanchor2662"></a> InterMapper sends the appropriate probe packet (ping, SNMP get-request, 
+                <li value="1"><a name="kanchor2659"></a><a name="kanchor2660"></a> InterMapper sends the appropriate probe packet (ping, SNMP get-request, 
  DNS query, etc.) 
   </li>
-                <li value="2"><a name="kanchor2663"></a> InterMapper waits the timeout interval specified for the particular device. 
+                <li value="2"><a name="kanchor2661"></a> InterMapper waits the timeout interval specified for the particular device. 
   </li>
                 <li value="3"> If a response arrives, InterMapper examines its contents and sets the device 
  status based on that response 
@@ -41,14 +41,14 @@
                 <li value="5"> The above procedure is repeated until a response arrives or the specified 
  number of probes has been sent 
   </li>
-                <li value="6"><a name="kanchor2664"></a> If no response has arrived after the final timeout, InterMapper sets the 
+                <li value="6"><a name="kanchor2662"></a> If no response has arrived after the final timeout, InterMapper sets the 
  device status to Down. 
   </li>
                 <li value="7"> In any event, the device is scheduled to be tested again at a time set 
  by the map's (or the device's) poll interval. 
 </li>
             </ol>
-            <p><a name="kanchor2665"></a> The default timeout is three seconds, with a default probe count of three 
+            <p><a name="kanchor2663"></a> The default timeout is three seconds, with a default probe count of three 
  seconds. Consequently, InterMapper will take nine seconds to declare a device 
  is down (three probes, waiting three seconds each). Both the timeout and the 
  number of probes can be set for each device. 

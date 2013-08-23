@@ -56,7 +56,6 @@
       conditions="Primary.online,Primary.print,Primary.CurrentInfo" />
     <TocEntry
       Title="Credits"
-      Link="/Content/01-About_InterMapper/Credits.htm"
       conditions="Primary.CurrentInfo,Primary.online,Primary.print" />
     <TocEntry
       Title="Warranty and License Agreement"

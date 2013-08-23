@@ -23,37 +23,37 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor1000"></a><a name="kanchor1001"></a><a name="kanchor1002"></a><a name="kanchor1003"></a><a name="kanchor1004"></a>Example Notification from a Command Line Program</h1>
-            <p><a name="kanchor1005"></a><a name="kanchor1006"></a> An interesting tool for notifications that we've found is iPing (<a href="http://www.iping.com/">http://www.iping.com/</a><a name="kanchor1007"></a><a name="kanchor1008"></a><a name="kanchor1009"></a>). 
+            <h1 class="L2"><a name="kanchor998"></a><a name="kanchor999"></a><a name="kanchor1000"></a><a name="kanchor1001"></a><a name="kanchor1002"></a>Example Notification from a Command Line Program</h1>
+            <p><a name="kanchor1003"></a><a name="kanchor1004"></a> An interesting tool for notifications that we've found is iPing (<a href="http://www.iping.com/">http://www.iping.com/</a><a name="kanchor1005"></a><a name="kanchor1006"></a><a name="kanchor1007"></a>). 
  This tool gives you several ways of generating by computer a notification that 
  iPing will read to the recipient over the phone. You can use this tool in any 
  version of InterMapper by making an email notifier where the email address is 
  ping.&lt;yourAccountName&gt;@iping.com. 
 </p>
-            <p><a name="kanchor1010"></a><a name="kanchor1011"></a><a name="kanchor1012"></a><a name="kanchor1013"></a><a name="kanchor1014"></a> However, iPing also has an API, one method of which allows more control over 
+            <p><a name="kanchor1008"></a><a name="kanchor1009"></a><a name="kanchor1010"></a><a name="kanchor1011"></a><a name="kanchor1012"></a> However, iPing also has an API, one method of which allows more control over 
  how the notification is carried out. This method, putnotification, is invoked 
  via http. With a command-line tool like "curl" and InterMapper's command-line 
  notifiers, you can create a powerful and tailored iPing notifier for InterMapper. 
 </p>
-            <h2><a name="kanchor1015"></a><a name="kanchor1016"></a>Implementing an iPing Notifier</h2>
-            <p><a name="kanchor1017"></a><a name="kanchor1018"></a> The curl utility is already available on many Unix systems. If it is not available 
+            <h2><a name="kanchor1013"></a><a name="kanchor1014"></a>Implementing an iPing Notifier</h2>
+            <p><a name="kanchor1015"></a><a name="kanchor1016"></a> The curl utility is already available on many Unix systems. If it is not available 
  on yours, or if you are using Windows, you can find out more about it and download 
- a copy from <a href="http://curl.haxx.se/">http://curl.haxx.se/</a><a name="kanchor1019"></a>. You can 
+ a copy from <a href="http://curl.haxx.se/">http://curl.haxx.se/</a><a name="kanchor1017"></a>. You can 
  find out more about the putnotification API method for iPing from         <a href="http://www.iping.com/ipingv2/PutNotification.aspx">http://www.iping.com/ipingv2/PutNotification.aspx</a>. 
  The rest of this command-line notifier tutorial assumes that curl is installed 
  and that you have an iPing account. 
   </p>
-            <p><a name="kanchor1020"></a><a name="kanchor1021"></a><a name="kanchor1022"></a><a name="kanchor1023"></a><a name="kanchor1024"></a> First, make sure that curl or an alias or soft link to it is in the Tools 
+            <p><a name="kanchor1018"></a><a name="kanchor1019"></a><a name="kanchor1020"></a><a name="kanchor1021"></a><a name="kanchor1022"></a> First, make sure that curl or an alias or soft link to it is in the Tools 
  directory on the InterMapper server. The Tools directory is a subdirectory 
  of the InterMapper Settings directory. If you do not have a Tools directory, 
  you will need to create one. For security reasons, only executables in this 
  directory may be executed as notifiers. 
   </p>
-            <p><a name="kanchor1025"></a><a name="kanchor1026"></a> Open the Server Settings dialog 
- box and click on the <b><a name="kanchor1027"></a>Notifier List</b> entry. Click on the         <b>Add...</b> 
+            <p><a name="kanchor1023"></a><a name="kanchor1024"></a> Open the Server Settings dialog 
+ box and click on the <b><a name="kanchor1025"></a>Notifier List</b> entry. Click on the         <b>Add...</b> 
   button and choose a type of         <b>Command Line</b>. Give it a name. 
 </p>
-            <p><a name="kanchor1028"></a><a name="kanchor1029"></a> In the "Command" field, enter the iPing notification command you want to use. 
+            <p><a name="kanchor1026"></a><a name="kanchor1027"></a> In the "Command" field, enter the iPing notification command you want to use. 
  A simple example to send a message to a phone number immediately would be: 
 </p><pre class="code">
 curl <br />"https://www.iping.com/services/iping.asp?method_name=putnotification
@@ -74,16 +74,16 @@ curl <br />"https://www.iping.com/services/iping.asp?method_name=putnotification
 </li>
                 <li value="4"><b>phone_number</b> the phone number to dial
 </li>
-                <li value="5"><b>notification_dt</b><a name="kanchor1030"></a> Valid notification date/time (see the iPing documentation) or "now"
+                <li value="5"><b>notification_dt</b><a name="kanchor1028"></a> Valid notification date/time (see the iPing documentation) or "now"
 </li>
                 <li value="6"><b>msg_text_body</b> The text of the message to be spoken.
 </li>
             </ul>
             <p><b>Note 1:</b> The msg_text_body must be in a form suitable for inclusion in a URL. In particular, the text should not contain spaces, ampersands (&amp;), question marks (?) or a number of other characters. InterMapper provides two macros that make it easy to enter the text:</p>
             <ul>
-                <li value="1"><b><a name="kanchor1031"></a>${URLESCAPE: xxxxx}</b> This macro returns a string that contains the text ("xxxxx") with all the URL special characters escaped properly. 
+                <li value="1"><b><a name="kanchor1029"></a>${URLESCAPE: xxxxx}</b> This macro returns a string that contains the text ("xxxxx") with all the URL special characters escaped properly. 
 </li>
-                <li value="2"><b>${ESCAPED_MESSAGE}</b><a name="kanchor1032"></a> This macro is a special case facility that performs the URL escaping function on the notifier's ${MESSAGE} string, as entered by the user. Click the "Edit 
+                <li value="2"><b>${ESCAPED_MESSAGE}</b><a name="kanchor1030"></a> This macro is a special case facility that performs the URL escaping function on the notifier's ${MESSAGE} string, as entered by the user. Click the "Edit 
 Message" button to modify the default message. The default message is 
 fairly short, as is appropriate for command-line notifications. 
 </li>

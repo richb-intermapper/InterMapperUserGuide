@@ -4,7 +4,7 @@
     <Map Name="INDEX" Link="/Content/Index.htm" />
     <Map Name="USERGUIDECOVER" Link="/Content/UserGuideCover.htm" />
     <Map Name="WELCOME" Link="/Content/welcome.html" />
-    <Map Name="CREDITS" Link="/Content/01-About_InterMapper/Credits.htm" />
+    <Map />
     <Map Name="GNULICENSE" Link="/Content/01-About_InterMapper/GNUlicense.htm" />
     <Map Name="HISTORY" Link="/Content/01-About_InterMapper/history.html" />
     <Map Name="SECTION508" Link="/Content/01-About_InterMapper/Section508.htm" />
@@ -185,7 +185,6 @@
     <Map Name="VERTEX_ATTRIBUTES" Link="/Content/09-Reference/09-05-Advanced_Importing/Vertex_Attributes.htm" />
     <Map Name="DATACENTER" Link="/Content/09-Reference/09-06-Data_Collection/datacenter.htm" />
     <Map Name="DATACOLLECTIONOVERVIEW" Link="/Content/09-Reference/09-06-Data_Collection/DataCollectionOverview.htm" />
-    <Map />
     <Map Name="USINGIMDATABASE" Link="/Content/09-Reference/09-06-Data_Collection/UsingIMDatabase.htm" />
     <Map Name="ABOUTIPMI" Link="/Content/10-Troubleshooting/aboutIPMI.htm" />
     <Map Name="ABOUT_WINS_NAMES" Link="/Content/10-Troubleshooting/About_WINS_Names.htm" />

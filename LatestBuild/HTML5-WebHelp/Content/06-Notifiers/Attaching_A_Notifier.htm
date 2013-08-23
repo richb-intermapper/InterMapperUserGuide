@@ -23,8 +23,8 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor728"></a><a name="attachnotifier"></a><a name="kanchor729"></a><a name="kanchor730"></a><a name="kanchor731"></a><a name="kanchor732"></a>Attaching a Notifier to a Device</h1>
-            <p><a name="kanchor733"></a><a name="kanchor734"></a><a name="kanchor735"></a><a name="kanchor736"></a><a name="kanchor737"></a><a name="kanchor738"></a>You can attach one or more notifiers to any device. For each notifier, you 
+            <h1 class="L2"><a name="kanchor727"></a><a name="attachnotifier"></a><a name="kanchor728"></a><a name="kanchor729"></a><a name="kanchor730"></a><a name="kanchor731"></a>Attaching a Notifier to a Device</h1>
+            <p><a name="kanchor732"></a><a name="kanchor733"></a><a name="kanchor734"></a><a name="kanchor735"></a><a name="kanchor736"></a><a name="kanchor737"></a>You can attach one or more notifiers to any device. For each notifier, you 
 	can choose which states trigger a notification to be sent. For example, a 
 	particular device might have a notifier send an e-mail when a device goes 
 	down, but can have a second notifier that plays sounds when the same device goes down, 
@@ -35,7 +35,7 @@
             </p>
             <ol>
                 <li value="1">Select one or more devices.</li>
-                <li value="2"><a name="kanchor739"></a>From the Monitor menu, choose <b><i><a name="kanchor740"></a>Notifiers Window</i></b><a name="kanchor741"></a>. 
+                <li value="2"><a name="kanchor738"></a>From the Monitor menu, choose <b><i><a name="kanchor739"></a>Notifiers Window</i></b><a name="kanchor740"></a>. 
 	 The Notifier Settings window appears, containing the notifiers currently 
 	 attached to the selected item as shown below.</li>
                 <li value="3">Select or clear the check boxes for the device states you 
@@ -47,27 +47,27 @@
             </p>
             <p style="text-align: center;"><i style="font-style: italic;">Attach Notifier window</i>
             </p>
-            <p><b>Note:</b><a name="kanchor742"></a><a name="kanchor743"></a><a name="kanchor744"></a> You can create a new notifier from the Notifier Settings window. 
+            <p><b>Note:</b><a name="kanchor741"></a><a name="kanchor742"></a><a name="kanchor743"></a> You can create a new notifier from the Notifier Settings window. 
 	The "Edit Notifiers..." button is a shortcut to the Notifier List 
 	in the Server Settings page. </p>
-            <h2><a name="kanchor745"></a><a name="kanchor746"></a><a name="kanchor747"></a>Using the Delay, Repeat, and Count parameters</h2>
+            <h2><a name="kanchor744"></a><a name="kanchor745"></a><a name="kanchor746"></a>Using the Delay, Repeat, and Count parameters</h2>
             <p><a name="rptdelay"></a>For each notifier, you can specify      <b>Delay</b>,      <b>Repeat</b>, 
 	and      <b>Count</b> parameters. These parameters can be used 
 	to control how quicky and how frequently notifications are sent. For example, 
 	to avoid unnecessary pages you might configure a notifier to wait until a 
 	device has been down for two minutes before sending the first page. You might also choose to re-send a notifier every 10 minutes forever. Notifications are sent until 
 	the count is reached, or the device has been acknowledged.</p>
-            <h3><a name="kanchor748"></a>How Delayed Notifiers work</h3>
-            <p><a name="kanchor749"></a><a name="kanchor750"></a><a name="kanchor751"></a><a name="kanchor752"></a>InterMapper maintains a queue of notifications to be sent. When a DOWN, WARN, 
+            <h3><a name="kanchor747"></a>How Delayed Notifiers work</h3>
+            <p><a name="kanchor748"></a><a name="kanchor749"></a><a name="kanchor750"></a><a name="kanchor751"></a>InterMapper maintains a queue of notifications to be sent. When a DOWN, WARN, 
 	ALARM or CRITICAL event happens, InterMapper places a notification in the 
 	queue, and sets its "time to be sent" according to the delay. (UP, 
 	OK and Trap notifications are never delayed.)</p>
-            <p><a name="kanchor753"></a>When an UP or OK event occurs, InterMapper first searches the notification 
+            <p><a name="kanchor752"></a>When an UP or OK event occurs, InterMapper first searches the notification 
 	queue for the corresponding down, warn, or alarm notification. If it's there, 
 	InterMapper removes both the DOWN (or Warn or Alarm) notification and UP (OK) 
 	event and won't send either one. If not, then InterMapper sends the UP/OK 
 	notification straight away.</p>
-            <h3><a name="kanchor754"></a>Notification Escalation</h3>
+            <h3><a name="kanchor753"></a>Notification Escalation</h3>
             <p>You can use notifiers to implement a problem escalation system by creating 
 	two or more notifiers for a device. The first notifier can fire 
 	quickly to alert someone immediately. A second notifier can be delayed for 

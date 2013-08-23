@@ -39,8 +39,7 @@
       Title="A Brief History"
       Link="/Content/01-About_InterMapper/history.html" />
     <TocEntry
-      Title="Credits"
-      Link="/Content/01-About_InterMapper/Credits.htm" />
+      Title="Credits" />
     <TocEntry
       Title="Warranty and License Agreement"
       Link="/Content/01-About_InterMapper/warranty.html" />

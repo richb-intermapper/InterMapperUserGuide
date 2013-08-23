@@ -23,18 +23,18 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2">Access Control Examples<a name="kanchor2085"></a><a name="kanchor2086"></a><a name="kanchor2087"></a></h1>
+            <h1 class="L2">Access Control Examples<a name="kanchor2083"></a><a name="kanchor2084"></a><a name="kanchor2085"></a></h1>
             <p>Here are some typical access control configurations that might be used 
  in different settings:</p>
             <dl>
-                <p style="font-weight: bold;"><a name="kanchor2088"></a><a name="kanchor2089"></a>Allow connections from anywhere (no authentication)</p>
+                <p style="font-weight: bold;"><a name="kanchor2086"></a><a name="kanchor2087"></a>Allow connections from anywhere (no authentication)</p>
                 <ol>
-                    <li value="1"><a name="kanchor2090"></a>From the Server Settings window, click a server (<b><a name="kanchor2091"></a><a name="kanchor2092"></a></b>Remote Server, Web Server, or Telnet Server)<b></b><a name="kanchor2093"></a><a name="kanchor2094"></a>. 
+                    <li value="1"><a name="kanchor2088"></a>From the Server Settings window, click a server (<b><a name="kanchor2089"></a><a name="kanchor2090"></a></b>Remote Server, Web Server, or Telnet Server)<b></b><a name="kanchor2091"></a><a name="kanchor2092"></a>. 
 		A list of firewall entries appears in the right pane.</li>
-                    <li value="2"><a name="kanchor2095"></a>Add a firewall definition and set it to "Allow 
+                    <li value="2"><a name="kanchor2093"></a>Add a firewall definition and set it to "Allow 
  *.*.*.*." </li>
-                    <li value="3">From the <a name="kanchor2096"></a><a href="users.html">Users panel</a><a name="kanchor2097"></a><a name="kanchor2098"></a><a name="kanchor2099"></a><a name="kanchor2100"></a><a name="kanchor2101"></a><a name="kanchor2102"></a>, create a Guest account 
-		with an Automatic Login address of "*.*.*.*". <br /><b><br />Note 1: </b><a name="kanchor2103"></a>This is a very open setting. Be sure that you actually 
+                    <li value="3">From the <a name="kanchor2094"></a><a href="users.html">Users panel</a><a name="kanchor2095"></a><a name="kanchor2096"></a><a name="kanchor2097"></a><a name="kanchor2098"></a><a name="kanchor2099"></a><a name="kanchor2100"></a>, create a Guest account 
+		with an Automatic Login address of "*.*.*.*". <br /><b><br />Note 1: </b><a name="kanchor2101"></a>This is a very open setting. Be sure that you actually 
  intend to allow anyone to connect. This configuration might be reasonable 
  if InterMapper were running behind a firewall, and thus not visible outside 
  your organization.<br /><br /><b>Note 2:</b> The IP wildcard example above works with 32-bit IPv4 address. InterMapper now supports 128-bit IPv6 addresses. Wildcard characters are not currently supported for IPv6 addresses.<br /></li>
@@ -43,29 +43,29 @@
             <dl>
                 <p style="font-weight: bold;">Allow connections from anywhere, but with authentication</p>
                 <ol>
-                    <li value="1"><a name="kanchor2104"></a>Define your user names and passwords as described in <a href="users.html">Users 
+                    <li value="1"><a name="kanchor2102"></a>Define your user names and passwords as described in <a href="users.html">Users 
 		and Groups</a>. </li>
                     <li value="2">From the Server Settings window, click <b>Remote Server</b>. 
 		A list of firewall entries appears in the right pane.</li>
-                    <li value="3">Add a firewall definition and set it to "Allow *.*.*.*."<br /><br /><a name="kanchor2105"></a><a name="kanchor2106"></a>Anyone that connects is required to provide a username/password.</li>
+                    <li value="3">Add a firewall definition and set it to "Allow *.*.*.*."<br /><br /><a name="kanchor2103"></a><a name="kanchor2104"></a>Anyone that connects is required to provide a username/password.</li>
                 </ol>
             </dl>
             <dl>
-                <p style="font-weight: bold;"><a name="kanchor2107"></a>Allow web connections to see all maps</p>
+                <p style="font-weight: bold;"><a name="kanchor2105"></a>Allow web connections to see all maps</p>
                 <ol>
-                    <li value="1">Define a group named <b><a name="kanchor2108"></a>FullWebAccess</b>.</li>
+                    <li value="1">Define a group named <b><a name="kanchor2106"></a>FullWebAccess</b>.</li>
                     <li value="2">Add users to that group. <br /><br />The users in the group can view all web pages.</li>
                 </ol>
             </dl>
             <dl>
-                <p><b style="font-weight: bold;"><a name="autologin"></a><a name="kanchor2109"></a><a name="kanchor2110"></a>Allow people 
+                <p><b style="font-weight: bold;"><a name="autologin"></a><a name="kanchor2107"></a><a name="kanchor2108"></a>Allow people 
 	 from known addresses to connect without entering a password</b>
                 </p>
-                <p class="dd"><a name="kanchor2111"></a>This is called an <i><a name="kanchor2112"></a><a name="kanchor2113"></a>automatic-login</i> user. </p>
+                <p class="dd"><a name="kanchor2109"></a>This is called an <i><a name="kanchor2110"></a><a name="kanchor2111"></a>automatic-login</i> user. </p>
                 <ol>
                     <li value="1">Create a new user with the desired name.</li>
                     <li value="2">Leave the <i><b>Password </b></i>box empty. </li>
-                    <li value="3"><a name="kanchor2114"></a><a name="kanchor2115"></a><a name="kanchor2116"></a>Enter the desired IP address in the <i><b>Automatic Login 
+                    <li value="3"><a name="kanchor2112"></a><a name="kanchor2113"></a><a name="kanchor2114"></a>Enter the desired IP address in the <i><b>Automatic Login 
 		</b></i>box.<br /><br />All connections from that IP address or range are automatically connected, 
 		and are assigned the specified user name.</li>
                 </ol>
@@ -74,29 +74,29 @@
                 <p style="font-weight: bold;">Allow a non-administrator user to see the log files
 </p>
                 <ol>
-                    <li value="1">Define a group named <a name="kanchor2117"></a>FullLogAccess.</li>
+                    <li value="1">Define a group named <a name="kanchor2115"></a>FullLogAccess.</li>
                     <li value="2">Add users to that group. <br /><br />The users in the group can view all the log files.&#160;</li>
                 </ol>
                 <p style="font-weight: bold;">Allow an automatic-login user name to connect from elsewhere by 
 	 entering a password</p>
                 <ul>
-                    <li value="1">Create an <a name="kanchor2118"></a><a href="#autologin">automatic-login 
+                    <li value="1">Create an <a name="kanchor2116"></a><a href="#autologin">automatic-login 
 		user </a> as described above, but enter a password. <br /><br />When connecting from an IP address <i>within</i> the range specified for 
 		automatic login, the user is automatically connected and assigned the 
 		specified user name. <br /><br />When connecting from an IP address <i>outside</i> the range specified 
 		for automatic login, the user is prompted for a user name and password.</li>
                 </ul>
-                <p style="font-weight: bold;"><a name="kanchor2119"></a>Deny all connections from certain addresses or sites</p>
+                <p style="font-weight: bold;"><a name="kanchor2117"></a>Deny all connections from certain addresses or sites</p>
                 <p class="dd">You can prohibit connections from certain sites. </p>
                 <ol>
                     <li value="1">From the Server Settings window, click <b>Remote Server</b>. 
 		A list of firewall entries appears in the right pane.</li>
-                    <li value="2">Click <b><i>Add...</i></b><a name="kanchor2120"></a> The Firewall Definition dialog 
+                    <li value="2">Click <b><i>Add...</i></b><a name="kanchor2118"></a> The Firewall Definition dialog 
 		appears.</li>
                     <li value="3">In the <i><b>IP Address</b></i> box, enter an IP address 
 		or         <a href="../firewall.html#addressranges">IP address range</a>.</li>
                     <li value="4">From the <b><i>Access</i></b> dropdown menu, choose         <i><b>Deny</b></i>.<i><b></b></i></li>
-                    <li value="5">Click <b><i><a name="kanchor2121"></a>OK</i></b>.<br /><br />All connections from the specified IP address or range are denied.</li>
+                    <li value="5">Click <b><i><a name="kanchor2119"></a>OK</i></b>.<br /><br />All connections from the specified IP address or range are denied.</li>
                 </ol>
                 <p style="font-weight: bold;">Give a single user access to a specific map</p>
                 <ol>

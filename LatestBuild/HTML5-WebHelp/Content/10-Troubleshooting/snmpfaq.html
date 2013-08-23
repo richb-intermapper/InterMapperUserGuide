@@ -23,17 +23,17 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="top"></a><a name="kanchor3558"></a><a name="kanchor3559"></a><a name="kanchor3560"></a><a name="kanchor3561"></a>SNMP Information</h1>
+            <h1 class="L2"><a name="top"></a><a name="kanchor3556"></a><a name="kanchor3557"></a><a name="kanchor3558"></a><a name="kanchor3559"></a>SNMP Information</h1>
             <ul>
                 <li value="1"><a href="#snmp">What is SNMP?</a>
                 </li>
-                <li value="2"><a name="kanchor3562"></a><a name="kanchor3563"></a><a name="kanchor3564"></a><a href="#rocs">What is the 'Read-only Community 
+                <li value="2"><a name="kanchor3560"></a><a name="kanchor3561"></a><a name="kanchor3562"></a><a href="#rocs">What is the 'Read-only Community 
  String'?</a>
                 </li>
                 <li value="3"><a href="#cantsnmp">Why can't I get SNMP information 
  from a device?</a>
                 </li>
-                <li value="4"><a name="kanchor3565"></a><a name="kanchor3566"></a><a href="#oidformat">How can InterMapper query a 
+                <li value="4"><a name="kanchor3563"></a><a name="kanchor3564"></a><a href="#oidformat">How can InterMapper query a 
  particular MIB variable?</a>
                 </li>
                 <li value="5"><a href="#tableix">Do all tables have an index?</a>
@@ -41,7 +41,7 @@
                 <li value="6"><a href="#snmprefs">Where can I read more information 
  about SNMP?</a>
                 </li>
-                <li value="7"><a name="kanchor3567"></a><a name="kanchor3568"></a><a name="kanchor3569"></a><a href="#unkenterprise">How do I interpret an unknown 
+                <li value="7"><a name="kanchor3565"></a><a name="kanchor3566"></a><a name="kanchor3567"></a><a href="#unkenterprise">How do I interpret an unknown 
  enterprise number?</a>
                 </li>
                 <li value="8"><a href="#scanall">Is there a way to scan a network 
@@ -51,28 +51,28 @@
             <p><a name="snmp"></a>
             </p>
             <h2>What is SNMP?</h2>
-            <p><a name="kanchor3570"></a><a name="kanchor3571"></a>SNMP stands for the Simple Network Management Protocol. At its heart, 
+            <p><a name="kanchor3568"></a><a name="kanchor3569"></a>SNMP stands for the Simple Network Management Protocol. At its heart, 
  SNMP is a set of rules that allows a computer to get statistics from another 
  computer across the Internet.</p>
-            <p><a name="kanchor3572"></a>Computers keep track of various statistics that measure what they're 
+            <p><a name="kanchor3570"></a>Computers keep track of various statistics that measure what they're 
  doing. For example, routers can keep track of the number of bytes, packets, 
  and errors that were transmitted and received on each interface (port). 
  Web servers might keep a tally of the number of hits they have received. 
  Other kinds of equipment have configuration information that's available 
  through SNMP.</p>
             <p>Each of these pieces of information (packet statistics, page hits, configuration) 
- is kept in a database described by a <i><a name="kanchor3573"></a>Management Information Base</i> 
+ is kept in a database described by a <i><a name="kanchor3571"></a>Management Information Base</i> 
  (a            <i>MIB</i> in SNMP parlance.) There are a many different MIBs, describing 
  many different aspects of a computer's operation.</p>
             <p>The various values that can be retrieved from a MIB are called <i>MIB 
  variables</i>. These variables are defined in the MIB for a device. Each 
- MIB variable is named by an            <i><a name="kanchor3574"></a>Object Identifier</i><a name="kanchor3575"></a><a name="kanchor3576"></a><a name="kanchor3577"></a> (OID), which usually 
+ MIB variable is named by an            <i><a name="kanchor3572"></a>Object Identifier</i><a name="kanchor3573"></a><a name="kanchor3574"></a><a name="kanchor3575"></a> (OID), which usually 
  has a name in the form of numbers separated by periods ("."), 
  like this: 1.3.6.1.xxxx.x.x.x.x...</p>
-            <p><a name="kanchor3578"></a><a name="kanchor3579"></a>For example, the MIB-II (pronounced, "MIB two") has a variable 
+            <p><a name="kanchor3576"></a><a name="kanchor3577"></a>For example, the MIB-II (pronounced, "MIB two") has a variable 
  that indicates the number of interfaces (ports) in a router. It's called 
  the "ifNumber", and its OID is 1.3.6.1.2.1.2.1.0</p>
-            <p><a name="kanchor3580"></a><a name="kanchor3581"></a><a name="kanchor3582"></a>InterMapper can query a device for the MIB variables and display the results. 
+            <p><a name="kanchor3578"></a><a name="kanchor3579"></a><a name="kanchor3580"></a>InterMapper can query a device for the MIB variables and display the results. 
  When a device receives a SNMP Get-Request for this ifNumber OID, it responds 
  with the count of interfaces.</p>
             <p><b style="font-weight: bold;">Note:</b> The trailing ".0" 
@@ -81,8 +81,8 @@
  wherever you enter an OID.</p>
             <p><a name="rocs"></a>
             </p>
-            <h2><a name="kanchor3583"></a>What is the 'Read-only Community String'?</h2>
-            <p><a name="kanchor3584"></a><a name="kanchor3585"></a><a name="kanchor3586"></a><a name="kanchor3587"></a>The SNMP Read-Only Community String is like a password. It is sent along 
+            <h2><a name="kanchor3581"></a>What is the 'Read-only Community String'?</h2>
+            <p><a name="kanchor3582"></a><a name="kanchor3583"></a><a name="kanchor3584"></a><a name="kanchor3585"></a>The SNMP Read-Only Community String is like a password. It is sent along 
  with each SNMP Get-Request and allows (or denies) access to device. Most 
  network vendors ship their equipment with a default password of "public". 
  (This is the so-called "default public community string".) Many 
@@ -90,15 +90,15 @@
  from getting information about the network setup. This is a good idea. 
  Even if it's only read-access, SNMP can divulge a lot of information about 
  the network that could be used to compromise it.</p>
-            <p><a name="kanchor3588"></a><a name="kanchor3589"></a><a name="kanchor3590"></a>If there's a "read-only community string", you might expect 
+            <p><a name="kanchor3586"></a><a name="kanchor3587"></a><a name="kanchor3588"></a>If there's a "read-only community string", you might expect 
  that there is a"Write community string". You'd be correct. There 
  is also a SNMP Set-Request, which is a command to set certain SNMP MIB 
  variables (e.g., certain OIDs) to a specified value. These writes are 
- protected by the write community string (which should <i>never</i><a name="kanchor3591"></a><a name="kanchor3592"></a> be 
+ protected by the write community string (which should <i>never</i><a name="kanchor3589"></a><a name="kanchor3590"></a> be 
  set to 'public'!). Many SNMP-speaking devices also have IP address filters 
  that ignore requests (read and write) unless the source address is on 
  an access list.</p>
-            <p><a name="kanchor3593"></a><a name="kanchor3594"></a>There's also a SNMP Trap, which is an unsolicited message from a device 
+            <p><a name="kanchor3591"></a><a name="kanchor3592"></a>There's also a SNMP Trap, which is an unsolicited message from a device 
  to an SNMP console (for example, InterMapper) that the device is in an 
  interesting state. Traps might indicate power-up or link-up/down conditions 
  temperatures exceeding certain thresholds, high traffic, etc. Traps provide 
@@ -115,22 +115,22 @@
  information.) 
 
 <p>In order of simplest to most complex, here is a list of reasons that 
- InterMapper might not get SNMP information from a device:</p><ul><li value="1"><b style="font-weight: bold;"><a name="kanchor3595"></a>Wrong DNS name/IP address</b> 
+ InterMapper might not get SNMP information from a device:</p><ul><li value="1"><b style="font-weight: bold;"><a name="kanchor3593"></a>Wrong DNS name/IP address</b> 
  - (not likely, but we have to mention it) </li><li value="2"><b style="font-weight: bold;">No connectivity</b> 
  - Can you ping the device from InterMapper? </li><li value="3"><b style="font-weight: bold;">No SNMP agent on the 
  device</b> - Many devices or computers have optional SNMP capabilities 
- that must be installed separately. </li><li value="4"><b style="font-weight: bold;"><a name="kanchor3596"></a><a name="kanchor3597"></a>Is the SNMP agent disabled?</b> 
+ that must be installed separately. </li><li value="4"><b style="font-weight: bold;"><a name="kanchor3594"></a><a name="kanchor3595"></a>Is the SNMP agent disabled?</b> 
  - Many devices allow you to disable the SNMP capability totally, or from 
- certain ports. </li><li value="5"><b style="font-weight: bold;"><a name="kanchor3598"></a><a name="kanchor3599"></a>If the SNMP agent is 
- based on net-snmp or UCD-snmp package</b><a name="kanchor3600"></a><a name="kanchor3601"></a> - be sure that the configuration 
+ certain ports. </li><li value="5"><b style="font-weight: bold;"><a name="kanchor3596"></a><a name="kanchor3597"></a>If the SNMP agent is 
+ based on net-snmp or UCD-snmp package</b><a name="kanchor3598"></a><a name="kanchor3599"></a> - be sure that the configuration 
  file specifically lists InterMapper's IP address/subnet as an allowed 
  client </li><li value="6"><b style="font-weight: bold;">In a custom probe, 
  have you specified the OID properly?</b> - (See the            <a href="#oidformat">OID 
- Format FAQ</a> for details.) </li><li value="7"><b style="font-weight: bold;"><a name="kanchor3602"></a>Wrong Community string</b> 
+ Format FAQ</a> for details.) </li><li value="7"><b style="font-weight: bold;"><a name="kanchor3600"></a>Wrong Community string</b> 
  - (have you tried 'public' ?) </li><li value="8"><b style="font-weight: bold;">Access lists: does 
- the equipment only allow SNMP access from certain addresses? </b></li><li value="9"><b style="font-weight: bold;"><a name="kanchor3603"></a><a name="kanchor3604"></a><a name="kanchor3605"></a>Firewalls: does a firewall 
+ the equipment only allow SNMP access from certain addresses? </b></li><li value="9"><b style="font-weight: bold;"><a name="kanchor3601"></a><a name="kanchor3602"></a><a name="kanchor3603"></a>Firewalls: does a firewall 
  block the SNMP port between your Mac and the equipment?</b></li><li value="10"><b style="font-weight: bold;">Bugs in the SNMP agent 
- on the equipment</b><a name="kanchor3606"></a><a name="kanchor3607"></a> - InterMapper uses SNMP Get-Next-Requests in several 
+ on the equipment</b><a name="kanchor3604"></a><a name="kanchor3605"></a> - InterMapper uses SNMP Get-Next-Requests in several 
  places. We've seen certain equipment that fails when queried this way. 
  </li></ul><p>If you're sure that you've checked all these things and you still can't 
  get SNMP information, please get back to us at <a href="mailto:support@intermapper.com">support@intermapper.com</a>. 
@@ -138,7 +138,7 @@
  </p><ul><li value="1"><b style="font-weight: bold;">Scalars </b>have a 
  single value, such as the interface number shown above. For example, the <span class="code">ifNumber</span> MIB variable of a router is 
  a single number that represents the total number of its interfaces (ports). 
- </li><li value="2"><b style="font-weight: bold;">Table values</b><a name="kanchor3608"></a>, on 
+ </li><li value="2"><b style="font-weight: bold;">Table values</b><a name="kanchor3606"></a>, on 
  the other hand, provide the same pieces of information for different items, 
  such as the traffic for each of a router's ports, or information about 
  each of the TCP connections in a device.</li></ul><p>InterMapper can read and display both scalar variables and table variables 
@@ -155,22 +155,22 @@ ciscoEnvMonVoltageStatusValue 1.3.6.1.4.1.9.9.13.1.2.1.3
  value of the first row; add ".2" to as a suffix, you'll get 
  the second row, etc.</p><h2><a name="tableix"></a>Do all tables have an index?</h2><p>As noted above, some tables don't have a separate index column. These 
  rows are named (their OIDs are specified by) data in the row. For example, 
- the OID for <span class="code"><a name="kanchor3609"></a>tcpConnState</span> row, the status 
+ the OID for <span class="code"><a name="kanchor3607"></a>tcpConnState</span> row, the status 
  of a particular TCP connection is "1.3.6.1.2.1.6.13.1.1". Its 
  index is the source and destination IP address and port (all four values) 
  which are appended to the <span class="code">tcpConnState</span> 
  OID. Thus, the full OID for the state of a TCP connection from 9.8.7.6 
  port 543 to 123.45.67.89 port 8765 would be:</p><pre class="code">1.3.6.1.2.1.6.13.1.1.9.8.7.6.543.123.45.67.89.8765</pre><p data-mc-conditions="Primary.online"><a href="#top">Back to top</a></p><h2 class="pagebreakbefore"><a name="snmprefs"></a>Where can I read more information about SNMP?</h2><p>Here's a great site to start learning about MIBs and all the cool things 
- you can do with them:</p><blockquote><p><a href="http://www.snmpworld.com/">http://www.snmpworld.com/</a></p></blockquote><p>Another is:</p><blockquote><p><a href="http://netman.cit.buffalo.edu/">http://netman.cit.buffalo.edu/</a></p></blockquote><p>A periodic newsletter, <i><a name="kanchor3610"></a>The Simple Times</i>, is online at:</p><blockquote><p><a href="http://www.simple-times.org/">http://www.simple-times.org/</a></p></blockquote><p>A great site pointing to various snmp products:</p><blockquote><p><a href="http://www.simpleweb.org/">http://www.simpleweb.org/</a></p></blockquote><p data-mc-conditions="Primary.online"><a href="#top">Back to top</a></p><p><a name="unkenterprise"></a></p><h2>How do I interpret an unknown enterprise number?</h2><p><b style="font-weight: bold;">Q:</b> My error log file shows the following 
- lines:</p><pre class="code"><a name="kanchor3611"></a><a name="kanchor3612"></a><a name="kanchor3613"></a>14/02 15:13:07 &#160;TRAP &#160;CITRIX1:: &#160;coldStart14/02 15:13:07 &#160;TRAP &#160;CITRIX1:: &#160;linkUp, ifIndex = 114/02 15:13:07 &#160;TRAP &#160;CITRIX1:: &#160;linkUp, ifIndex = 1677721914/02 15:14:07 &#160;TRAP &#160;CITRIX1:: &#160;1.3.6.1.4.1.3845.3.1.1 (8) &#160;{ &lt;no variables&gt; }
-</pre><p><a name="kanchor3614"></a>Can you tell me what that SNMP ID is? (1.3.6.1.4.1.3845.3.1.1 (8))</p><p><b style="font-weight: bold;">A:</b><a name="kanchor3615"></a><a name="kanchor3616"></a> The "1.3.6.1.4.1..." 
+ you can do with them:</p><blockquote><p><a href="http://www.snmpworld.com/">http://www.snmpworld.com/</a></p></blockquote><p>Another is:</p><blockquote><p><a href="http://netman.cit.buffalo.edu/">http://netman.cit.buffalo.edu/</a></p></blockquote><p>A periodic newsletter, <i><a name="kanchor3608"></a>The Simple Times</i>, is online at:</p><blockquote><p><a href="http://www.simple-times.org/">http://www.simple-times.org/</a></p></blockquote><p>A great site pointing to various snmp products:</p><blockquote><p><a href="http://www.simpleweb.org/">http://www.simpleweb.org/</a></p></blockquote><p data-mc-conditions="Primary.online"><a href="#top">Back to top</a></p><p><a name="unkenterprise"></a></p><h2>How do I interpret an unknown enterprise number?</h2><p><b style="font-weight: bold;">Q:</b> My error log file shows the following 
+ lines:</p><pre class="code"><a name="kanchor3609"></a><a name="kanchor3610"></a><a name="kanchor3611"></a>14/02 15:13:07 &#160;TRAP &#160;CITRIX1:: &#160;coldStart14/02 15:13:07 &#160;TRAP &#160;CITRIX1:: &#160;linkUp, ifIndex = 114/02 15:13:07 &#160;TRAP &#160;CITRIX1:: &#160;linkUp, ifIndex = 1677721914/02 15:14:07 &#160;TRAP &#160;CITRIX1:: &#160;1.3.6.1.4.1.3845.3.1.1 (8) &#160;{ &lt;no variables&gt; }
+</pre><p><a name="kanchor3612"></a>Can you tell me what that SNMP ID is? (1.3.6.1.4.1.3845.3.1.1 (8))</p><p><b style="font-weight: bold;">A:</b><a name="kanchor3613"></a><a name="kanchor3614"></a> The "1.3.6.1.4.1..." 
  prefix of the OID indicates that the trap is from a private enterprise 
  MIB. You can find out what enterprise by downloading the Enterprise Numbers 
  RFC from:</p><p><a href="http://www.iana.org/assignments/enterprise-numbers">http://www.iana.org/assignments/enterprise-numbers</a></p><p>Reading through the file indicates this:</p><pre class="code">3845 &#160;Citrix Systems &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Keith Turnbull &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;keitht@citrix.com
 </pre><p>You should contact the Citrix company (or read their MIB) to find out the 
  exact interpretation of the trap's OID. 
 
-</p><p data-mc-conditions="Primary.online"><a href="#top">Back to top</a></p><p><a name="scanall"></a></p><h2>Is there a way to scan a network for all SNMP devices?</h2><p><a name="kanchor3617"></a><a name="kanchor3618"></a><a name="kanchor3619"></a><a name="kanchor3620"></a>InterMapper will do a very good job of finding SNMP-speaking devices 
+</p><p data-mc-conditions="Primary.online"><a href="#top">Back to top</a></p><p><a name="scanall"></a></p><h2>Is there a way to scan a network for all SNMP devices?</h2><p><a name="kanchor3615"></a><a name="kanchor3616"></a><a name="kanchor3617"></a><a name="kanchor3618"></a>InterMapper will do a very good job of finding SNMP-speaking devices 
  if you know the devices' SNMP Read-only Community string. Detailed instructions 
  for scanning a subnet are available from the network scanning page. Be 
  sure to set the default SNMP Read-only Community String as shown in the 

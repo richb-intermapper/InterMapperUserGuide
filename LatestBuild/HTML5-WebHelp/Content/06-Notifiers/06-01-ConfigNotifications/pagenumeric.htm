@@ -23,37 +23,37 @@
         <div id="dartware_toclink" class="dartware_toclink"><a name="dartware_a" href="#">Show TOC</a>
         </div>
         <div class="pagewidth">
-            <h1 class="L2"><a name="kanchor923"></a><a name="kanchor924"></a><a name="kanchor925"></a><a name="kanchor926"></a><a name="kanchor927"></a>Notification Using a Numeric Pager</h1>
-            <p><a name="kanchor928"></a><a name="kanchor929"></a> You can configure InterMapper to use alphanumeric modem paging to send messages 
+            <h1 class="L2"><a name="kanchor922"></a><a name="kanchor923"></a><a name="kanchor924"></a><a name="kanchor925"></a><a name="kanchor926"></a>Notification Using a Numeric Pager</h1>
+            <p><a name="kanchor927"></a><a name="kanchor928"></a> You can configure InterMapper to use alphanumeric modem paging to send messages 
  to numeric pagers.
 </p>
             <p>To send numeric pages, follow these three basic steps:
 </p>
             <ol>
                 <li value="1">Create a new paging service.</li>
-                <li value="2"><a name="kanchor930"></a>Create one or more paging subscribers to receive the numeric pages.</li>
+                <li value="2"><a name="kanchor929"></a>Create one or more paging subscribers to receive the numeric pages.</li>
                 <li value="3">Edit the notification message as you normally would. Any non-numeric characters 
  are removed.</li>
             </ol>
             <h2>Step 1: Create a new paging service: </h2>
             <p />
             <ol>
-                <li value="1"><a name="kanchor931"></a>From the Edit menu, choose <b><i><a name="kanchor932"></a>Server Settings...</i></b></li>
-                <li value="2"><a name="kanchor933"></a>In the Server Settings window, click to choose <i><b><a name="kanchor934"></a>Notifier List</b></i>. 
+                <li value="1"><a name="kanchor930"></a>From the Edit menu, choose <b><i><a name="kanchor931"></a>Server Settings...</i></b></li>
+                <li value="2"><a name="kanchor932"></a>In the Server Settings window, click to choose <i><b><a name="kanchor933"></a>Notifier List</b></i>. 
   </li>
                 <li value="3">Click <b><i>Add...</i></b> to create a new notifier. 
   </li>
-                <li value="4">From the <b><i> Notifier Type</i></b> dropdown menu, choose       <b><i><a name="kanchor935"></a>Alpha-numeric 
+                <li value="4">From the <b><i> Notifier Type</i></b> dropdown menu, choose       <b><i><a name="kanchor934"></a>Alpha-numeric 
  Pager (Dialup)</i></b>. 
   </li>
-                <li value="5">From <i><b>Subscriber</b></i> dropdown menu, choose       <b><i><a name="kanchor936"></a>Edit List... </i></b><a name="kanchor937"></a>The 
+                <li value="5">From <i><b>Subscriber</b></i> dropdown menu, choose       <b><i><a name="kanchor935"></a>Edit List... </i></b><a name="kanchor936"></a>The 
  Modem Pager Settings window appears. 
   </li>
-                <li value="6">In the <b><i><a name="kanchor938"></a>Paging Services</i></b> tab, click       <b><i>Add</i></b><a name="kanchor939"></a><a name="kanchor940"></a>. A New 
+                <li value="6">In the <b><i><a name="kanchor937"></a>Paging Services</i></b> tab, click       <b><i>Add</i></b><a name="kanchor938"></a><a name="kanchor939"></a>. A New 
  Service appears in the Paging Services list, and an information form for the 
  new service appears at the right. 
   </li>
-                <li value="7">In the <b><i><a name="kanchor941"></a>Name </i></b> box, enter a name for the new service. 
+                <li value="7">In the <b><i><a name="kanchor940"></a>Name </i></b> box, enter a name for the new service. 
   </li>
                 <li value="8">Leave the service telephone number blank. (This is what tells InterMapper 
  to do numeric paging instead of alpha-numeric paging.) 
@@ -61,7 +61,7 @@
                 <li value="9">Data bits, stop bits, parity, and baud rate are irrelevant and may be set 
  to anything legal. 
   </li>
-                <li value="10"><a name="kanchor942"></a><a name="kanchor943"></a>Leave the modem init string at the default, ATE0V1. 
+                <li value="10"><a name="kanchor941"></a><a name="kanchor942"></a>Leave the modem init string at the default, ATE0V1. 
   </li>
                 <li value="11">Choose the desired modem. You may create more than one such service, if 
  you want.
@@ -74,7 +74,7 @@
   </li>
                 <li value="13">Set the service field to use the service created in the steps above. 
   </li>
-                <li value="14"><a name="kanchor944"></a>Set the pager id to be the phone number used to dial the pager. To the pager 
+                <li value="14"><a name="kanchor943"></a>Set the pager id to be the phone number used to dial the pager. To the pager 
  id/phone number, append enough of your modem's pause characters (for most 
  modems, this is a comma) to make sure that InterMapper waits until the call 
  has been answered and any introductory message played to send the tones with 
@@ -85,21 +85,21 @@
  as you normally would, using the InterMapper macros if you so desire. When the 
  page is sent, all non-numeric characters will be removed. So, the message: </p>
             <blockquote>
-                <p><a name="kanchor945"></a> DOWN: 192.168.1.132 </p>
+                <p><a name="kanchor944"></a> DOWN: 192.168.1.132 </p>
                 <p> &#160;&#160;&#160;becomes</p>
                 <p> 1921681132 </p>
             </blockquote>
             <p> Future versions of InterMapper may contain new macros to provide numeric codes 
  for common events.
 </p>
-            <h2><a name="kanchor946"></a><a name="kanchor947"></a>Paging Log File<a name="logfile"></a></h2>
-            <p><a name="kanchor948"></a> The paging log file is a special file which receives logging of all paging 
+            <h2><a name="kanchor945"></a><a name="kanchor946"></a>Paging Log File<a name="logfile"></a></h2>
+            <p>The paging log file is a special file which receives logging of all paging 
  traffic and messages, including the details of the modem commands and text written 
  and read. The information in this log may help you or InterMapper Technical Support 
  to troubleshoot paging if it is not working correctly. 
 </p>
             <p> To start logging this traffic, use the <i><b>Log Files</b></i> panel of the 
- Server Settings window to create a log file named       <b>Paging</b><a name="kanchor949"></a> (The log file 
+ Server Settings window to create a log file named       <b>Paging</b><a name="kanchor947"></a> (The log file 
  name will be "Paging&lt;date&gt;.txt") Logging continues until the log file 
  is removed through the Log Files panel. 
 </p>
