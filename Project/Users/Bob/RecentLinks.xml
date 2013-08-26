@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RecentLinks>
     <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
-        <Link Value="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide\Content\07-MonitoringNetwork\MappingWithLayer2.htm" />
+        <Link Value="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapperUserGuide\Content\09-Reference\09-02-Probe_Reference\ProbeReference\Basic.htm" />
     </Dialog>
     <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog">
-        <Link Value="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide\Content\07-MonitoringNetwork\MappingWithLayer2.htm" />
+        <Link Value="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapperUserGuide\Content\09-Reference\09-02-Probe_Reference\ProbeReference\Basic.htm" />
     </Dialog>
     <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
         <Link Value="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapper User Guide\Content\Resources\Images\FlowsFilters-vlan.png" />

@@ -11,7 +11,8 @@
   MasterPageLayout="/Content/Resources/PageLayouts/DartwareChapter.flpgl"
   MasterStylesheet="/Content/default.css"
   OutputFolder="E:\Projects\Doc Projects\Dartware\Flare-InterMapper\InterMapperUserGuide"
-  conditions="Primary.print">
+  conditions="Primary.print"
+  DisableAutoSync="false">
   <Variables>
     <Variable
       Name="Primary/CurrentVersion">5.4</Variable>
@@ -24,8 +25,11 @@
   <PDF
     ShowUsedBookmarks="false"
     DownsampleImages="true"
-    ImageCompression="JPEG" />
+    ImageCompression="JPEG"
+    InitialMagnification="FitH"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle" />
   <DocumentProperties
     Title="InterMapper User Guide"
-    Author="Bob Merrill" />
+    Author="Help/Systems, LLC" />
 </CatapultTarget>
