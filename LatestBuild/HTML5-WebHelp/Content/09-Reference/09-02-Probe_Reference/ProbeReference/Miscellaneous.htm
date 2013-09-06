@@ -57,7 +57,7 @@
                 <p><i>Link Count</i> - sets the number of interfaces to create when adding the device to the map. </p>
                 <p><i>Loop %</i> - sets the percentage of links that should connect themselves to subnets already present on the map. </p>
                 <p><i>Filename: com.dartware.demo</i>
-                    <br /><i>Version: 1.6</i>
+                    <br /><i>Version: 1.7</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -72,7 +72,7 @@
                 <p><i>Object Name</i> - optional - The name of the value that you want to monitor. It appears in the Status window and in a chart legend.</p>
                 <p><i>Object ID</i> - The object identifier (OID) of the value that you want to monitor. To retrieve the value of a MIB variable that is not in a table, the OID must end with ".0" (e.g. "1.3.6.1.2.1.1.1.0").</p>
                 <p><i>Filename: com.dartware.snmpv2c.basic</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -89,7 +89,7 @@
                 <p><i>Low Memory - Alarm</i> - specifies the <b>Alarm</b> threshold for the amount of free memory remaining (in bytes). If the free memory drops below this threshold, the device is set to <i>Alarm</i> state.</p>
                 <p><i>Low Memory - Warning</i> - specifies the <b>Warning</b> threshold for the amount of free memory remaining (in bytes). If the free memory drops below this threshold, the device is set to <i>Warning</i> state.</p>
                 <p><i>Filename: com.dartware.snmpv2c.cisco</i>
-                    <br /><i>Version: 1.10</i>
+                    <br /><i>Version: 1.11</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -104,7 +104,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.snmpv2c</i>
-                    <br /><i>Version: 1.6</i>
+                    <br /><i>Version: 1.7</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -121,7 +121,7 @@
                 </p>
                 <p><i>Plugin</i> - enter the Nagios command string. You can use the <span class="code">${ADDRESS}</span>  and <span class="code">${PORT}</span>, as mentioned above.</p>
                 <p><i>Filename: com.dartware.nagios.template</i>
-                    <br /><i>Version: 1.7</i>
+                    <br /><i>Version: 1.8</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -134,7 +134,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.nonpolling</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -147,19 +147,19 @@
                 <p>The probe demonstrates how to retrieve SNMP values from a device by specifying their OIDs and how to display those values in the device's Status Window. </p>
                 <p>The probe also provides thresholds that set the device into <b>Alarm</b> or <b>Warning</b> state. </p>
                 <p>In this example, the device goes into <b>Alarm</b> or <b>Warning</b> state if it has been rebooted recently (controlled by the <i>RebootAlarm</i> and <i>RebootWarn</i> parameters - two and three minutes, by default) or if there aren't as many interfaces in the ifTable as specified (in the <i>ExpectedInterfaces</i> parameter.)</p>
-                <p><b>Parameters</b>
-                </p>
-                <p><i>RebootAlarm</i> - set the device to <b>Alarm</b> if the sysUptime is less than the specified value in minutes.</p>
-                <p><i>RebootWarn</i> - set the device to <b>Warning</b> if the sysUptime is less than the specified value in minutes.</p>
-                <p><i>ExpectedInterfaces</i> - set the device to <b>Warning</b> if the the ifNumber is greater than or equal to this value.</p>
                 <p>This probe also demonstrates:</p>
                 <ul>
                     <li value="1"> <b>CALCULATION variables</b> - converts from centi-seconds (hundredths of a second) to seconds.</li>
                     <li value="2"> <b>Formatting of the Status Window</b> - in the <span class="code">&lt;snmp-device-display&gt;</span> section.</li>
                     <li value="3"> IMML also allows you to create a link to a URL, using the \U2=http://xxxx\ notation shown in the <span class="code">&lt;snmp-device-display&gt;</span> section.</li>
                 </ul>
+                <p><b>Parameters</b>
+                </p>
+                <p><i>RebootAlarm</i> - set the device to <b>Alarm</b> if the sysUptime is less than the specified value in minutes.</p>
+                <p><i>RebootWarn</i> - set the device to <b>Warning</b> if the sysUptime is less than the specified value in minutes.</p>
+                <p><i>ExpectedInterfaces</i> - set the device to <b>Warning</b> if the <span class="code">ifNumber</span> is greater than or equal to this value.</p>
                 <p><i>Filename: com.dartware.snmp.prototype.txt</i>
-                    <br /><i>Version: 1.2</i>
+                    <br /><i>Version: 1.4</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -173,7 +173,7 @@
                 </p>
                 <p><i>Allowed TCP Connections</i> - The maximum number of TCP connections allowed.</p>
                 <p><i>Filename: com.dartware.snmp.tcpcheck</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>

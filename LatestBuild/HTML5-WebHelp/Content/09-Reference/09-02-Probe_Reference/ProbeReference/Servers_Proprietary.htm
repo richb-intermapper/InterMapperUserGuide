@@ -103,7 +103,7 @@
                 <p><i>database name</i> - The name of the database to query.</p>
                 <p><i>timeout</i> - Number of seconds to wait for response.</p>
                 <p><i>Filename: com.dartware.tcp.4D</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -126,12 +126,12 @@
                 <p>This probe supports the Apache ExtendedStatus directive, if enabled.</p>
                 <p><b>Parameters</b>
                 </p>
-                <p> <i>Host Name</i> - Name of the host server</p>
+                <p><i>Host Name</i> - Name of the host server</p>
                 <p><i>URL Path</i> - Path to the server status page </p>
                 <p><i>User ID</i> - Server administrator username</p>
-                <p>Password - Administrator password</p>
+                <p><i>Password</i> - Administrator password</p>
                 <p><i>Filename: com.dartware.tcp.apache.txt</i>
-                    <br /><i>Version: 1.0</i>
+                    <br /><i>Version: 1.1</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -146,7 +146,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.tcp.appleshareip</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -155,11 +155,12 @@
             <blockquote>
                 <h3>AFP</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its Apple File Sharing using the Server Admin port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of a user with admin privileges on the specified server.</p>
-                <p><i>Password</i> is the password for the admin user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.afp.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -170,11 +171,12 @@
             <blockquote>
                 <h3>FTP</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its FTP Server using the Server Admin port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> This probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.ftp.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -185,11 +187,12 @@
             <blockquote>
                 <h3>Info</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details using the Server Admin port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.info.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -201,10 +204,11 @@
                 <h3>NAT</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its NAT service using the Server Admin port and protocol.</p>
                 <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.nat.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -215,11 +219,12 @@
             <blockquote>
                 <h3>Print</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its Print Server using the Server Admin port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.print.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -230,11 +235,12 @@
             <blockquote>
                 <h3>QTSS</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its QuickTime Streaming Server using the Server Admin port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.qtss.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -245,11 +251,12 @@
             <blockquote>
                 <h3>Web</h3>
                 <p>This TCP probe queries a <a href="http://www.apple.com/server/macosx/">Mac OS X Server</a> installation for various details about its Web Server using the Server Admin port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Admin port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.  An admin user is not required.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOS X.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Admin port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.  An admin user is not required.</p>
+                <p><i>Password</i> - the user's password.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOS X.</p>
                 <p><i>Filename: com.dartware.tcp.osxserver.web.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -264,7 +271,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.rtmp</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -273,22 +280,22 @@
             <blockquote>
                 <h3>Xserve G4</h3>
                 <p>This TCP probe queries an Xserve G4 for various details using the Server Monitor port and protocol.</p>
-                <p><b>This probe will monitor Xserve G4s running Mac OS X 10.3.9 and earlier.  For Xserves running 10.4 or later, please choose the Xserve Tiger probe.</b>
+                <p><b>Note:</b> It is compatible Xserve G4s running Mac OS X 10.3.9 and earlier.  For Xserves running 10.4 or later, please choose the Xserve Tiger probe.</p>
+                <p>Sends a request for status information via an HTTPS post to the Server Monitor port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
-                <p>A request for status information is made via an HTTPS post to the Server Monitor port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p><i>OS Version</i> specifies the version of Mac OS X Server that is running on the Xserve.</p>
-                <p>The remaining options allow you to display or ignore the corresponding data. These options correspond to the tabs in the Server Monitor application on Mac OS X Server.</p>
-                <p><i>Info</i> is general information about the server, such as amount of RAM and OS name and version.</p>
-                <p><i>Drives</i> is information about the various drives installed on the server. This information includes the manufacturer, model, and capacity of each drive.</p>
-                <p><i>Power</i> is information pertaining to the power supply.</p>
-                <p><i>Network</i> information includes the hardware address, IP address, traffic information, and type of each interface.</p>
-                <p><i>Temperature</i> is the ambient temperature of the server.</p>
-                <p><i>Blowers</i> is information on the speed of the server's cooling fans.</p>
-                <p><i>Security</i> monitors the state of the security lock and the enclosure.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOSX.</i>
-                </p>
+                <p><i>User</i> - the name of any user on the specified server.</p>
+                <p><i>Password</i> - the password for the specified user.</p>
+                <p><i>OS Version</i> - the version of Mac OS X Server running on the Xserve.</p>
+                <p>The remaining options let you display or ignore data in the response. These options correspond to tabs in the Server Monitor application on Mac OS X Server.</p>
+                <p><i>Info</i> - general information about the server, such as amount of RAM, and OS name, and version.</p>
+                <p><i>Drives</i> - information about the drives installed on the server. Includes the manufacturer, model, and capacity of each drive.</p>
+                <p><i>Power</i> - information about the power supply.</p>
+                <p><i>Network</i> - Includes the hardware address, IP address, traffic information, and type of each interface.</p>
+                <p><i>Temperature</i> - the ambient temperature of the server.</p>
+                <p><i>Blowers</i> - information on the speed of the server's cooling fans.</p>
+                <p><i>Security</i> - the state of the security lock and the enclosure.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOSX.</p>
                 <p><i>Filename: com.dartware.tcp.xserve.details</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -299,19 +306,20 @@
             <blockquote>
                 <h3>Xserve G5</h3>
                 <p>This TCP probe queries an <a href="http://www.apple.com/xserve/">Xserve G5</a> for various details using the Server Monitor port and protocol.</p>
-                <p>A request for status information is made via an HTTPS post to the Server Monitor port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p>The remaining options allow you to display or ignore the corresponding data. These options correspond to the tabs in the Server Monitor application on Mac OS X Server.</p>
-                <p><i>Info</i> is general information about the server, such as amount of RAM and OS name and version.</p>
-                <p><i>Drives</i> is information about the various drives installed on the server. This information includes the manufacturer, model, and capacity of each drive.</p>
-                <p><i>Power</i> is information pertaining to the power supply.</p>
-                <p><i>Network</i> information includes the hardware address, IP address, traffic information, and type of each interface.</p>
-                <p><i>Temperature</i> is the ambient temperature of the server.</p>
-                <p><i>Blowers</i> is information on the speed of the server's cooling fans.</p>
-                <p><i>Security</i> monitors the state of the security lock and the enclosure.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOSX.</i>
+                <p>Sends a request for status information via an HTTPS post to the Server Monitor port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.</p>
+                <p><i>Password</i> - the password for the specified user.</p>
+                <p>The remaining options let you display or ignore data in the response. These options correspond to tabs in the Server Monitor application on Mac OS X Server.</p>
+                <p><i>Info</i> - general information about the server, such as amount of RAM, and OS name, and version.</p>
+                <p><i>Drives</i> - information about the drives installed on the server. Includes the manufacturer, model, and capacity of each drive.</p>
+                <p><i>Power</i> - information about the power supply.</p>
+                <p><i>Network</i> - Includes the hardware address, IP address, traffic information, and type of each interface.</p>
+                <p><i>Temperature</i> - the ambient temperature of the server.</p>
+                <p><i>Blowers</i> - information on the speed of the server's cooling fans.</p>
+                <p><i>Security</i> - the state of the security lock and the enclosure.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOSX.</p>
                 <p><i>Filename: com.dartware.tcp.xserve.g5.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -322,8 +330,10 @@
             <blockquote>
                 <h3>Xserve RAID</h3>
                 <p>This TCP probe queries an <a href="http://www.apple.com/xserve/raid/">Xserve RAID</a> for various details using the RAID Admin port and protocol.</p>
-                <p>Status information is requested from the Xserve RAID via a series of HTTP POSTs. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>Password</i> is the monitoring password used for RAID Admin.</p>
+                <p>Sends a request to an Xserve Raid via an HTTPS post via a series of HTTP POSTs and parses an XML responses.</p>
+                <p><b>Parameters</b>
+                </p>
+                <p><i>Password</i> - the RAID administrator's monitoring password.</p>
                 <p><i>Filename: com.dartware.tcp.xserve.raid.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -334,20 +344,21 @@
             <blockquote>
                 <h3>Xserve Tiger (PPC)</h3>
                 <p>This probe queries an <a href="http://www.apple.com/xserve/">Xserve</a> running Mac OS X 10.4 using the Server Monitor port and protocol.  Because of this, the probe requires an administrators name and password in order to access the information.  Due to significant hardware differences, there are separate probes for G4 Xserves, G5 Xserves, and Intel Xserves.</p>
-                <p>Apple has pre-configured several thresholds for various properties, such as temperatures, blower speeds, and power supply values.  The Server Monitor protocol specifies when any of these thresholds are exceeded and the error message and status will be reflected by this probe.</p>
-                <p>A request for status information is made via an HTTPS POST to the Server Monitor port. The server responds with XML data that is then parsed by the probe.</p>
-                <p><i>User</i> is the name of any user on the specified server.</p>
-                <p><i>Password</i> is the password for the user specified in <i>User</i>.</p>
-                <p>The remaining options allow you to display or ignore the corresponding data. These options correspond to the tabs in the Server Monitor application on Mac OS X Server.</p>
-                <p><i>Info</i> is general information about the server, such as number of CPUs, amount of RAM, and OS name and version.</p>
-                <p><i>Drives</i> is information about the various drives installed on the server such as the manufacturer, model, capacity, and SMART messages for each drive.</p>
-                <p><i>Power</i> includes myriad measurements including CPU power and current, and power supply voltages.</p>
-                <p><i>Network</i> information includes the hardware address, IP address, traffic information, and type of each interface.</p>
-                <p><i>Temperature</i> lists several temperatures in the enclosure.</p>
-                <p><i>Blowers</i> is information on the speed of the server's cooling fans.</p>
-                <p><i>Security</i> monitors the state of the security lock and the enclosure.</p>
-                <p><i>Note: The implementation of this probe uses OpenSSL on MacOSX.</i>
+                <p>Apple has pre-configured several thresholds for various properties, such as temperatures, blower speeds, and power supply values.  The Server Monitor protocol specifies when any of these thresholds are exceeded and the error message and status are reflected by this probe.</p>
+                <p>Sends a request for status information via an HTTPS post to the Server Monitor port and parses an XML response.</p>
+                <p><b>Parameters</b>
                 </p>
+                <p><i>User</i> - the name of any user on the specified server.</p>
+                <p><i>Password</i> - the password for the specified user.</p>
+                <p>The remaining options let you display or ignore data in the response. These options correspond to tabs in the Server Monitor application on Mac OS X Server.</p>
+                <p><i>Info</i> - general information about the server, such as amount of RAM, and OS name, and version.</p>
+                <p><i>Drives</i> - information about the drives installed on the server. Includes the manufacturer, model, and capacity of each drive.</p>
+                <p><i>Power</i> - information about the power supply.</p>
+                <p><i>Network</i> - Includes the hardware address, IP address, traffic information, and type of each interface.</p>
+                <p><i>Temperature</i> - the ambient temperature of the server.</p>
+                <p><i>Blowers</i> - information on the speed of the server's cooling fans.</p>
+                <p><i>Security</i> - the state of the security lock and the enclosure.</p>
+                <p><b>Note:</b> The implementation of this probe uses OpenSSL on MacOSX.</p>
                 <p><i>Filename: com.dartware.tcp.xserve.tiger.txt</i>
                     <br /><i>Version: 1.0</i>
                 </p>
@@ -506,7 +517,7 @@
                 </p>
                 <p><i>Purple Time</i> - sets the number of minutes to wait without a report before indicating a problem. In an actual Big Brother server, this is thirty minutes; Big Brother shows a device as purple if it goes this long without a report from the device. This probe shows it as DOWN.</p>
                 <p><i>Filename: com.dartware.bigbrother</i>
-                    <br /><i>Version: 1.6</i>
+                    <br /><i>Version: 1.7</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -521,7 +532,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.blitzwatch</i>
-                    <br /><i>Version: 1.5</i>
+                    <br /><i>Version: 1.6</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -540,7 +551,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.tcp.citrix.txt</i>
-                    <br /><i>Version: 1.1</i>
+                    <br /><i>Version: 1.2</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -555,7 +566,7 @@
                 <p><i>Password</i> - the DataCenter admin user's password.</p>
                 <p><i>Port</i> - the port the DataCenter server listens on.</p>
                 <p><i>Filename: com.dartware.tcp.imauth</i>
-                    <br /><i>Version: 0.3</i>
+                    <br /><i>Version: 0.4</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -570,7 +581,7 @@
                 <p><i>Password</i> - the DataCenter admin user's password.</p>
                 <p><i>Port</i> - the port the DataCenter server listens on.</p>
                 <p><i>Filename: com.dartware.tcp.imdatabase</i>
-                    <br /><i>Version: 0.3</i>
+                    <br /><i>Version: 0.4</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -583,7 +594,7 @@
                 </p>
                 <p><i>Name</i> - the name to look up in the DND.</p>
                 <p><i>Filename: com.dartware.tcp.dnd</i>
-                    <br /><i>Version: 1.6</i>
+                    <br /><i>Version: 1.7</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -596,7 +607,7 @@
                 </p>
                 <p>None.</p>
                 <p><i>Filename: com.dartware.tcp.filemaker</i>
-                    <br /><i>Version: 1.6</i>
+                    <br /><i>Version: 1.7</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -610,7 +621,7 @@
                 <p><i>Banner</i> - Expected text string.</p>
                 <p><i>Port</i> - Port to send on.</p>
                 <p><i>Filename: com.dartware.tcp.firstclass</i>
-                    <br /><i>Version: 1.6</i>
+                    <br /><i>Version: 1.7</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -634,7 +645,10 @@
             <blockquote>
                 <h3>Lotus Notes</h3>
                 <p>Lotus Notes uses Port 1352 for its Remote Procedure Call and Notes Replication. </p>
-                <p>This probe simply establishes a connection to the indicated port, which presumably is a Lotus Notes server. If the connection is successful, the device's status is set to OK; otherwise, its status is DOWN.</p>
+                <p>This probe attempts to establish a connection to port 1532, assumed to be a Lotus Notes server. If the connection is successful, the device's status is set to <b><i>Okay</i></b>; otherwise, it is set to  <b><i>Down</i></b>.</p>
+                <p><b>Parameters</b>
+                </p>
+                <p>None.</p>
                 <p><i>Filename: com.dartware.tcp.lotusnotes</i>
                     <br /><i>Version: 1.4</i>
                 </p>
@@ -644,9 +658,12 @@
             <h2>Servers Proprietary &gt; MeetingMaker</h2>
             <blockquote>
                 <h3>MeetingMaker</h3>
-                <p>The MeetingMaker server listens on port 649. This probe attempts to connect and exits with OKAY status if it succeeds.</p>
+                <p>The MeetingMaker server listens on port 649. This probe attempts to connect and exits with <b><i>OKAY</i></b> status if successful.</p>
+                <p><b>Parameters</b>
+                </p>
+                <p>None.</p>
                 <p><i>Filename: com.dartware.tcp.meetingmaker</i>
-                    <br /><i>Version: 1.4</i>
+                    <br /><i>Version: 1.5</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -664,7 +681,7 @@
                 <p><i>Free Lease Critical</i> - The number of free leases remaining at which the device enters CRITICAL state.</p>
                 <p><i>View the DHCP scope table</i> - Click to view a list of available scopes, along with information about in-use lease, free lease, and pending offers.</p>
                 <p><i>Filename: com.dartware.snmp.dhcpcheck.txt</i>
-                    <br /><i>Version: 0.3</i>
+                    <br /><i>Version: 0.4</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -682,7 +699,7 @@
                 <p>If <i>Username</i> and <i>Password</i> are left blank, the user credentials under which InterMapper is running will be used.</p>
                 <p><b>Note:</b> In order for this probe to operate, InterMapper must be running as an administrative user, or you must supply an adminsitrator username and password for in the NT Services panel in Server Settings. This allows InterMapper to elevate its privileges temporarily.</p>
                 <p><i>Filename: com.dartware.ntsvcs.std</i>
-                    <br /><i>Version: 1.8</i>
+                    <br /><i>Version: 1.9</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -701,7 +718,7 @@
                 <p><i>Timeout (sec)</i> - allows you to override the device's specified timeout.</p>
                 <p>InterMapper invokes the sql_query.vbs script, included with this probe.</p>
                 <p><i>Filename: com.dartware.cmd.sql_query.txt</i>
-                    <br /><i>Version: 1.3</i>
+                    <br /><i>Version: 1.4</i>
                 </p>
                 <p><a href="#">Back to Top</a>
                 </p>
@@ -720,7 +737,9 @@
                 <p><span class="code">  command[check_swap]=/usr/local/nagios/libexec/check_swap -w 20% -c 10%</span>
                 </p>
                 <p>When the NRPE daemon receives a request to run the "check_swap" plugin, it issues the command above.</p>
-                <p>The <i>Nagios Plugin</i> paramenter tells which plugin to execute. It must match one of the command definitions in the nrpe.cfg file, e.g., the text within square brackets [ ... ]. To test the connection from InterMapper to the NRPE daemon, set <i>Nagios Plugin</i> to the value "_NRPE_CHECK".</p>
+                <p><b>Parameters</b>
+                </p>
+                <p><i>Nagios Plugin</i> - tells which plugin to execute. It must match one of the command definitions in the nrpe.cfg file (the text within square brackets [ ... ]). To test the connection from InterMapper to the NRPE daemon, set <i>Nagios Plugin</i> to the value "_NRPE_CHECK".</p>
                 <p>For information about installing an NRPE daemon, see the <a href="http://nagios.sourceforge.net/docs/nrpe/NRPE.pdf">NRPE Documentation</a> (at http://nagios.sourceforge.net/docs/nrpe/NRPE.pdf), especially the section on Remote Host Configuration. Nagios and the Nagios logo are registered trademarks of Ethan Galstad. For more information, see <a href="http://www.nagios.org.">http://www.nagios.org.</a> <![CDATA[ ]]></p>
                 <p><i>Filename: com.dartware.tcp.nrpe.txt</i>
                     <br /><i>Version: 1.2</i>
