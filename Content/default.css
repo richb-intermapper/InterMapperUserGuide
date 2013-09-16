@@ -166,6 +166,7 @@ span.code
 	font-size: inherit;
 	letter-spacing: normal;
 	background-color: #FFF;
+	mc-hyphenate: never;
 }
 
 .logmsg
@@ -534,6 +535,11 @@ p.codeindent
 	{
 		mc-format: ' (Pg {page})';
 	}
+
+	p.probeinfo
+	{
+		width: 100%;
+	}
 }
 
 /* font-size: .4em; */
@@ -714,5 +720,21 @@ a:hover
 		mc-format: '{}';
 		display: none;
 	}
+}
+
+p.probeinfo
+{
+	border: solid 1px #808080;
+	margin-right: auto;
+	padding: 1em;
+	width: 60%;
+	white-space: nowrap;
+	mc-hyphenate: never;
+	min-width: 55%;
+}
+
+.code
+{
+	mc-hyphenate: inherit;
 }
 
