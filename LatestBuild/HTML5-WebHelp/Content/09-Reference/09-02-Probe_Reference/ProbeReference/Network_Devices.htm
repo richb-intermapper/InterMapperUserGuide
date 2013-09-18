@@ -229,11 +229,11 @@ Version:  <span class="code">1.6</span></p>
                 </ul>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>UPS: model, firmware, status, </p>
-                <p><i>battery</i>: capacity, time remaining, temperature, replacement status, </p>
-                <p><i>output</i>: load percent, volts, amps, frequency, </p>
-                <p><i>input</i>: volts, voltage range over last minute, frequency, last input failure,</p>
-                <p>Enviromental Monitor: probe name, number of probes, current temperature &amp; humidity, high &amp; low threshold configurations.</p>
+                <p><i>UPS</i>: model, firmware, status, </p>
+                <p><i>Battery</i>: capacity, time remaining, temperature, replacement status, </p>
+                <p><i>Output</i>: load percent, volts, amps, frequency, </p>
+                <p><i>Input</i>: volts, voltage range over last minute, frequency, last input failure,</p>
+                <p><i>Enviromental Monitor</i>: probe name, number of probes, current temperature &amp; humidity, high &amp; low threshold configurations.</p>
                 <p><b>C. Alarms</b>
                 </p>
                 <ul>
@@ -243,12 +243,12 @@ Version:  <span class="code">1.6</span></p>
                 </ul>
                 <p><b>D. Warnings</b>
                 </p>
-                <p>If unit goes onto "Smart Trim" or "Smart Boost"</p>
+                <p>If unit goes onto "Smart Trim" or "Smart Boost".</p>
                 <p><b>Parameters</b>
                 </p>
                 <p>None.</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.apc-ap961x.txt</span><br />
-Version:  <span class="code">3.6</span></p>
+Version:  <span class="code">3.7</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -262,9 +262,10 @@ Version:  <span class="code">3.6</span></p>
                 <p><b>APC UPS MIB</b> [... enterprises.apc.products.hardware.ups / ... 1.3.6.1.4.1.318.1.1.1]</p>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>UPS: model, firmware, status, (<i>battery</i>: capacity, time remaining, temperature, replacement status), </p>
-                <p><i>output</i>: load percent, volts, amps, frequency, </p>
-                <p><i>input</i>: volts, voltage range over last minute, frequency, last input failure</p>
+                <p><i>UPS</i>: model, firmware, status,</p>
+                <p><i>Battery</i>: capacity, time remaining, temperature, replacement status, </p>
+                <p><i>Output</i>: load percent, volts, amps, frequency, </p>
+                <p><i>Input</i>: volts, voltage range over last minute, frequency, last input failure</p>
                 <p><b>C. Alarms</b>
                 </p>
                 <ul>
@@ -275,7 +276,7 @@ Version:  <span class="code">3.6</span></p>
                 <p><b>D. Warnings</b>
                 </p>
                 <ul>
-                    <li value="1"> If unit goes onto "Smart Trim" or "Smart Boost"</li>
+                    <li value="1"> If unit goes onto "Smart Trim" or "Smart Boost".</li>
                     <li value="2"> If the battery temperature exceeds user-specified thresholds (see "Parameters" below).</li>
                 </ul>
                 <p><b>Parameters</b>
@@ -286,7 +287,7 @@ Version:  <span class="code">3.6</span></p>
                 <p><i>Warning Threshold - High Temp</i>: Threshold for warning state (see above).</p>
                 <p><i>Alarm Threshold - High Temp</i>: Threshold for warning state (see above).</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.apc.txt</span><br />
-Version:  <span class="code">3.6</span></p>
+Version:  <span class="code">3.7</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -300,9 +301,9 @@ Version:  <span class="code">3.6</span></p>
                 <p><b>BestPower MIB </b> [... enterprises.bestPower.bestLink / ... 1.2947.1]</p>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>vendor, model, firmware version, VA Rating, time on battery, time remaining, </p>
-                <p><i>input &amp; output:</i> voltage, current, frequency, </p>
-                <p>output power, internal temperature.</p>
+                <p><i>UPS</i>: vendor, model, VA Rating, firmware version, </p>
+                <p><i>Battery</i>: time on battery, time remaining, internal temperature</p>
+                <p><i>Input &amp; Output</i>: voltage, current, frequency, output power (true and apparent)</p>
                 <p><b>C. Alarms &amp; Warnings</b>
                 </p>
                 <ul>
@@ -311,9 +312,9 @@ Version:  <span class="code">3.6</span></p>
                 </ul>
                 <p><b>Parameters</b>
                 </p>
-                <p><i>BatteryRemainingAlarm</i>: Threshold for alarm state (see above).</p>
+                <p><i>BatteryRemainingAlarm</i>: Threshold for alarm state (see above)</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.bestpower.txt</span><br />
-Version:  <span class="code">2.12</span></p>
+Version:  <span class="code">2.13</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -330,17 +331,19 @@ Version:  <span class="code">2.12</span></p>
                 </ul>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, </p>
-                <p><i>three input lines:</i> Hz, volts, amps, kWatts, </p>
-                <p><i>three output lines:</i> Hz, volts, amps, kWatts, output load percent</p>
+                <p><i>UPS</i>: vendor, model, software version, firmware version, </p>
+                <p><i>Battery</i>: alarm status, output source, battery status, battery voltage, battery current, </p>
+                <p><i>Three input lines</i>: Hz, volts, amps, kWatts, </p>
+                <p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
+                <p><i>Three frequency lines</i>: input, output, bypass</p>
                 <p><b>C. Alarms</b>
                 </p>
-                <p>If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</p>
+                <p>If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).</p>
                 <p><b>Parameters</b>
                 </p>
                 <p>None.</p>
                 <p class="probeinfo">Filename: <span class="code">shef.ac.uk.ups.exide.txt</span><br />
-Version:  <span class="code">2.13</span></p>
+Version:  <span class="code">2.14</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -357,20 +360,22 @@ Version:  <span class="code">2.13</span></p>
                 </ul>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current</p>
-                <p><i>three input lines:</i> Hz, volts, amps, kWatts</p>
-                <p><i>three output lines:</i> Hz, volts, amps, kWatts, output load percent</p>
-                <p><i>temperatures:</i> battery, ambient</p>
+                <p><i>UPS</i>: vendor, model, software version, firmware version, alarm status</p>
+                <p><i>Battery</i>: output source, battery status, battery voltage, battery current</p>
+                <p><i>Three input lines</i>: Hz, volts, amps, kWatts</p>
+                <p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
+                <p><i>Temperatures</i>: battery, ambient</p>
+                <p><i>UPS alarm table</i>: (link to view table) </p>
                 <p><b>C. Alarms</b>
                 </p>
                 <ul>
-                    <li value="1"> If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</li>
+                    <li value="1"> If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).</li>
                 </ul>
                 <p><b>Parameters</b>
                 </p>
                 <p>None.</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-opencomms.txt</span><br />
-Version:  <span class="code">2.14</span></p>
+Version:  <span class="code">2.15</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -384,17 +389,18 @@ Version:  <span class="code">2.14</span></p>
                 <p><b>LIEBERT-SERIES-300-UPS-MIB</b> [... enterprises.emerson.liebertCorp.liebertUps.luExtensions.luCore / ... 1.476.1.1.1.1] and [... luExtensions.luUPStationS / ... 1.2]</p>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>vendor, model, software version, firmware version, output load (%), battery voltage, battery current,</p>
-                <p><i>three input, output, and bypass phases:</i> voltage, current</p>
-                <p><i>frequencies:</i> input, output, bypass</p>
+                <p><i>UPS</i>: vendor, model, software version, firmware version, </p>
+                <p><i>Device Status</i>: alarm status, output load (%), battery voltage, battery current,</p>
+                <p><i>Three input, output, and bypass phases</i>: voltage, current</p>
+                <p><i>Frequencies</i>: input, output, bypass</p>
                 <p><b>C. Alarms</b>
                 </p>
-                <p>If the device is reporting any alarms. (The MIB includes a comprehensive list of alarms).</p>
+                <p>If the device is reporting any alarms (The MIB includes a comprehensive list of alarms).</p>
                 <p><b>Parameters</b>
                 </p>
                 <p>None.</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-series300.txt</span><br />
-Version:  <span class="code">2.8</span></p>
+Version:  <span class="code">2.9</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -413,12 +419,12 @@ Version:  <span class="code">2.8</span></p>
                 <p><b>Liebert UPS MIB</b> [... enterprises.emerson.liebertCorp.liebertUps / ... 1.476.1.1]</p>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>MIB, vendor, model, &amp; software version</p>
+                <p><i>UPS</i>: MIB, vendor, model, &amp; software version</p>
                 <p><b>Parameters</b>
                 </p>
                 <p>None.</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.liebert-ups.txt</span><br />
-Version:  <span class="code">2.8</span></p>
+Version:  <span class="code">2.9</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -432,13 +438,14 @@ Version:  <span class="code">2.8</span></p>
                 <p><b>UPS MIB (RFC 1628)</b> [... mib-2.upsMIB / ... 1.33]</p>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current, </p>
-                <p><i>three input lines:</i> Hz, volts, amps, kWatts,</p>
-                <p><i>three output lines:</i> Hz, volts, amps, kWatts, output load percent</p>
+                <p><i>UPS</i>: vendor, model, software version, firmware version, </p>
+                <p><i>Device Status</i>: alarm status, output source, battery status, battery voltage, battery current, battery temperature</p>
+                <p><i>Three input lines</i>: Hz, volts, amps, kWatts,</p>
+                <p><i>Three output lines</i>: Hz, volts, amps, kWatts, output load percent</p>
                 <p><b>C. Alarms</b>
                 </p>
                 <ul>
-                    <li value="1"> Alarm: If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</li>
+                    <li value="1"> Alarm: If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).</li>
                     <li value="2"> Alarm: If the battery temp exceeds a user-defined threshold.</li>
                 </ul>
                 <p><b>Parameters</b>
@@ -462,18 +469,19 @@ Version:  <span class="code">3.6</span></p>
                 </ul>
                 <p><b>B. Displayed Values</b>
                 </p>
-                <p>vendor, model, software version, firmware version, output source, battery status, battery voltage, battery current,</p>
-                <p><i>three input lines:</i> Hz, volts, amps, kWatts</p>
-                <p><i>three output lines:</i> Hz, volts, amps, kWatts, output load percent</p>
-                <p>ambient temperature, ambient humidity</p>
+                <p><i>UPS</i>: vendor, model, software version, firmware version, </p>
+                <p><i>Device Status</i>: output source, battery status, battery voltage, battery current,</p>
+                <p><i>Three input lines</i>: Hz, volts, amps, kWatts</p>
+                <p><i>Three output lines</i>"" Hz, volts, amps, kWatts, output load percent</p>
+                <p><i>EnviroSense Unit info</i>: ambient humidity, ambient temperature</p>
                 <p><b>C. Alarms</b>
                 </p>
-                <p>If the device is reporting any alarms. (The UPS MIB includes a comprehensive list of alarms).</p>
+                <p>If the device is reporting any alarms (The UPS MIB includes a comprehensive list of alarms).</p>
                 <p><b>Parameters</b>
                 </p>
                 <p>None.</p>
                 <p class="probeinfo">Filename: <span class="code">com.dartware.ups.tripplite.txt</span><br />
-Version:  <span class="code">2.13</span></p>
+Version:  <span class="code">2.14</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
@@ -481,6 +489,12 @@ Version:  <span class="code">2.13</span></p>
             <blockquote>
                 <h3>Victron UPS</h3>
                 <p>This probe monitors important values in the Victron UPS.</p>
+                <p><b>B. Displayed Values</b>
+                </p>
+                <p><i>UPS</i>: battery status, battery remaining, low voltage warning</p>
+                <p><i>Input Voltage</i>: Phase 1, 2, and 3</p>
+                <p><i>Ouput Voltage</i>: Phase 1, 2, and 3</p>
+                <p><i>Victron Alarm Points defined</i>: (three values)</p>
                 <p><b>Parameters</b>
                 </p>
                 <p><i>UPS Battery Status - Alarm</i> - ALARM threshold for Battery Status.</p>
@@ -493,7 +507,7 @@ Version:  <span class="code">2.13</span></p>
                 <p><i>Low Input Voltage line [1,2, or 3] - Alarm</i> - ALARM threshold for the mininmum specified input voltage on phase 1, 2, or 3. If the input voltage drops below this threshold, the device is set to <b>Alarm</b>.</p>
                 <p><i>Low Output Voltage line [1,2, or 3] - Alarm</i> - ALARM threshold for the mininmum specified output voltage on phase 1, 2, or 3. If the output voltage drops below this threshold, the device is set to <b>Alarm</b>.</p>
                 <p class="probeinfo">Filename: <span class="code">de.medianet.freinet.ups.victron.txt</span><br />
-Version:  <span class="code">3.0</span></p>
+Version:  <span class="code">3.1</span></p>
                 <p><a href="#">Back to Top</a>
                 </p>
             </blockquote>
