@@ -30,7 +30,11 @@
  is associated with a user name that is used to determine which maps and 
  permissions are available. For some examples of typical access control 
  setups, see <a href="08-03-01-Users/examples.html">Access Control Examples</a>.</p>
-            <p style="font-weight: normal;"><b>Note:</b> You can also control access through the <a href="authserver.htm">InterMapper Authentication Server</a>, which connects to an external authentication server such as Radius, LDAP, or ActiveDirectory to authenticate a user. For more information, see    <a href="authserver.htm">Authentication Server</a>,.</p>
+            <p style="font-weight: normal;"><b>Notes:</b> <![CDATA[ ]]></p>
+            <ul>
+                <li style="font-weight: normal;" value="1">You can also control access through the <a href="authserver.htm">InterMapper Authentication Server</a>, which connects to an external authentication server such as Radius, LDAP, or ActiveDirectory to authenticate a user. For more information, see    <a href="authserver.htm">Authentication Server</a>.</li>
+                <li style="font-weight: normal;" value="2">Any firewall that is protecting the machine that is running InterMapper must be configured to allow access to the ports specified for remote access. This includes the port specified for use by the web server.</li>
+            </ul>
             <h2><a name="kanchor1890"></a>The Access Control Process</h2>
             <p><a name="kanchor1891"></a><a name="kanchor1892"></a>When a user attempts to connect to one of the InterMapper servers, the 
  request goes through these steps:</p>

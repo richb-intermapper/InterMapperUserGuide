@@ -252,6 +252,20 @@ a.MiniTOC1:link
 	
 }
 
+.xref.ConceptPageNumber
+{
+	text-decoration: inherit;
+	font-weight: inherit;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.xref.H1_and_page
+{
+	
+}
+
 .MCWebHelpFramesetLink a
 {
 	

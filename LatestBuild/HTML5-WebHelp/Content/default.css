@@ -534,11 +534,22 @@ p.codeindent
 	MadCap|xref.ConceptPageNumber
 	{
 		mc-format: ' (Pg {page})';
+		color: #0000ff;
 	}
 
 	p.probeinfo
 	{
 		width: 100%;
+	}
+
+	a
+	{
+		color: #0000ff;
+	}
+
+	MadCap|xref.H1_and_page
+	{
+		color: #0000ff;
 	}
 }
 
